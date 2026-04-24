@@ -37,6 +37,12 @@ export default async function Nav() {
           >
             Notes
           </Link>
+          <Link
+            href="/guide/invisible-armour"
+            className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
+          >
+            Guide
+          </Link>
           <form method="get" action="/search" className="flex items-center">
             <input
               type="search"
