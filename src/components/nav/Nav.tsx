@@ -31,6 +31,12 @@ export default async function Nav() {
           >
             Houses
           </Link>
+          <Link
+            href="/notes"
+            className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
+          >
+            Notes
+          </Link>
           <form method="get" action="/search" className="flex items-center">
             <input
               type="search"

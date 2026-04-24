@@ -71,7 +71,7 @@ function toLabel(raw: string) {
 function NotesPyramid({
   notes,
 }: {
-  notes: { position: NotePosition; note: { name: string }; order: number }[];
+  notes: { position: NotePosition; note: { name: string; slug: string }; order: number }[];
 }) {
   const grouped = (["TOP", "MIDDLE", "BASE", "ACCORD"] as NotePosition[]).map(
     (pos) => ({
@@ -97,12 +97,13 @@ function NotesPyramid({
           </p>
           <div className="flex flex-wrap gap-1.5">
             {items.map((n) => (
-              <span
+              <Link
                 key={n.note.name}
-                className="text-xs text-stone-300 px-2.5 py-1 bg-stone-900/60 border border-stone-800/80 rounded-full"
+                href={`/notes/${n.note.slug}`}
+                className="text-xs text-stone-300 hover:text-stone-100 px-2.5 py-1 bg-stone-900/60 hover:bg-stone-800/60 border border-stone-800/80 hover:border-stone-700 rounded-full transition-colors"
               >
                 {n.note.name}
-              </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -158,7 +159,7 @@ export default async function FragranceDetailPage({
     include: {
       house: true,
       notes: {
-        include: { note: { select: { name: true } } },
+        include: { note: { select: { name: true, slug: true } } },
         orderBy: { order: "asc" },
       },
       seasons:    { select: { season: true } },
