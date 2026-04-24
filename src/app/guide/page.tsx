@@ -15,6 +15,13 @@ const GUIDES = [
     subtitle: "The only sense with a direct line to your emotions and memory. Here's what's actually happening when a scent stops you in your tracks.",
     read:     "12 min read",
   },
+  {
+    href:     "/guide/edt-edp-parfum",
+    tag:      "Buying Guide · Education",
+    title:    "EDT, EDP, Parfum: What the Letters Actually Mean",
+    subtitle: "Every fragrance bottle has a concentration label. Most people ignore it. Here's why that's a mistake.",
+    read:     "11 min read",
+  },
 ];
 
 export default function GuidePage() {
