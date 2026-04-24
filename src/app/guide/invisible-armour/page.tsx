@@ -110,6 +110,14 @@ export default function InvisibleArmourPage() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
 
+      {/* Back */}
+      <Link
+        href="/guide"
+        className="text-[10px] uppercase tracking-[0.2em] text-stone-600 hover:text-stone-400 transition-colors block mb-12"
+      >
+        ← Guide
+      </Link>
+
       {/* Masthead */}
       <div className="mb-16 pb-16 border-b border-stone-800/60">
         <p className="text-[10px] uppercase tracking-[0.3em] text-amber-500 mb-6">

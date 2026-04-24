@@ -38,7 +38,7 @@ export default async function Nav() {
             Notes
           </Link>
           <Link
-            href="/guide/invisible-armour"
+            href="/guide"
             className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
           >
             Guide
