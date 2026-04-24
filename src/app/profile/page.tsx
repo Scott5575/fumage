@@ -2,22 +2,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth";
 import { getWardrobe } from "@/lib/collections";
-import {
-  COLLECTION_STATUS_LABELS,
-  COLLECTION_STATUS_ICONS,
-  type CollectionStatus,
-} from "@/types/ugc";
-
-const FAMILY_LABELS: Record<string, string> = {
-  FRESH: "Fresh", AROMATIC: "Aromatic", WOODY: "Woody", ORIENTAL: "Oriental",
-  GOURMAND: "Gourmand", LEATHER: "Leather", CITRUS: "Citrus", CHYPRE: "Chypre",
-};
-
-const FAMILY_DOT: Record<string, string> = {
-  FRESH: "bg-sky-400", AROMATIC: "bg-emerald-400", WOODY: "bg-amber-700",
-  ORIENTAL: "bg-orange-500", GOURMAND: "bg-rose-400", LEATHER: "bg-stone-500",
-  CITRUS: "bg-yellow-400", CHYPRE: "bg-lime-600",
-};
+import { type CollectionStatus } from "@/types/ugc";
+import { WardrobeGrid } from "@/components/collection/WardrobeGrid";
 
 const STATUS_TABS: { value: CollectionStatus | "ALL"; label: string }[] = [
   { value: "ALL",          label: "All"         },
@@ -107,68 +93,7 @@ export default async function ProfilePage({ searchParams }: Props) {
       </div>
 
       {/* Entry grid */}
-      {entries.length === 0 ? (
-        <div className="text-center py-24">
-          <p className="text-stone-600 text-sm mb-4">Nothing here yet.</p>
-          <Link
-            href="/fragrances"
-            className="text-[10px] uppercase tracking-[0.2em] text-amber-500/70 hover:text-amber-400 transition-colors"
-          >
-            Browse the catalog →
-          </Link>
-        </div>
-      ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {entries.map((entry) => (
-            <Link
-              key={entry.id}
-              href={`/fragrances/${entry.fragrance.slug}`}
-              className="group border border-stone-800 hover:border-stone-600 rounded p-4 transition-colors bg-stone-950/40"
-            >
-              <div className="flex items-center gap-1.5 mb-3">
-                <span className="text-amber-600/60 text-xs">
-                  {COLLECTION_STATUS_ICONS[entry.status]}
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.12em] text-amber-500/60">
-                  {COLLECTION_STATUS_LABELS[entry.status]}
-                </span>
-                {entry.pinned && (
-                  <span className="ml-auto text-[10px] text-stone-600">Pinned</span>
-                )}
-              </div>
-
-              <p className="text-[10px] uppercase tracking-[0.15em] text-stone-500 mb-1 truncate">
-                {entry.fragrance.house.name}
-              </p>
-              <p className="text-stone-200 text-sm font-light leading-snug mb-3 line-clamp-2">
-                {entry.fragrance.name}
-              </p>
-
-              <div className="flex items-center gap-1.5">
-                <span
-                  className={`inline-block w-1.5 h-1.5 rounded-full ${
-                    FAMILY_DOT[entry.fragrance.family] ?? "bg-stone-600"
-                  }`}
-                />
-                <span className="text-[10px] text-stone-500">
-                  {FAMILY_LABELS[entry.fragrance.family] ?? entry.fragrance.family}
-                </span>
-              </div>
-
-              {entry.personalRating != null && (
-                <p className="text-[10px] text-amber-500/70 mt-2">
-                  Your rating: {entry.personalRating.toFixed(1)}
-                </p>
-              )}
-              {entry.personalNote && (
-                <p className="text-[10px] text-stone-600 mt-1 line-clamp-2">
-                  {entry.personalNote}
-                </p>
-              )}
-            </Link>
-          ))}
-        </div>
-      )}
+      <WardrobeGrid initialEntries={entries} />
     </main>
   );
 }
