@@ -1,0 +1,2 @@
+-- AlterEnum
+ALTER TYPE "HouseTier" ADD VALUE 'ULTRA_LUXURY';

@@ -1,0 +1,509 @@
+// ============================================================================
+// FUMAGE — The Gentleman's Atlas
+// Prisma Schema v1.0
+//
+// Stack: PostgreSQL · Prisma ORM · Next.js API Routes (assumed)
+//
+// Key design decisions:
+//   - Notes are a proper table (enables "all fragrances with oud" queries)
+//   - Dupe relationships are DIRECTIONAL (A clones B, not symmetric)
+//   - Similar relationships are SYMMETRIC (stored once, A.id < B.id convention)
+//   - Season/Occasion/TimeOfDay are junction tables, not arrays (indexable)
+//   - Fragrance carries both communityRating (editorial) and avgUserRating (computed)
+//   - House is a first-class entity (enables house browsing + tier filtering)
+// ============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// ENUMS
+// ============================================================================
+
+enum FragranceCategory {
+  DESIGNER
+  NICHE
+  ULTRA_LUXURY // Roja, Clive Christian, SHL 777
+  ARTISAN      // Bogue, Slumberhouse, small-batch
+}
+
+enum ScentFamily {
+  FRESH
+  AROMATIC
+  WOODY
+  ORIENTAL
+  GOURMAND
+  LEATHER
+  CITRUS
+  CHYPRE
+}
+
+enum NotePosition {
+  TOP
+  MIDDLE
+  BASE
+  ACCORD // Overall accords (e.g. "smoky", "animalic") — not tied to pyramid
+}
+
+enum PriceTier {
+  BUDGET        // 1 — Under $30
+  ACCESSIBLE    // 2 — $30–$80
+  MID           // 3 — $80–$200
+  PREMIUM       // 4 — $200–$400
+  ULTRA         // 5 — $400+
+}
+
+enum Availability {
+  WIDELY_AVAILABLE
+  LIMITED            // Boutique / online only
+  DISCONTINUED
+  SEASONAL
+}
+
+enum ComplimentFactor {
+  LOW
+  MODERATE
+  HIGH
+  VERY_HIGH
+}
+
+enum TrendDirection {
+  RISING
+  STABLE
+  DECLINING
+}
+
+enum HypeRating {
+  UNDERRATED
+  ACCURATELY_RATED
+  SLIGHTLY_OVERHYPED
+  OVERHYPED
+}
+
+enum Season {
+  SPRING
+  SUMMER
+  FALL
+  WINTER
+}
+
+enum Occasion {
+  CASUAL
+  BUSINESS
+  DATE
+  SPECIAL
+  NIGHT_OUT
+}
+
+enum TimeOfDay {
+  DAY
+  NIGHT
+  ALL_DAY
+}
+
+enum DupeSimilarity {
+  CLOSE       // Hard to distinguish blind
+  STRONG      // Very similar DNA
+  INSPIRED    // Clearly influenced by, not a clone
+  ADJACENT    // Same genre/vibe, different composition
+}
+
+enum CollectionStatus {
+  OWNED
+  WISHLISTED
+  TRIED          // Sampled / decanted
+  BLIND_BOUGHT   // Purchased without sampling
+  DECANTED       // Own a decant only
+  SOLD           // Previously owned
+}
+
+enum HouseTier {
+  DESIGNER       // Dior, Chanel, YSL
+  NICHE          // Creed, Amouage, Le Labo
+  ULTRA_LUXURY   // Clive Christian, Roja Parfums, SHL 777
+  BUDGET_NICHE   // Lattafa, Armaf, Al Haramain
+  ARTISAN        // Bogue, Slumberhouse, Zoologist
+  CELEBRITY      // Not really used but schema-complete
+}
+
+// ============================================================================
+// CATALOG MODELS
+// ============================================================================
+
+model House {
+  id          String    @id @default(cuid())
+  slug        String    @unique
+  name        String    @unique
+  tier        HouseTier
+  country     String?
+  city        String?
+  foundedYear Int?
+  website     String?
+  description String?
+
+  fragrances Fragrance[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([tier])
+  @@index([slug])
+}
+
+model Fragrance {
+  id   String @id @default(cuid())
+  slug String @unique  // e.g. "dior-sauvage", "creed-aventus"
+
+  name     String
+  houseId  String
+  house    House  @relation(fields: [houseId], references: [id])
+  year     Int?
+
+  category    FragranceCategory
+  family      ScentFamily
+  subfamily   String?           // e.g. "Aromatic Fougère", "Fruity Chypre"
+
+  // Pricing
+  priceTier   PriceTier
+  priceRange  String?   // Human-readable: "$80–$160"
+
+  // Performance (editorial / community-aggregated values, 1–10)
+  longevity   Int?
+  projection  Int?
+  sillage     Int?
+
+  availability Availability @default(WIDELY_AVAILABLE)
+
+  // Editorial ratings & metadata
+  communityRating Float?  // Stored from source data (e.g. 4.2/5)
+  popularityScore Int?    // 1–100 composite score
+  sentiment       String? // @db.Text — short editorial sentiment
+  uniqueChars     String? // @db.Text — "what makes it distinctive"
+
+  // Market signals
+  massAppeal      Boolean?
+  complimentFactor ComplimentFactor?
+  trend           TrendDirection?
+  hypeRating      HypeRating?
+
+  // Collector notes (from V2 data model)
+  beginnerNote    String? // @db.Text
+  collectorNote   String? // @db.Text
+
+  // Computed from user reviews — updated via background job
+  avgUserRating   Float?
+  reviewCount     Int     @default(0)
+
+  // Relations
+  notes         FragranceNote[]
+  seasons       FragranceSeason[]
+  occasions     FragranceOccasion[]
+  timesOfDay    FragranceTimeOfDay[]
+
+  // Dupe relationships (directional: this fragrance IS a dupe of another)
+  isDupeOf      DupeRelationship[] @relation("DupeSource")
+  hasDupes      DupeRelationship[] @relation("DupeTarget")
+
+  // Similar fragrances (symmetric)
+  similarA      SimilarFragrance[] @relation("SimilarA")
+  similarB      SimilarFragrance[] @relation("SimilarB")
+
+  reviews       Review[]
+  collections   UserCollection[]
+
+  // Data provenance
+  dataSource    String? // "Original xlsx", "ME additions v2", "Niche additions v3"
+  verified      Boolean @default(false) // manually reviewed entry
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([houseId])
+  @@index([family])
+  @@index([category])
+  @@index([priceTier])
+  @@index([popularityScore])
+  @@index([slug])
+  @@index([year])
+}
+
+model Note {
+  id   String @id @default(cuid())
+  name String @unique  // e.g. "Bergamot", "Oud", "Iso E Super"
+  slug String @unique  // e.g. "bergamot", "oud", "iso-e-super"
+
+  // Optional metadata for Notes Library feature
+  noteType    String?   // "natural" | "synthetic" | "accord"
+  origin      String?   // "Citrus aurantium bergamia, Calabria"
+  description String?   // @db.Text
+  didYouKnow  String?   // @db.Text
+
+  fragrances FragranceNote[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([slug])
+}
+
+// Junction: Fragrance ↔ Note (with position in pyramid)
+model FragranceNote {
+  id          String       @id @default(cuid())
+  fragranceId String
+  fragrance   Fragrance    @relation(fields: [fragranceId], references: [id], onDelete: Cascade)
+  noteId      String
+  note        Note         @relation(fields: [noteId], references: [id])
+  position    NotePosition
+  order       Int          @default(0) // display order within position
+
+  @@unique([fragranceId, noteId, position])
+  @@index([fragranceId])
+  @@index([noteId])
+}
+
+// Junctions for filterable arrays
+model FragranceSeason {
+  fragranceId String
+  fragrance   Fragrance @relation(fields: [fragranceId], references: [id], onDelete: Cascade)
+  season      Season
+
+  @@id([fragranceId, season])
+  @@index([season])
+}
+
+model FragranceOccasion {
+  fragranceId String
+  fragrance   Fragrance @relation(fields: [fragranceId], references: [id], onDelete: Cascade)
+  occasion    Occasion
+
+  @@id([fragranceId, occasion])
+  @@index([occasion])
+}
+
+model FragranceTimeOfDay {
+  fragranceId String
+  fragrance   Fragrance @relation(fields: [fragranceId], references: [id], onDelete: Cascade)
+  timeOfDay   TimeOfDay
+
+  @@id([fragranceId, timeOfDay])
+  @@index([timeOfDay])
+}
+
+// ============================================================================
+// RELATIONSHIPS BETWEEN FRAGRANCES
+// ============================================================================
+
+// DIRECTIONAL: sourceId clones/dupes targetId
+// e.g. source=Armaf CDNI, target=Creed Aventus
+model DupeRelationship {
+  id         String         @id @default(cuid())
+  sourceId   String                              // The clone/dupe
+  source     Fragrance      @relation("DupeSource", fields: [sourceId], references: [id])
+  targetId   String                              // The original being cloned
+  target     Fragrance      @relation("DupeTarget", fields: [targetId], references: [id])
+
+  similarity DupeSimilarity
+  notes      String?        // e.g. "Sweeter and less smoky than the original"
+  priceNote  String?        // e.g. "~$25 vs $400"
+
+  // Community confidence signal
+  upvotes    Int            @default(0)
+  downvotes  Int            @default(0)
+
+  createdAt  DateTime       @default(now())
+  updatedAt  DateTime       @updatedAt
+
+  @@unique([sourceId, targetId])
+  @@index([sourceId])
+  @@index([targetId])
+}
+
+// SYMMETRIC: fragranceA and fragranceB are similar
+// Convention: store once with the lower cuid() first
+model SimilarFragrance {
+  id          String    @id @default(cuid())
+  fragranceAId String
+  fragranceA  Fragrance @relation("SimilarA", fields: [fragranceAId], references: [id])
+  fragranceBId String
+  fragranceB  Fragrance @relation("SimilarB", fields: [fragranceBId], references: [id])
+
+  notes       String?   // Why they're similar
+
+  @@unique([fragranceAId, fragranceBId])
+  @@index([fragranceAId])
+  @@index([fragranceBId])
+}
+
+// ============================================================================
+// USER MODELS
+// ============================================================================
+
+model User {
+  id          String  @id @default(cuid())
+  email       String  @unique
+  username    String  @unique
+  displayName String?
+  avatarUrl   String?
+  bio         String? // @db.Text
+
+  // Auth — store hashed password or OAuth provider tokens
+  passwordHash String?
+
+  // Profile signals
+  experienceLevel String? // "beginner" | "enthusiast" | "collector"
+  preferredFamilies ScentFamily[]
+
+  // Relations
+  reviews      Review[]
+  collections  UserCollection[]
+  following    UserFollow[]     @relation("Follower")
+  followers    UserFollow[]     @relation("Following")
+  reviewVotes  ReviewVote[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([username])
+  @@index([email])
+}
+
+model UserFollow {
+  followerId  String
+  follower    User   @relation("Follower",  fields: [followerId],  references: [id])
+  followingId String
+  following   User   @relation("Following", fields: [followingId], references: [id])
+  createdAt   DateTime @default(now())
+
+  @@id([followerId, followingId])
+}
+
+// ============================================================================
+// UGC — REVIEWS
+// ============================================================================
+
+model Review {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
+  fragranceId String
+  fragrance   Fragrance @relation(fields: [fragranceId], references: [id])
+
+  title       String?
+  body        String    // @db.Text — main review text
+
+  // Numeric ratings (user's personal experience)
+  rating          Float   // 1.0–5.0 (overall)
+  longevityRating Int?    // 1–10
+  projectionRating Int?   // 1–10
+  valueRating     Int?    // 1–10 (value for money)
+
+  // Contextual tags on this review
+  seasons     Season[]
+  occasions   Occasion[]
+
+  // Ownership context
+  bottleOwned    Boolean  @default(false)  // vs. sampled/decanted
+  bottleSize     String?                   // "100ml EDP", "decant"
+  purchaseYear   Int?
+
+  // Moderation
+  published   Boolean  @default(true)
+  flagged     Boolean  @default(false)
+
+  // Engagement
+  helpfulCount    Int @default(0)
+  notHelpfulCount Int @default(0)
+  votes           ReviewVote[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, fragranceId]) // One review per user per fragrance
+  @@index([fragranceId])
+  @@index([userId])
+  @@index([rating])
+  @@index([createdAt])
+}
+
+model ReviewVote {
+  userId   String
+  user     User   @relation(fields: [userId], references: [id])
+  reviewId String
+  review   Review @relation(fields: [reviewId], references: [id])
+  helpful  Boolean  // true = helpful, false = not helpful
+
+  createdAt DateTime @default(now())
+
+  @@id([userId, reviewId])
+}
+
+// ============================================================================
+// USER COLLECTIONS / WARDROBE
+// ============================================================================
+
+model UserCollection {
+  id          String          @id @default(cuid())
+  userId      String
+  user        User            @relation(fields: [userId], references: [id])
+  fragranceId String
+  fragrance   Fragrance       @relation(fields: [fragranceId], references: [id])
+
+  status      CollectionStatus
+
+  // Personal metadata
+  personalRating   Float?   // 1–10 (different from public review rating)
+  personalNote     String?  // @db.Text — private note
+  purchasePrice    Decimal? @db.Decimal(10, 2)
+  purchaseCurrency String?  @default("USD")
+  purchaseDate     DateTime?
+  bottleSize       String?  // "100ml", "30ml", "5ml decant"
+
+  // Display in wardrobe
+  pinned      Boolean @default(false)
+  position    Int?    // Custom sort order
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, fragranceId])
+  @@index([userId])
+  @@index([fragranceId])
+  @@index([status])
+}
+
+// ============================================================================
+// REFERENCE / EDITORIAL CONTENT
+// ============================================================================
+
+// For the Layering Guide, Primer chapters, etc. — if you want CMS-managed
+model EditorialContent {
+  id       String @id @default(cuid())
+  slug     String @unique
+  title    String
+  subtitle String?
+  body     String  // @db.Text — Markdown
+  section  String  // "layering" | "primer" | "families" | "notes"
+  order    Int     @default(0)
+
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([section])
+  @@index([slug])
+}
+
+// Tracks the V1/V2/V3 data import history
+model DataImportLog {
+  id          String   @id @default(cuid())
+  version     String   // "v1", "v2-me", "v3-niche"
+  description String
+  count       Int      // Entries imported
+  importedAt  DateTime @default(now())
+}
