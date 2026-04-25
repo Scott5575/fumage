@@ -1,0 +1,96 @@
+---
+date: 2026-04-25T17:00:00Z
+date_local: 2026-04-25 (afternoon, US time)
+session: 14
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 14 Handover — Fumage
+
+## What was done this session
+
+### New article — Beyond the Counter (`/guide/niche-fragrance-houses`)
+Eleven niche house profiles in a single article: Creed, Amouage, Parfums de Marly, Xerjoff, Initio Parfums Privés, Nishane, Nasomatto, D.S. & Durga, Tauer Perfumes, Roja Parfums, and Maison Margiela Replica. Each card includes house origin and descriptor, editorial body, and `FragLinks` picking verified database IDs. Occasion context grid (four scenarios) and a niche vs. bespoke comparison table. Registered in `GuideIndex.tsx` under "Niche · Houses". Commit `1659437`.
+
+### New article — The Smart Shelf (`/guide/smart-shelf`)
+Seven Gulf/value-tier house profiles: Armaf, Lattafa, Afnan, Rasasi, Al Haramain, Maison Alhambra, Ard Al Zaafaran. Includes the clone economy explainer, Gulf fragrance tradition context, a four-tier wardrobe framework (Pinnacle / Niche Core / Gateway / Smart Shelf), and a seven-row niche-to-value pairing table with linked fragrance references. Registered under "Buying Guide · Value". Commit `420a824`.
+
+### New article — Where a Fragrance Comes From Changes Everything (`/guide/regional-traditions`)
+The largest article yet: eight regional traditions (French, Italian, Mediterranean, English, Oriental, Arabian, American, Japanese), each with motto, editorial body, signature notes pills, a 6-card fragrance grid (linked where slugs exist), and a "when to reach for" wear note. Three inline editorial callouts (concentration primer, French vs. Italian philosophy, Arabian value proposition). At-a-glance comparison table (8 rows × 5 columns), four budget tier cards, two starter wardrobes (Value ~$250–350; Without Compromise ~$900–1,200), and a footnote section on German and Nordic traditions. 48 fragrance references total; 20 link to catalog pages. Registered under "Education · Regional". Commit `dcd625d`.
+
+## Current app state
+
+### Routes
+- `/` — home: hero, featured fragrances, scent family tiles
+- `/fragrances` — catalog with filter sidebar + pagination (48 per page)
+- `/fragrances/[slug]` — fragrance detail: notes pyramid, dual-register, dupes, similar, reviews, collection button
+- `/houses` — listing grouped by tier
+- `/houses/[slug]` — house detail with fragrance grid
+- `/notes` — notes library A–Z with pagination
+- `/notes/[slug]` — note detail with position drill-down
+- `/search` — Meilisearch-backed search
+- `/dupes` — alternatives browser
+- `/guide` — filterable index (16 articles)
+- `/guide/[slug]` — 16 article pages
+- `/sign-in`, `/sign-up` — Supabase auth
+- `/auth/callback` — PKCE handler
+- `/profile` — wardrobe (authenticated) with status tabs, sort control, edit modal
+
+### Guide articles (16 total)
+| Route | Title | Category |
+|---|---|---|
+| `/guide/invisible-allure` | The Invisible Allure | Psychology |
+| `/guide/invisible-armour` | The Invisible Armour | Psychology |
+| `/guide/brain-on-cologne` | Your Brain on Cologne | Psychology |
+| `/guide/aquatic-marine` | Better Than Its Reputation | Family Deep Dive |
+| `/guide/leather-tobacco` | Fragrances With Opinions | Family Deep Dive |
+| `/guide/fougere` | The Original Blueprint | Family Deep Dive |
+| `/guide/oriental-amber` | Rich, Warm, Unapologetic | Family Deep Dive |
+| `/guide/woody-aromatic` | The Backbone of Men's Fragrance | Family Deep Dive |
+| `/guide/fresh-citrus` | The Misunderstood Family | Family Deep Dive |
+| `/guide/niche-fragrance` | Down the Rabbit Hole | Buying Guide |
+| `/guide/niche-fragrance-houses` | Beyond the Counter | Buying Guide |
+| `/guide/smart-shelf` | The Smart Shelf | Buying Guide |
+| `/guide/regional-traditions` | Where a Fragrance Comes From Changes Everything | Buying Guide |
+| `/guide/dupes-debate` | The Dupes Debate | Buying Guide |
+| `/guide/edt-edp-parfum` | EDT, EDP, Parfum | Buying Guide |
+| `/guide/fragrance-wardrobe` | The Fragrance Wardrobe | Buying Guide |
+
+### Infrastructure
+- Next.js 16.2.4, Prisma 5.22.0, PostgreSQL via Supabase (ref: hnsnmjwdpewgivphxkcn)
+- Auth: Supabase Auth
+- Search: Meilisearch SDK 0.57.0
+- Deployed: Vercel, auto-deploy on push to `main`
+- TypeScript: zero errors
+- Database: 685 fragrances, 159 houses, 358 notes, 23 dupes, 1542 similar pairs
+
+### Git state
+- Branch: `main`, ahead of origin by 10 commits (not yet pushed this session)
+- Latest commits:
+  - `dcd625d` — add regional traditions guide article — eight masculine fragrance traditions
+  - `420a824` — add The Smart Shelf guide article — affordable fragrance alternatives
+  - `1659437` — add Beyond the Counter guide article — niche fragrance houses
+  - `a1c3924` — show display name in wardrobe header, fall back to email prefix
+  - `86780d6` — add Knize Ten to fragrance database (685 entries)
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-012 | Build layering guidance page |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+
+## Design constants (carry forward)
+
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Guide article components (`PullQuote`, `SectionLabel`, `FragLinks`, `FragCard`) are defined inline per file — intentionally not shared
+- Nav order: Catalog · Houses · Notes · Dupes · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against `prisma/data/fragrance_database.json` using the `id` field before referencing in guide articles — never invent a slug, render unmatched as plain pills
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- Source HTML files for articles come from `~/Downloads/` — convert to TSX faithfully, adapting to the Fumage dark design system
