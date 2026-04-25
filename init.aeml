@@ -1,0 +1,135 @@
+::document
+id: init
+authority: governing
+applies-to: claude-code
+read: every-session | before-any-action
+version: v0.1.0
+audit_round: r0
+versioning_tier: full
+purpose: project-level governance overlay — extends or overrides ~/.aeleon/global/init.aeml
+
+  This file carries project-specific governance: the project's name, root path, orientation,
+  phases, session-close obligations, and any per-project overrides of the kernel's universal rules.
+
+  The kernel's universal rules live at ~/.aeleon/global/init.aeml and are read first.
+  Anything declared here takes precedence over the kernel's defaults.
+
+
+::project
+name: fumage
+root: ~/projects/fumage
+handover-dir: ~/projects/fumage/handover/
+memory-entry: ~/.claude/projects/-Users-scottreisinger/memory/project-fumage.md
+::end-project
+
+
+::orientation
+
+  Fumage is a men's fragrance reference site — catalog, editorial guides, dupe browser,
+  notes library, and wardrobe system — targeting beginners through serious collectors.
+  The design aesthetic is apothecary-editorial: dark (#0c0906 background), warm amber
+  accents, serif typography. Built on Next.js, Prisma, PostgreSQL via Supabase, Meilisearch
+  for search, deployed to Vercel with auto-deploy on push to main.
+
+  Current scale: 685 fragrances, 159 houses, 358 notes, 23 dupes, 1542 similar pairs.
+  21 guide articles live. TypeScript zero-error policy is maintained at all times.
+
+::end-orientation
+
+
+::phases
+
+  ::phase
+  id: 1
+  name: foundation
+  status: complete
+  ::end-phase
+  # Schema migrated, database seeded, auth wired. Completed 2026-04-24.
+
+  ::phase
+  id: 2
+  name: app-router
+  status: complete
+  ::end-phase
+  # All routed pages built. Completed 2026-04-24.
+
+  ::phase
+  id: 3
+  name: search
+  status: complete
+  ::end-phase
+  # Meilisearch integrated. Completed 2026-04-24.
+
+  ::phase
+  id: 4
+  name: launch
+  status: active
+  ::end-phase
+  # Vercel deploy live at fumage.vercel.app. Custom domain (ai-009) outstanding.
+
+::end-phases
+
+
+::session-close
+sequence: ordered
+obligation: mandatory — a session that ends without completing all steps is incomplete
+
+  step[1] Verify TypeScript compiles clean: run `npx tsc --noEmit`. Resolve any errors before proceeding.
+  step[2] Push all commits to origin: run `git push`. Confirm push succeeded before writing the handover.
+  step[3] Write the handover file to ./handover/ using the filename format
+          claude-session-handover-{YYYYMMDDTHHmmssZ}.aeml where the timestamp is derived
+          from the system clock at the moment of writing. The git state section must reflect
+          post-push reality: branch name, clean/dirty state, and latest commit hash only.
+          Never record "ahead of origin by N commits" as a final state.
+  step[4] Update the project memory entry at
+          ~/.claude/projects/-Users-scottreisinger/memory/project-fumage.md
+          with the new session number and the exact filename of the handover just written.
+
+::end-session-close
+
+
+::design-constants
+
+  background:       #0c0906
+  body-text:        stone-200
+  accent:           amber-500 / amber-400
+  card-border:      border-stone-800, hover border-stone-600
+  label-style:      text-[10px] uppercase tracking-[0.2em]
+  aesthetic:        apothecary-editorial — dark, warm, not sterile e-commerce
+
+  guide-articles:
+    container:      max-w-2xl
+    typography:     font-serif display and body
+    pull-quotes:    left amber border
+    components:     PullQuote, SectionLabel, FragLinks, FragCard — defined inline per file (intentionally not shared)
+
+  nav-order:        Catalog · Houses · Notes · Dupes · Guide · Search · Wardrobe/Sign in
+  mobile-nav:       MobileNav.tsx (client component); desktop nav is hidden md:flex in Nav.tsx
+
+::end-design-constants
+
+
+::slug-discipline
+
+  rule: always verify fragrance slugs against prisma/data/fragrance_database.json using the id field
+        before referencing them in guide articles. never invent a slug. render unmatched references
+        as plain text or pills, never as broken links.
+
+::end-slug-discipline
+
+
+::commit-discipline
+
+  rule: one commit per discrete feature or article. imperative subject line. Co-Authored-By trailer on every commit.
+  rule: never commit with TypeScript errors present.
+
+::end-commit-discipline
+
+
+::project-overrides
+
+  # No kernel rule overrides at this time. Kernel rules apply in full.
+
+::end-project-overrides
+
+::end-document
