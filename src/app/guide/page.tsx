@@ -22,6 +22,13 @@ const GUIDES = [
     subtitle: "Every fragrance bottle has a concentration label. Most people ignore it. Here's why that's a mistake.",
     read:     "11 min read",
   },
+  {
+    href:     "/guide/fragrance-wardrobe",
+    tag:      "Wardrobe Building · Practical",
+    title:    "The Fragrance Wardrobe",
+    subtitle: "Why one bottle isn't enough and forty is too many. The five slots that cover everything, seasonal rotation, and collector traps.",
+    read:     "13 min read",
+  },
 ];
 
 export default function GuidePage() {
