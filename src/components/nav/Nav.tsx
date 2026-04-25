@@ -38,6 +38,12 @@ export default async function Nav() {
             Notes
           </Link>
           <Link
+            href="/dupes"
+            className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
+          >
+            Dupes
+          </Link>
+          <Link
             href="/guide"
             className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
           >
