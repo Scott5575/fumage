@@ -118,6 +118,14 @@ const GUIDES: {
     category: "guide",
   },
   {
+    href:     "/guide/fragrance-clones",
+    tag:      "Buying Guide · Clones",
+    title:    "Scent Without the Sticker Shock",
+    subtitle: "The complete clone buyer's guide — thirteen houses profiled, twenty popular pairings, and a five-step evaluation method for judging any accord without owning the original.",
+    read:     "18 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
