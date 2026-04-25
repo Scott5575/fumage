@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/leather-tobacco",
+    tag:      "Family Deep Dive · Leather",
+    title:    "Fragrances With Opinions",
+    subtitle: "Not for everyone, on purpose. The leather and tobacco family is where fragrance stops trying to be liked and starts trying to be remembered.",
+    read:     "9 min read",
+  },
+  {
     href:     "/guide/fougere",
     tag:      "Family Deep Dive · Fougère",
     title:    "The Original Blueprint",
