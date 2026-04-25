@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/dupes-debate",
+    tag:      "Buying Guide · Opinion",
+    title:    "The Dupes Debate",
+    subtitle: "Fragrance dupes are everywhere, heavily marketed, and hotly debated. Here's an honest look at what they actually are, when they make sense, and when they don't.",
+    read:     "12 min read",
+  },
+  {
     href:     "/guide/niche-fragrance",
     tag:      "Niche · Education",
     title:    "Down the Rabbit Hole",
