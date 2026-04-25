@@ -1,0 +1,101 @@
+---
+date: 2026-04-25T21:00:00Z
+date_local: 2026-04-25 (evening, US time)
+session: 15
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 15 Handover — Fumage
+
+## What was done this session
+
+### New article — Scent Without the Sticker Shock (`/guide/fragrance-clones`)
+Comprehensive clone buyer's guide. Thirteen house profiles (Armaf, Lattafa, Al Haramain, Afnan, Maison Alhambra, Pendora Scents, Alexandria Fragrances, Parfums Vintage, Dua Fragrances, Rasasi, Zimaya, Zara, Aldi/Lidl) with reputation badges (rep/val/off/cult/prem/rising). Twenty popular clone→original pairings in a 2-column card grid, all originals linked to catalog pages where slugs exist. Five-step evaluation methodology: pillar identification, dry-down phase analysis (top/heart/base), triangulation via multiple clones, reference vocabulary building, and own-terms evaluation with a six-point checklist. Registered under "Buying Guide · Clones". Commit `d2041ca`.
+
+### New article — The Invisible Weapon (`/guide/pheromones`)
+Science and history of pheromones in men's fragrance. Covers VNO anatomy, androstenone/androstadienone research (Wyart et al. 2007, Sobel et al. 2006), natural animalics (musk, civet, castoreum, ambergris), and synthetic pheromone ingredients (Habanolide, Georgywood, AND). Seven-item myth/fact/complex verdict grid. Six fragrance cards: Kouros (`yves-saint-laurent-kouros`), Antaeus (`chanel-antaeus`), Musk Oud (Memo Paris, no slug), Muscs Koublaï Khän (Serge Lutens, no slug), Cuir de Russie (Chanel, no slug), Sauvage Elixir (`dior-dior-sauvage-elixir`). Honorable mentions link Terre d'Hermès EDT, Knize Ten, and Encre Noire. Registered under "Psychology · Science". Commit `9f0b0e1`.
+
+### New article — Why They Change What You Love (`/guide/reformulations`)
+Editorial on reformulations, discontinuations, and flankers. Three-part structure: Part One (IFRA regulations, cost of naturals, consolidation, new markets) with four info cards; Part Two (discontinuation economics, secondary market guidance, verdict box) with callouts on the IFRA 49th Amendment and the scarcity irony; Part Three (flanker spectrum gradient bar from Cash Grab → Standalone Classic, four collector strategy cards, concentration flanker note). Drop-cap lede using Tailwind `first-letter:` variant. No fragrance slugs — purely editorial. Registered under "Industry · Culture". Commit `eac9ce5`.
+
+### All 15 session commits pushed to origin
+Vercel auto-deploy triggered. All 20 guide articles are now live.
+
+## Current app state
+
+### Routes
+- `/` — home: hero, featured fragrances, scent family tiles
+- `/fragrances` — catalog with filter sidebar + pagination (48 per page)
+- `/fragrances/[slug]` — fragrance detail: notes pyramid, dual-register, dupes, similar, reviews, collection button
+- `/houses` — listing grouped by tier
+- `/houses/[slug]` — house detail with fragrance grid
+- `/notes` — notes library A–Z with pagination
+- `/notes/[slug]` — note detail with position drill-down
+- `/search` — Meilisearch-backed search
+- `/dupes` — alternatives browser
+- `/guide` — filterable index (20 articles)
+- `/guide/[slug]` — 20 article pages
+- `/sign-in`, `/sign-up` — Supabase auth
+- `/auth/callback` — PKCE handler
+- `/profile` — wardrobe (authenticated) with status tabs, sort control, edit modal
+
+### Guide articles (20 total)
+| Route | Title | Category |
+|---|---|---|
+| `/guide/invisible-allure` | The Invisible Allure | Psychology |
+| `/guide/invisible-armour` | The Invisible Armour | Psychology |
+| `/guide/brain-on-cologne` | Your Brain on Cologne | Psychology |
+| `/guide/pheromones` | The Invisible Weapon | Psychology |
+| `/guide/aquatic-marine` | Better Than Its Reputation | Family Deep Dive |
+| `/guide/leather-tobacco` | Fragrances With Opinions | Family Deep Dive |
+| `/guide/fougere` | The Original Blueprint | Family Deep Dive |
+| `/guide/oriental-amber` | Rich, Warm, Unapologetic | Family Deep Dive |
+| `/guide/woody-aromatic` | The Backbone of Men's Fragrance | Family Deep Dive |
+| `/guide/fresh-citrus` | The Misunderstood Family | Family Deep Dive |
+| `/guide/niche-fragrance` | Down the Rabbit Hole | Buying Guide |
+| `/guide/niche-fragrance-houses` | Beyond the Counter | Buying Guide |
+| `/guide/smart-shelf` | The Smart Shelf | Buying Guide |
+| `/guide/regional-traditions` | Where a Fragrance Comes From Changes Everything | Buying Guide |
+| `/guide/fragrance-clones` | Scent Without the Sticker Shock | Buying Guide |
+| `/guide/reformulations` | Why They Change What You Love | Buying Guide |
+| `/guide/dupes-debate` | The Dupes Debate | Buying Guide |
+| `/guide/edt-edp-parfum` | EDT, EDP, Parfum | Buying Guide |
+| `/guide/fragrance-wardrobe` | The Fragrance Wardrobe | Buying Guide |
+| `/guide/layering` | (ai-012, not yet built) | — |
+
+### Infrastructure
+- Next.js 16.2.4, Prisma 5.22.0, PostgreSQL via Supabase (ref: hnsnmjwdpewgivphxkcn)
+- Auth: Supabase Auth
+- Search: Meilisearch SDK 0.57.0
+- Deployed: Vercel, auto-deploy on push to `main`
+- TypeScript: zero errors
+- Database: 685 fragrances, 159 houses, 358 notes, 23 dupes, 1542 similar pairs
+
+### Git state
+- Branch: `main`, up to date with origin
+- Latest commits:
+  - `eac9ce5` — add Why They Change What You Love guide article
+  - `9f0b0e1` — add The Invisible Weapon guide article
+  - `d2041ca` — add Scent Without the Sticker Shock guide article
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-012 | Build layering guidance page |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+
+## Design constants (carry forward)
+
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Guide article components (`PullQuote`, `SectionLabel`, `FragLinks`, `FragCard`) are defined inline per file — intentionally not shared
+- Nav order: Catalog · Houses · Notes · Dupes · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against `prisma/data/fragrance_database.json` using the `id` field before referencing in guide articles — never invent a slug, render unmatched as plain text
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- Source HTML files for articles come from `~/Downloads/` — convert to TSX faithfully, adapting to the Fumage dark design system
