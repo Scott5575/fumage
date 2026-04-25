@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/woody-aromatic",
+    tag:      "Family Deep Dive · Woody",
+    title:    "The Backbone of Men's Fragrance",
+    subtitle: "The widest and most versatile family in men's perfumery. Warm, grounding, and almost universally flattering — but woody covers more ground than most people realise.",
+    read:     "9 min read",
+  },
+  {
     href:     "/guide/fresh-citrus",
     tag:      "Family Deep Dive · Fresh",
     title:    "The Misunderstood Family",
