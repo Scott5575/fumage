@@ -94,6 +94,14 @@ const GUIDES: {
     category: "guide",
   },
   {
+    href:     "/guide/niche-fragrance-houses",
+    tag:      "Niche · Houses",
+    title:    "Beyond the Counter",
+    subtitle: "Eleven essential niche houses for the masculine fragrance collector — from accessible gateway entries to the rarefied apex of the category.",
+    read:     "16 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
