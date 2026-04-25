@@ -134,6 +134,14 @@ const GUIDES: {
     category: "guide",
   },
   {
+    href:     "/guide/reformulations",
+    tag:      "Industry · Culture",
+    title:    "Why They Change What You Love",
+    subtitle: "On reformulations, discontinued legends, and the flanker flood — a clear-eyed guide to navigating what fragrance houses do when they think no one is paying attention.",
+    read:     "14 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
