@@ -1,0 +1,104 @@
+---
+date: 2026-04-25T15:06:36Z
+date_local: 2026-04-25 (afternoon, US time)
+session: 16
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 16 Handover — Fumage
+
+## What was done this session
+
+### New article — So You Want to Make Your Own Cologne (`/guide/diy-cologne`)
+DIY perfumery and bespoke fragrance services guide. Five-section structure: (1) The Premise — lede with drop cap, pull quote on the critic-vs-kitchen gap; (2) The Reality Check — five numbered failure modes (materials cost, formulation as discipline, stability, IFRA compliance, dilution math) plus a Cost of Entry callout ($600–$1,800+ entry); (3) The Path Forward — four practical principles (course/text first, reputable suppliers, accord as unit of work, meticulous records) plus chord/symphony pull quote; (4) Bespoke Services — six dark service cards (Imaginary Authors, Scentbird/Commodity, Olfactive Studio, Ffern, Scent Trunk, Your Local Perfumer); (5) Practical Framework — five principles (reference library, aggressive constraint, skin testing, resist adding, maceration time) plus Minimum Viable Brief callout; (6) The Honest Comparison — four-route dot-rating matrix (Full DIY, Online Service, Independent Perfumer, Established House) across Quality Ceiling, Effort Required, and Cost. Registered under "The Craft · DIY & Bespoke". Commit `8612886`.
+
+### Root cause analysis — handover process failures
+Three improvement records written to [~/.aeleon-feedback/improvement-register.aeml](~/.aeleon-feedback/improvement-register.aeml) covering 15 sessions of accumulated process debt:
+- ir-001: Memory system never seeded — cold-start required filesystem search
+- ir-002: Session 14 handover recorded pre-push git state as fact
+- ir-003: Handovers written for only 3 of 15 sessions
+
+### Self-fixes applied
+- Memory system seeded: MEMORY.md created, project-fumage.md and feedback-session-close.md written to `~/.claude/projects/-Users-scottreisinger/memory/`. Fixes ir-001 symptom.
+- `init.aeml` created in project root with `::session-close` block enforcing push → handover → memory-update sequence. Commits `d5c62f8`. Encodes ir-002 and ir-003 fixes at the governance layer.
+
+## Current app state
+
+### Routes
+- `/` — home: hero, featured fragrances, scent family tiles
+- `/fragrances` — catalog with filter sidebar + pagination (48 per page)
+- `/fragrances/[slug]` — fragrance detail: notes pyramid, dual-register, dupes, similar, reviews, collection button
+- `/houses` — listing grouped by tier
+- `/houses/[slug]` — house detail with fragrance grid
+- `/notes` — notes library A–Z with pagination
+- `/notes/[slug]` — note detail with position drill-down
+- `/search` — Meilisearch-backed search
+- `/dupes` — alternatives browser
+- `/guide` — filterable index (21 articles)
+- `/guide/[slug]` — 21 article pages
+- `/sign-in`, `/sign-up` — Supabase auth
+- `/auth/callback` — PKCE handler
+- `/profile` — wardrobe (authenticated) with status tabs, sort control, edit modal
+
+### Guide articles (21 total)
+| Route | Title | Category |
+|---|---|---|
+| `/guide/invisible-allure` | The Invisible Allure | Psychology |
+| `/guide/invisible-armour` | The Invisible Armour | Psychology |
+| `/guide/brain-on-cologne` | Your Brain on Cologne | Psychology |
+| `/guide/pheromones` | The Invisible Weapon | Psychology |
+| `/guide/aquatic-marine` | Better Than Its Reputation | Family Deep Dive |
+| `/guide/leather-tobacco` | Fragrances With Opinions | Family Deep Dive |
+| `/guide/fougere` | The Original Blueprint | Family Deep Dive |
+| `/guide/oriental-amber` | Rich, Warm, Unapologetic | Family Deep Dive |
+| `/guide/woody-aromatic` | The Backbone of Men's Fragrance | Family Deep Dive |
+| `/guide/fresh-citrus` | The Misunderstood Family | Family Deep Dive |
+| `/guide/niche-fragrance` | Down the Rabbit Hole | Buying Guide |
+| `/guide/niche-fragrance-houses` | Beyond the Counter | Buying Guide |
+| `/guide/smart-shelf` | The Smart Shelf | Buying Guide |
+| `/guide/regional-traditions` | Where a Fragrance Comes From Changes Everything | Buying Guide |
+| `/guide/fragrance-clones` | Scent Without the Sticker Shock | Buying Guide |
+| `/guide/reformulations` | Why They Change What You Love | Buying Guide |
+| `/guide/dupes-debate` | The Dupes Debate | Buying Guide |
+| `/guide/edt-edp-parfum` | EDT, EDP, Parfum | Buying Guide |
+| `/guide/fragrance-wardrobe` | The Fragrance Wardrobe | Buying Guide |
+| `/guide/diy-cologne` | So You Want to Make Your Own Cologne | The Craft |
+| `/guide/layering` | (ai-012, not yet built) | — |
+
+### Infrastructure
+- Next.js 16.2.4, Prisma 5.22.0, PostgreSQL via Supabase (ref: hnsnmjwdpewgivphxkcn)
+- Auth: Supabase Auth
+- Search: Meilisearch SDK 0.57.0
+- Deployed: Vercel, auto-deploy on push to `main`
+- TypeScript: zero errors
+- Database: 685 fragrances, 159 houses, 358 notes, 23 dupes, 1542 similar pairs
+
+### Git state
+- Branch: `main`, up to date with origin
+- Latest commits:
+  - `d5c62f8` — add project governance overlay with session-close sequence
+  - `8612886` — add So You Want to Make Your Own Cologne guide article
+  - `170cbd4` — add session 15 handover
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-012 | Build layering guidance page |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+
+## Design constants (carry forward)
+
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Guide article components (`PullQuote`, `SectionLabel`, `FragLinks`, `FragCard`) are defined inline per file — intentionally not shared
+- Nav order: Catalog · Houses · Notes · Dupes · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against `prisma/data/fragrance_database.json` using the `id` field before referencing in guide articles — never invent a slug, render unmatched as plain text
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- Source HTML files for articles come from `~/Downloads/` — convert to TSX faithfully, adapting to the Fumage dark design system
+- Session-close sequence (mandatory): (1) `npx tsc --noEmit`, (2) `git push`, (3) write handover, (4) update project-fumage.md memory entry
