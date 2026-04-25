@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/oriental-amber",
+    tag:      "Family Deep Dive · Oriental",
+    title:    "Rich, Warm, Unapologetic",
+    subtitle: "The most divisive family in men's fragrance is also the most memorable. Worn correctly, orientals are devastating. Worn incorrectly, they clear rooms.",
+    read:     "9 min read",
+  },
+  {
     href:     "/guide/woody-aromatic",
     tag:      "Family Deep Dive · Woody",
     title:    "The Backbone of Men's Fragrance",
