@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/fresh-citrus",
+    tag:      "Family Deep Dive · Fresh",
+    title:    "The Misunderstood Family",
+    subtitle: "The most approachable family is also the most underestimated. Here's what separates the great fresh fragrances from the forgettable.",
+    read:     "10 min read",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
