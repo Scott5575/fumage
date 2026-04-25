@@ -102,6 +102,14 @@ const GUIDES: {
     category: "guide",
   },
   {
+    href:     "/guide/smart-shelf",
+    tag:      "Buying Guide · Value",
+    title:    "The Smart Shelf",
+    subtitle: "Gulf heritage houses, the clone economy, and a four-tier wardrobe strategy. Seven value houses worth knowing — and when to reach for them instead of the expensive bottle.",
+    read:     "15 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
