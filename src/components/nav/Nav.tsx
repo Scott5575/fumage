@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getCurrentUser } from "@/lib/auth";
 import { signOut } from "@/app/auth/actions";
+import MobileNav from "./MobileNav";
 
 export default async function Nav() {
   const user = await getCurrentUser();
@@ -18,7 +19,7 @@ export default async function Nav() {
           </span>
         </Link>
 
-        <nav className="flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6">
           <Link
             href="/fragrances"
             className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
@@ -85,6 +86,8 @@ export default async function Nav() {
             </Link>
           )}
         </nav>
+
+        <MobileNav user={user} />
       </div>
     </header>
   );
