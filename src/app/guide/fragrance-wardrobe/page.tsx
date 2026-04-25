@@ -105,7 +105,7 @@ const SLOTS = [
     frags: [
       { name: "Polo",           slug: "ralph-lauren-polo"     },
       { name: "Tuscan Leather", slug: "tom-ford-tuscan-leather" },
-      { name: "Knize Ten",      slug: null                     },
+      { name: "Knize Ten",      slug: "knize-ten"              },
     ],
   },
 ];
@@ -148,7 +148,7 @@ const SEASONS = [
     frags: [
       { name: "Tobacco Vanille",  slug: "tom-ford-tobacco-vanille" },
       { name: "Reflection Man",   slug: "amouage-reflection-man"   },
-      { name: "Knize Ten",        slug: null                        },
+      { name: "Knize Ten",        slug: "knize-ten"                 },
     ],
   },
 ];

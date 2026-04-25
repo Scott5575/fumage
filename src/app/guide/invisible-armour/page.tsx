@@ -18,7 +18,7 @@ const SLUG: Record<string, string | null> = {
   "cool-water":           "davidoff-cool-water",
   "oud-wood":             "tom-ford-oud-wood",
   "abraaj-oud":           null,
-  "knize-ten":            null,
+  "knize-ten":            "knize-ten",
   "bleu-de-chanel":       "chanel-bleu-de-chanel-edp",
   "la-nuit-de-lhomme":    "yves-saint-laurent-la-nuit-de-l-homme",
   "spicebomb-extreme":    "viktor-rolf-spicebomb-extreme",

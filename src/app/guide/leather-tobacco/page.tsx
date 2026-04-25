@@ -130,7 +130,7 @@ const PICKS = [
     best:    false,
     house:   "Knize",
     name:    "Knize Ten",
-    slug:    null,
+    slug:    "knize-ten",
     profile: "Lemon, rose, jasmine, iris, leather, birch tar, vetiver, amber",
     body:    "Launched 1924, beloved ever since by everyone who discovers it. Hard leather — birch tar and vetiver — with a surprisingly elegant floral heart. One of the great hidden classics in men's fragrance at an almost offensively low price for its quality.",
   },
