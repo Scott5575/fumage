@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/niche-fragrance",
+    tag:      "Niche · Education",
+    title:    "Down the Rabbit Hole",
+    subtitle: "What niche means, why it costs that much, the houses worth knowing, and how to go deep without going broke.",
+    read:     "14 min read",
+  },
+  {
     href:     "/guide/invisible-armour",
     tag:      "Psychology · Recommendations",
     title:    "The Invisible Armour",
