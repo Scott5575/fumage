@@ -64,7 +64,9 @@ export default async function ProfilePage({ searchParams }: Props) {
         <p className="text-[10px] uppercase tracking-[0.25em] text-amber-500 mb-2">
           Your Wardrobe
         </p>
-        <h1 className="text-2xl font-light text-stone-200">{user.email}</h1>
+        <h1 className="text-2xl font-light text-stone-200">
+          {user.name ?? user.email.split("@")[0]}
+        </h1>
       </div>
 
       {/* Stats strip */}
