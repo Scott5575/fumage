@@ -165,6 +165,14 @@ const GUIDES: {
     read:     "13 min read",
     category: "guide",
   },
+  {
+    href:     "/guide/diy-cologne",
+    tag:      "The Craft · DIY & Bespoke",
+    title:    "So You Want to Make Your Own Cologne",
+    subtitle: "The cost of entry, the five reasons your first attempt probably won't be wearable, and the bespoke services that give you a singular result without the chemistry homework.",
+    read:     "12 min read",
+    category: "guide",
+  },
 ];
 
 const FILTERS: { value: Category; label: string }[] = [
