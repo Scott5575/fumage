@@ -14,6 +14,14 @@ const GUIDES: {
   category: Category;
 }[] = [
   {
+    href:     "/guide/pheromones",
+    tag:      "Psychology · Science",
+    title:    "The Invisible Weapon",
+    subtitle: "Pheromones in men's fragrances — the history, the hard science, and the hype. What the research actually says about scent, attraction, and why animalic ingredients work.",
+    read:     "14 min read",
+    category: "psychology",
+  },
+  {
     href:     "/guide/invisible-allure",
     tag:      "Psychology · Attraction",
     title:    "The Invisible Allure",
