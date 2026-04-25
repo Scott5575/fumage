@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { signIn } from "@/app/auth/actions";
 
 type Props = {
   searchParams: Promise<{ error?: string; message?: string }>;
+};
+
+export const metadata: Metadata = {
+  title: "Sign In — Fumage",
+  description: "Sign in to track your fragrance wardrobe on Fumage.",
 };
 
 export default async function SignInPage({ searchParams }: Props) {

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Your Brain on Cologne — Fumage Guide",
+  description: "The neuroscience of scent — how fragrance shapes memory, mood, and why certain smells stop you in your tracks.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

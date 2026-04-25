@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+
+export const metadata: Metadata = {
+  title: "Fragrance Notes — Fumage",
+  description: "Discover 358 fragrance notes — explore by name and position in the pyramid.",
+};
 
 export default async function NotesPage() {
   const notes = await prisma.note.findMany({

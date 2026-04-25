@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 
@@ -21,6 +22,11 @@ const PRICE_LABELS: Record<string, string> = {
   MID:        "$80–200",
   PREMIUM:    "$200–400",
   ULTRA:      "$400+",
+};
+
+export const metadata: Metadata = {
+  title: "Fragrance Dupes — Fumage",
+  description: "Find affordable alternatives to popular designer fragrances. Clones, inspirations, and honest comparisons.",
 };
 
 export default async function DupesPage() {

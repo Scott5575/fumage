@@ -1,6 +1,30 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+
+const TIER_LABELS_META: Record<string, string> = {
+  DESIGNER: "Designer", NICHE: "Niche", ULTRA_LUXURY: "Ultra Luxury",
+  ARTISAN: "Artisan", BUDGET_NICHE: "Budget / Accessible", CELEBRITY: "Celebrity",
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const house = await prisma.house.findUnique({
+    where: { slug },
+    select: { name: true, tier: true, _count: { select: { fragrances: true } } },
+  });
+  if (!house) return {};
+  const tier = TIER_LABELS_META[house.tier] ?? house.tier;
+  return {
+    title: `${house.name} — Fumage`,
+    description: `${house.name}: ${tier} fragrance house. Explore ${house._count.fragrances} fragrances on Fumage.`,
+  };
+}
 
 const FAMILY_LABELS: Record<string, string> = {
   FRESH: "Fresh", AROMATIC: "Aromatic", WOODY: "Woody", ORIENTAL: "Oriental",

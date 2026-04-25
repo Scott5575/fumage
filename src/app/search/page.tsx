@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import SearchResults from "./SearchResults";
 
 type Props = {
   searchParams: Promise<{ q?: string }>;
+};
+
+export const metadata: Metadata = {
+  title: "Search — Fumage",
+  description: "Search across 684 fragrances, 158 houses, and 358 notes on Fumage.",
 };
 
 export default async function SearchPage({ searchParams }: Props) {

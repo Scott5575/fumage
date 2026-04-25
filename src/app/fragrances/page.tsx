@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
@@ -149,6 +150,11 @@ async function FragranceGrid({ searchParams }: { searchParams: SearchParams }) {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Fragrance Catalog — Fumage",
+  description: "Browse 684 men's fragrances by scent family, price, occasion, and season.",
+};
 
 export default async function FragrancesPage({
   searchParams,

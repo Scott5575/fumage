@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Misunderstood Family — Fumage Guide",
+  description: "Fresh and citrus fragrances done well — why the category deserves a second look and the best it has to offer.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

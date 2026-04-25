@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Original Blueprint — Fumage Guide",
+  description: "The fougère accord: the 19th-century blueprint behind most men's fragrances, and why it still dominates shelves.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

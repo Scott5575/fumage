@@ -1,6 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const note = await prisma.note.findUnique({
+    where: { slug },
+    select: { name: true, _count: { select: { fragrances: true } } },
+  });
+  if (!note) return {};
+  return {
+    title: `${note.name} — Fumage`,
+    description: `${note.name}: a fragrance note that appears in ${note._count.fragrances} fragrances. Explore the full list on Fumage.`,
+  };
+}
 import { NotePosition } from "@prisma/client";
 
 const FAMILY_DOT: Record<string, string> = {

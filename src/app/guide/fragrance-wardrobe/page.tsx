@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Fragrance Wardrobe — Fumage Guide",
+  description: "How to build a versatile fragrance collection from scratch — five essential slots, seasonal logic, and collector traps to avoid.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

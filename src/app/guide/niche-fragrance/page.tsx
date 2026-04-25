@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Down the Rabbit Hole — Fumage Guide",
+  description: "An introduction to niche fragrance — what separates it from designer, why it matters, and how to find your first bottle.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

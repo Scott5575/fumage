@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { HouseTier } from "@prisma/client";
@@ -25,6 +26,11 @@ const TIER_DESCRIPTIONS: Partial<Record<HouseTier, string>> = {
   ULTRA_LUXURY: "Ultra-premium houses where bottles run $400 and up — Clive Christian, Roja Parfums.",
   ARTISAN:      "Small-batch, experimental, or cult houses — Bogue, Slumberhouse, Zoologist.",
   BUDGET_NICHE: "Accessible niche: serious compositions at accessible prices — Lattafa, Armaf, Al Haramain.",
+};
+
+export const metadata: Metadata = {
+  title: "Fragrance Houses — Fumage",
+  description: "Explore 158 fragrance houses from accessible designers to ultra-luxury niche.",
 };
 
 export default async function HousesPage() {

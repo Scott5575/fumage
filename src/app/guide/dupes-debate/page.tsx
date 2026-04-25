@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Dupes Debate — Fumage Guide",
+  description: "Are fragrance dupes worth buying? An honest breakdown of clones, inspirations, and where the line between homage and copy sits.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

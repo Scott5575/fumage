@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Rich, Warm, Unapologetic — Fumage Guide",
+  description: "Oriental and amber fragrances: the richest, warmest end of the spectrum, and the fragrances that made it famous.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

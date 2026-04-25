@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth";
@@ -16,6 +17,11 @@ const STATUS_TABS: { value: CollectionStatus | "ALL"; label: string }[] = [
 
 type Props = {
   searchParams: Promise<{ status?: string }>;
+};
+
+export const metadata: Metadata = {
+  title: "Your Wardrobe — Fumage",
+  description: "Manage your fragrance collection, personal ratings, and reviews.",
 };
 
 export default async function ProfilePage({ searchParams }: Props) {

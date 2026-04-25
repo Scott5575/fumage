@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Backbone of Men's Fragrance — Fumage Guide",
+  description: "Woody and aromatic fragrances: the family that defines the masculine canon, from office-safe aromatics to statement ouds.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

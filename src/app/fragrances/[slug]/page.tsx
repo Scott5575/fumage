@@ -1,6 +1,30 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+
+const FAMILY_LABELS_META: Record<string, string> = {
+  FRESH: "Fresh", AROMATIC: "Aromatic", WOODY: "Woody", ORIENTAL: "Oriental",
+  GOURMAND: "Gourmand", LEATHER: "Leather", CITRUS: "Citrus", CHYPRE: "Chypre",
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const f = await prisma.fragrance.findUnique({
+    where: { slug },
+    select: { name: true, family: true, house: { select: { name: true } } },
+  });
+  if (!f) return {};
+  const family = FAMILY_LABELS_META[f.family] ?? f.family;
+  return {
+    title: `${f.name} by ${f.house.name} — Fumage`,
+    description: `${f.name} by ${f.house.name}: a ${family} fragrance. Notes pyramid, reviews, dupes, and similar picks on Fumage.`,
+  };
+}
 import { getCurrentUser } from "@/lib/auth";
 import { NotePosition } from "@prisma/client";
 import DualRegisterToggle from "@/components/fragrance/DualRegisterToggle";

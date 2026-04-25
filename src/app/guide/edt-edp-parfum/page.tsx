@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "EDT, EDP, Parfum — Fumage Guide",
+  description: "The difference between Eau de Toilette, Eau de Parfum, and Parfum — and how to choose the right concentration.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

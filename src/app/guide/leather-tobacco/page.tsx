@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Fragrances With Opinions — Fumage Guide",
+  description: "Leather and tobacco fragrances: deliberately bold, deeply characterful, and entirely unapologetic.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

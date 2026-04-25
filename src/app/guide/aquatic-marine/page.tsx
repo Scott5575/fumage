@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Better Than Its Reputation — Fumage Guide",
+  description: "A deep dive into the aquatic and marine family — misunderstood, refined, and more versatile than its reputation suggests.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

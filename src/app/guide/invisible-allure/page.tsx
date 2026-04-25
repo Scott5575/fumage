@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Invisible Allure — Fumage Guide",
+  description: "Why fragrance is the most powerful form of attraction — and how to use it with intention.",
+};
 
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (

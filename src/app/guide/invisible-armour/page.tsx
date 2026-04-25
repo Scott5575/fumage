@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "The Invisible Armour — Fumage Guide",
+  description: "Fragrance as confidence: how wearing the right scent changes how you carry yourself and how others perceive you.",
+};
 
 // Catalog slugs for linked rec cards. null = not in database.
 const SLUG: Record<string, string | null> = {

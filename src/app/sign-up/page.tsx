@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { signUp } from "@/app/auth/actions";
 
 type Props = {
   searchParams: Promise<{ error?: string; message?: string }>;
+};
+
+export const metadata: Metadata = {
+  title: "Create Account — Fumage",
+  description: "Create an account to track your fragrance collection, write reviews, and build your wardrobe.",
 };
 
 export default async function SignUpPage({ searchParams }: Props) {
