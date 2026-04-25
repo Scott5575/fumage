@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/aquatic-marine",
+    tag:      "Family Deep Dive · Aquatic",
+    title:    "Better Than Its Reputation",
+    subtitle: "Written off as dated by fragrance snobs, beloved by everyone else, and secretly the source of some of the most genuinely enjoyable warm-weather fragrances ever made.",
+    read:     "9 min read",
+  },
+  {
     href:     "/guide/leather-tobacco",
     tag:      "Family Deep Dive · Leather",
     title:    "Fragrances With Opinions",
