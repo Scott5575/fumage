@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/invisible-allure",
+    tag:      "Psychology · Attraction",
+    title:    "The Invisible Allure",
+    subtitle: "How fragrance works beneath consciousness — shaping how others perceive you, projecting confidence before a word is spoken, and making you unforgettable long after you've left the room.",
+    read:     "15 min read",
+  },
+  {
     href:     "/guide/aquatic-marine",
     tag:      "Family Deep Dive · Aquatic",
     title:    "Better Than Its Reputation",
