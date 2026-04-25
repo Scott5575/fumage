@@ -110,6 +110,14 @@ const GUIDES: {
     category: "guide",
   },
   {
+    href:     "/guide/regional-traditions",
+    tag:      "Education · Regional",
+    title:    "Where a Fragrance Comes From Changes Everything",
+    subtitle: "Eight great traditions — French, Italian, Mediterranean, English, Oriental, Arabian, American, Japanese — with 48 examples, four budget tiers, and two starter wardrobes.",
+    read:     "22 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
