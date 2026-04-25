@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const GUIDES = [
   {
+    href:     "/guide/fougere",
+    tag:      "Family Deep Dive · Fougère",
+    title:    "The Original Blueprint",
+    subtitle: "The structural DNA of men's cologne since 1882. If you've ever smelled a classic masculine fragrance and couldn't place why — it was probably a fougère.",
+    read:     "9 min read",
+  },
+  {
     href:     "/guide/oriental-amber",
     tag:      "Family Deep Dive · Oriental",
     title:    "Rich, Warm, Unapologetic",
