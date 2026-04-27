@@ -45,6 +45,12 @@ export default async function Nav() {
             Dupes
           </Link>
           <Link
+            href="/layer"
+            className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
+          >
+            Layer
+          </Link>
+          <Link
             href="/guide"
             className="text-[10px] uppercase tracking-[0.2em] text-stone-400 hover:text-stone-200 transition-colors"
           >
