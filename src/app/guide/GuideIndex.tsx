@@ -173,6 +173,14 @@ const GUIDES: {
     read:     "12 min read",
     category: "guide",
   },
+  {
+    href:     "/guide/layering",
+    tag:      "The Craft · Technique",
+    title:    "The Invisible Third",
+    subtitle: "Layering two fragrances doesn't give you two — it gives you a third that belongs to neither bottle. The theory, the method, six proven combinations, and the advanced techniques that go further.",
+    read:     "16 min read",
+    category: "guide",
+  },
 ];
 
 const FILTERS: { value: Category; label: string }[] = [
