@@ -40054,5 +40054,119 @@
     "beginner": "",
     "collector": "A cornerstone of the leather family and a serious collector’s benchmark. Austrian provenance from a tailor house founded in 1858.",
     "source": "Notes: community consensus (Fragrantica, Basenotes). History: Knize house records."
+  },
+  {
+    "id": "herm-s-terre-d-herm-s-eau-givr-e",
+    "name": "Terre d'Hermès Eau Givrée",
+    "house": "Hermès",
+    "year": 2022,
+    "category": "Designer",
+    "family": "citrus",
+    "subfamily": "Citrus Woody",
+    "notes": {
+      "top": [
+        "Cedrat"
+      ],
+      "heart": [
+        "Juniper Berry",
+        "Timur Pepper"
+      ],
+      "base": [
+        "Woody Notes",
+        "Mineral Notes"
+      ]
+    },
+    "price": 3,
+    "priceRaw": "$137–$175",
+    "performance": {
+      "longevity": 7,
+      "projection": 6,
+      "sillage": 6
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "occasions": [
+      "casual",
+      "business",
+      "date"
+    ],
+    "timeOfDay": [
+      "day"
+    ],
+    "availability": "Widely Available",
+    "rating": "4.2/5",
+    "popularity": 70,
+    "sentiment": "A crystalline, frozen take on Terre d'Hermès — icy and luminous where the original is earthy and dark. Won the 2023 Fragrance Foundation USA Award for Men's Prestige Fragrance of the Year.",
+    "dupes": "",
+    "similar": "Terre d'Hermès EDP, Terre d'Hermès EDT, Acqua di Parma Colonia Essenza",
+    "unique": "Razor-sharp frozen citron with juniper and Timur pepper — a crystalline, mineral counterpart to the original's geological earthiness. The frosted effect is driven by ingredient combination, not synthetics.",
+    "massAppeal": "Yes",
+    "compliment": "High",
+    "trend": "Rising",
+    "hype": "Underrated",
+    "beginner": "",
+    "collector": "",
+    "source": "Notes: Hermès official site / Christine Nagel press disclosures. Performance: Parfumo community (1,500+ ratings), Fragrantica. Award: Fragrance Foundation USA 2023 Men's Prestige Fragrance of the Year."
+  },
+  {
+    "id": "issey-miyake-le-sel-d-issey",
+    "name": "Le Sel d'Issey",
+    "house": "Issey Miyake",
+    "year": 2024,
+    "category": "Designer",
+    "family": "fresh",
+    "subfamily": "Fresh Marine Woody",
+    "notes": {
+      "top": [
+        "Salt",
+        "Ginger"
+      ],
+      "heart": [
+        "Seaweed",
+        "Vetiver",
+        "Oakmoss"
+      ],
+      "base": [
+        "Cedarwood",
+        "Akigalawood"
+      ]
+    },
+    "price": 3,
+    "priceRaw": "$85–$139",
+    "performance": {
+      "longevity": 7,
+      "projection": 6,
+      "sillage": 6
+    },
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "occasions": [
+      "casual",
+      "business",
+      "date"
+    ],
+    "timeOfDay": [
+      "day"
+    ],
+    "availability": "Widely Available",
+    "rating": "3.9/5",
+    "popularity": 55,
+    "sentiment": "A mineral, iodized sea-salt composition built on laminaria seaweed and akigalawood. Won the 2025 Fragrantica Best Masculine Award. Polarizing but distinctive — not a conventional aquatic.",
+    "dupes": "",
+    "similar": "Acqua di Giò EDT, Bvlgari Aqva Pour Homme, L'Eau d'Issey Pour Homme",
+    "unique": "Uses laminaria seaweed and oakmoss to evoke dry crystalline salt on rock — not the synthetic ocean-spray aquatic of the 1990s. Akigalawood adds mildly smoky earthiness. First Issey Miyake refillable men's fragrance.",
+    "massAppeal": "No",
+    "compliment": "Moderate",
+    "trend": "Rising",
+    "hype": "Underrated",
+    "beginner": "",
+    "collector": "",
+    "source": "Notes: Quentin Bisch / Givaudan disclosures via Fragrantica and Sharp Magazine interview (September 2024). Performance: Basenotes community threads, Fragrantica. Award: Fragrantica Best Masculine 2025 (EDT)."
   }
 ]
