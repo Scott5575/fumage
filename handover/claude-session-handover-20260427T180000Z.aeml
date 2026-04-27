@@ -1,0 +1,103 @@
+---
+date: 2026-04-27T18:00:00Z
+date_local: 2026-04-27 (evening, US time)
+session: 18
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 18 Handover — Fumage
+
+## What was done this session
+
+### Two new fragrances added to catalog
+
+Both fragrances were researched from Fragrantica, Parfumo, official brand sites, Basenotes, and community consensus, then added to `prisma/data/fragrance_database.json` and seeded into the live database. Commit `80803f7`.
+
+**Terre d'Hermès Eau Givrée** — slug `herm-s-terre-d-herm-s-eau-givr-e`
+- EDP, 2022, Christine Nagel
+- Family: Citrus / Citrus Woody
+- Notes: Cedrat → Juniper Berry, Timur Pepper → Woody Notes, Mineral Notes
+- Performance: longevity 7 / projection 6 / sillage 6
+- Seasons: spring, summer, fall | Occasions: casual, business, date | Day
+- Price: $137–$175 (MID) | Rating: 4.2/5 | Popularity: 70
+- Trend: Rising | Hype: Underrated | Mass appeal: Yes | Compliment: High
+- Award: 2023 Fragrance Foundation USA Men's Prestige Fragrance of the Year
+
+**Le Sel d'Issey** — slug `issey-miyake-le-sel-d-issey`
+- EDT, 2024, Quentin Bisch (Givaudan)
+- Family: Fresh / Fresh Marine Woody
+- Notes: Salt, Ginger → Seaweed, Vetiver, Oakmoss → Cedarwood, Akigalawood
+- Performance: longevity 7 / projection 6 / sillage 6
+- Seasons: spring, summer, fall | Occasions: casual, business, date | Day
+- Price: $85–$139 (MID) | Rating: 3.9/5 | Popularity: 55
+- Trend: Rising | Hype: Underrated | Mass appeal: No | Compliment: Moderate
+- Award: 2025 Fragrantica Best Masculine Award (EDT)
+- First Issey Miyake refillable men's fragrance
+
+### Database state after seed
+- Fragrances: 687 (was 685)
+- Notes: 361 (was 358 — new: Cedrat, Timur Pepper, Akigalawood)
+- Similar pairs: 1546 (was 1542)
+- Dupe relationships: 23 (unchanged)
+
+## Current app state
+
+### Routes
+- `/` — home: hero, featured fragrances, scent family tiles
+- `/fragrances` — catalog with filter sidebar + pagination (48 per page)
+- `/fragrances/[slug]` — fragrance detail: notes pyramid, dual-register, dupes, similar, reviews, collection button
+- `/houses` — listing grouped by tier
+- `/houses/[slug]` — house detail with fragrance grid
+- `/notes` — notes library A–Z with pagination
+- `/notes/[slug]` — note detail with position drill-down
+- `/search` — Meilisearch-backed search
+- `/dupes` — alternatives browser
+- `/layer` — interactive layering tool (added session 17)
+- `/guide` — filterable index (22 articles)
+- `/guide/[slug]` — 22 article pages
+- `/sign-in`, `/sign-up` — Supabase auth
+- `/auth/callback` — PKCE handler
+- `/profile` — wardrobe (authenticated) with status tabs, sort control, edit modal
+
+### Guide articles (22 total — unchanged this session)
+See session 17 handover for full table.
+
+### Infrastructure
+- Next.js 16.2.4, Prisma 5.22.0, PostgreSQL via Supabase (ref: hnsnmjwdpewgivphxkcn)
+- Auth: Supabase Auth
+- Search: Meilisearch SDK 0.57.0
+- Deployed: Vercel, auto-deploy on push to `main`
+- TypeScript: zero errors
+- Database: 687 fragrances, 159 houses, 361 notes, 23 dupes, 1546 similar pairs
+- No new dependencies added this session
+
+### Git state
+- Branch: `main`, up to date with origin
+- Latest commits:
+  - `80803f7` — add Terre d'Hermès Eau Givrée and Le Sel d'Issey to catalog
+  - `be92a94` — add session 17 handover
+  - `8cc4ba2` — add fragrance layering tool at /layer
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route (requires `ANTHROPIC_API_KEY` env var) |
+
+## Design constants (carry forward)
+
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Guide article components (`PullQuote`, `SectionLabel`, `FragLinks`, `FragCard`) are defined inline per file — intentionally not shared
+- Nav order: Catalog · Houses · Notes · Dupes · Layer · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against `prisma/data/fragrance_database.json` using the `id` field before referencing in guide articles — never invent a slug, render unmatched as plain text
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- Source HTML files for articles come from `~/Downloads/` — convert to TSX faithfully, adapting to the Fumage dark design system
+- Layering tool slot colors: amber (Base) / sky (Top) / rose (Accent)
+- Session-close sequence (mandatory): (1) `npx tsc --noEmit`, (2) `git push`, (3) write handover, (4) update project-fumage.md memory entry
