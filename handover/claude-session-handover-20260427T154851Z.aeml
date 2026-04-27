@@ -1,0 +1,110 @@
+---
+date: 2026-04-27T15:48:51Z
+date_local: 2026-04-27 (afternoon, US time)
+session: 17
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 17 Handover — Fumage
+
+## What was done this session
+
+### New article — The Invisible Third (`/guide/layering`)
+Fragrance layering guide, registered as article 22 in the guide index. Merged from two source articles: the new article's six verified brand-specific combinations (Molecule 01 / Iso E Super as amplifier, Tobacco Vanille + Bergamote 22, Encre Noire + Amber Pour Homme, Santal 33 + Baccarat Rouge 540, Oud Wood + Sauvage, Black Afgano + Bleu de Chanel EDP) with the prior HTML article's unique content: scent pyramid visual, when-to-layer occasions, numbered application steps, hair mist technique, soliflore-as-tool method, drydown layering, seasonal ratio rotation, seven pitfalls, Kurkdjian closing quote, and "start with two bottles" conclusion. The user's editorial voice (practical, accessible, occasion-aware) was preserved in the body sections it originated. Commit `fe0b118`.
+
+### New interactive tool — Layering Tool (`/layer`)
+Interactive fragrance layering tool added as a dedicated route and linked from the main nav (between Dupes and Guide on desktop and mobile). Architecture:
+
+- **`/app/layer/page.tsx`** — server shell with metadata
+- **`/app/layer/LayeringTool.tsx`** — client component. Three labeled search slots (Base / Top / Accent) with Meilisearch autocomplete via the existing `/api/search` endpoint. Selecting a fragrance triggers a fetch to the new `/api/layer/[slug]` route for full note data. When two or more slots are filled, the blend result panel renders.
+- **`/api/layer/[slug]/route.ts`** — new Prisma route returning structured note data (TOP / MIDDLE / BASE / ACCORD), performance scores, family, subfamily, seasons, and occasions for a given fragrance slug.
+- **Blend result panel** contains: (1) combined notes pyramid with pills color-coded by source fragrance and shared notes highlighted as structural bridges; (2) projected performance bars (longevity / projection / sillage averaged across selections); (3) family profile with contextual guidance per family count; (4) rule-based blend assessment built from note overlap count, averaged performance, season and occasion intersections. No external API calls — fully computed from Prisma catalog data.
+- AI-generated description deferred — designed to be added later as a `/api/layer/predict` route calling the Anthropic SDK.
+
+Commit `8cc4ba2`.
+
+## Current app state
+
+### Routes
+- `/` — home: hero, featured fragrances, scent family tiles
+- `/fragrances` — catalog with filter sidebar + pagination (48 per page)
+- `/fragrances/[slug]` — fragrance detail: notes pyramid, dual-register, dupes, similar, reviews, collection button
+- `/houses` — listing grouped by tier
+- `/houses/[slug]` — house detail with fragrance grid
+- `/notes` — notes library A–Z with pagination
+- `/notes/[slug]` — note detail with position drill-down
+- `/search` — Meilisearch-backed search
+- `/dupes` — alternatives browser
+- `/layer` — interactive layering tool (new session 17)
+- `/guide` — filterable index (22 articles)
+- `/guide/[slug]` — 22 article pages
+- `/sign-in`, `/sign-up` — Supabase auth
+- `/auth/callback` — PKCE handler
+- `/profile` — wardrobe (authenticated) with status tabs, sort control, edit modal
+
+### Guide articles (22 total)
+| Route | Title | Category |
+|---|---|---|
+| `/guide/invisible-allure` | The Invisible Allure | Psychology |
+| `/guide/invisible-armour` | The Invisible Armour | Psychology |
+| `/guide/brain-on-cologne` | Your Brain on Cologne | Psychology |
+| `/guide/pheromones` | The Invisible Weapon | Psychology |
+| `/guide/aquatic-marine` | Better Than Its Reputation | Family Deep Dive |
+| `/guide/leather-tobacco` | Fragrances With Opinions | Family Deep Dive |
+| `/guide/fougere` | The Original Blueprint | Family Deep Dive |
+| `/guide/oriental-amber` | Rich, Warm, Unapologetic | Family Deep Dive |
+| `/guide/woody-aromatic` | The Backbone of Men's Fragrance | Family Deep Dive |
+| `/guide/fresh-citrus` | The Misunderstood Family | Family Deep Dive |
+| `/guide/niche-fragrance` | Down the Rabbit Hole | Buying Guide |
+| `/guide/niche-fragrance-houses` | Beyond the Counter | Buying Guide |
+| `/guide/smart-shelf` | The Smart Shelf | Buying Guide |
+| `/guide/regional-traditions` | Where a Fragrance Comes From Changes Everything | Buying Guide |
+| `/guide/fragrance-clones` | Scent Without the Sticker Shock | Buying Guide |
+| `/guide/reformulations` | Why They Change What You Love | Buying Guide |
+| `/guide/dupes-debate` | The Dupes Debate | Buying Guide |
+| `/guide/edt-edp-parfum` | EDT, EDP, Parfum | Buying Guide |
+| `/guide/fragrance-wardrobe` | The Fragrance Wardrobe | Buying Guide |
+| `/guide/diy-cologne` | So You Want to Make Your Own Cologne | The Craft |
+| `/guide/layering` | The Invisible Third | The Craft |
+| (one slot open for future article) | — | — |
+
+### Infrastructure
+- Next.js 16.2.4, Prisma 5.22.0, PostgreSQL via Supabase (ref: hnsnmjwdpewgivphxkcn)
+- Auth: Supabase Auth
+- Search: Meilisearch SDK 0.57.0
+- Deployed: Vercel, auto-deploy on push to `main`
+- TypeScript: zero errors
+- Database: 685 fragrances, 159 houses, 358 notes, 23 dupes, 1542 similar pairs
+- No new dependencies added this session
+
+### Git state
+- Branch: `main`, up to date with origin
+- Latest commits:
+  - `8cc4ba2` — add fragrance layering tool at /layer
+  - `fe0b118` — add The Invisible Third — fragrance layering guide (ai-012)
+  - `48cc52d` — add session 16 handover
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-012 | DONE — The Invisible Third layering guide (`/guide/layering`) |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route (requires `ANTHROPIC_API_KEY` env var) |
+
+## Design constants (carry forward)
+
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Guide article components (`PullQuote`, `SectionLabel`, `FragLinks`, `FragCard`) are defined inline per file — intentionally not shared
+- Nav order: Catalog · Houses · Notes · Dupes · Layer · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against `prisma/data/fragrance_database.json` using the `id` field before referencing in guide articles — never invent a slug, render unmatched as plain text
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- Source HTML files for articles come from `~/Downloads/` — convert to TSX faithfully, adapting to the Fumage dark design system
+- Layering tool slot colors: amber (Base) / sky (Top) / rose (Accent)
+- Session-close sequence (mandatory): (1) `npx tsc --noEmit`, (2) `git push`, (3) write handover, (4) update project-fumage.md memory entry
