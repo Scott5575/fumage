@@ -1,0 +1,54 @@
+---
+date: 2026-04-28T00:00:00Z
+date_local: 2026-04-28 (US time)
+session: 19
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 19 Handover — Fumage
+
+## What was done this session
+
+### No Fumage code changes
+
+This session contained no edits to the Fumage codebase, routes, database, or guide articles.
+
+### External research deliverable: clone fragrance brand spreadsheet
+
+Produced a standalone CSV at `/Users/scottreisinger/clone_fragrance_brands.csv` — not part of the Fumage repo.
+
+**Contents:** Top 50 global clone/dupe/inspired-by fragrance companies, ranked 1–50, focused on masculine and unisex fragrances. Each brand has 10 fragrance rows.
+
+**Columns:** Brand · Website · Rank · Fragrance Name · Inspired By / Dupe Target · Gender Label · Notes · Popularity Signal · Review Signal
+
+**Total:** 501 lines (1 header + 500 data rows).
+
+**Methodology:** Web research across Fragrantica, Basenotes, Reddit r/fragrance, brand sites, and review aggregators. Three research agents contributed data across successive passes. Sub-label duplicates (e.g. "Armaf (extended picks)", "Lattafa Oud Mood") were collapsed into parent brands; the freed slots were filled with independent houses.
+
+**Known data quality flags:**
+- Benchmark Fragrances / Lathe Parfums — minimal online presence; all rows data-limited.
+- Rave Scents — Lattafa sub-brand (kept by explicit user decision); rows 6–10 data-limited.
+- Lootah Perfumes — traditional Emirati house; most dupe targets listed as "Original composition."
+- Pendora Scents and Asdaaf — sub-brands of Paris Corner and Lattafa respectively (kept by explicit user decision).
+
+## Current Fumage app state
+
+Unchanged from session 18. Full state documented in `claude-session-handover-20260427T180000Z.aeml`.
+
+- Database: 687 fragrances, 159 houses, 361 notes, 23 dupes, 1546 similar pairs
+- Guide articles: 22 total
+- Branch: main, up to date with origin
+- Latest commit: 692b380 — add session 18 handover
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
