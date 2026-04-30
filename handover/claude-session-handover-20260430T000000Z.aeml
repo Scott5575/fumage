@@ -1,0 +1,64 @@
+---
+date: 2026-04-30T00:00:00Z
+date_local: 2026-04-30 (US time)
+session: 23
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 23 Handover — Fumage
+
+## What was done this session
+
+### 1. Dupe direction bug — root cause identified and fixed
+
+**Problem:** The dupe list was not truly directional. Budget/clone fragrances that listed what they copy (e.g. `afnan-9-am` listing "Aventus-adjacent") were being seeded backward — Creed Aventus appeared as a clone of 9 AM on the Creed Aventus fragrance page. Affected ~50 clone entries systemically.
+
+**Root cause:** `prisma/data/fragrance_database.json` used two incompatible conventions in a single `dupes` field:
+- Convention A (originals listing clones): `creed-aventus | "Club de Nuit Intense Man EDP (Armaf) ~$25–$45"` — entry is the original
+- Convention B (clones listing originals): `afnan-9-am | "Aventus-adjacent"` — entry is the clone
+
+The seed code assumed Convention A for all 208 entries with a `dupes` field. Convention B entries produced backward relationships.
+
+**Fix — two-part:**
+
+1. **Data** (`prisma/data/fragrance_database.json`): renamed `dupes` to one of two directional fields:
+   - `hasDupes` — 26 entries (the original lists its clones)
+   - `isDupeOf` — 50 entries (the clone lists what it copies)
+   - Field removed entirely for 132 entries ("No direct target" / niche-to-niche adjacencies that are not true budget dupes)
+
+2. **Seed** (`prisma/seed.ts`): replaced the single loop with two loops, each inserting `sourceId`/`targetId` in the correct direction:
+   - `hasDupes` loop: `sourceId = resolved clone`, `targetId = entry` (unchanged behavior)
+   - `isDupeOf` loop: `sourceId = entry` (clone), `targetId = resolved original` (flipped)
+   - `RawFragrance` interface updated: `dupes: string` → `hasDupes?: string` + `isDupeOf?: string`
+
+**Commit:** `c0f6373` — pushed to origin/main.
+
+**Pending:** Database reseed has NOT been run — Supabase was unreachable from the local network during this session. Run the following in a terminal with internet access to apply the fix to live data:
+
+```
+cd /Users/scottreisinger/projects/fumage && npm run db:seed
+```
+
+This is safe to run anytime — the seed drops and recreates all `DupeRelationship` rows without touching user data.
+
+---
+
+## Current Fumage app state
+
+- Database: 687 fragrances, 159 houses, 361 notes (unchanged)
+- Dupe relationships in DB: still incorrect until reseed runs
+- Meilisearch: 687 documents (in sync, unchanged)
+- Branch: main, up to date with origin
+- Latest commit: c0f6373 — fix dupe direction
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| — | **Run `npm run db:seed`** to apply dupe direction fix to live DB |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
