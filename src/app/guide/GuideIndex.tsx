@@ -110,6 +110,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/synthetic-notes",
+    tag:      "Chemistry · Education",
+    title:    "The Invisible Architecture",
+    subtitle: "From Iso E Super to Ambroxan — the lab-made molecules that build every great fragrance you own, and why the synthetic stigma is exactly backwards.",
+    read:     "14 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/niche-fragrance",
     tag:      "Niche · Education",
     title:    "Down the Rabbit Hole",
