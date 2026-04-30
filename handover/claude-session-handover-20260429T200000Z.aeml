@@ -1,0 +1,47 @@
+---
+date: 2026-04-29T20:00:00Z
+date_local: 2026-04-29 (US time)
+session: 22
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 22 Handover — Fumage
+
+## What was done this session
+
+### 1. Meilisearch reindex — two missing fragrances
+
+**Problem:** Terre d'Hermès Eau Givrée and Le Sel d'Issey were present in the Postgres database (seeded in a prior session) but absent from the Meilisearch index. Neither appeared in site search results.
+
+**Root cause:** The reindex script (`scripts/reindex.ts`, run via `npm run search:reindex`) was not executed after the fragrances were seeded. The catalog page (`/fragrances`) is a paginated Prisma query and would show them eventually (page 5 and page 12 respectively given their popularity scores), but site search is Meilisearch-only, so they were effectively invisible.
+
+**Fix:** Ran `npm run search:reindex`. All 687 fragrances pushed to Meilisearch. Both fragrances now return exactly one hit in search.
+
+**No code changes.** Operational fix only.
+
+---
+
+## Standing note for future sessions
+
+Any fragrance seeded into the database via Prisma requires a follow-up `npm run search:reindex` to appear in search. This is a manual step — there is no automatic sync.
+
+---
+
+## Current Fumage app state
+
+- Database: 687 fragrances, 159 houses, 361 notes, 23 dupes, 1546 similar pairs (unchanged)
+- Guide articles: 28 total (unchanged)
+- Meilisearch: 687 documents indexed (up to date)
+- Branch: main, up to date with origin
+- Latest commit: 48e915f — add session 21 handover
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
