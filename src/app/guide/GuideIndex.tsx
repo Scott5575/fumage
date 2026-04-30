@@ -110,6 +110,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/classic-notes-reimagined",
+    tag:      "Education · Notes",
+    title:    "The Classics, Reimagined",
+    subtitle: "Vetiver, leather, fougère, tobacco — the pillars of masculine perfumery aren't going anywhere. But they've shed their skins. Note by note, what's changed and what to wear.",
+    read:     "16 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/presence-over-performance",
     tag:      "Culture · Trends",
     title:    "Presence Over Performance",
