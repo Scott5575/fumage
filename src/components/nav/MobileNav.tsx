@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/houses", label: "Houses" },
   { href: "/notes", label: "Notes" },
   { href: "/dupes", label: "Dupes" },
+  { href: "/clones", label: "Clones" },
   { href: "/layer", label: "Layer" },
   { href: "/guide", label: "Guide" },
 ];
