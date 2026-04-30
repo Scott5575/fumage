@@ -1,0 +1,75 @@
+---
+date: 2026-04-29T00:00:00Z
+date_local: 2026-04-29 (US time)
+session: 20
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 20 Handover — Fumage
+
+## What was done this session
+
+### 1. Clone Finder — new route at /clones
+
+Added a searchable tool for the 500-row clone/dupe spreadsheet produced in session 19.
+
+**Files created:**
+- `src/data/clone-brands.ts` — typed TypeScript array of 500 entries (50 brands × 10 fragrances). Gender values normalised: "Male" → "Masculine", "Feminine/Unisex" → "Unisex".
+- `src/app/clones/page.tsx` — server page, passes static data as prop, sets metadata.
+- `src/app/clones/CloneSearch.tsx` — `"use client"` component. Live text search across name / brand / inspired-by target / notes. Gender pill filter (All / Masculine / Unisex). Brand dropdown (50 options). Inline term highlighting. No DB, no Meilisearch, no API route — client-side filtering of a static array.
+
+**Files modified:**
+- `src/components/nav/Nav.tsx` — added "Clones" link between Dupes and Layer.
+- `src/components/nav/MobileNav.tsx` — added "Clones" to NAV_LINKS array.
+
+**Commit:** 7c5512a
+
+### 2. Gourmand family deep dive — /guide/gourmand (ai-015 closed)
+
+**Files created:**
+- `src/app/guide/gourmand/page.tsx`
+
+**Content:** 4 subfamilies (Vanilla/Tonka, Chocolate/Coffee, Caramel/Praline, Fruity Gourmand). 6 ingredients: ethyl maltol as the defining molecule, vanillin, tonka bean, heliotropin/piperonal, coumarin, praline accord. 5 picks: Thierry Mugler A*Men (budget), Guerlain L'Homme Idéal EDP (mid, best-in-class), Jean Paul Gaultier Le Male Elixir (mid), Parfums de Marly Herod (niche, best-in-class), Serge Lutens Jeux de Peau (wildcard). 3 pitfalls: heat amplification, judging by bad examples, cloying vs. rich distinction.
+
+Intro hook: Angel (1992) as the origin event — the industry was horrified, the public bought millions.
+
+**Files modified:**
+- `src/app/guide/GuideIndex.tsx` — added Gourmand card entry in "family" category.
+
+**Commit:** 5f73fc3
+
+### 3. Chypre family deep dive — /guide/chypre (ai-016 closed)
+
+**Files created:**
+- `src/app/guide/chypre/page.tsx`
+
+**Content:** 4 subfamilies (Classic Green, Leather, Floral, Modern/Neo-Chypre). 6 ingredients: oakmoss (restricted), labdanum, bergamot, vetiver, cistus, evernyl methyl ether (the synthetic replacement). 5 picks: Chanel Pour Monsieur EDT (budget), Hermès Terre d'Hermès EDP (mid, best-in-class), Dior Eau Sauvage Parfum 2012 (mid), Robert Piguet Bandit (niche), Guerlain Mitsouko EDT (wildcard with vintage-hunting call). 3 pitfalls: expecting classical oakmoss in modern bottles, dismissing the family as outdated, confusing fresh-aromatic with chypre.
+
+Intro hook: the IFRA restriction as a structural through-line — the article frames the family as two chapters, before and after 2004.
+
+Note box: guidance on vintage hunting — eBay, Fragrantica swap forums, decant communities, batch code reading.
+
+**Files modified:**
+- `src/app/guide/GuideIndex.tsx` — added Chypre card entry in "family" category.
+
+**Commit:** b40bddb
+
+## Current Fumage app state
+
+- Database: 687 fragrances, 159 houses, 361 notes, 23 dupes, 1546 similar pairs (unchanged)
+- Guide articles: 24 total (was 22; added Gourmand and Chypre)
+- Branch: main, up to date with origin
+- Latest commit: b40bddb — add Chypre family deep dive (ai-016)
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+ai-015 and ai-016 are closed.
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
