@@ -110,6 +110,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/presence-over-performance",
+    tag:      "Culture · Trends",
+    title:    "Presence Over Performance",
+    subtitle: "The era of scent as territory is over. What the market has moved toward instead — and why presence is the harder thing to pull off.",
+    read:     "12 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/synthetic-notes",
     tag:      "Chemistry · Education",
     title:    "The Invisible Architecture",
