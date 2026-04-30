@@ -94,6 +94,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/gourmand",
+    tag:      "Family Deep Dive · Gourmand",
+    title:    "Pleasure Is the Point",
+    subtitle: "Written off as sugary indulgence by people who haven't encountered the right ones. The gourmand family is the most immediately gratifying in perfumery — and technically the most demanding to execute well.",
+    read:     "10 min read",
+    category: "family",
+  },
+  {
     href:     "/guide/niche-fragrance",
     tag:      "Niche · Education",
     title:    "Down the Rabbit Hole",
