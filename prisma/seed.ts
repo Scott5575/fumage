@@ -44,7 +44,8 @@ interface RawFragrance {
   rating: string;       // "4.2/5"
   popularity: number;
   sentiment: string;
-  dupes: string;        // free-text, parsed below
+  hasDupes?: string;    // entry is the original; lists its clones (free-text, parsed below)
+  isDupeOf?: string;    // entry is the clone; lists the originals it copies
   similar: string;      // comma-separated names
   unique: string;
   massAppeal: string;   // "Yes" | "No" | ""
@@ -763,31 +764,52 @@ async function main() {
   let dupeSkipped = 0;
   const dupeInserts: Prisma.DupeRelationshipCreateManyInput[] = [];
 
+  // hasDupes: entry is the original; field lists its clones
   for (const entry of raw) {
-    if (!entry.dupes.trim()) continue;
+    if (!entry.hasDupes?.trim()) continue;
 
-    const targetFragId = fragSlugIdMap.get(entry.id); // The original being cloned
+    const targetFragId = fragSlugIdMap.get(entry.id);
     if (!targetFragId) continue;
 
-    const parsed = parseDupeString(entry.dupes);
+    const parsed = parseDupeString(entry.hasDupes);
 
     for (const dupe of parsed) {
-      // Try to resolve the dupe fragrance slug
       const sourceSlug = resolveSlug(dupe.dupeNameRaw, dupe.houseHint, nameSlugMap);
       const sourceFragId = sourceSlug ? fragSlugIdMap.get(sourceSlug) : null;
 
-      if (!sourceFragId) {
-        // The dupe fragrance isn't in our catalog (external, out-of-scope, etc.)
-        dupeSkipped++;
-        continue;
-      }
-
-      // Don't link a fragrance to itself
+      if (!sourceFragId) { dupeSkipped++; continue; }
       if (sourceFragId === targetFragId) continue;
 
       dupeInserts.push({
-        sourceId:   sourceFragId,   // The clone
-        targetId:   targetFragId,   // The original
+        sourceId:   sourceFragId,
+        targetId:   targetFragId,
+        similarity: dupe.similarity as any,
+        notes:      dupe.notes || undefined,
+        priceNote:  dupe.priceNote || undefined,
+      });
+      dupeLinked++;
+    }
+  }
+
+  // isDupeOf: entry is the clone; field lists the originals it copies
+  for (const entry of raw) {
+    if (!entry.isDupeOf?.trim()) continue;
+
+    const sourceFragId = fragSlugIdMap.get(entry.id);
+    if (!sourceFragId) continue;
+
+    const parsed = parseDupeString(entry.isDupeOf);
+
+    for (const dupe of parsed) {
+      const targetSlug = resolveSlug(dupe.dupeNameRaw, dupe.houseHint, nameSlugMap);
+      const targetFragId = targetSlug ? fragSlugIdMap.get(targetSlug) : null;
+
+      if (!targetFragId) { dupeSkipped++; continue; }
+      if (sourceFragId === targetFragId) continue;
+
+      dupeInserts.push({
+        sourceId:   sourceFragId,
+        targetId:   targetFragId,
         similarity: dupe.similarity as any,
         notes:      dupe.notes || undefined,
         priceNote:  dupe.priceNote || undefined,

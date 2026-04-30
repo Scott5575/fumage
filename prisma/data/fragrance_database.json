@@ -50,7 +50,6 @@
     "rating": "4.2/5",
     "popularity": 99,
     "sentiment": "The world's best-selling fragrance. Loved for its versatility and mass appeal.",
-    "dupes": "ASAD (Lattafa) ~$25–$35",
     "similar": "Bleu de Chanel EDP, Y EDP, Acqua di Giò Profumo",
     "unique": "Nuclear ambroxan projection with iconic raw mineral freshness.",
     "massAppeal": "Yes",
@@ -59,7 +58,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "ASAD (Lattafa) ~$25–$35"
   },
   {
     "id": "chanel-bleu-de-chanel-edp",
@@ -114,7 +114,6 @@
     "rating": "4.4/5",
     "popularity": 97,
     "sentiment": "Considered the refined, mature alternative to Sauvage. A staple for professional environments.",
-    "dupes": "Club de Nuit Intense Man (Armaf) ~$25–$45",
     "similar": "Sauvage EDP, Terre d'Hermès EDP, Fahrenheit",
     "unique": "Polished, cerebral freshness undercut by warm incense-wood drydown.",
     "massAppeal": "Yes",
@@ -123,7 +122,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Club de Nuit Intense Man (Armaf) ~$25–$45"
   },
   {
     "id": "creed-aventus",
@@ -177,7 +177,6 @@
     "rating": "4.5/5",
     "popularity": 96,
     "sentiment": "The benchmark masculine niche fragrance. Batch variation is a major community talking point.",
-    "dupes": "Club de Nuit Intense Man EDP (Armaf) ~$25–$45",
     "similar": "Silver Mountain Water, Green Irish Tweed, Millesime Imperial",
     "unique": "Pineapple-birch smoke accord is iconic and widely imitated.",
     "massAppeal": "No",
@@ -186,7 +185,8 @@
     "hype": "Slightly overhyped",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Club de Nuit Intense Man EDP (Armaf) ~$25–$45"
   },
   {
     "id": "tom-ford-tobacco-vanille",
@@ -236,7 +236,6 @@
     "rating": "4.5/5",
     "popularity": 93,
     "sentiment": "A landmark gourmand-oriental. The quintessential winter evening fragrance.",
-    "dupes": "Tobacco Touch (Armaf) ~$30–$50",
     "similar": "Noir de Noir, Black Orchid, Oud Wood, Spicebomb Extreme",
     "unique": "Warm pipe tobacco sweetened by vanilla and dried fruit.",
     "massAppeal": "No",
@@ -245,7 +244,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Tobacco Touch (Armaf) ~$30–$50"
   },
   {
     "id": "giorgio-armani-acqua-di-gi-profumo",
@@ -356,7 +356,6 @@
     "rating": "4.4/5",
     "popularity": 91,
     "sentiment": "The accessible entry point to oud for Western audiences.",
-    "dupes": "Oud Mood (Lattafa) ~$20–$30",
     "similar": "Tobacco Vanille, Noir de Noir, Gucci Guilty Absolute",
     "unique": "Approachable oud with warmth and depth.",
     "massAppeal": "No",
@@ -365,7 +364,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Oud Mood (Lattafa) ~$20–$30"
   },
   {
     "id": "yves-saint-laurent-y-edp",
@@ -536,7 +536,6 @@
     "rating": "4.3/5",
     "popularity": 89,
     "sentiment": "Legendary seductive fragrance. The cardamom-lavender combo is universally appealing.",
-    "dupes": "La Nuit Clone (Armaf) ~$20–$35",
     "similar": "L'Homme YSL, Stronger with You, Luna Rossa Sport",
     "unique": "Spiced cardamom lavender with a sweet coumarin dry-down.",
     "massAppeal": "Yes",
@@ -545,7 +544,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "La Nuit Clone (Armaf) ~$20–$35"
   },
   {
     "id": "paco-rabanne-invictus",
@@ -654,7 +654,6 @@
     "rating": "4.1/5",
     "popularity": 91,
     "sentiment": "One of the defining masculines of the 2010s. Massive compliment magnet.",
-    "dupes": "Tres Nuit (Armaf) ~$20–$35",
     "similar": "Invictus Intense, Le Male, CH Men",
     "unique": "Candy-spice leather hybrid.",
     "massAppeal": "Yes",
@@ -663,7 +662,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Tres Nuit (Armaf) ~$20–$35"
   },
   {
     "id": "jean-paul-gaultier-le-male",
@@ -892,7 +892,6 @@
     "rating": "4.4/5",
     "popularity": 85,
     "sentiment": "Caramel-vanilla bomb. Widely considered the best Stronger with You flanker.",
-    "dupes": "Khamrah (Lattafa) ~$25–$35",
     "similar": "Tobacco Vanille, 1 Million Elixir, Spicebomb Extreme",
     "unique": "Dessert-level sweetness balanced by smoky cashmeran.",
     "massAppeal": "Yes",
@@ -901,7 +900,8 @@
     "hype": "Underrated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Khamrah (Lattafa) ~$25–$35"
   },
   {
     "id": "viktor-rolf-spicebomb-extreme",
@@ -947,7 +947,6 @@
     "rating": "4.3/5",
     "popularity": 86,
     "sentiment": "Thick, rich, and assertive. Designed for statement-making in cold climates.",
-    "dupes": "Khamrah (Lattafa) ~$25–$35",
     "similar": "Tobacco Vanille, Stronger with You Intensely, Black Afgano",
     "unique": "Lava-pepper-tobacco opening is explosive.",
     "massAppeal": "No",
@@ -956,7 +955,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Khamrah (Lattafa) ~$25–$35"
   },
   {
     "id": "montblanc-explorer",
@@ -1239,7 +1239,6 @@
     "rating": "4.3/5",
     "popularity": 94,
     "sentiment": "Perhaps the most hyped fragrance of the 2020s. Unique warm-sweet amberwood note.",
-    "dupes": "Wajaha (Lattafa) ~$25–$35 | Fakhar Man (Lattafa) ~$20–$30",
     "similar": "Nuit de Feu, Oud Satin Mood, Angels' Share",
     "unique": "The 'caramelized jasmine' amberwood accord is instantly recognizable worldwide.",
     "massAppeal": "No",
@@ -1248,7 +1247,8 @@
     "hype": "Overhyped",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Wajaha (Lattafa) ~$25–$35 | Fakhar Man (Lattafa) ~$20–$30"
   },
   {
     "id": "dior-dior-homme-intense",
@@ -1296,7 +1296,6 @@
     "rating": "4.5/5",
     "popularity": 89,
     "sentiment": "Consistently ranked among the top masculine designer fragrances.",
-    "dupes": "Supremacy Silver (Afnan) ~$30–$50",
     "similar": "L'Homme YSL, Fahrenheit, Bleu de Chanel EDP",
     "unique": "Iris powder executed with French haute parfumerie precision.",
     "massAppeal": "No",
@@ -1305,7 +1304,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Supremacy Silver (Afnan) ~$30–$50"
   },
   {
     "id": "rasasi-hawas",
@@ -1533,7 +1533,6 @@
     "rating": "4.3/5",
     "popularity": 95,
     "sentiment": "More refined and warmer than the EDT. A smoother, slightly sweeter take on the Sauvage DNA.",
-    "dupes": "ASAD EDP (Lattafa) ~$25–$35",
     "similar": "Sauvage EDT, Bleu de Chanel EDP, Y EDP",
     "unique": "Vanilla-ambroxan finish adds seductive warmth missing from the original.",
     "massAppeal": "Yes",
@@ -1542,7 +1541,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "ASAD EDP (Lattafa) ~$25–$35"
   },
   {
     "id": "dior-sauvage-parfum",
@@ -1938,7 +1938,6 @@
     "rating": "4.2/5",
     "popularity": 88,
     "sentiment": "The original Bleu. Lighter than the EDP, excellent for daytime and warmer months.",
-    "dupes": "Blue Nile (Afnan) ~$25–$35",
     "similar": "Sauvage EDT, Terre d'Hermès EDT, Y EDT",
     "unique": "Citrus-woody freshness anchored by light patchouli-vetiver.",
     "massAppeal": "Yes",
@@ -1947,7 +1946,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Blue Nile (Afnan) ~$25–$35"
   },
   {
     "id": "chanel-bleu-de-chanel-parfum",
@@ -2831,7 +2831,6 @@
     "rating": "4.0/5",
     "popularity": 91,
     "sentiment": "The original aquatic powerhouse. Defined the genre. Slightly dated but massively influential.",
-    "dupes": "Tres Nuit (Armaf) ~$15–$30",
     "similar": "Invictus, Cool Water, Light Blue Pour Homme",
     "unique": "Calone-marine accord that launched a thousand imitators.",
     "massAppeal": "Yes",
@@ -2840,7 +2839,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Tres Nuit (Armaf) ~$15–$30"
   },
   {
     "id": "giorgio-armani-acqua-di-gi-edp",
@@ -3008,7 +3008,6 @@
     "rating": "4.2/5",
     "popularity": 84,
     "sentiment": "Dark, smooth, and seductive. A classic designer date-night fragrance.",
-    "dupes": "Code Inspired (Armaf) ~$20–$35",
     "similar": "La Nuit de L'Homme, 1 Million, Bvlgari Man Black",
     "unique": "Star anise over tobacco and leather creates a signature signature.",
     "massAppeal": "Yes",
@@ -3017,7 +3016,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Code Inspired (Armaf) ~$20–$35"
   },
   {
     "id": "giorgio-armani-armani-code-absolu",
@@ -3411,7 +3411,6 @@
     "rating": "4.4/5",
     "popularity": 81,
     "sentiment": "The most intense and beast-mode version of the 1 Million family. Tobacco-amber is stunning.",
-    "dupes": "Khamrah (Lattafa) ~$25–$35",
     "similar": "Tobacco Vanille, Spicebomb Extreme, Stronger with You Intensely",
     "unique": "Tobacco-cardamom-amber explosion. A genuine monster performance.",
     "massAppeal": "Yes",
@@ -3420,7 +3419,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Khamrah (Lattafa) ~$25–$35"
   },
   {
     "id": "paco-rabanne-invictus-intense",
@@ -3652,7 +3652,6 @@
     "rating": "4.3/5",
     "popularity": 85,
     "sentiment": "Sweeter and more intense than Le Male. A beast-mode compliment getter with serious projection.",
-    "dupes": "Ultra Male Clone (Lattafa) ~$20–$30",
     "similar": "1 Million, Le Male, La Nuit de L'Homme",
     "unique": "Pear-fig-vanilla sweetness cranked to maximum.",
     "massAppeal": "Yes",
@@ -3661,7 +3660,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Ultra Male Clone (Lattafa) ~$20–$30"
   },
   {
     "id": "jean-paul-gaultier-le-male-elixir",
@@ -3885,7 +3885,6 @@
     "rating": "4.2/5",
     "popularity": 87,
     "sentiment": "A massive crowd-pleaser. Mint-lemon freshness with tonka sweetness. One of the top-selling masculines.",
-    "dupes": "Chill (Lattafa) ~$20–$30",
     "similar": "Invictus, Dylan Blue, Y EDT",
     "unique": "Mint and apple with tonka sweetness—an approachable, safe choice.",
     "massAppeal": "Yes",
@@ -3894,7 +3893,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Chill (Lattafa) ~$20–$30"
   },
   {
     "id": "versace-eros-flame",
@@ -4197,7 +4197,6 @@
     "rating": "4.1/5",
     "popularity": 85,
     "sentiment": "The quintessential office fragrance. Apple-spice-wood is a reliable, safe choice.",
-    "dupes": "Tres Nuit (Armaf) ~$15–$30",
     "similar": "Allure Homme, Gentleman Givenchy, Dior Homme",
     "unique": "Apple-spice masculinity that defined the 90s office scent.",
     "massAppeal": "Yes",
@@ -4206,7 +4205,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Tres Nuit (Armaf) ~$15–$30"
   },
   {
     "id": "hugo-boss-boss-bottled-night",
@@ -4786,7 +4786,6 @@
     "rating": "4.3/5",
     "popularity": 82,
     "sentiment": "An elegant, classic oriental masculine. Cardamom-amber depth is masterfully done.",
-    "dupes": "The One Inspired (Armaf) ~$20–$35",
     "similar": "Armani Code, La Nuit de L'Homme, Pour Homme DG",
     "unique": "Cardamom-tobacco oriental that ages gracefully.",
     "massAppeal": "Yes",
@@ -4795,7 +4794,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "The One Inspired (Armaf) ~$20–$35"
   },
   {
     "id": "dolce-gabbana-the-one-gentleman",
@@ -6984,7 +6984,6 @@
     "rating": "4.0/5",
     "popularity": 82,
     "sentiment": "The father of the marine genre. Historically essential—slightly dated but still competent.",
-    "dupes": "Cool Water Inspired (Armaf) ~$15–$25",
     "similar": "Acqua di Giò EDT, Polo Sport, Insensé Ultramarine",
     "unique": "Mint-tobacco marine accord that created the fresh water genre.",
     "massAppeal": "Yes",
@@ -6993,7 +6992,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Cool Water Inspired (Armaf) ~$15–$25"
   },
   {
     "id": "davidoff-zino",
@@ -8104,7 +8104,6 @@
     "rating": "4.4/5",
     "popularity": 79,
     "sentiment": "The original gourmand masculine. Patchouli-coffee-caramel combination is iconic.",
-    "dupes": "A*Men Clone (Armaf) ~$20–$35",
     "similar": "Le Male, Tobacco Vanille, 1 Million",
     "unique": "Gourmand masculine pioneer—patchouli-coffee genre-definer.",
     "massAppeal": "No",
@@ -8113,7 +8112,8 @@
     "hype": "Underrated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "A*Men Clone (Armaf) ~$20–$35"
   },
   {
     "id": "thierry-mugler-b-men",
@@ -8688,7 +8688,6 @@
     "rating": "4.5/5",
     "popularity": 81,
     "sentiment": "A landmark leather fragrance. Raspberry-saffron-leather combination is stunning.",
-    "dupes": "Leather Inspired (Lattafa) ~$20–$30",
     "similar": "Gucci Guilty Absolute, Fahrenheit, Cuir de Russie",
     "unique": "Raspberry-leather accord is instantly iconic.",
     "massAppeal": "No",
@@ -8697,7 +8696,8 @@
     "hype": "Accurately rated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (official site / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes threads). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Leather Inspired (Lattafa) ~$20–$30"
   },
   {
     "id": "tom-ford-noir-de-noir",
@@ -15478,7 +15478,6 @@
     "rating": "4.4/5",
     "popularity": 77,
     "sentiment": "One of the most outstanding designer purchases under $50. Smoky vetiver-cypress darkness.",
-    "dupes": "Inspired by Encre Noire (Armaf) ~$15–$25",
     "similar": "Terre d'Hermès, Sycomore, Grey Vetiver",
     "unique": "Cypress-vetiver darkness at an unbelievable price.",
     "massAppeal": "Yes",
@@ -15487,7 +15486,8 @@
     "hype": "Underrated",
     "beginner": "",
     "collector": "",
-    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit)."
+    "source": "Notes: brand disclosures (official site / press). Performance & mass-appeal: major retailer reviews + community (Reddit, Parfumo). Dupe claims: community consensus (YouTube, Reddit).",
+    "hasDupes": "Inspired by Encre Noire (Armaf) ~$15–$25"
   },
   {
     "id": "lalique-lalique-encre-noire-sport",
@@ -29421,7 +29421,6 @@
     "rating": "4.3/5",
     "popularity": 92,
     "sentiment": "TikTok viral sensation. Unisex but heavily worn by women; men wear it confidently too. Creamy vanilla-orchid comfort scent.",
-    "dupes": "Original-ish — inspired by Kayali Vanilla 28",
     "similar": "Lattafa Yara Moi, Kayali Vanilla 28, Cloud by Ariana Grande",
     "unique": "Orchid-vanilla accord that bridges gourmand and floral without tipping either way.",
     "massAppeal": "Yes",
@@ -29430,7 +29429,8 @@
     "hype": "Accurately rated",
     "beginner": "The viral TikTok one. Yes, it's as cozy as people say. Unisex-leaning feminine but confident men wear it too.",
     "collector": "Lattafa's breakout 2020s hit. The orchid note is synthetic but well-deployed. Led directly to the Yara Moi, Yara Candy, Yara Tous flanker explosion.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Original-ish — inspired by Kayali Vanilla 28"
   },
   {
     "id": "lattafa-oud-mood-gold",
@@ -29477,7 +29477,6 @@
     "rating": "4.4/5",
     "popularity": 85,
     "sentiment": "The richer sibling of Oud Mood. Rose-oud-saffron powerhouse that punches well above its price.",
-    "dupes": "Kilian Rolling in Love adjacent; no single close target",
     "similar": "Initio Oud for Greatness, Amouage Epic Man",
     "unique": "Gold edition version is notably deeper and more rose-forward than original Oud Mood.",
     "massAppeal": "No",
@@ -29533,7 +29532,6 @@
     "rating": "4.5/5",
     "popularity": 88,
     "sentiment": "Widely considered one of the closest and most legitimately great affordable takes on the Layton/PdM ambery-saffron archetype.",
-    "dupes": "Adjacent to PdM Layton but not a direct clone",
     "similar": "Parfums de Marly Layton, Initio Oud for Greatness",
     "unique": "Saffron-nutmeg-oud triangle with an exceptionally smooth amber base.",
     "massAppeal": "No",
@@ -29542,7 +29540,8 @@
     "hype": "Underrated",
     "beginner": "Frequently topping 'best budget niche' lists. Buy a decant first; performs hard.",
     "collector": "Stronger projection than Layton; less refined in the mid. The Bade'e line has a dozen flankers — Amethyst is the consensus pick.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Adjacent to PdM Layton but not a direct clone"
   },
   {
     "id": "lattafa-bade-e-al-oud-oud-for-glory",
@@ -29589,7 +29588,6 @@
     "rating": "4.5/5",
     "popularity": 90,
     "sentiment": "The Initio Oud for Greatness dupe. Remarkably close DNA at roughly 1/10 the price.",
-    "dupes": "Direct target: Initio Oud for Greatness",
     "similar": "Initio Oud for Greatness, MFK Oud Satin Mood",
     "unique": "Genuinely punches within striking distance of Initio — one of the standout clones of the 2020s.",
     "massAppeal": "No",
@@ -29598,7 +29596,8 @@
     "hype": "Accurately rated",
     "beginner": "The Initio OFG dupe everyone mentions. Sample before committing; projects like a flare.",
     "collector": "Lattafa's flagship clone success. Performance matches the target; nuance in the drydown is where it parts ways.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: Initio Oud for Greatness"
   },
   {
     "id": "lattafa-fakhar-men-gold",
@@ -29648,7 +29647,6 @@
     "rating": "4.3/5",
     "popularity": 80,
     "sentiment": "More polished and sweeter Layton-adjacent take than the original Fakhar. A compliment-getter.",
-    "dupes": "PdM Layton adjacent",
     "similar": "PdM Layton, Dior Sauvage Elixir",
     "unique": "Fakhar Gold tones down the original's roughness; more versatile daily wearer.",
     "massAppeal": "Yes",
@@ -29657,7 +29655,8 @@
     "hype": "Underrated",
     "beginner": "Safer than the original Fakhar if you want Layton-vibes. Less edgy.",
     "collector": "Lattafa's house style (dense amber-saffron structure) shows through. Better value than the OG Fakhar at this point.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "PdM Layton adjacent"
   },
   {
     "id": "lattafa-teriaq",
@@ -29704,7 +29703,6 @@
     "rating": "4.3/5",
     "popularity": 75,
     "sentiment": "Honey-saffron-incense composition. Warm and deeply resinous; performs enormously.",
-    "dupes": "Somewhat close to MFK Grand Soir and Nishane Hacivat territory",
     "similar": "MFK Grand Soir, Xerjoff Naxos",
     "unique": "Honey is more prominent than in most ME honey-saffron compositions.",
     "massAppeal": "No",
@@ -29713,7 +29711,8 @@
     "hype": "Underrated",
     "beginner": "If you love honey-tobacco-incense, this is a genuinely impressive budget entry.",
     "collector": "Underdiscussed relative to quality. The incense-to-oud transition is particularly well-handled.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Somewhat close to MFK Grand Soir and Nishane Hacivat territory"
   },
   {
     "id": "lattafa-velvet-oud",
@@ -29762,7 +29761,6 @@
     "rating": "4.2/5",
     "popularity": 70,
     "sentiment": "Apple-saffron-oud composition in Aventus-adjacent territory but softer and more oud-forward.",
-    "dupes": "Loose Aventus adjacency",
     "similar": "Creed Aventus, Nishane Hacivat",
     "unique": "Creamier and more casual than most Lattafa oud releases.",
     "massAppeal": "Yes",
@@ -29771,7 +29769,8 @@
     "hype": "Underrated",
     "beginner": "Wearable oud — good first Lattafa for those intimidated by BAO Amethyst's sweetness.",
     "collector": "Often missed in Lattafa best-of lists; quietly excellent.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Loose Aventus adjacency"
   },
   {
     "id": "lattafa-pride-al-shaghaf",
@@ -29823,7 +29822,6 @@
     "rating": "4.3/5",
     "popularity": 83,
     "sentiment": "Direct Aventus dupe. Community debates whether it or CdN Intense is closer; different noses pick different winners.",
-    "dupes": "Direct target: Creed Aventus",
     "similar": "Creed Aventus, Armaf CdN Intense, Lattafa Asad",
     "unique": "Slightly sweeter Aventus impression than CdN Intense.",
     "massAppeal": "Yes",
@@ -29832,7 +29830,8 @@
     "hype": "Accurately rated",
     "beginner": "One of the legitimate Aventus alternatives to sample before dropping $400.",
     "collector": "Pride line from Lattafa has several hits; Al Shaghaf is the flagship masculine.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: Creed Aventus"
   },
   {
     "id": "lattafa-ra-ed-gold",
@@ -29879,7 +29878,6 @@
     "rating": "4.3/5",
     "popularity": 72,
     "sentiment": "Newer Lattafa saffron-rose-oud in the Amouage/Ombre adjacency. Well-regarded, not yet viral.",
-    "dupes": "Somewhat Amouage Interlude territory",
     "similar": "Amouage Interlude Man, Kilian Rolling in Love",
     "unique": "Vanilla base softens the rose-oud core more than typical for this genre.",
     "massAppeal": "No",
@@ -29888,7 +29886,8 @@
     "hype": "Underrated",
     "beginner": "Emerging hit. If you already love the oud-saffron formula, this is worth a sample.",
     "collector": "Part of Lattafa's late-2022/2023 tier-up cycle; higher-end feel than earlier house releases.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Somewhat Amouage Interlude territory"
   },
   {
     "id": "lattafa-maahir-black-edition",
@@ -29935,7 +29934,6 @@
     "rating": "4.2/5",
     "popularity": 72,
     "sentiment": "Darker, smokier sibling of original Maahir. Agarwood-heavy.",
-    "dupes": "No clear single target",
     "similar": "Amouage Jubilation XXV, Tom Ford Oud Wood",
     "unique": "Agarwood-smoke register uncommon in Lattafa lineup.",
     "massAppeal": "No",
@@ -29992,7 +29990,6 @@
     "rating": "4.1/5",
     "popularity": 68,
     "sentiment": "Soft clean musk — the 'out of the shower' scent. Unisex-leaning.",
-    "dupes": "Kiehl's Musk-adjacent territory",
     "similar": "Narciso Rodriguez For Her Musc, The Body Shop White Musk",
     "unique": "Classically clean musk; rare in ME lineup which usually leans smoky.",
     "massAppeal": "Yes",
@@ -30001,7 +29998,8 @@
     "hype": "Accurately rated",
     "beginner": "If heavy ME scents aren't for you, this is the gentlest entry.",
     "collector": "Respectable for the price; not groundbreaking.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Kiehl's Musk-adjacent territory"
   },
   {
     "id": "lattafa-khamrah-qahwa",
@@ -30050,7 +30048,6 @@
     "rating": "4.4/5",
     "popularity": 85,
     "sentiment": "The coffee-forward sibling of Khamrah. Arguably more distinctive than the original.",
-    "dupes": "No direct target; adjacent to MFK Gentle Fluidity Gold and Montale Intense Cafe",
     "similar": "Lattafa Khamrah, Montale Intense Café",
     "unique": "Arabic coffee (qahwa) accord — cardamom-coffee-date combo uncommon in Western perfumery.",
     "massAppeal": "Yes",
@@ -30105,7 +30102,6 @@
     "rating": "4.2/5",
     "popularity": 65,
     "sentiment": "Softer, smoother take on the Bade'e Al Oud profile. Less aggressive than Amethyst or OFG.",
-    "dupes": "Mildly Layton-adjacent",
     "similar": "Lattafa BAO Amethyst, PdM Layton",
     "unique": "More approachable for those who find Amethyst too sweet.",
     "massAppeal": "Yes",
@@ -30114,7 +30110,8 @@
     "hype": "Underrated",
     "beginner": "Gentler entry to the Bade'e line.",
     "collector": "Often recommended as the 'office-safe' BAO.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Mildly Layton-adjacent"
   },
   {
     "id": "armaf-derby-club-house",
@@ -30164,7 +30161,6 @@
     "rating": "4.1/5",
     "popularity": 72,
     "sentiment": "Hermès Terre d'Hermès / Dior Homme adjacent territory at a fraction of the cost.",
-    "dupes": "Adjacent to Hermès H24 and Dior Homme",
     "similar": "Terre d'Hermès, Dior Homme EDT",
     "unique": "Iris-leather construction uncommon at this price point.",
     "massAppeal": "Yes",
@@ -30173,7 +30169,8 @@
     "hype": "Underrated",
     "beginner": "Smart-casual office scent. Won't offend anyone.",
     "collector": "Armaf's most refined masculine. Not a direct clone — genuinely its own composition.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Adjacent to Hermès H24 and Dior Homme"
   },
   {
     "id": "armaf-odyssey-homme",
@@ -30222,7 +30219,6 @@
     "rating": "4.0/5",
     "popularity": 65,
     "sentiment": "Dior Homme Intense adjacent. Solid but not quite at Derby Club House's level.",
-    "dupes": "Dior Homme adjacency",
     "similar": "Dior Homme Intense, Prada L'Homme",
     "unique": "Tobacco-cinnamon heart gives it slightly more warmth than DHI.",
     "massAppeal": "Yes",
@@ -30231,7 +30227,8 @@
     "hype": "Underrated",
     "beginner": "Cozy office scent. Safe bet.",
     "collector": "Armaf's take on the Dior Homme archetype. Competent rather than brilliant.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Dior Homme adjacency"
   },
   {
     "id": "armaf-ventana",
@@ -30278,7 +30275,6 @@
     "rating": "4.2/5",
     "popularity": 78,
     "sentiment": "Versace Eros dupe. Close enough that most noses wouldn't catch it.",
-    "dupes": "Direct target: Versace Eros",
     "similar": "Versace Eros, Armaf Club de Nuit Sillage",
     "unique": "The Eros DNA without the club-scent baggage or price.",
     "massAppeal": "Yes",
@@ -30287,7 +30283,8 @@
     "hype": "Accurately rated",
     "beginner": "Much cheaper than Eros; similar vibe. Safe swap.",
     "collector": "One of Armaf's better mainstream-dupe executions.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: Versace Eros"
   },
   {
     "id": "armaf-cdnim-elixir",
@@ -30336,7 +30333,6 @@
     "rating": "4.3/5",
     "popularity": 80,
     "sentiment": "The Elixir concentration adds density and longevity. Denser, darker, sweeter take.",
-    "dupes": "Creed Aventus Elixir-adjacent, Aventus adjacent",
     "similar": "Armaf CdN Intense Man, Creed Aventus",
     "unique": "More nocturnal than the original CdN Intense.",
     "massAppeal": "Yes",
@@ -30345,7 +30341,8 @@
     "hype": "Accurately rated",
     "beginner": "Winter upgrade of the CdN Intense you already love.",
     "collector": "The Elixir is arguably the best-performing Aventus-inspired fragrance at this price point.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Creed Aventus Elixir-adjacent, Aventus adjacent"
   },
   {
     "id": "armaf-hunter-intense",
@@ -30394,7 +30391,6 @@
     "rating": "4.0/5",
     "popularity": 60,
     "sentiment": "Workhorse daily fougère. Inoffensive and versatile.",
-    "dupes": "Loose BdC territory",
     "similar": "Bleu de Chanel, Dior Sauvage",
     "unique": "Nothing revolutionary, but well-executed daily wearer.",
     "massAppeal": "Yes",
@@ -30403,7 +30399,8 @@
     "hype": "Accurately rated",
     "beginner": "Safe and cheap. Good first fragrance.",
     "collector": "Fills the budget-daily slot competently.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Loose BdC territory"
   },
   {
     "id": "armaf-italica",
@@ -30452,7 +30449,6 @@
     "rating": "4.1/5",
     "popularity": 65,
     "sentiment": "YSL Y EDP adjacent composition. Apple-lavender-musk.",
-    "dupes": "YSL Y EDP adjacency",
     "similar": "YSL Y EDP, PdM Layton",
     "unique": "Pear-apple combo is a nice wrinkle on the Y formula.",
     "massAppeal": "Yes",
@@ -30461,7 +30457,8 @@
     "hype": "Underrated",
     "beginner": "If Y EDP is too trendy or expensive, this gets close.",
     "collector": "Underdiscussed relative to quality.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "YSL Y EDP adjacency"
   },
   {
     "id": "armaf-voyage-pour-homme",
@@ -30509,7 +30506,6 @@
     "rating": "3.9/5",
     "popularity": 55,
     "sentiment": "Light daily fougère. Not distinctive but inoffensive.",
-    "dupes": "Generic BdC adjacency",
     "similar": "Bleu de Chanel EDT, Y EDT",
     "unique": "Lighter than most Armafs in its tier.",
     "massAppeal": "Yes",
@@ -30518,7 +30514,8 @@
     "hype": "Accurately rated",
     "beginner": "Safe hot-weather daily.",
     "collector": "Fills a niche slot; nothing essential.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Generic BdC adjacency"
   },
   {
     "id": "al-haramain-amber-oud-carbon-edition",
@@ -30566,7 +30563,6 @@
     "rating": "4.4/5",
     "popularity": 83,
     "sentiment": "Darker, smokier sibling of Amber Oud Gold. One of the best ME masculine releases at this price.",
-    "dupes": "Adjacent to Tom Ford Oud Wood territory",
     "similar": "TF Oud Wood, Amouage Interlude Man",
     "unique": "Pepper-cardamom opening is exceptionally well-done.",
     "massAppeal": "No",
@@ -30575,7 +30571,8 @@
     "hype": "Underrated",
     "beginner": "If Amber Oud Gold is too sweet, Carbon is your pick.",
     "collector": "Consistently called 'the best Al Haramain' in community discussions.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Adjacent to Tom Ford Oud Wood territory"
   },
   {
     "id": "al-haramain-amber-oud-blue-edition",
@@ -30623,7 +30620,6 @@
     "rating": "4.2/5",
     "popularity": 72,
     "sentiment": "Cleaner, more floral of the Amber Oud line. Unisex-leaning.",
-    "dupes": "No direct target",
     "similar": "Al Haramain Amber Oud Gold, Amber Oud White",
     "unique": "Aldehyde-floral opening is unusual in the Amber Oud line.",
     "massAppeal": "Yes",
@@ -30680,7 +30676,6 @@
     "rating": "4.2/5",
     "popularity": 75,
     "sentiment": "Darker, mintier version of L'Aventure. BdC Parfum adjacent.",
-    "dupes": "Bleu de Chanel Parfum adjacency",
     "similar": "BdC Parfum, Al Haramain L'Aventure",
     "unique": "Mint-lavender opening is unusual for ME releases.",
     "massAppeal": "Yes",
@@ -30689,7 +30684,8 @@
     "hype": "Underrated",
     "beginner": "If you love L'Aventure but want a cooler-weather version, Knight.",
     "collector": "Lesser-known L'Aventure flanker; community favorite.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Bleu de Chanel Parfum adjacency"
   },
   {
     "id": "al-haramain-l-aventure-intense",
@@ -30736,7 +30732,6 @@
     "rating": "4.3/5",
     "popularity": 78,
     "sentiment": "The densest, longest-lasting L'Aventure. Closest to BdC EDP/Parfum DNA.",
-    "dupes": "Bleu de Chanel EDP/Parfum",
     "similar": "BdC Parfum, Al Haramain L'Aventure",
     "unique": "Intense does exactly what the name implies — longevity beast.",
     "massAppeal": "Yes",
@@ -30745,7 +30740,8 @@
     "hype": "Accurately rated",
     "beginner": "The BdC replacement that outlasts the original.",
     "collector": "Projects harder than BdC Parfum; the 'if you want value over polish' pick.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Bleu de Chanel EDP/Parfum"
   },
   {
     "id": "al-haramain-junoon-leather",
@@ -30792,7 +30788,6 @@
     "rating": "4.2/5",
     "popularity": 62,
     "sentiment": "Raspberry-leather-oud composition. Tom Ford Tuscan Leather adjacent.",
-    "dupes": "Tuscan Leather adjacency",
     "similar": "TF Tuscan Leather, Amouage Lyric Man",
     "unique": "Raspberry pick-up in the top uncommon for ME compositions.",
     "massAppeal": "No",
@@ -30801,7 +30796,8 @@
     "hype": "Underrated",
     "beginner": "Leather fragrance, sample first — polarizes.",
     "collector": "Worth trying if Tuscan Leather is out of reach.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Tuscan Leather adjacency"
   },
   {
     "id": "al-haramain-oud-ispahani",
@@ -30847,7 +30843,6 @@
     "rating": "4.1/5",
     "popularity": 55,
     "sentiment": "Classical rose-oud composition. Quiet and elegant.",
-    "dupes": "No direct target",
     "similar": "Amouage Lyric Man, Roja Oud",
     "unique": "More restrained than most Al Haramain oud releases.",
     "massAppeal": "No",
@@ -30904,7 +30899,6 @@
     "rating": "4.4/5",
     "popularity": 90,
     "sentiment": "Major TikTok breakout. Sweet apple-honey-cinnamon scent with exceptional performance for the price.",
-    "dupes": "Nishane Nanshe adjacent; somewhat unique",
     "similar": "Nishane Nanshe, PdM Althair",
     "unique": "Apple-cinnamon gourmand-oriental is rare in the price tier; performance is shockingly good.",
     "massAppeal": "Yes",
@@ -30913,7 +30907,8 @@
     "hype": "Accurately rated",
     "beginner": "TikTok made this famous for good reason. Apply lightly — projects hard.",
     "collector": "Afnan's breakout release. 9 PM and 9 AM both put the brand on the map in Western markets.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Nishane Nanshe adjacent; somewhat unique"
   },
   {
     "id": "afnan-9-am",
@@ -30962,7 +30957,6 @@
     "rating": "4.2/5",
     "popularity": 78,
     "sentiment": "The daytime counterpart to 9 PM. Lighter, fruitier, more spring-friendly.",
-    "dupes": "Aventus-adjacent",
     "similar": "Creed Aventus, Armaf CdN Intense",
     "unique": "Afnan's answer to the Aventus-style fruity chypre.",
     "massAppeal": "Yes",
@@ -30971,7 +30965,8 @@
     "hype": "Accurately rated",
     "beginner": "If 9 PM is too sweet or nocturnal, 9 AM is the daylight sibling.",
     "collector": "Sits between 9 PM and CdN Intense in DNA.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Aventus-adjacent"
   },
   {
     "id": "afnan-supremacy-in-heaven",
@@ -31018,7 +31013,6 @@
     "rating": "4.0/5",
     "popularity": 60,
     "sentiment": "Lighter, more ethereal Afnan release. Less in-your-face than Supremacy Silver.",
-    "dupes": "No direct target",
     "similar": "Afnan Supremacy Silver, Dior Sauvage",
     "unique": "Iris-incense heart is unusual for the brand.",
     "massAppeal": "Yes",
@@ -31076,7 +31070,6 @@
     "rating": "4.2/5",
     "popularity": 72,
     "sentiment": "YSL Y EDP adjacent. Sage-juniper-amberwood with strong projection.",
-    "dupes": "Direct target: YSL Y EDP",
     "similar": "YSL Y EDP, PdM Layton",
     "unique": "One of the cleaner Y EDP clones on market.",
     "massAppeal": "Yes",
@@ -31085,7 +31078,8 @@
     "hype": "Underrated",
     "beginner": "Sample before buying Y EDP.",
     "collector": "Afnan's most-overlooked quality release.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: YSL Y EDP"
   },
   {
     "id": "maison-alhambra-kismet",
@@ -31138,7 +31132,6 @@
     "rating": "4.1/5",
     "popularity": 72,
     "sentiment": "Aventus clone. Slightly less smoky than CdN Intense; sweeter profile.",
-    "dupes": "Direct target: Creed Aventus",
     "similar": "Creed Aventus, Armaf CdN Intense, Lattafa Asad",
     "unique": "Runs slightly warmer than other Aventus clones.",
     "massAppeal": "Yes",
@@ -31147,7 +31140,8 @@
     "hype": "Underrated",
     "beginner": "Cheaper Aventus option; less well-known than CdN Intense.",
     "collector": "Maison Alhambra is a Parfums Perrier offshoot aimed squarely at the mainstream-clone market.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: Creed Aventus"
   },
   {
     "id": "maison-alhambra-aventador",
@@ -31199,7 +31193,6 @@
     "rating": "4.2/5",
     "popularity": 75,
     "sentiment": "The more aggressive Aventus clone from MA. Higher projection than Kismet.",
-    "dupes": "Direct target: Creed Aventus",
     "similar": "Creed Aventus, Armaf CdN Intense",
     "unique": "Louder than most Aventus clones; may tip into too-sweet.",
     "massAppeal": "Yes",
@@ -31208,7 +31201,8 @@
     "hype": "Accurately rated",
     "beginner": "If CdN Intense feels too familiar, try Aventador.",
     "collector": "Decent close-clone; projects harder than target.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: Creed Aventus"
   },
   {
     "id": "maison-alhambra-layali",
@@ -31258,7 +31252,6 @@
     "rating": "4.2/5",
     "popularity": 75,
     "sentiment": "Parfums de Marly Layton clone. Close in opening; diverges in drydown.",
-    "dupes": "Direct target: PdM Layton",
     "similar": "PdM Layton, Lattafa Bade'e Al Oud Amethyst",
     "unique": "Coffee note slightly more prominent than in target.",
     "massAppeal": "Yes",
@@ -31267,7 +31260,8 @@
     "hype": "Underrated",
     "beginner": "Layton DNA at 1/10 price. Sample before Layton itself.",
     "collector": "One of the strongest PdM Layton clones at this price point.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: PdM Layton"
   },
   {
     "id": "maison-alhambra-la-rouge",
@@ -31316,7 +31310,6 @@
     "rating": "4.1/5",
     "popularity": 70,
     "sentiment": "Baccarat Rouge 540 clone. Close enough for most noses.",
-    "dupes": "Direct target: MFK Baccarat Rouge 540",
     "similar": "MFK BR540, Al Haramain Amber Oud Gold",
     "unique": "Slightly less ethereal than target; more grounded.",
     "massAppeal": "Yes",
@@ -31325,7 +31318,8 @@
     "hype": "Accurately rated",
     "beginner": "The BR540 dupe you can find almost anywhere.",
     "collector": "Not quite as close as Al Haramain Amber Oud Gold, but widely available.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: MFK Baccarat Rouge 540"
   },
   {
     "id": "maison-alhambra-ionus",
@@ -31375,7 +31369,6 @@
     "rating": "4.1/5",
     "popularity": 65,
     "sentiment": "Dior Homme adjacent iris-amber composition.",
-    "dupes": "Dior Homme / Prada L'Homme adjacency",
     "similar": "Dior Homme, Prada L'Homme",
     "unique": "Iris at this price point is rare.",
     "massAppeal": "Yes",
@@ -31384,7 +31377,8 @@
     "hype": "Underrated",
     "beginner": "Iris introduction on a budget.",
     "collector": "Surprisingly polished for MA's tier.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Dior Homme / Prada L'Homme adjacency"
   },
   {
     "id": "maison-alhambra-exclusif-oud",
@@ -31431,7 +31425,6 @@
     "rating": "4.2/5",
     "popularity": 65,
     "sentiment": "Solid mid-tier Initio OFG-style oud composition.",
-    "dupes": "Initio Oud for Greatness adjacency",
     "similar": "Initio OFG, Lattafa BAO Oud for Glory",
     "unique": "More restrained than the primary OFG clones.",
     "massAppeal": "No",
@@ -31440,7 +31433,8 @@
     "hype": "Underrated",
     "beginner": "Less showy OFG alternative.",
     "collector": "If you find BAO Oud for Glory too loud, Exclusif Oud is the mellower take.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Initio Oud for Greatness adjacency"
   },
   {
     "id": "orientica-royal-amber",
@@ -31489,7 +31483,6 @@
     "rating": "4.4/5",
     "popularity": 85,
     "sentiment": "Widely considered one of the finest BR540 alternatives. Many prefer it.",
-    "dupes": "Direct target: MFK Baccarat Rouge 540 (Extrait direction)",
     "similar": "MFK BR540 Extrait, Al Haramain Amber Oud Gold",
     "unique": "Dense, projects harder than target; arguably more long-lasting.",
     "massAppeal": "Yes",
@@ -31498,7 +31491,8 @@
     "hype": "Underrated",
     "beginner": "If you can't find Al Haramain Amber Oud Gold, Royal Amber is the next-best BR540 alternative.",
     "collector": "Orientica is positioned as a step above Lattafa in presentation and quality; Royal Amber is the flagship.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: MFK Baccarat Rouge 540 (Extrait direction)"
   },
   {
     "id": "orientica-amber-rouge",
@@ -31545,7 +31539,6 @@
     "rating": "4.3/5",
     "popularity": 75,
     "sentiment": "Saffron-rose-oud-amber — the Amouage Lyric Man / Interlude Man territory.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, Roja Enigma",
     "unique": "Rose-forward where most ME saffron compositions lean more on oud.",
     "massAppeal": "No",
@@ -31604,7 +31597,6 @@
     "rating": "4.2/5",
     "popularity": 65,
     "sentiment": "Softer, more wearable Orientica.",
-    "dupes": "No direct target",
     "similar": "PdM Layton, Nishane Hacivat",
     "unique": "Bridges fruity-chypre and oriental-woody territories.",
     "massAppeal": "Yes",
@@ -31662,7 +31654,6 @@
     "rating": "4.3/5",
     "popularity": 82,
     "sentiment": "One of the earliest and most-copied BR540 dupes. Community staple.",
-    "dupes": "Direct target: MFK Baccarat Rouge 540",
     "similar": "MFK BR540, Al Haramain Amber Oud Gold",
     "unique": "Less refined than Orientica Royal Amber but more affordable.",
     "massAppeal": "Yes",
@@ -31671,7 +31662,8 @@
     "hype": "Accurately rated",
     "beginner": "The OG BR540 dupe before Al Haramain's version took over.",
     "collector": "Still relevant; performance can vary batch to batch.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: MFK Baccarat Rouge 540"
   },
   {
     "id": "fragrance-world-barakkat-satin-oud",
@@ -31718,7 +31710,6 @@
     "rating": "4.3/5",
     "popularity": 78,
     "sentiment": "MFK Oud Satin Mood alternative. Rose-oud-vanilla in satin-smooth construction.",
-    "dupes": "Direct target: MFK Oud Satin Mood",
     "similar": "MFK Oud Satin Mood, Amouage Lyric Man",
     "unique": "One of the closest MFK Oud Satin Mood dupes.",
     "massAppeal": "No",
@@ -31727,7 +31718,8 @@
     "hype": "Underrated",
     "beginner": "MFK dupe market is crowded; this is a standout.",
     "collector": "Community has coalesced around Satin Oud as the best Oud Satin Mood alternative.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: MFK Oud Satin Mood"
   },
   {
     "id": "fragrance-world-barakkat-aqua",
@@ -31774,7 +31766,6 @@
     "rating": "4.1/5",
     "popularity": 65,
     "sentiment": "Fresh aromatic daily. BdC-adjacent.",
-    "dupes": "Loose BdC / Sauvage adjacency",
     "similar": "Bleu de Chanel, Dior Sauvage",
     "unique": "More oceanic than most Sauvage clones.",
     "massAppeal": "Yes",
@@ -31783,7 +31774,8 @@
     "hype": "Accurately rated",
     "beginner": "Safe summer daily.",
     "collector": "Inoffensive; fills a daily-wearer slot.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Loose BdC / Sauvage adjacency"
   },
   {
     "id": "fragrance-world-barakkat-oud-al-amir",
@@ -31831,7 +31823,6 @@
     "rating": "4.2/5",
     "popularity": 60,
     "sentiment": "Leathery oud-rose composition. Niche-luxury adjacent.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, TF Tuscan Leather",
     "unique": "Leather-oud-rose triangle uncommon at this price.",
     "massAppeal": "No",
@@ -31891,7 +31882,6 @@
     "rating": "4.2/5",
     "popularity": 72,
     "sentiment": "Aventus clone. Slightly sweeter and less smoky than top-tier clones.",
-    "dupes": "Direct target: Creed Aventus",
     "similar": "Creed Aventus, Armaf CdN Intense",
     "unique": "Paris Corner's Emir sub-line aims at aspirational niche.",
     "massAppeal": "Yes",
@@ -31900,7 +31890,8 @@
     "hype": "Accurately rated",
     "beginner": "Solid Aventus alternative in the Armaf / Lattafa tier.",
     "collector": "Paris Corner / Emir is one of the fastest-growing ME houses in Western markets.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: Creed Aventus"
   },
   {
     "id": "paris-corner-emir-ghaliyah",
@@ -31949,7 +31940,6 @@
     "rating": "4.2/5",
     "popularity": 70,
     "sentiment": "Another BR540 alternative. Crowded space; decent entry.",
-    "dupes": "Direct target: MFK Baccarat Rouge 540",
     "similar": "MFK BR540, Orientica Royal Amber",
     "unique": "Nothing standout; competent execution.",
     "massAppeal": "Yes",
@@ -31958,7 +31948,8 @@
     "hype": "Accurately rated",
     "beginner": "Widely stocked BR540 alternative.",
     "collector": "Royal Amber and AH Amber Oud Gold still lead this category.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: MFK Baccarat Rouge 540"
   },
   {
     "id": "paris-corner-emir-xtreme-horse",
@@ -32009,7 +32000,6 @@
     "rating": "4.3/5",
     "popularity": 75,
     "sentiment": "Parfums de Marly Pegasus clone. Close and well-executed.",
-    "dupes": "Direct target: PdM Pegasus",
     "similar": "PdM Pegasus, PdM Layton",
     "unique": "One of the few Pegasus clones on market.",
     "massAppeal": "Yes",
@@ -32018,7 +32008,8 @@
     "hype": "Underrated",
     "beginner": "If Pegasus calls to you, sample Xtreme Horse first.",
     "collector": "Filling a gap the other houses haven't hit as hard.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Direct target: PdM Pegasus"
   },
   {
     "id": "paris-corner-paris-corner-patchouli-intense",
@@ -32066,7 +32057,6 @@
     "rating": "4.2/5",
     "popularity": 68,
     "sentiment": "Chanel Coromandel-adjacent composition.",
-    "dupes": "Chanel Coromandel adjacency",
     "similar": "Chanel Coromandel, MFK Grand Soir",
     "unique": "Patchouli-amber-rose more balanced than many ME oriental woods.",
     "massAppeal": "No",
@@ -32075,7 +32065,8 @@
     "hype": "Underrated",
     "beginner": "If you like patchouli but find Coromandel expensive, Patchouli Intense.",
     "collector": "One of Paris Corner's most original compositions.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Chanel Coromandel adjacency"
   },
   {
     "id": "khadlaj-hareem-al-sultan-gold",
@@ -32122,7 +32113,6 @@
     "rating": "4.2/5",
     "popularity": 75,
     "sentiment": "Rose-saffron-oud classic. Unisex-leaning but confidently worn by men in the Middle East.",
-    "dupes": "No direct target",
     "similar": "Lattafa Badee Al Oud Amethyst, Amouage Lyric Man",
     "unique": "Khadlaj's signature is dense, unapologetic oriental compositions.",
     "massAppeal": "Yes",
@@ -32179,7 +32169,6 @@
     "rating": "4.0/5",
     "popularity": 55,
     "sentiment": "Solid daily oud for a low price.",
-    "dupes": "No direct target",
     "similar": "Al Haramain Amber Oud, Lattafa Oud Mood",
     "unique": "Approachable daily oud.",
     "massAppeal": "Yes",
@@ -32235,7 +32224,6 @@
     "rating": "4.1/5",
     "popularity": 55,
     "sentiment": "More oud-forward than Hareem Al Sultan Gold. Traditional ME oud territory.",
-    "dupes": "No direct target",
     "similar": "Ajmal Dhan Al Oudh, Swiss Arabian Shaghaf Oud",
     "unique": "Leather pickup in base distinguishes from other Khadlaj.",
     "massAppeal": "No",
@@ -32292,7 +32280,6 @@
     "rating": "4.5/5",
     "popularity": 72,
     "sentiment": "Honey-rose-amber-oud masterwork from one of the Middle East's most prestigious houses.",
-    "dupes": "No direct target",
     "similar": "Xerjoff Naxos, Amouage Epic Man",
     "unique": "Honey at legendary level — one of the best honey fragrances ever composed.",
     "massAppeal": "No",
@@ -32348,7 +32335,6 @@
     "rating": "4.4/5",
     "popularity": 50,
     "sentiment": "Luxury ME oud composition.",
-    "dupes": "No direct target",
     "similar": "Amouage Jubilation XXV, Roja Aoud",
     "unique": "Dense, traditional ME luxury oud.",
     "massAppeal": "No",
@@ -32403,7 +32389,6 @@
     "rating": "4.6/5",
     "popularity": 45,
     "sentiment": "Powerhouse luxury oud; not for the faint of heart.",
-    "dupes": "No direct target",
     "similar": "Amouage Jubilation XXV, Roja Aoud, Arabian Oud Kalemat",
     "unique": "Uncompromising real-oud composition.",
     "massAppeal": "No",
@@ -32460,7 +32445,6 @@
     "rating": "4.2/5",
     "popularity": 68,
     "sentiment": "Classical ME composition at rock-bottom pricing. Community favorite for value.",
-    "dupes": "No direct target",
     "similar": "Khadlaj HAS Gold, Lattafa BAO Amethyst",
     "unique": "Dense for the price; heavier than typical Lattafa releases.",
     "massAppeal": "Yes",
@@ -32518,7 +32502,6 @@
     "rating": "4.1/5",
     "popularity": 55,
     "sentiment": "Softer, more floral ME composition. Unisex-leaning.",
-    "dupes": "No direct target",
     "similar": "Nabeel HAS Gold, Khadlaj HAS Gold",
     "unique": "More approachable than Nabeel's heavier releases.",
     "massAppeal": "Yes",
@@ -32576,7 +32559,6 @@
     "rating": "4.0/5",
     "popularity": 70,
     "sentiment": "Legendary ultra-budget ME fragrance. Under $10, genuinely good.",
-    "dupes": "No direct target",
     "similar": "Nabeel HAS Gold, Khadlaj HAS Gold",
     "unique": "The price-to-quality ratio is absurd.",
     "massAppeal": "Yes",
@@ -32632,7 +32614,6 @@
     "rating": "4.1/5",
     "popularity": 75,
     "sentiment": "Cult classic. Smells exactly like it sounds — chocolate and musk. Unisex.",
-    "dupes": "Angel Thierry Mugler adjacency",
     "similar": "Thierry Mugler Angel, Mugler A*Men",
     "unique": "Chocolate fragrance on a microscopic budget.",
     "massAppeal": "Yes",
@@ -32641,7 +32622,8 @@
     "hype": "Accurately rated",
     "beginner": "Gourmand curiosity at zero risk.",
     "collector": "The entry-level gourmand ME everyone tries once.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Angel Thierry Mugler adjacency"
   },
   {
     "id": "al-rehab-al-rehab-dakar",
@@ -32689,7 +32671,6 @@
     "rating": "4.0/5",
     "popularity": 60,
     "sentiment": "Classic fougère at cents per spray.",
-    "dupes": "No direct target",
     "similar": "Drakkar Noir, Azzaro Pour Homme",
     "unique": "Competent old-school fougère.",
     "massAppeal": "Yes",
@@ -32744,7 +32725,6 @@
     "rating": "4.1/5",
     "popularity": 60,
     "sentiment": "Asdaaf is Lattafa's sub-brand. Very similar formulations, slightly cheaper.",
-    "dupes": "Same target as Lattafa BAO line",
     "similar": "Lattafa BAO Amethyst, PdM Layton",
     "unique": "Cheaper channel to the Lattafa BAO formula.",
     "massAppeal": "Yes",
@@ -32753,7 +32733,8 @@
     "hype": "Underrated",
     "beginner": "Before Lattafa — this house is the same DNA cheaper.",
     "collector": "Asdaaf, Maison Alhambra, and Lattafa all share some formulation heritage.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Same target as Lattafa BAO line"
   },
   {
     "id": "asdaaf-asdaaf-khusoosi",
@@ -32800,7 +32781,6 @@
     "rating": "4.0/5",
     "popularity": 50,
     "sentiment": "Standard ME saffron-rose-oud at bargain pricing.",
-    "dupes": "No direct target",
     "similar": "Lattafa Raghba, Khadlaj HAS Gold",
     "unique": "Nothing standout; competent execution.",
     "massAppeal": "Yes",
@@ -32855,7 +32835,6 @@
     "rating": "4.5/5",
     "popularity": 50,
     "sentiment": "Widian's luxury ME masculine; dense, opulent, confidently traditional.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, Roja Aoud",
     "unique": "Genuinely luxurious construction; the Black line is Widian's flagship.",
     "massAppeal": "No",
@@ -32915,7 +32894,6 @@
     "rating": "4.4/5",
     "popularity": 45,
     "sentiment": "More refined, iris-forward version of the house signature.",
-    "dupes": "No direct target",
     "similar": "Amouage Reflection Man, Widian Black I",
     "unique": "Iris-saffron-oud triangle refined to a mirror shine.",
     "massAppeal": "No",
@@ -32973,7 +32951,6 @@
     "rating": "4.3/5",
     "popularity": 40,
     "sentiment": "Fresh-oriental hybrid. Rare genre cross; well-executed.",
-    "dupes": "No direct target",
     "similar": "Acqua di Parma Colonia Assoluta, Tom Ford Beau de Jour",
     "unique": "Marine top over warm amber dry-down.",
     "massAppeal": "Yes",
@@ -33031,7 +33008,6 @@
     "rating": "4.0/5",
     "popularity": 50,
     "sentiment": "Unisex-leaning feminine; fruity-floral with vanilla base.",
-    "dupes": "No direct target",
     "similar": "Dior J'adore (masculine adjacency), Nasomatto Absinth",
     "unique": "Rare ME release in this softer fruity-floral genre.",
     "massAppeal": "Yes",
@@ -33090,7 +33066,6 @@
     "rating": "4.2/5",
     "popularity": 60,
     "sentiment": "Classical ME amber-oud with a spiced twist. Ajmal at its mainstream best.",
-    "dupes": "No direct target",
     "similar": "Tom Ford Oud Wood, Amouage Interlude Man",
     "unique": "More mainstream-accessible than most Ajmal releases.",
     "massAppeal": "Yes",
@@ -33149,7 +33124,6 @@
     "rating": "4.1/5",
     "popularity": 55,
     "sentiment": "Polished modern fougère. BdC adjacent.",
-    "dupes": "Loose BdC adjacency",
     "similar": "Bleu de Chanel, Prada L'Homme",
     "unique": "Unusually refined for its tier.",
     "massAppeal": "Yes",
@@ -33158,7 +33132,8 @@
     "hype": "Underrated",
     "beginner": "Office-safe Ajmal.",
     "collector": "Ajmal's more refined line; lesser-known.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Loose BdC adjacency"
   },
   {
     "id": "ajmal-ajmal-santal-wood",
@@ -33208,7 +33183,6 @@
     "rating": "4.2/5",
     "popularity": 50,
     "sentiment": "Sandalwood-focused composition; creamy and wearable.",
-    "dupes": "Le Labo Santal 33 adjacency",
     "similar": "Le Labo Santal 33, Diptyque Tam Dao",
     "unique": "One of the better sandalwood interpretations at this price.",
     "massAppeal": "Yes",
@@ -33217,7 +33191,8 @@
     "hype": "Underrated",
     "beginner": "Santal 33 alternative at 1/3 price.",
     "collector": "Ajmal's underrated sandalwood entry.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Le Labo Santal 33 adjacency"
   },
   {
     "id": "swiss-arabian-shaghaf-oud",
@@ -33266,7 +33241,6 @@
     "rating": "4.4/5",
     "popularity": 72,
     "sentiment": "Plum-saffron-rose-oud composition. One of SA's best-regarded masculines.",
-    "dupes": "No direct target",
     "similar": "Montale Black Aoud, Amouage Lyric Man",
     "unique": "Plum pick-up distinguishes it from countless other saffron-oud compositions.",
     "massAppeal": "Yes",
@@ -33323,7 +33297,6 @@
     "rating": "4.3/5",
     "popularity": 65,
     "sentiment": "Ahmar (Red) is slightly drier and more leather-adjacent than original.",
-    "dupes": "No direct target",
     "similar": "Shaghaf Oud, Rasasi Hawas",
     "unique": "Ginger top is distinctive.",
     "massAppeal": "Yes",
@@ -33382,7 +33355,6 @@
     "rating": "4.1/5",
     "popularity": 55,
     "sentiment": "Clean musky aromatic. Unusually Western-leaning for SA.",
-    "dupes": "Loose BdC adjacency",
     "similar": "Bleu de Chanel, Chanel Allure Homme Sport",
     "unique": "Less heavy than typical SA releases.",
     "massAppeal": "Yes",
@@ -33391,7 +33363,8 @@
     "hype": "Underrated",
     "beginner": "Gentler SA entry.",
     "collector": "SA does have some crossover-friendly releases; Musk Malaki is one.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Loose BdC adjacency"
   },
   {
     "id": "rasasi-hawas-ice",
@@ -33439,7 +33412,6 @@
     "rating": "4.2/5",
     "popularity": 72,
     "sentiment": "Lighter, fresher version of Hawas. Summer-daily alternative.",
-    "dupes": "Aventus Cologne adjacency",
     "similar": "Creed Aventus Cologne, Silver Mountain Water",
     "unique": "Rare ME fresh-aromatic summer composition.",
     "massAppeal": "Yes",
@@ -33448,7 +33420,8 @@
     "hype": "Accurately rated",
     "beginner": "Summer-wearable Rasasi; Hawas for hot weather.",
     "collector": "Rasasi has iterated on Hawas well; Ice is the best flanker.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Aventus Cologne adjacency"
   },
   {
     "id": "rasasi-rasasi-la-yuqawam-men",
@@ -33498,7 +33471,6 @@
     "rating": "4.2/5",
     "popularity": 68,
     "sentiment": "Aventus-adjacent with grapefruit prominence.",
-    "dupes": "Creed Aventus adjacency",
     "similar": "Creed Aventus, Armaf CdN Intense",
     "unique": "Grapefruit-forward rather than pineapple-forward.",
     "massAppeal": "Yes",
@@ -33507,7 +33479,8 @@
     "hype": "Underrated",
     "beginner": "Different Aventus-clone approach.",
     "collector": "Rasasi's answer to the Aventus market.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Creed Aventus adjacency"
   },
   {
     "id": "rasasi-rasasi-faqat-lil-rijal",
@@ -33558,7 +33531,6 @@
     "rating": "4.3/5",
     "popularity": 70,
     "sentiment": "Classical ME masculine. 'Only For Men' translation — confidently traditional.",
-    "dupes": "No direct target",
     "similar": "Nabeel HAS Gold, Khadlaj HAS Gold",
     "unique": "Saffron-rose-amber triangle without the oud dominance.",
     "massAppeal": "Yes",
@@ -33616,7 +33588,6 @@
     "rating": "4.5/5",
     "popularity": 50,
     "sentiment": "Sequel to the beloved original Kalemat. Sweeter, more gourmand-leaning.",
-    "dupes": "No direct target",
     "similar": "Arabian Oud Kalemat, Xerjoff Naxos",
     "unique": "Less honey, more vanilla than the original.",
     "massAppeal": "No",
@@ -33672,7 +33643,6 @@
     "rating": "4.4/5",
     "popularity": 45,
     "sentiment": "Darker, smokier Kalemat variant. More masculine-leaning than original.",
-    "dupes": "No direct target",
     "similar": "Arabian Oud Kalemat, Xerjoff Naxos",
     "unique": "Traditional ME oud-honey-rose with a darker twist.",
     "massAppeal": "No",
@@ -33728,7 +33698,6 @@
     "rating": "4.2/5",
     "popularity": 65,
     "sentiment": "Gourmand-oriental at a low price. Often compared to Lattafa Raghba.",
-    "dupes": "Lattafa Raghba adjacency",
     "similar": "Lattafa Raghba, Kayali Yum",
     "unique": "Very similar to Lattafa Raghba; sister formulation.",
     "massAppeal": "Yes",
@@ -33737,7 +33706,8 @@
     "hype": "Underrated",
     "beginner": "AAZ and Lattafa often overlap; this is the AAZ version of Raghba.",
     "collector": "AAZ is known to share formulations with Lattafa; many releases are essentially identical.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "Lattafa Raghba adjacency"
   },
   {
     "id": "zimaya-zimaya-fakhama-black",
@@ -33785,7 +33755,6 @@
     "rating": "4.3/5",
     "popularity": 60,
     "sentiment": "Zimaya is positioned as ME mid-tier luxury; Fakhama is their masculine flagship line.",
-    "dupes": "No direct target",
     "similar": "Lattafa BAO Amethyst, Afnan 9 PM",
     "unique": "Fakhama Black is the darker, more oud-forward of the Fakhama line.",
     "massAppeal": "No",
@@ -33843,7 +33812,6 @@
     "rating": "4.4/5",
     "popularity": 80,
     "sentiment": "Tom Ford Tobacco Vanille adjacent with a more medicinal tobacco note. Cult status.",
-    "dupes": "TF Tobacco Vanille adjacency",
     "similar": "TF Tobacco Vanille, Nishane Ani",
     "unique": "Drier tobacco than TFTV; more cigar-like, less sweet.",
     "massAppeal": "Yes",
@@ -33852,7 +33820,8 @@
     "hype": "Accurately rated",
     "beginner": "If TFTV is too sweet, Red Tobacco is the drier alternative.",
     "collector": "Mancera at the top of its game. Arguably better than TFTV for some noses.",
-    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal."
+    "source": "Notes: brand disclosures (official site, FiftyOne, retailer listings). Performance & dupe claims: community consensus (Reddit r/ArabicFragrance, r/fragrance, YouTube reviewers: Jeremy Fragrance, Curly Fragrance, Redolessence, Gents Scents). Sentiment: aggregated community signal.",
+    "isDupeOf": "TF Tobacco Vanille adjacency"
   },
   {
     "id": "montale-montale-black-aoud",
@@ -33900,7 +33869,6 @@
     "rating": "4.3/5",
     "popularity": 70,
     "sentiment": "Rose-oud powerhouse. Montale at its most aggressive.",
-    "dupes": "No direct target",
     "similar": "Mancera Aoud Lemon, Amouage Interlude Man",
     "unique": "Projects like a nuclear weapon; the original Western oud statement.",
     "massAppeal": "No",
@@ -33956,7 +33924,6 @@
     "rating": "4.4/5",
     "popularity": 68,
     "sentiment": "Darker, more chocolatey version of Intense Café.",
-    "dupes": "No direct target",
     "similar": "Montale Intense Café, Kilian Angels' Share",
     "unique": "Dark chocolate pickup gives it dessert-like quality.",
     "massAppeal": "Yes",
@@ -34014,7 +33981,6 @@
     "rating": "4.4/5",
     "popularity": 85,
     "sentiment": "Honey-coffee-apple gourmand with cardamom accent. The fragrance that put Nishane's gourmand-oriental style on the map.",
-    "dupes": "Afnan 9 PM is the widely-cited budget adjacency",
     "similar": "Afnan 9 PM, Nishane Ani",
     "unique": "Honey and coffee in balance without tipping into syrup — technically impressive.",
     "massAppeal": "Yes",
@@ -34023,7 +33989,8 @@
     "hype": "Accurately rated",
     "beginner": "If Ani is too tobacco-forward for you, Nanshe is the sweeter coffee-forward sibling.",
     "collector": "Nanshe (2018) walked so Afnan 9 PM (2020) could run. The DNA is openly traceable.",
-    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Afnan 9 PM is the widely-cited budget adjacency"
   },
   {
     "id": "nishane-wulong-cha",
@@ -34073,7 +34040,6 @@
     "rating": "4.3/5",
     "popularity": 68,
     "sentiment": "Green/oolong tea accord done with unusual subtlety. One of the best tea-forward masculines.",
-    "dupes": "No direct target",
     "similar": "Bvlgari Thé Vert, Dior Privée Eau Noire",
     "unique": "Real tea character rather than the generic 'tea note' sweetness most brands settle for.",
     "massAppeal": "Yes",
@@ -34130,7 +34096,6 @@
     "rating": "4.2/5",
     "popularity": 60,
     "sentiment": "Aegean-coast inspired aquatic. Salty and floral rather than synthetic-marine.",
-    "dupes": "No direct target",
     "similar": "Creed Silver Mountain Water, Acqua di Parma Blu Mediterraneo",
     "unique": "Ambergris base sets it apart from the calone-driven aquatic herd.",
     "massAppeal": "Yes",
@@ -34190,7 +34155,6 @@
     "rating": "4.3/5",
     "popularity": 65,
     "sentiment": "Smoky Haitian vetiver bolstered by cardamom and patchouli. Serious vetiver lovers take note.",
-    "dupes": "No direct target",
     "similar": "Guerlain Vetiver, Lalique Encre Noire",
     "unique": "Unusually smoky interpretation of vetiver for a contemporary niche release.",
     "massAppeal": "No",
@@ -34248,7 +34212,6 @@
     "rating": "4.3/5",
     "popularity": 62,
     "sentiment": "Bergamot and amber composition. Mediterranean in feel — less dense than Middle Eastern ambers.",
-    "dupes": "No direct target",
     "similar": "Nishane Hacivat, Acqua di Parma Ambra",
     "unique": "Calabrian bergamot in an amber context — fresher than most ambers, warmer than most citrus.",
     "massAppeal": "Yes",
@@ -34306,7 +34269,6 @@
     "rating": "4.4/5",
     "popularity": 72,
     "sentiment": "Rum-coconut-tobacco-oud combination. Divisive — love it or hate it.",
-    "dupes": "No direct target",
     "similar": "Kilian Straight to Heaven, Xerjoff Naxos",
     "unique": "Boozy coconut rum over smoky oud is a genre of one.",
     "massAppeal": "No",
@@ -34362,7 +34324,6 @@
     "rating": "4.3/5",
     "popularity": 60,
     "sentiment": "Cognac-leather-oud. Dense, grown-up, slightly decadent.",
-    "dupes": "No direct target",
     "similar": "Tom Ford Tuscan Leather, Amouage Memoir Man",
     "unique": "Cognac opening into leather-oud is rare and compelling.",
     "massAppeal": "No",
@@ -34421,7 +34382,6 @@
     "rating": "4.2/5",
     "popularity": 58,
     "sentiment": "Orange blossom-heavy white floral. Worn widely by men; defies gender categorization.",
-    "dupes": "No direct target",
     "similar": "Serge Lutens Fleurs d'Oranger, Tom Ford Neroli Portofino",
     "unique": "A rare white floral with enough backbone for men to wear confidently.",
     "massAppeal": "Yes",
@@ -34478,7 +34438,6 @@
     "rating": "4.4/5",
     "popularity": 62,
     "sentiment": "Smoky incense-rum-tobacco theater. Named for Turkish shadow puppet theater — fittingly atmospheric.",
-    "dupes": "No direct target",
     "similar": "Comme des Garçons Avignon, Nishane Hacivat",
     "unique": "Boozy incense done with restraint — never cloying.",
     "massAppeal": "No",
@@ -34534,7 +34493,6 @@
     "rating": "4.1/5",
     "popularity": 52,
     "sentiment": "Fig done with bitter green nuance. Unusually deep for the genre.",
-    "dupes": "No direct target",
     "similar": "Diptyque Philosykos, Fréderic Malle Fougère Nobile",
     "unique": "Fig milk and fig wood both rendered convincingly.",
     "massAppeal": "Yes",
@@ -34594,7 +34552,6 @@
     "rating": "4.5/5",
     "popularity": 88,
     "sentiment": "Citrus-fruity-amber composition that defies the stereotype of Xerjoff heaviness. Perhaps their most crowd-pleasing release.",
-    "dupes": "Adjacent to Montale Rose Musk and Nishane Hacivat",
     "similar": "Nishane Hacivat, Xerjoff Naxos",
     "unique": "Mandarin-honey-vanilla triangle with genuinely joyful character.",
     "massAppeal": "Yes",
@@ -34651,7 +34608,6 @@
     "rating": "4.5/5",
     "popularity": 75,
     "sentiment": "Leather-honey-immortelle in an Italian register. Unisex-leaning but widely worn by men.",
-    "dupes": "No direct target",
     "similar": "Roja Haute Luxe, Clive Christian X Feminine",
     "unique": "Immortelle and honey kept in balance — tips neither into curry nor into syrup.",
     "massAppeal": "No",
@@ -34710,7 +34666,6 @@
     "rating": "4.3/5",
     "popularity": 62,
     "sentiment": "Refined woody-aromatic. Xerjoff's 'smart gentleman' signature.",
-    "dupes": "No direct target",
     "similar": "Tom Ford Grey Vetiver, Chanel Égoïste",
     "unique": "Iris and lavender in refined balance — rare in masculine releases.",
     "massAppeal": "Yes",
@@ -34767,7 +34722,6 @@
     "rating": "4.2/5",
     "popularity": 55,
     "sentiment": "Salty-woody aquatic. Part of Xerjoff's Oceania-inspired pillars.",
-    "dupes": "No direct target",
     "similar": "Creed Silver Mountain Water, Amouage Beach Hut Man",
     "unique": "Salty driftwood base uncommon in mainstream aquatic.",
     "massAppeal": "Yes",
@@ -34825,7 +34779,6 @@
     "rating": "4.5/5",
     "popularity": 65,
     "sentiment": "Fruity-spicy-oud powerhouse. The densest of the Alexandria trilogy.",
-    "dupes": "No direct target",
     "similar": "Xerjoff Alexandria II, Amouage Lyric Man",
     "unique": "Peach over oud is rare and well-executed.",
     "massAppeal": "No",
@@ -34882,7 +34835,6 @@
     "rating": "4.3/5",
     "popularity": 65,
     "sentiment": "Mediterranean citrus-floral in Italian register. Brighter than Erba Pura.",
-    "dupes": "No direct target",
     "similar": "Acqua di Parma Colonia, Xerjoff Erba Pura",
     "unique": "Amalfi coast in a bottle — less heavy than most Xerjoffs.",
     "massAppeal": "Yes",
@@ -34939,7 +34891,6 @@
     "rating": "4.3/5",
     "popularity": 58,
     "sentiment": "Basil-iris-violet composition. Green and elegant.",
-    "dupes": "No direct target",
     "similar": "Prada L'Homme, Dior Homme",
     "unique": "Basil at the top is distinctive and well-handled.",
     "massAppeal": "Yes",
@@ -34996,7 +34947,6 @@
     "rating": "4.3/5",
     "popularity": 55,
     "sentiment": "Darker, masculine-focused Casamorati. Saffron-oud-amber with lavender top.",
-    "dupes": "No direct target",
     "similar": "Xerjoff Naxos, PdM Layton",
     "unique": "Lavender-oud combination rare in Italian niche.",
     "massAppeal": "Yes",
@@ -35055,7 +35005,6 @@
     "rating": "4.4/5",
     "popularity": 75,
     "sentiment": "Sweet pineapple-floral-chypre. An Aventus-adjacent but distinctly modern composition.",
-    "dupes": "Loose Creed Aventus adjacency",
     "similar": "Creed Aventus, Xerjoff Erba Pura",
     "unique": "Pineapple done cleaner and less smoky than Aventus.",
     "massAppeal": "Yes",
@@ -35111,7 +35060,6 @@
     "rating": "4.5/5",
     "popularity": 72,
     "sentiment": "Vanilla-sandalwood comfort scent elevated to niche heights. Unisex.",
-    "dupes": "No direct target",
     "similar": "MFK Oud Satin Mood, Guerlain Tonka Impériale",
     "unique": "Vanilla without cloying, sandalwood without fading — sustained elegance throughout.",
     "massAppeal": "Yes",
@@ -35169,7 +35117,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Black Sabbath guitarist collaboration. Dense, dark, leathery. Not a gimmick.",
-    "dupes": "No direct target",
     "similar": "Tom Ford Tuscan Leather, Amouage Interlude Man",
     "unique": "Celebrity-collab niche that actually delivers — rare category.",
     "massAppeal": "No",
@@ -35227,7 +35174,6 @@
     "rating": "4.5/5",
     "popularity": 65,
     "sentiment": "Saffron-rose-oud built with Marly-signature polish. Founder Julien Sprecher's chess-themed luxury line.",
-    "dupes": "Adjacent to PdM Layton and Herod territory",
     "similar": "PdM Layton, PdM Herod, Amouage Interlude",
     "unique": "Feels like an evolution of what Marly does — same DNA, different register.",
     "massAppeal": "No",
@@ -35236,7 +35182,8 @@
     "hype": "Accurately rated",
     "beginner": "Mind Games is Marly's step up. Only if you've already graduated from Layton/Pegasus.",
     "collector": "Sprecher's personal statement after leaving PdM day-to-day operations. Chess pieces on the bottle for a reason.",
-    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced.",
+    "isDupeOf": "Adjacent to PdM Layton and Herod territory"
   },
   {
     "id": "mind-games-opening",
@@ -35287,7 +35234,6 @@
     "rating": "4.4/5",
     "popularity": 60,
     "sentiment": "Lavender-cardamom-iris aromatic. Chess-themed 'opening move' — elegant and deliberate.",
-    "dupes": "Adjacent to Dior Homme / PdM Layton",
     "similar": "PdM Layton, Dior Homme Intense",
     "unique": "The lavender is treated with unusual softness.",
     "massAppeal": "Yes",
@@ -35296,7 +35242,8 @@
     "hype": "Accurately rated",
     "beginner": "Luxury niche, not a starting point.",
     "collector": "Opening is the subtler sibling to Stratagem. Office-appropriate.",
-    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced.",
+    "isDupeOf": "Adjacent to Dior Homme / PdM Layton"
   },
   {
     "id": "mind-games-queen-of-hearts-gambit",
@@ -35344,7 +35291,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Rose-raspberry-gourmand with Marly polish. Unisex-leaning feminine.",
-    "dupes": "No direct target",
     "similar": "PdM Delina, Kilian Rolling in Love",
     "unique": "Raspberry-rose-saffron combination unusual in masculine-friendly territory.",
     "massAppeal": "Yes",
@@ -35404,7 +35350,6 @@
     "rating": "4.4/5",
     "popularity": 58,
     "sentiment": "Aromatic-woody with a chess-player's restraint. Suits the professional register.",
-    "dupes": "No direct target",
     "similar": "PdM Layton, Creed Aventus",
     "unique": "Ambroxan handled with more nuance than most modern masculines.",
     "massAppeal": "Yes",
@@ -35462,7 +35407,6 @@
     "rating": "4.6/5",
     "popularity": 62,
     "sentiment": "The flagship masculine. Final-move theatrics, confidently aggressive.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, PdM Herod",
     "unique": "Beast-mode projection on a modern-polished composition.",
     "massAppeal": "No",
@@ -35520,7 +35464,6 @@
     "rating": "4.3/5",
     "popularity": 52,
     "sentiment": "Smoky leather-tobacco. The darker sibling of Checkmate.",
-    "dupes": "No direct target",
     "similar": "TF Tuscan Leather, Amouage Memoir Man",
     "unique": "Cumin at the top keeps this from being generic leather.",
     "massAppeal": "No",
@@ -35579,7 +35522,6 @@
     "rating": "4.3/5",
     "popularity": 50,
     "sentiment": "Fresh aromatic with iris depth. Mind Games' summer entry.",
-    "dupes": "No direct target",
     "similar": "PdM Greenley, Chanel Bleu de Chanel Parfum",
     "unique": "Iris handled lightly — rare in aromatic niche.",
     "massAppeal": "Yes",
@@ -35637,7 +35579,6 @@
     "rating": "4.2/5",
     "popularity": 45,
     "sentiment": "Citrus-aromatic with herb accents. Mind Games' entry-level.",
-    "dupes": "No direct target",
     "similar": "Acqua di Parma Signatures, Xerjoff Nio",
     "unique": "Thyme-ginger combination refreshing in a genre crowded with citrus-lavender.",
     "massAppeal": "Yes",
@@ -35694,7 +35635,6 @@
     "rating": "4.6/5",
     "popularity": 65,
     "sentiment": "Date-saffron-oud-rose in SHL 777's signature dense register. Feels genuinely Middle Eastern despite French origin.",
-    "dupes": "No direct target",
     "similar": "Amouage Lyric Man, Xerjoff Alexandria II",
     "unique": "Dates as a central note — rare and extraordinarily atmospheric.",
     "massAppeal": "No",
@@ -35750,7 +35690,6 @@
     "rating": "4.5/5",
     "popularity": 55,
     "sentiment": "Pure oud fantasy. Pretends to be no one else; one of the strongest synthetic oud compositions.",
-    "dupes": "No direct target",
     "similar": "Amouage Jubilation XXV, Roja Aoud",
     "unique": "Oud-forward without the typical medicinal opening.",
     "massAppeal": "No",
@@ -35807,7 +35746,6 @@
     "rating": "4.5/5",
     "popularity": 55,
     "sentiment": "Saffron-myrrh-rose with religious atmospheric density. 'Oumma' references community.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, SHL Khôl de Bahrein",
     "unique": "Myrrh handling is especially well-done.",
     "massAppeal": "No",
@@ -35866,7 +35804,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Fruity-floral luxury — stone fruit over white florals. Desert-sun feel.",
-    "dupes": "No direct target",
     "similar": "Xerjoff Alexandria II, Nishane Hundred Silent Ways",
     "unique": "Apricot done right is rare — this gets there.",
     "massAppeal": "Yes",
@@ -35922,7 +35859,6 @@
     "rating": "4.5/5",
     "popularity": 50,
     "sentiment": "Leather-tobacco-oud dense composition. 'Mortal Skin' — animalic by design.",
-    "dupes": "No direct target",
     "similar": "TF Tuscan Leather, Amouage Memoir Man",
     "unique": "Genuinely unsettling in its animalic intensity — by design.",
     "massAppeal": "No",
@@ -35978,7 +35914,6 @@
     "rating": "4.7/5",
     "popularity": 45,
     "sentiment": "SHL's luxury flagship. Dense amber-saffron-oud composition. Extrait concentration.",
-    "dupes": "No direct target",
     "similar": "Roja Aoud, Amouage Jubilation XXV",
     "unique": "One of the densest modern ambers commercially available.",
     "massAppeal": "No",
@@ -36038,7 +35973,6 @@
     "rating": "4.5/5",
     "popularity": 82,
     "sentiment": "Spicy-amber composition. Unisex. Cult status for unusual juniper-vanilla-amber triangle.",
-    "dupes": "Adjacent to Lattafa Khamrah",
     "similar": "Lattafa Khamrah, MFK Baccarat Rouge 540",
     "unique": "Gold version amps the vanilla-amber; Silver keeps it transparent.",
     "massAppeal": "Yes",
@@ -36047,7 +35981,8 @@
     "hype": "Accurately rated",
     "beginner": "Unisex gateway to MFK that's more interesting than BR540.",
     "collector": "Kurkdjian's concept-piece project — same structural bones, two interpretations. A lesson in perfumery as architecture.",
-    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced.",
+    "hasDupes": "Adjacent to Lattafa Khamrah"
   },
   {
     "id": "maison-francis-kurkdjian-gentle-fluidity-silver",
@@ -36096,7 +36031,6 @@
     "rating": "4.3/5",
     "popularity": 68,
     "sentiment": "Cleaner, cooler Fluidity. Unisex with slight masculine lean.",
-    "dupes": "No direct target",
     "similar": "MFK Gentle Fluidity Gold, MFK Aqua Celestia",
     "unique": "Silver reveals what Gold hides — the juniper-pepper skeleton.",
     "massAppeal": "Yes",
@@ -36154,7 +36088,6 @@
     "rating": "4.2/5",
     "popularity": 55,
     "sentiment": "Woody-aromatic with amyris (West Indian sandalwood) heart. Polished masculine.",
-    "dupes": "No direct target",
     "similar": "Hermès Terre d'Hermès, Dior Homme",
     "unique": "Amyris is less common than standard sandalwood.",
     "massAppeal": "Yes",
@@ -36212,7 +36145,6 @@
     "rating": "4.2/5",
     "popularity": 50,
     "sentiment": "Fresh citrus-aromatic. MFK's summer offering.",
-    "dupes": "No direct target",
     "similar": "Acqua di Parma Colonia, Hermès Eau de Narcisse Bleu",
     "unique": "Vanilla-citrus drydown unusual for MFK.",
     "massAppeal": "Yes",
@@ -36270,7 +36202,6 @@
     "rating": "4.4/5",
     "popularity": 72,
     "sentiment": "Clean-laundry aesthetic elevated to niche refinement. Named for New York's area code.",
-    "dupes": "Adjacent to Juliette Has A Gun Not A Perfume",
     "similar": "Juliette Has A Gun Not A Perfume, Glossier You",
     "unique": "'Clean' as a legitimate fragrance aesthetic rather than lazy descriptor.",
     "massAppeal": "Yes",
@@ -36327,7 +36258,6 @@
     "rating": "4.4/5",
     "popularity": 65,
     "sentiment": "Narcotic vanilla-orange-blossom. Unisex. Skin-scent compliment magnet.",
-    "dupes": "No direct target",
     "similar": "Initio Oud for Greatness, Kilian Love Don't Be Shy",
     "unique": "Vanilla-orange-blossom in near-animalic register.",
     "massAppeal": "Yes",
@@ -36385,7 +36315,6 @@
     "rating": "4.3/5",
     "popularity": 58,
     "sentiment": "Leather-saffron-oud in Initio's dense register. Under-discussed in the lineup.",
-    "dupes": "No direct target",
     "similar": "Initio Oud for Greatness, TF Tuscan Leather",
     "unique": "Leather and oud in near-equal balance — rare.",
     "massAppeal": "No",
@@ -36443,7 +36372,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Middle-Eastern-informed Initio composition. Saffron-rose-oud in their house style.",
-    "dupes": "No direct target",
     "similar": "Initio Oud for Greatness, Amouage Lyric Man",
     "unique": "More traditional ME-inspired than most Initios.",
     "massAppeal": "No",
@@ -36502,7 +36430,6 @@
     "rating": "4.2/5",
     "popularity": 48,
     "sentiment": "Amouage's lightest masculine. Refined, cool, iris-forward.",
-    "dupes": "No direct target",
     "similar": "Chanel Allure Homme Edition Blanche, Dior Homme",
     "unique": "Quiet Amouage — rare register for the house.",
     "massAppeal": "Yes",
@@ -36558,7 +36485,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Tobacco-leather-sandalwood travel-themed Amouage. Sophisticated and warm.",
-    "dupes": "No direct target",
     "similar": "Amouage Memoir Man, TF Tobacco Vanille",
     "unique": "Tobacco-cardamom register rare in Amouage.",
     "massAppeal": "No",
@@ -36616,7 +36542,6 @@
     "rating": "4.3/5",
     "popularity": 50,
     "sentiment": "Green-herbal fougère done luxuriously. Barbershop with oakmoss depth.",
-    "dupes": "No direct target",
     "similar": "Paco Rabanne Pour Homme (vintage), Azzaro Pour Homme",
     "unique": "One of the best modern fougères at niche level.",
     "massAppeal": "Yes",
@@ -36674,7 +36599,6 @@
     "rating": "4.3/5",
     "popularity": 60,
     "sentiment": "Smoky birch-tar leather. Traditional 'Russian' leather interpretation.",
-    "dupes": "No direct target",
     "similar": "Memo Irish Leather, TF Tuscan Leather",
     "unique": "More classically leathery than Memo Irish Leather.",
     "massAppeal": "No",
@@ -36731,7 +36655,6 @@
     "rating": "4.3/5",
     "popularity": 52,
     "sentiment": "Ethiopian-inspired smoky-incense. Contemplative and warm.",
-    "dupes": "No direct target",
     "similar": "CdG Avignon, Nishane Karagöz",
     "unique": "Myrrh as structural base rare in niche.",
     "massAppeal": "No",
@@ -36790,7 +36713,6 @@
     "rating": "4.1/5",
     "popularity": 45,
     "sentiment": "Saffron-leather-rhubarb. Unusual opening for the genre.",
-    "dupes": "No direct target",
     "similar": "Memo Russian Leather, Memo Irish Leather",
     "unique": "Rhubarb at the top — genuinely rare.",
     "massAppeal": "No",
@@ -36848,7 +36770,6 @@
     "rating": "4.3/5",
     "popularity": 70,
     "sentiment": "Musky-ambrette-pear composition. Cult status skin-scent.",
-    "dupes": "Juliette Has A Gun Not A Perfume adjacency",
     "similar": "JHAG Not A Perfume, Molecule 01",
     "unique": "Ambrette seed rare as primary note in niche.",
     "massAppeal": "Yes",
@@ -36908,7 +36829,6 @@
     "rating": "4.4/5",
     "popularity": 72,
     "sentiment": "Rose in masculine register. Cumin-cedar give it grit.",
-    "dupes": "No direct target",
     "similar": "Byredo Rose Noir, Atelier Cologne Rose Anonyme",
     "unique": "Rose stripped of prettiness — almost dusty.",
     "massAppeal": "Yes",
@@ -36967,7 +36887,6 @@
     "rating": "4.3/5",
     "popularity": 58,
     "sentiment": "Smoky-peppery vetiver. One of the best contemporary vetivers.",
-    "dupes": "No direct target",
     "similar": "Guerlain Vetiver, Nishane Sultan Vetyver",
     "unique": "Pepper-clove handled elegantly over smoky vetiver.",
     "massAppeal": "Yes",
@@ -37023,7 +36942,6 @@
     "rating": "4.3/5",
     "popularity": 55,
     "sentiment": "Smoky birch-tar patchouli. A divisive masterpiece — smells like leather burning.",
-    "dupes": "No direct target",
     "similar": "CdG Black, Frapin Caravelle Épicée",
     "unique": "Closest commercial approximation to actual smoke.",
     "massAppeal": "No",
@@ -37082,7 +37000,6 @@
     "rating": "4.3/5",
     "popularity": 72,
     "sentiment": "Desert-dry woody-floral. Unisex. A genuinely beautiful perfume despite Byredo's hype.",
-    "dupes": "No direct target",
     "similar": "Byredo Gypsy Water, Frédéric Malle Vetiver Extraordinaire",
     "unique": "Sandalwood-violet restraint rare in modern niche.",
     "massAppeal": "Yes",
@@ -37140,7 +37057,6 @@
     "rating": "4.2/5",
     "popularity": 55,
     "sentiment": "Literal cedar fragrance. Name doesn't lie.",
-    "dupes": "Serge Lutens Féminité du Bois adjacency",
     "similar": "Serge Lutens Féminité du Bois, Commodity Wool",
     "unique": "Linear cedar — minimalist execution.",
     "massAppeal": "Yes",
@@ -37198,7 +37114,6 @@
     "rating": "4.3/5",
     "popularity": 62,
     "sentiment": "Old-library leather-vanilla. Byredo's atmospheric composition.",
-    "dupes": "No direct target",
     "similar": "Maison Margiela Replica Whispers in the Library, Byredo Rose of No Man's Land",
     "unique": "'Old paper' accord handled with restraint.",
     "massAppeal": "Yes",
@@ -37256,7 +37171,6 @@
     "rating": "4.3/5",
     "popularity": 60,
     "sentiment": "Saffron-leather-rose composition. Byredo's most Middle-East-leaning release.",
-    "dupes": "No direct target",
     "similar": "Byredo Rose of No Man's Land, PdM Layton",
     "unique": "Raspberry-saffron-leather combo unusual.",
     "massAppeal": "Yes",
@@ -37313,7 +37227,6 @@
     "rating": "4.6/5",
     "popularity": 55,
     "sentiment": "Roja's statement oud. Dense, elegant, aggressively luxurious.",
-    "dupes": "No direct target",
     "similar": "Amouage Jubilation XXV, SHL Oud 777",
     "unique": "Oud at Roja price-tier means real oud plus impeccable blending.",
     "massAppeal": "No",
@@ -37373,7 +37286,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Roja's classical fougère done with oakmoss integrity. Pre-IFRA character.",
-    "dupes": "No direct target",
     "similar": "Azzaro Pour Homme (vintage), Paco Rabanne Pour Homme (vintage)",
     "unique": "One of the few modern fougères that feels true to the tradition.",
     "massAppeal": "Yes",
@@ -37433,7 +37345,6 @@
     "rating": "4.4/5",
     "popularity": 60,
     "sentiment": "Roja's Aventus-adjacent fruity chypre. Tops Aventus on technical quality; loses on iconic status.",
-    "dupes": "Creed Aventus target",
     "similar": "Creed Aventus, Xerjoff Accento",
     "unique": "Technically superior to Aventus in many ways; not its identical twin.",
     "massAppeal": "Yes",
@@ -37491,7 +37402,6 @@
     "rating": "4.5/5",
     "popularity": 55,
     "sentiment": "Clive Christian's accessible luxury masculine. Woody-fruity with rhubarb nuance.",
-    "dupes": "No direct target",
     "similar": "Creed Aventus, Roja Scandal",
     "unique": "Rhubarb in masculine composition — genuinely unusual.",
     "massAppeal": "Yes",
@@ -37551,7 +37461,6 @@
     "rating": "4.3/5",
     "popularity": 48,
     "sentiment": "Classical Crown Perfumery composition revived. Victorian-era formulation brought forward.",
-    "dupes": "No direct target",
     "similar": "Penhaligon's Blenheim Bouquet, Creed Original Vetiver",
     "unique": "Literal 19th-century formulation — a time capsule.",
     "massAppeal": "Yes",
@@ -37609,7 +37518,6 @@
     "rating": "4.2/5",
     "popularity": 42,
     "sentiment": "Apple blossom as central note. Unisex-leaning feminine.",
-    "dupes": "No direct target",
     "similar": "CC Jump Up and Kiss Me, Guerlain Aqua Allegoria Pera Granita",
     "unique": "Literal apple blossom rendered naturalistically.",
     "massAppeal": "Yes",
@@ -37667,7 +37575,6 @@
     "rating": "4.4/5",
     "popularity": 62,
     "sentiment": "Incense-amber-leather in Tiziana's mystical register. Constellation-themed.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, Ani by Nishane",
     "unique": "Incense-oud-amber triangle rare at this refinement.",
     "massAppeal": "No",
@@ -37726,7 +37633,6 @@
     "rating": "4.3/5",
     "popularity": 55,
     "sentiment": "Red-fruit gourmand-leather. Unisex — widely worn by men.",
-    "dupes": "No direct target",
     "similar": "Tiziana Terenzi Kirke, Kilian Angels' Share",
     "unique": "Cranberry-raspberry-leather unusual combination.",
     "massAppeal": "Yes",
@@ -37784,7 +37690,6 @@
     "rating": "4.3/5",
     "popularity": 50,
     "sentiment": "Spicy-floral-oud. Tiziana at their most Middle-Eastern-influenced.",
-    "dupes": "No direct target",
     "similar": "Tiziana Orion, Amouage Interlude",
     "unique": "Osmanthus-saffron combination rare in ME-style composition.",
     "massAppeal": "No",
@@ -37841,7 +37746,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Labdanum-heavy resinous oriental. Dark, brooding, atmospheric.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude Man, MFK Grand Soir",
     "unique": "Labdanum as central rather than supporting note — uncommon.",
     "massAppeal": "No",
@@ -37899,7 +37803,6 @@
     "rating": "4.4/5",
     "popularity": 65,
     "sentiment": "Dense amber in classical register. Year 114 references Pliny the Elder.",
-    "dupes": "No direct target",
     "similar": "Serge Lutens Ambre Sultan, Profumum Roma Ambre Aurea",
     "unique": "Amber in richest possible form — minimal fresh notes.",
     "massAppeal": "No",
@@ -37957,7 +37860,6 @@
     "rating": "4.5/5",
     "popularity": 70,
     "sentiment": "Immortelle-leather-vanilla Gothic. Named for the French libertine author's birth year.",
-    "dupes": "No direct target",
     "similar": "Parfum d'Empire Ambre Russe, Guerlain Shalimar",
     "unique": "Immortelle-leather combination rare and well-executed.",
     "massAppeal": "Yes",
@@ -38015,7 +37917,6 @@
     "rating": "4.3/5",
     "popularity": 52,
     "sentiment": "Tuberose in most animalic interpretation. Leather-patchouli base keeps it grounded.",
-    "dupes": "No direct target",
     "similar": "Serge Lutens Tubéreuse Criminelle, Amouage Honour",
     "unique": "Masculine-friendly tuberose — a rarity.",
     "massAppeal": "No",
@@ -38073,7 +37974,6 @@
     "rating": "4.3/5",
     "popularity": 60,
     "sentiment": "Bitter orange-juniper citrus with patchouli base. Diptyque's sophisticated citrus.",
-    "dupes": "No direct target",
     "similar": "Hermès Eau d'Orange Verte, Guerlain Eau de Cologne Impériale",
     "unique": "Juniper-orange combination in citrus context — refined.",
     "massAppeal": "Yes",
@@ -38131,7 +38031,6 @@
     "rating": "4.2/5",
     "popularity": 55,
     "sentiment": "Iris-musk in 'skin scent' register. Unisex.",
-    "dupes": "No direct target",
     "similar": "Frédéric Malle Iris Poudre, Prada Infusion d'Iris",
     "unique": "Ambrette-iris-aldehyde combination unusual at this price.",
     "massAppeal": "Yes",
@@ -38186,7 +38085,6 @@
     "rating": "4.2/5",
     "popularity": 55,
     "sentiment": "Green rose — literal garden-walk fragrance. Iconic in Diptyque's catalog.",
-    "dupes": "No direct target",
     "similar": "Byredo Rose of No Man's Land, Jo Malone Rose",
     "unique": "Blackcurrant leaves give green bite to rose.",
     "massAppeal": "Yes",
@@ -38244,7 +38142,6 @@
     "rating": "4.4/5",
     "popularity": 60,
     "sentiment": "Moorish leather — spiced, smoky, warm. Serge Lutens at his most atmospheric.",
-    "dupes": "No direct target",
     "similar": "Serge Lutens Ambre Sultan, Chanel Cuir de Russie",
     "unique": "Leather in full orientalist register — spice-heavy.",
     "massAppeal": "No",
@@ -38301,7 +38198,6 @@
     "rating": "4.4/5",
     "popularity": 58,
     "sentiment": "Dates-myrrh-spice — Middle Eastern spice market. Dense and atmospheric.",
-    "dupes": "No direct target",
     "similar": "SHL Khôl de Bahrein, Serge Lutens Chergui",
     "unique": "Actual date accord — rare and evocative.",
     "massAppeal": "No",
@@ -38358,7 +38254,6 @@
     "rating": "4.3/5",
     "popularity": 60,
     "sentiment": "Vanilla-licorice-coconut gourmand. Unisex. One of the definitive niche vanillas.",
-    "dupes": "No direct target",
     "similar": "Kilian Straight to Heaven, Xerjoff More Than Words",
     "unique": "Licorice-vanilla combination is a Lutens hallmark.",
     "massAppeal": "Yes",
@@ -38415,7 +38310,6 @@
     "rating": "4.5/5",
     "popularity": 45,
     "sentiment": "Genuinely animalic — references hyraceum. Polarizing and unique.",
-    "dupes": "No direct target",
     "similar": "Serge Lutens Muscs Koublaï Khän, Parfum d'Empire Musc Tonkin",
     "unique": "Real hyraceum accord — few niche releases go this animalic.",
     "massAppeal": "No",
@@ -38472,7 +38366,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Smoky leather-oud in 'apex predator' register. Aggressive and theatrical.",
-    "dupes": "No direct target",
     "similar": "Zoologist Bat, Nishane Karagöz",
     "unique": "Smoke as primary structure — few fragrances commit this far.",
     "massAppeal": "No",
@@ -38529,7 +38422,6 @@
     "rating": "4.3/5",
     "popularity": 40,
     "sentiment": "Japanese hot spring atmosphere. Yuzu-plum-cherry blossom unisex.",
-    "dupes": "No direct target",
     "similar": "Byredo Mojave Ghost, Guerlain Aqua Allegoria Nerolia Vetiver",
     "unique": "Yuzu at the top in Japanese-atmosphere composition.",
     "massAppeal": "Yes",
@@ -38587,7 +38479,6 @@
     "rating": "4.4/5",
     "popularity": 68,
     "sentiment": "Cognac-honey-cinnamon gourmand. Part of Penhaligon's Portraits storytelling line.",
-    "dupes": "No direct target",
     "similar": "TF Tobacco Vanille, Penhaligon's The Inimitable William Penhaligon",
     "unique": "Cognac as central note — executed well.",
     "massAppeal": "Yes",
@@ -38647,7 +38538,6 @@
     "rating": "4.3/5",
     "popularity": 55,
     "sentiment": "Orange-blossom-tobacco aromatic. Sophisticated British-barbershop register.",
-    "dupes": "No direct target",
     "similar": "Penhaligon's Sartorial, Penhaligon's Endymion",
     "unique": "Orange blossom in masculine aromatic.",
     "massAppeal": "Yes",
@@ -38705,7 +38595,6 @@
     "rating": "4.2/5",
     "popularity": 45,
     "sentiment": "Incense-iris-lavender in refined register. Penhaligon's recent understated entry.",
-    "dupes": "No direct target",
     "similar": "Penhaligon's The Tragedy of Lord George, Frédéric Malle French Lover",
     "unique": "Understated incense at British-niche pricing.",
     "massAppeal": "Yes",
@@ -38764,7 +38653,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "Black hemlock — a proprietary accord. Dry woody-green with distinctive character.",
-    "dupes": "No direct target",
     "similar": "Creed Original Vetiver, Hermès Bel Ami",
     "unique": "Hemlock as primary note — exists nowhere else.",
     "massAppeal": "Yes",
@@ -38822,7 +38710,6 @@
     "rating": "4.4/5",
     "popularity": 58,
     "sentiment": "Refined tobacco-leather. Elegant British restraint.",
-    "dupes": "No direct target",
     "similar": "TF Tobacco Vanille (drier register), Dunhill Icon",
     "unique": "Iris-tobacco combination gives unusual lightness.",
     "massAppeal": "Yes",
@@ -38880,7 +38767,6 @@
     "rating": "4.4/5",
     "popularity": 55,
     "sentiment": "British take on ME oud-rose tradition. Restrained and elegant.",
-    "dupes": "No direct target",
     "similar": "Amouage Interlude, Roja Aoud",
     "unique": "Western restraint applied to traditionally excessive genre.",
     "massAppeal": "No",
@@ -38938,7 +38824,6 @@
     "rating": "4.3/5",
     "popularity": 48,
     "sentiment": "Smoky-leather-incense in French-niche register. Architectural composition.",
-    "dupes": "No direct target",
     "similar": "CdG Avignon, Frapin Caravelle Épicée",
     "unique": "Violet-leather-incense combination rare.",
     "massAppeal": "No",
@@ -38997,7 +38882,6 @@
     "rating": "4.2/5",
     "popularity": 40,
     "sentiment": "Earth-and-moss composition. Atmospheric woody.",
-    "dupes": "No direct target",
     "similar": "Lalique Encre Noire, Comme des Garçons 2",
     "unique": "Literal 'earth' accord — rare.",
     "massAppeal": "No",
@@ -39054,7 +38938,6 @@
     "rating": "4.2/5",
     "popularity": 42,
     "sentiment": "Green-fig-blackcurrant. Vegetal and clear.",
-    "dupes": "No direct target",
     "similar": "Diptyque Philosykos, Jean Claude Ellena Brin",
     "unique": "Vegetal sap accord — unusual.",
     "massAppeal": "Yes",
@@ -39112,7 +38995,6 @@
     "rating": "4.5/5",
     "popularity": 48,
     "sentiment": "Gardoni's lavender-myrrh-leather signature. Italian artisan niche at its most characterful.",
-    "dupes": "No direct target",
     "similar": "Bogue Maai, Amouage Bracken Man",
     "unique": "Lavender-myrrh combination defines the composition.",
     "massAppeal": "No",
@@ -39170,7 +39052,6 @@
     "rating": "4.6/5",
     "popularity": 52,
     "sentiment": "White floral in most animalic register. Vintage-perfumery quality.",
-    "dupes": "No direct target",
     "similar": "Vintage Nombre Noir, Serge Lutens Fleurs d'Oranger",
     "unique": "Civet-indole-jasmine combination — old-world.",
     "massAppeal": "No",
@@ -39229,7 +39110,6 @@
     "rating": "4.6/5",
     "popularity": 50,
     "sentiment": "Pine-incense-hay. Pacific-Northwest forest in a bottle. Cult status.",
-    "dupes": "No direct target",
     "similar": "Mandy Aftel Fir, Comme des Garçons Kyoto",
     "unique": "Literal evergreen forest — no other fragrance captures this.",
     "massAppeal": "No",
@@ -39287,7 +39167,6 @@
     "rating": "4.5/5",
     "popularity": 42,
     "sentiment": "Tobacco-smoke-honey-castoreum. Cult artisan tobacco.",
-    "dupes": "No direct target",
     "similar": "Slumberhouse Baque, Nishane Ani",
     "unique": "Real smoke in tobacco context — uncompromising.",
     "massAppeal": "No",
@@ -39344,7 +39223,6 @@
     "rating": "4.6/5",
     "popularity": 48,
     "sentiment": "Bortnikoff's oud-saffron-amber masterwork. Artisan niche at highest tier.",
-    "dupes": "No direct target",
     "similar": "Amouage Jubilation XXV, SHL Khôl de Bahrein",
     "unique": "Russian artisan take on Arab oud tradition.",
     "massAppeal": "No",
@@ -39402,7 +39280,6 @@
     "rating": "4.5/5",
     "popularity": 40,
     "sentiment": "Labdanum-centric amber. Spanish-inspired composition.",
-    "dupes": "No direct target",
     "similar": "Histoires de Parfums Ambre 114, Bortnikoff Black Gold",
     "unique": "Labdanum and cistus together — both southern European natives.",
     "massAppeal": "No",
@@ -39459,7 +39336,6 @@
     "rating": "4.4/5",
     "popularity": 52,
     "sentiment": "Australian sandalwood at the core. Creamy and restrained.",
-    "dupes": "Loose Santal 33 adjacency",
     "similar": "Le Labo Santal 33, Diptyque Tam Dao",
     "unique": "Sandalwood without the generic-sandalwood-synthetic feel.",
     "massAppeal": "Yes",
@@ -39468,7 +39344,8 @@
     "hype": "Underrated",
     "beginner": "Approachable sandalwood upgrade from Santal 33.",
     "collector": "Atelier Materi's raw-ingredient focus is a refreshing direction in niche.",
-    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced."
+    "source": "Notes: brand disclosures (house websites / press releases). Performance & sentiment: community aggregation (Parfumo ratings, Fragrantica review patterns, Basenotes artisan threads, r/fragrance niche discussions). Dupe claims: community consensus, cross-referenced.",
+    "isDupeOf": "Loose Santal 33 adjacency"
   },
   {
     "id": "atelier-materi-oud-sombre",
@@ -39516,7 +39393,6 @@
     "rating": "4.3/5",
     "popularity": 45,
     "sentiment": "Restrained oud-rose in French register. Less aggressive than Arabian ouds.",
-    "dupes": "No direct target",
     "similar": "Ormonde Jayne Nawab of Oudh, Memo Paris Oud & Roses",
     "unique": "Quiet oud — rare.",
     "massAppeal": "No",
@@ -39573,7 +39449,6 @@
     "rating": "4.6/5",
     "popularity": 48,
     "sentiment": "Dusita's flagship oud composition. French-trained Thai perfumer Pissara Umavijani's masterwork.",
-    "dupes": "No direct target",
     "similar": "Amouage Jubilation XXV, SHL Oud 777",
     "unique": "Oud built on French structural principles rather than ME tradition.",
     "massAppeal": "No",
@@ -39632,7 +39507,6 @@
     "rating": "4.5/5",
     "popularity": 42,
     "sentiment": "Thai-mythology-inspired oriental. Narcissus and rose refined.",
-    "dupes": "No direct target",
     "similar": "Frédéric Malle Portrait of a Lady, Chanel No. 19",
     "unique": "Narcissus as central note — extremely rare.",
     "massAppeal": "No",
@@ -39689,7 +39563,6 @@
     "rating": "4.5/5",
     "popularity": 70,
     "sentiment": "Nasomatto's masculine flagship. Woody-leathery powerhouse.",
-    "dupes": "No direct target",
     "similar": "Creed Aventus (drier), TF Oud Wood",
     "unique": "Dense woody-leather composition in minimalist presentation.",
     "massAppeal": "Yes",
@@ -39747,7 +39620,6 @@
     "rating": "4.3/5",
     "popularity": 55,
     "sentiment": "Vetiver-grass composition. Nasomatto's cleanest masculine.",
-    "dupes": "No direct target",
     "similar": "Guerlain Vetiver, Lalique Encre Noire",
     "unique": "Fresh grass accord done convincingly.",
     "massAppeal": "Yes",
@@ -39805,7 +39677,6 @@
     "rating": "4.5/5",
     "popularity": 50,
     "sentiment": "Rose-tobacco-beeswax artisanal composition. Liz Moores' artisan craft.",
-    "dupes": "No direct target",
     "similar": "By Kilian Back to Black, HdP 1740 Marquis de Sade",
     "unique": "Tobacco and rose in balance — genuinely rare.",
     "massAppeal": "No",
@@ -39862,7 +39733,6 @@
     "rating": "4.5/5",
     "popularity": 45,
     "sentiment": "Resinous-incense masterwork. Hypnotic and ritualistic.",
-    "dupes": "No direct target",
     "similar": "Amouage Myths Man, Profumum Roma Olibanum",
     "unique": "Ritual-atmospheric composition.",
     "massAppeal": "No",
@@ -39921,7 +39791,6 @@
     "rating": "4.3/5",
     "popularity": 50,
     "sentiment": "Raspberry-plum gourmand-oriental. Unisex. Under-discussed quality.",
-    "dupes": "No direct target",
     "similar": "Guerlain L'Heure Bleue, Mugler Angel",
     "unique": "Dried-fruit register rather than fresh-fruit gourmand.",
     "massAppeal": "Yes",
@@ -39980,7 +39849,6 @@
     "rating": "4.3/5",
     "popularity": 48,
     "sentiment": "Indian-spice-market composition. Cumin-forward masculine.",
-    "dupes": "No direct target",
     "similar": "Hermès Déclaration, L'Artisan Parfumeur Tea for Two",
     "unique": "Cumin as central character — polarizing.",
     "massAppeal": "No",
