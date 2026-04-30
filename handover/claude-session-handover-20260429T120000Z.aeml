@@ -1,0 +1,87 @@
+---
+date: 2026-04-29T12:00:00Z
+date_local: 2026-04-29 (US time)
+session: 21
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 21 Handover — Fumage
+
+## What was done this session
+
+### 1. Synthetic Aromachemicals — /guide/synthetic-notes
+
+**Files created:**
+- `src/app/guide/synthetic-notes/page.tsx` — Chemistry deep dive. 4 synthetic functions (backbone, lift, skin feel, novel territory); 8 key molecules (Iso E Super → Galaxolide) each with tech subtitle, body, character, and key fragrances; 5 picks (Cool Water through Azzaro Pour Homme); 3 pitfalls.
+
+**Files modified:**
+- `src/app/guide/GuideIndex.tsx` — added entry, tag "Chemistry · Education", category "guide"
+
+**Commit:** f9e6912
+
+---
+
+### 2. Presence Over Performance — /guide/presence-over-performance
+
+**Files created:**
+- `src/app/guide/presence-over-performance/page.tsx` — Culture/trends editorial. 4 vocabulary concepts (skin scent, phantom sillage, proximity effect, olfactory signature); 6 defining market shifts (numbered grid); 6 comparison pairs (two-column performance vs. presence table); presence notes tag cloud (5 core, 13 supporting); application note box.
+
+**Files modified:**
+- `src/app/guide/GuideIndex.tsx` — added entry, tag "Culture · Trends", category "guide"
+
+**Commit:** 844bb86
+
+---
+
+### 3. The Classics, Reimagined — /guide/classic-notes-reimagined
+
+**Files created:**
+- `src/app/guide/classic-notes-reimagined/page.tsx` — Education/notes article. 6 classic masculine note families (Vetiver, Leather, Fougère, Tobacco & Smoke, Woods, Musk) rendered via a `NoteEntry[]` data array. Each section has: intro para, body paras, optional 1- or 2-column facet card, optional pullquote, optional picks box. 20 bottle picks total across 5 note sections (musk has no picks).
+
+**Files modified:**
+- `src/app/guide/GuideIndex.tsx` — added entry, tag "Education · Notes", category "guide"
+
+**Commit:** e151ee7
+
+---
+
+### 4. The Second Skin — /guide/skin-scents
+
+**Files created:**
+- `src/app/guide/skin-scents/page.tsx` — Education/technique article. 6 key materials (musks through castoreum); 4 science concept cards (2×2 grid); cultural shift (3 paras + pullquote); 6 wearing rules (Rule badge list, new pattern); 7 benchmark fragrances with chemistry-dependency column; longevity section + practical note box.
+
+**Files modified:**
+- `src/app/guide/GuideIndex.tsx` — added entry, tag "Education · Technique", category "guide"
+
+**Commit:** 98602d9
+
+---
+
+## New layout patterns introduced this session
+
+- **Two-column comparison table** (presence-over-performance) — performance vs. presence header row + data rows
+- **Numbered shift grid** (presence-over-performance) — large serif number + name + body, 2-col
+- **Notes tag cloud** (presence-over-performance) — highlighted core vs. supporting tags
+- **NoteEntry[] loop** (classic-notes-reimagined) — typed array rendered in a loop, optional facet/pullquote/picks per entry
+- **Rule badge list** (skin-scents) — "Rule" amber badge + rule name + body, similar to Pitfalls pattern
+- **Benchmark table with right-aligned column** (skin-scents) — fragrance/house/angle + dependency level
+
+---
+
+## Current Fumage app state
+
+- Database: 687 fragrances, 159 houses, 361 notes, 23 dupes, 1546 similar pairs (unchanged)
+- Guide articles: 28 total (was 25 start of session; added 4)
+- Branch: main, up to date with origin
+- Latest commit: 98602d9 — add skin-scents education article
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
