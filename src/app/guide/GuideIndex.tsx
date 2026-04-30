@@ -110,6 +110,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/skin-scents",
+    tag:      "Education · Technique",
+    title:    "The Second Skin",
+    subtitle: "The fragrance category that makes people lean in — what skin scents are, the science of why they work, and how to wear one well.",
+    read:     "13 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/classic-notes-reimagined",
     tag:      "Education · Notes",
     title:    "The Classics, Reimagined",
