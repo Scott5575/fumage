@@ -102,6 +102,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/chypre",
+    tag:      "Family Deep Dive · Chypre",
+    title:    "The Aristocrat",
+    subtitle: "The most historically significant family in perfumery — and the one most transformed by regulation. One lichen, one rulebook, and a century of consequence.",
+    read:     "11 min read",
+    category: "family",
+  },
+  {
     href:     "/guide/niche-fragrance",
     tag:      "Niche · Education",
     title:    "Down the Rabbit Hole",
