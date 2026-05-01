@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { prisma } from "@/lib/prisma";
 
 const FAMILY_LABELS_META: Record<string, string> = {
@@ -464,6 +465,22 @@ export default async function FragranceDetailPage({
 
         {/* ── Sidebar ── */}
         <aside className="space-y-8">
+          {/* Bottle image */}
+          {fragrance.imageUrl && (
+            <section className="flex justify-center">
+              <div className="relative w-48 h-64">
+                <Image
+                  src={fragrance.imageUrl}
+                  alt={`${fragrance.name} by ${fragrance.house.name}`}
+                  fill
+                  sizes="192px"
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </section>
+          )}
+
           {/* This is a clone of... */}
           {fragrance.isDupeOf.length > 0 && (
             <section>

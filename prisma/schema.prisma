@@ -218,6 +218,9 @@ model Fragrance {
   reviews       Review[]
   collections   UserCollection[]
 
+  // Media
+  imageUrl      String? // Supabase Storage URL for bottle image
+
   // Data provenance
   dataSource    String? // "Original xlsx", "ME additions v2", "Niche additions v3"
   verified      Boolean @default(false) // manually reviewed entry
