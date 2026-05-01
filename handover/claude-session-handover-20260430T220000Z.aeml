@@ -1,0 +1,51 @@
+---
+date: 2026-04-30T22:00:00Z
+date_local: 2026-04-30 (US time)
+session: 24
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 24 Handover — Fumage
+
+## What was done this session
+
+### 1. Database reseed — dupe direction fix applied to live data
+
+Session 23 committed the dupe direction fix (commit `c0f6373`) but could not run the reseed because Supabase was unreachable from the local network. This session ran the reseed successfully.
+
+```
+cd /Users/scottreisinger/projects/fumage && npm run db:seed
+```
+
+**Result:**
+- Houses: 159 (unchanged)
+- Notes: 361 (unchanged)
+- Fragrances: 687 (unchanged)
+- Dupe relationships: 23 (now correctly directional — previously wrong for ~50 clone entries)
+- Similar pairs: 1546 (unchanged)
+- Duration: 466.5s
+
+The dupe direction bug is fully resolved end-to-end. Clone fragrances no longer appear as originals on original fragrance pages.
+
+No code changes were made this session — the seed ran against the database only.
+
+---
+
+## Current Fumage app state
+
+- Database: 687 fragrances, 159 houses, 361 notes
+- Dupe relationships: 23 — **correctly directional**
+- Meilisearch: 687 documents (in sync, unchanged)
+- Branch: main, up to date with origin
+- Latest commit: fdcb5f3 — add session 23 handover
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
