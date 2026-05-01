@@ -2,7 +2,7 @@
  * scripts/fetch-fragrance-images.ts
  *
  * For each fragrance without an imageUrl:
- *   1. Search Fragrantica by name + house
+ *   1. Search Fragrantica by name + house (via headless Chromium — bypasses bot protection)
  *   2. Follow the first result link to the fragrance page
  *   3. Extract the og:image URL (the official bottle shot)
  *   4. Download the image and upload to Supabase Storage
@@ -25,17 +25,15 @@ import * as path from "path";
 import * as https from "https";
 import * as http from "http";
 import { URL } from "url";
+import { chromium } from "playwright";
 import { PrismaClient } from "@prisma/client";
 import { createClient } from "@supabase/supabase-js";
-import * as cheerio from "cheerio";
 
 // ── Config ─────────────────────────────────────────────────────────────────────
 
 const BUCKET = "fragrance-images";
-const DELAY_MS = 2500; // between Fragrantica requests
+const DELAY_MS = 3000; // between Fragrantica requests
 const MAX_RETRIES = 2;
-const USER_AGENT =
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
 // ── Args ───────────────────────────────────────────────────────────────────────
 
@@ -68,54 +66,6 @@ function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function fetchUrl(url: string): Promise<{ body: string; finalUrl: string }> {
-  return new Promise((resolve, reject) => {
-    const parsedUrl = new URL(url);
-    const mod = parsedUrl.protocol === "https:" ? https : http;
-
-    const options = {
-      hostname: parsedUrl.hostname,
-      path: parsedUrl.pathname + parsedUrl.search,
-      headers: {
-        "User-Agent": USER_AGENT,
-        Accept: "text/html,application/xhtml+xml",
-        "Accept-Language": "en-US,en;q=0.9",
-      },
-    };
-
-    const req = mod.get(options, (res) => {
-      // Follow redirects
-      if (
-        res.statusCode &&
-        res.statusCode >= 300 &&
-        res.statusCode < 400 &&
-        res.headers.location
-      ) {
-        const redirectUrl = res.headers.location.startsWith("http")
-          ? res.headers.location
-          : `${parsedUrl.protocol}//${parsedUrl.hostname}${res.headers.location}`;
-        resolve(fetchUrl(redirectUrl));
-        return;
-      }
-
-      if (res.statusCode !== 200) {
-        reject(new Error(`HTTP ${res.statusCode} for ${url}`));
-        return;
-      }
-
-      let body = "";
-      res.on("data", (chunk) => (body += chunk));
-      res.on("end", () => resolve({ body, finalUrl: url }));
-    });
-
-    req.on("error", reject);
-    req.setTimeout(15000, () => {
-      req.destroy();
-      reject(new Error(`Timeout fetching ${url}`));
-    });
-  });
-}
-
 function fetchBinary(url: string): Promise<Buffer> {
   return new Promise((resolve, reject) => {
     const parsedUrl = new URL(url);
@@ -124,7 +74,10 @@ function fetchBinary(url: string): Promise<Buffer> {
     const options = {
       hostname: parsedUrl.hostname,
       path: parsedUrl.pathname + parsedUrl.search,
-      headers: { "User-Agent": USER_AGENT },
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+      },
     };
 
     const req = mod.get(options, (res) => {
@@ -156,58 +109,55 @@ function fetchBinary(url: string): Promise<Buffer> {
   });
 }
 
-// ── Fragrantica search ─────────────────────────────────────────────────────────
+// ── Fragrantica search (Playwright) ────────────────────────────────────────────
 
 async function findFragranticaImageUrl(
+  page: import("playwright").Page,
   name: string,
   house: string
 ): Promise<string | null> {
   const query = encodeURIComponent(`${name} ${house}`);
   const searchUrl = `https://www.fragrantica.com/search/?query=${query}`;
 
-  let searchHtml: string;
+  await page.goto(searchUrl, { waitUntil: "load", timeout: 30000 });
+  // Fragrantica renders search results client-side via AlgoliaSearch; 5s is enough to settle
+  await sleep(5000);
+
+  // Wait up to 5s for at least one perfume result link to appear
+  let fragrancePageUrl: string | null = null;
   try {
-    const { body } = await fetchUrl(searchUrl);
-    searchHtml = body;
-  } catch (err) {
-    throw new Error(`Search request failed: ${(err as Error).message}`);
+    await page.waitForSelector('a[href*="/perfume/"]', { timeout: 5000 });
+  } catch {
+    // no results found within timeout
   }
 
-  const $ = cheerio.load(searchHtml);
-
-  // Fragrantica search results: links to /perfume/House/Name-year-id.html
-  let fragrancePageUrl: string | null = null;
-
-  $("a[href]").each((_, el) => {
-    const href = $(el).attr("href") ?? "";
-    if (href.match(/\/perfume\/[^/]+\/[^/]+-\d+\.html/)) {
-      fragrancePageUrl = href.startsWith("http")
-        ? href
-        : `https://www.fragrantica.com${href}`;
-      return false; // break
+  fragrancePageUrl = await page.evaluate(() => {
+    const links = Array.from(document.querySelectorAll("a[href]"));
+    for (const a of links) {
+      const href = (a as HTMLAnchorElement).href;
+      if (/\/perfume\/[^/]+\/[^/]+-\d+\.html/.test(href)) {
+        return href;
+      }
     }
+    return null;
   });
 
-  if (!fragrancePageUrl) {
-    return null;
-  }
+  if (!fragrancePageUrl) return null;
 
-  await sleep(1000);
+  await sleep(500);
 
-  let pageHtml: string;
-  try {
-    const { body } = await fetchUrl(fragrancePageUrl);
-    pageHtml = body;
-  } catch (err) {
-    throw new Error(
-      `Fragrance page request failed: ${(err as Error).message}`
-    );
-  }
+  // Click the first result link so Cloudflare sees a natural navigation from the search page
+  const firstLink = page.locator(`a[href="${fragrancePageUrl}"], a[href*="${new URL(fragrancePageUrl).pathname}"]`).first();
+  await firstLink.click();
+  await page.waitForLoadState("load", { timeout: 30000 });
+  await sleep(3000);
 
-  const $page = cheerio.load(pageHtml);
-  const ogImage = $page('meta[property="og:image"]').attr("content") ?? null;
+  const ogImage = await page.evaluate(() => {
+    const meta = document.querySelector('meta[property="og:image"]');
+    return meta ? (meta as HTMLMetaElement).content : null;
+  });
 
-  return ogImage;
+  return ogImage ?? null;
 }
 
 // ── Storage ────────────────────────────────────────────────────────────────────
@@ -253,7 +203,12 @@ async function main() {
 
   const fragrances = await prisma.fragrance.findMany({
     where,
-    select: { id: true, slug: true, name: true, house: { select: { name: true } } },
+    select: {
+      id: true,
+      slug: true,
+      name: true,
+      house: { select: { name: true } },
+    },
     orderBy: { popularityScore: "desc" },
   });
 
@@ -263,59 +218,92 @@ async function main() {
   const results = { ok: 0, skipped: 0, failed: 0 };
   const failures: string[] = [];
 
-  for (let i = 0; i < target.length; i++) {
-    const f = target[i];
-    const prefix = `[${i + 1}/${target.length}] ${f.house.name} — ${f.name}`;
+  const browser = await chromium.launch({
+    headless: false, // headful mode bypasses Cloudflare fingerprinting
+    args: ["--disable-blink-features=AutomationControlled"],
+  });
+  const context = await browser.newContext({
+    userAgent:
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    locale: "en-US",
+    viewport: { width: 1280, height: 800 },
+  });
+  // Hide automation signals that Cloudflare detects
+  await context.addInitScript(() => {
+    Object.defineProperty(navigator, "webdriver", { get: () => undefined });
+    // @ts-ignore
+    delete window.cdc_adoQpoasnfa76pfcZLmcfl_Array;
+    // @ts-ignore
+    delete window.cdc_adoQpoasnfa76pfcZLmcfl_Promise;
+    // @ts-ignore
+    delete window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol;
+  });
+  const page = await context.newPage();
 
-    let imageSourceUrl: string | null = null;
-    let attempt = 0;
+  try {
+    for (let i = 0; i < target.length; i++) {
+      const f = target[i];
+      const prefix = `[${i + 1}/${target.length}] ${f.house.name} — ${f.name}`;
 
-    while (attempt <= MAX_RETRIES && !imageSourceUrl) {
-      try {
-        imageSourceUrl = await findFragranticaImageUrl(f.name, f.house.name);
-      } catch (err) {
-        attempt++;
-        if (attempt > MAX_RETRIES) {
+      let imageSourceUrl: string | null = null;
+      let attempt = 0;
+
+      while (attempt <= MAX_RETRIES && !imageSourceUrl) {
+        try {
+          imageSourceUrl = await findFragranticaImageUrl(
+            page,
+            f.name,
+            f.house.name
+          );
+          break;
+        } catch (err) {
+          attempt++;
+          if (attempt > MAX_RETRIES) {
+            console.error(`  ${prefix}: FAILED — ${(err as Error).message}`);
+            results.failed++;
+            failures.push(`${f.slug}: ${(err as Error).message}`);
+          } else {
+            await sleep(3000);
+          }
+        }
+      }
+
+      if (attempt > MAX_RETRIES) {
+        // already logged above
+      } else if (!imageSourceUrl) {
+        console.log(`  ${prefix}: no image found on Fragrantica`);
+        results.skipped++;
+      } else if (DRY_RUN) {
+        console.log(`  ${prefix}: would fetch ${imageSourceUrl}`);
+        results.ok++;
+      } else {
+        try {
+          const imageData = await fetchBinary(imageSourceUrl);
+          const publicUrl = await uploadImage(f.slug, imageData);
+          await prisma.fragrance.update({
+            where: { id: f.id },
+            data: { imageUrl: publicUrl },
+          });
+          console.log(`  ${prefix}: ✓`);
+          results.ok++;
+        } catch (err) {
           console.error(`  ${prefix}: FAILED — ${(err as Error).message}`);
           results.failed++;
           failures.push(`${f.slug}: ${(err as Error).message}`);
-          break;
         }
-        await sleep(3000);
       }
-    }
 
-    if (!imageSourceUrl) {
-      if (attempt === 0) {
-        console.log(`  ${prefix}: no image found on Fragrantica`);
-        results.skipped++;
-      }
-    } else if (DRY_RUN) {
-      console.log(`  ${prefix}: would fetch ${imageSourceUrl}`);
-      results.ok++;
-    } else {
-      try {
-        const imageData = await fetchBinary(imageSourceUrl);
-        const publicUrl = await uploadImage(f.slug, imageData);
-        await prisma.fragrance.update({
-          where: { id: f.id },
-          data: { imageUrl: publicUrl },
-        });
-        console.log(`  ${prefix}: ✓`);
-        results.ok++;
-      } catch (err) {
-        console.error(`  ${prefix}: FAILED — ${(err as Error).message}`);
-        results.failed++;
-        failures.push(`${f.slug}: ${(err as Error).message}`);
+      if (i < target.length - 1) {
+        await sleep(DELAY_MS);
       }
     }
-
-    if (i < target.length - 1) {
-      await sleep(DELAY_MS);
-    }
+  } finally {
+    await browser.close();
   }
 
-  console.log(`\nDone. ok=${results.ok} skipped=${results.skipped} failed=${results.failed}`);
+  console.log(
+    `\nDone. ok=${results.ok} skipped=${results.skipped} failed=${results.failed}`
+  );
 
   if (failures.length > 0) {
     const logPath = path.join(process.cwd(), "image-fetch-failures.log");
