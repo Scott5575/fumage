@@ -1,0 +1,77 @@
+---
+date: 2026-05-01T00:00:00Z
+date_local: 2026-05-01 (US time)
+session: 25
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 25 Handover — Fumage
+
+## What was done this session
+
+### 1. Fragrance bottle image pipeline — full implementation
+
+Added end-to-end support for displaying official bottle images on fragrance detail pages. The pipeline scrapes Fragrantica for og:image bottle shots, uploads them to Supabase Storage, and stores the public URL in the database.
+
+**Files changed:**
+
+- `prisma/schema.prisma` — added `imageUrl String?` to `Fragrance` model
+- `prisma/migrations/20260501000000_add_fragrance_image_url/migration.sql` — `ALTER TABLE "Fragrance" ADD COLUMN "imageUrl" TEXT;` — **pending apply** (DB was unreachable this session; Supabase project appears paused)
+- `next.config.js` — added `hnsnmjwdpewgivphxkcn.supabase.co` to `images.remotePatterns` for Next.js `<Image>` component
+- `scripts/fetch-fragrance-images.ts` — one-time scraping script; see usage below
+- `src/app/fragrances/[slug]/page.tsx` — bottle image renders at top of sidebar when `imageUrl` is set (Next.js `<Image>`, 192×256px, `object-contain`)
+- `package.json` / `package-lock.json` — added `cheerio` dev dependency (HTML parser used by the script)
+
+**Script usage (run after DB is reachable):**
+
+```bash
+# Test on one fragrance first
+SUPABASE_SERVICE_ROLE_KEY=<service_role_key> \
+  npx ts-node --compiler-options '{"module":"CommonJS"}' \
+  scripts/fetch-fragrance-images.ts --limit 1 --slug dior-sauvage
+
+# Full run — all 687 fragrances without imageUrl, in popularity order
+SUPABASE_SERVICE_ROLE_KEY=<service_role_key> \
+  npx ts-node --compiler-options '{"module":"CommonJS"}' \
+  scripts/fetch-fragrance-images.ts
+```
+
+`SUPABASE_SERVICE_ROLE_KEY` is in Supabase dashboard → Project Settings → API → Service role secret.
+
+The script: searches Fragrantica by name+house, follows the first result, extracts `og:image`, downloads the bottle shot, uploads to Supabase Storage bucket `fragrance-images` (auto-created if absent), updates `fragrance.imageUrl`. 2.5s delay between requests; supports `--dry-run`, `--limit N`, `--slug S`. Failures logged to `image-fetch-failures.log`.
+
+**Commit:** `c701e0b`
+
+---
+
+## Pending — must do before images appear in the app
+
+1. **Unpause Supabase** in the dashboard (project was unreachable this session)
+2. **Apply the migration:**
+   ```bash
+   DIRECT_URL="postgresql://postgres:Our%20C%40t%20is%20Or3o@db.hnsnmjwdpewgivphxkcn.supabase.co:5432/postgres" \
+     npx prisma migrate deploy
+   ```
+3. **Run the image fetch script** (test first, then full run as above)
+
+---
+
+## Current Fumage app state
+
+- Database: 687 fragrances, 159 houses, 361 notes
+- Dupe relationships: 23 — correctly directional
+- Meilisearch: 687 documents (in sync)
+- Branch: main, up to date with origin
+- Latest commit: c701e0b — add fragrance bottle images via Fragrantica scrape to Supabase Storage
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-010 | Unpause Supabase → apply migration → run fetch-fragrance-images.ts (session 25) |
+| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+
+## Design constants (carry forward)
+
+See session 18 handover — no changes.
