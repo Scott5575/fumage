@@ -2,10 +2,10 @@
  * scripts/fetch-fragrance-images.ts
  *
  * For each fragrance without an imageUrl:
- *   1. Search Fragrantica by name + house (via headless Chromium — bypasses bot protection)
- *   2. Follow the first result link to the fragrance page
- *   3. Extract the og:image URL (the official bottle shot)
- *   4. Download the image and upload to Supabase Storage
+ *   1. Search DuckDuckGo via Playwright (handles JS bot checks; never touches Fragrantica)
+ *   2. Extract the numeric fragrance ID from the first Fragrantica result URL
+ *   3. Fetch the clean bottle shot directly from fimgs.net (open CDN, no bot protection)
+ *   4. Upload to Supabase Storage
  *   5. Update fragrance.imageUrl in the database
  *
  * Run (from project root):
@@ -32,7 +32,6 @@ import { createClient } from "@supabase/supabase-js";
 // ── Config ─────────────────────────────────────────────────────────────────────
 
 const BUCKET = "fragrance-images";
-const DELAY_MS = 3000; // between Fragrantica requests
 const MAX_RETRIES = 2;
 
 // ── Args ───────────────────────────────────────────────────────────────────────
@@ -70,94 +69,75 @@ function fetchBinary(url: string): Promise<Buffer> {
   return new Promise((resolve, reject) => {
     const parsedUrl = new URL(url);
     const mod = parsedUrl.protocol === "https:" ? https : http;
-
-    const options = {
-      hostname: parsedUrl.hostname,
-      path: parsedUrl.pathname + parsedUrl.search,
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    const req = mod.get(
+      {
+        hostname: parsedUrl.hostname,
+        path: parsedUrl.pathname + parsedUrl.search,
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        },
       },
-    };
-
-    const req = mod.get(options, (res) => {
-      if (
-        res.statusCode &&
-        res.statusCode >= 300 &&
-        res.statusCode < 400 &&
-        res.headers.location
-      ) {
-        resolve(fetchBinary(res.headers.location));
-        return;
+      (res) => {
+        if (
+          res.statusCode &&
+          res.statusCode >= 300 &&
+          res.statusCode < 400 &&
+          res.headers.location
+        ) {
+          resolve(fetchBinary(res.headers.location));
+          return;
+        }
+        if (res.statusCode !== 200) {
+          reject(new Error(`HTTP ${res.statusCode} fetching ${url}`));
+          return;
+        }
+        const chunks: Buffer[] = [];
+        res.on("data", (c) => chunks.push(Buffer.from(c)));
+        res.on("end", () => resolve(Buffer.concat(chunks)));
       }
-
-      if (res.statusCode !== 200) {
-        reject(new Error(`HTTP ${res.statusCode} fetching image ${url}`));
-        return;
-      }
-
-      const chunks: Buffer[] = [];
-      res.on("data", (chunk) => chunks.push(Buffer.from(chunk)));
-      res.on("end", () => resolve(Buffer.concat(chunks)));
-    });
-
+    );
     req.on("error", reject);
     req.setTimeout(20000, () => {
       req.destroy();
-      reject(new Error(`Timeout fetching image ${url}`));
+      reject(new Error(`Timeout fetching ${url}`));
     });
   });
 }
 
-// ── Fragrantica search (Playwright) ────────────────────────────────────────────
+// ── DuckDuckGo search → Fragrantica ID ────────────────────────────────────────
 
 async function findFragranticaImageUrl(
   page: import("playwright").Page,
   name: string,
   house: string
 ): Promise<string | null> {
-  const query = encodeURIComponent(`${name} ${house}`);
-  const searchUrl = `https://www.fragrantica.com/search/?query=${query}`;
+  const query = encodeURIComponent(
+    `site:fragrantica.com/perfume ${name} ${house}`
+  );
+  await page.goto(`https://duckduckgo.com/?q=${query}&ia=web`, {
+    waitUntil: "networkidle",
+    timeout: 30000,
+  });
 
-  await page.goto(searchUrl, { waitUntil: "load", timeout: 30000 });
-  // Fragrantica renders search results client-side via AlgoliaSearch; 5s is enough to settle
-  await sleep(5000);
-
-  // Wait up to 5s for at least one perfume result link to appear
-  let fragrancePageUrl: string | null = null;
-  try {
-    await page.waitForSelector('a[href*="/perfume/"]', { timeout: 5000 });
-  } catch {
-    // no results found within timeout
-  }
-
-  fragrancePageUrl = await page.evaluate(() => {
+  // Extract the first Fragrantica perfume URL from search results
+  const fragUrl = await page.evaluate(() => {
     const links = Array.from(document.querySelectorAll("a[href]"));
     for (const a of links) {
       const href = (a as HTMLAnchorElement).href;
-      if (/\/perfume\/[^/]+\/[^/]+-\d+\.html/.test(href)) {
+      if (/fragrantica\.com\/perfume\/[^/]+\/[^/]+-\d+\.html/.test(href)) {
         return href;
       }
     }
     return null;
   });
 
-  if (!fragrancePageUrl) return null;
+  if (!fragUrl) return null;
 
-  await sleep(500);
+  const idMatch = fragUrl.match(/-(\d+)\.html$/);
+  if (!idMatch) return null;
 
-  // Click the first result link so Cloudflare sees a natural navigation from the search page
-  const firstLink = page.locator(`a[href="${fragrancePageUrl}"], a[href*="${new URL(fragrancePageUrl).pathname}"]`).first();
-  await firstLink.click();
-  await page.waitForLoadState("load", { timeout: 30000 });
-  await sleep(3000);
-
-  const ogImage = await page.evaluate(() => {
-    const meta = document.querySelector('meta[property="og:image"]');
-    return meta ? (meta as HTMLMetaElement).content : null;
-  });
-
-  return ogImage ?? null;
+  return `https://fimgs.net/mdimg/perfume/375x500.${idMatch[1]}.jpg`;
 }
 
 // ── Storage ────────────────────────────────────────────────────────────────────
@@ -218,27 +198,21 @@ async function main() {
   const results = { ok: 0, skipped: 0, failed: 0 };
   const failures: string[] = [];
 
-  const browser = await chromium.launch({
-    headless: false, // headful mode bypasses Cloudflare fingerprinting
-    args: ["--disable-blink-features=AutomationControlled"],
-  });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext({
     userAgent:
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     locale: "en-US",
     viewport: { width: 1280, height: 800 },
   });
-  // Hide automation signals that Cloudflare detects
-  await context.addInitScript(() => {
-    Object.defineProperty(navigator, "webdriver", { get: () => undefined });
-    // @ts-ignore
-    delete window.cdc_adoQpoasnfa76pfcZLmcfl_Array;
-    // @ts-ignore
-    delete window.cdc_adoQpoasnfa76pfcZLmcfl_Promise;
-    // @ts-ignore
-    delete window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol;
-  });
   const page = await context.newPage();
+
+  // Warm up: navigate to DuckDuckGo home to establish session before searching
+  await page.goto("https://duckduckgo.com/", {
+    waitUntil: "networkidle",
+    timeout: 30000,
+  });
+  await sleep(1500);
 
   try {
     for (let i = 0; i < target.length; i++) {
@@ -269,9 +243,9 @@ async function main() {
       }
 
       if (attempt > MAX_RETRIES) {
-        // already logged above
+        // already logged
       } else if (!imageSourceUrl) {
-        console.log(`  ${prefix}: no image found on Fragrantica`);
+        console.log(`  ${prefix}: not found on Fragrantica`);
         results.skipped++;
       } else if (DRY_RUN) {
         console.log(`  ${prefix}: would fetch ${imageSourceUrl}`);
@@ -291,10 +265,6 @@ async function main() {
           results.failed++;
           failures.push(`${f.slug}: ${(err as Error).message}`);
         }
-      }
-
-      if (i < target.length - 1) {
-        await sleep(DELAY_MS);
       }
     }
   } finally {
