@@ -1,73 +1,95 @@
 ---
-date: 2026-05-01T12:00:00Z
+date: 2026-05-01T120000Z
 date_local: 2026-05-01 (US time)
-session: 26
+session: 27
 authored_by: Claude Sonnet 4.6
 ---
 
-# Session 26 Handover — Fumage
+# Session 27 Handover — Fumage / Fragrance Bottle Images
 
 ## What was done this session
 
-### 1. Applied pending migration
+### Image pipeline — full rewrite and successful run
 
-`20260501000000_add_fragrance_image_url` was applied successfully via `prisma migrate deploy`. The `imageUrl TEXT` column now exists in the live database.
+The fragrance bottle image pipeline went through three full rewrites this session before landing in a correct state.
 
-### 2. Rewrote image fetch script to use Playwright
+**Problem 1 — Cloudflare block (Playwright → Fragrantica):**
+The session-25 script navigated Fragrantica directly via headful Playwright. Cloudflare blocked the session after ~32 requests. Stopped the run at 32/687.
 
-`scripts/fetch-fragrance-images.ts` was rewritten to replace the raw `https.get()` approach (which returned HTTP 403 from Cloudflare) with a headful Chromium browser via Playwright.
+**Problem 2 — First rewrite (DuckDuckGo HTTP POST):**
+Rewrote to use plain HTTP POST to `html.duckduckgo.com/html/`. DuckDuckGo served a JS bot-challenge on the second request — no results beyond the first. Aborted.
 
-Key changes:
-- Removed `cheerio` dependency (no longer needed)
-- Added `playwright` dev dependency
-- Browser launched with `headless: false` and `--disable-blink-features=AutomationControlled`
-- `navigator.webdriver` suppressed via `context.addInitScript` to bypass Cloudflare fingerprinting
-- Search results wait 5 s after `load` event for AlgoliaSearch to render (Fragrantica loads results client-side)
-- Fragrance page navigated by clicking the result link (not `page.goto`) so Cloudflare session carries over from the search page
-- Single browser instance, single page object reused across all fragrances
+**Problem 3 — Second rewrite (Playwright → DuckDuckGo → fimgs.net):**
+Switched to Playwright navigating DuckDuckGo (handles JS challenges) and downloading images directly from `fimgs.net` (Fragrantica's open CDN, no bot protection). This ran to completion: 654/654 processed, 0 failures. But nearly every image was wrong — DuckDuckGo returns the most SEO-popular Fragrantica page for a name, which is often a close variant ("Aventus Forever" for "Aventus", "Oud Wood Intense" for "Oud Wood", "1 Million Lucky" for "1 Million", etc.).
 
-Tested successfully: Dior Sauvage — image fetched, uploaded to Supabase Storage, `imageUrl` written to DB.
+**Problem 4 — Wrong images (no slug verification):**
+All 687 imageUrls were set to wrong images. Cleared all to null and rewrote with verification.
 
-**Commit:** (session 26)
+**Final approach — now live:**
+`scripts/fetch-fragrance-images.ts` searches DuckDuckGo via Playwright with `name + house + year` in the query, then runs each result URL through `urlMatchesFragrance()` before accepting. The verifier:
+- Strips concentration notation (EDP/EDT/"eau de parfum") from both sides before comparing — does NOT strip product-variant words (Elixir, Parfum, Intense, Absolu) since those distinguish separate products
+- Conditionally strips IGNORABLE URL words (pour/homme/femme/man/woman) only when absent from our product name — preserves "Le Male", "Club de Nuit Intense Man", "Light Blue Pour Homme"
+- Tries the match both with the full product name AND with the house-name prefix stripped — handles DB entries like "Giorgio Armani Acqua di Giò Elixir" (Fragrantica URL slug: "Acqua-di-Gio-Elixir")
+- Rejects URLs with extra product words (Forever, Intense, Lucky, Rebel, Lover, etc.)
 
----
+Commits: `2a31b99`, `c4f5779`.
 
-## Pending — full image run not yet started
+**Final image state:**
+- 520/687 fragrances have a correct bottle shot in Supabase Storage (`fragrance-images` bucket), `imageUrl` set in DB
+- 167/687 have `imageUrl = null` (no image shown — these are genuinely hard cases: niche houses with no DuckDuckGo Fragrantica results, DB abbreviations that don't match Fragrantica naming e.g. "CDNIM Elixir", or fragrances Fragrantica indexes differently)
+- Failures logged at `image-fetch-failures.log` in the project root
 
-The script is ready and tested. The full run (~687 fragrances) was not started this session because the user paused to prepare the handover.
-
-**Full run command:**
-```bash
-SUPABASE_SERVICE_ROLE_KEY=<service_role_key> \
-  npx ts-node --compiler-options '{"module":"CommonJS"}' \
-  scripts/fetch-fragrance-images.ts
-```
-
-- Chromium window will be visible for the full duration (~2–2.5 hours at ~12 s/fragrance)
-- Failures logged to `image-fetch-failures.log`
-- Already-processed fragrances (non-null `imageUrl`) are skipped automatically
-- Dior Sauvage already has `imageUrl` set — will be skipped on the full run
-
-**Open decision:** the og:image Fragrantica serves is a social card (`en-social-{id}.jpeg`) rather than a clean bottle shot (`fimgs.net/mdimg/perfume/375x500.{id}.jpg`). The user did not confirm which to use before ending the session — confirm at next session start before running.
+The 167 null fragrances show no image on the detail page (the `{fragrance.imageUrl && ...}` guard in `src/app/fragrances/[slug]/page.tsx` handles this gracefully).
 
 ---
 
 ## Current Fumage app state
 
 - Database: 687 fragrances, 159 houses, 361 notes
-- `imageUrl` set: 1 (dior-sauvage); 686 remaining
-- Meilisearch: 687 documents (in sync)
-- Branch: main
-- Latest migration: `20260501000000_add_fragrance_image_url` — applied
+- `imageUrl` set: 520; null: 167
+- Branch: `main`, up to date with origin
+- Latest commits:
+  - `c4f5779` — harden image fetch: year-in-query + slug verification
+  - `2a31b99` — rewrite image fetch to DuckDuckGo + fimgs.net
+  - `d5b20d7` — apply migration (add_fragrance_image_url)
 
 ## Open action items
 
 | ID | Description |
 |---|---|
 | ai-009 | Configure custom domain in Vercel |
-| ai-010 | Confirm social-card vs. bottle-image format, then run full `fetch-fragrance-images.ts` for remaining 686 fragrances |
-| — | Deferred: add AI-generated description to `/layer` tool via Anthropic SDK + `/api/layer/predict` route |
+| ai-012 | Build layering guidance page |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+| — | 167 fragrances still have no image — investigate remaining failures log; may require manual slug mapping or alternative image sources for the niche/abbreviated cases |
+
+## Image pipeline — how to re-run or extend
+
+To fetch images for any remaining null fragrances (e.g. after adding new fragrances to the DB):
+```bash
+SUPABASE_SERVICE_ROLE_KEY=<service_role_key> \
+  npx ts-node --compiler-options '{"module":"CommonJS"}' \
+  scripts/fetch-fragrance-images.ts
+```
+Processes only fragrances where `imageUrl IS NULL`. Options: `--dry-run`, `--limit N`, `--slug S`, `--force` (reprocess all, overwriting existing).
+
+To fix a specific fragrance after manually identifying its correct Fragrantica ID:
+```bash
+# Set imageUrl directly in DB, e.g.:
+# fimgs.net/mdimg/perfume/375x500.{fragrantica_id}.jpg → download + upload to Supabase
+SUPABASE_SERVICE_ROLE_KEY=<service_role_key> \
+  npx ts-node --compiler-options '{"module":"CommonJS"}' \
+  scripts/fetch-fragrance-images.ts --slug <slug> --force
+```
 
 ## Design constants (carry forward)
 
-See session 18 handover — no changes.
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Nav order: Catalog · Houses · Notes · Dupes · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against database before referencing in guide articles
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- Images: bottle shots from `fimgs.net/mdimg/perfume/375x500.{id}.jpg` stored in Supabase Storage `fragrance-images` bucket as `{slug}.jpg`
