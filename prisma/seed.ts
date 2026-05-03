@@ -467,7 +467,7 @@ const NAME_ALIASES: Record<string, string> = {
   // Shortened names
   "chrome":                       "azzaro-azzaro-chrome",
   "chrome intense":               "azzaro-azzaro-chrome-intense",
-  "terre d'hermès":               "herm-s-terre-d-herm-s-edt",
+  "terre d'hermès":               "hermes-terre-d-hermes-edt",
   "jazz club":                    "maison-margiela-replica-jazz-club",
   "amouage interlude man":        "amouage-interlude-man",
   "amouage jubilation xxv":       "amouage-jubilation-xxv-man",
