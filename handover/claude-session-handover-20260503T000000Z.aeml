@@ -1,0 +1,106 @@
+---
+date: 2026-05-03T000000Z
+date_local: 2026-05-03 (US time)
+session: 28
+authored_by: Claude Sonnet 4.6
+---
+
+# Session 28 Handover — Fumage / House Catalog Expansion
+
+## What was done this session
+
+### DATABASE_URL infrastructure fix
+
+The direct Supabase DB connection (`db.hnsnmjwdpewgivphxkcn.supabase.co:5432`) no longer resolves via DNS — Supabase moved free-tier direct connections to IPv6-only. Switched both `.env` and `.env.local` to the IPv4-compatible transaction pooler:
+
+```
+postgresql://postgres.hnsnmjwdpewgivphxkcn:<password>@aws-1-us-east-1.pooler.supabase.com:6543/postgres?pgbouncer=true
+```
+
+This is a permanent change. Any future seed scripts or local DB access must use this URL.
+
+### House catalog expansion — 159 → 596 houses (commit `7f882cb`)
+
+User provided `global_fragrance_houses_v10.xlsx` (535 houses, 22 categories, sourced from a curated global directory). Processed via Python:
+- Decoded HTML entities (`&#232;` → `è`) before slugifying
+- Mapped 22 Excel categories to `HouseTier` enum (Designer/Luxury + Heritage → DESIGNER; all Niche/regional → NICHE; Artisan/Indie/Australian → ARTISAN)
+- Deduped one slug collision (`d'Annam` / `D Annam` → kept apostrophe form)
+- Output: `prisma/data/houses_v10.json` (534 houses)
+
+Wrote `prisma/seed-houses.ts` — upserts all 534 entries. For existing houses: updates `country`, `foundedYear`, `website`, `description` only (never overwrites `tier`). For new houses: full insert. Result:
+- 437 new houses inserted
+- 93 existing houses enriched (country, foundedYear, website, description)
+- 4 skipped (accented-name slug mismatch — fixed separately below)
+
+**Website URLs now populated:** all 534 Excel entries include the official house website. This is the source of truth for future house-page enrichment and image sourcing.
+
+### Accented-name slug fix — 4 houses, 30 fragrances (commit `c44875e`)
+
+The original fragrance seeder used a broken slugifier that dropped accented characters entirely (e.g. `é` → removed, `ç` → removed), producing slugs like `herm-s`, `comme-des-gar-ons`, `fr-d-ric-malle`, `initio-parfums-priv-s`. Fixed in three places:
+
+**House slugs in DB** (via `seed-houses.ts` run + direct update):
+- `herm-s` → `hermes`
+- `comme-des-gar-ons` → `comme-des-garcons`
+- `fr-d-ric-malle` → `frederic-malle`
+- `initio-parfums-priv-s` → `initio-parfums-prives`
+
+**30 fragrance slugs in DB** — all fragments slugified correctly using `unicodedata.NFKD` + ASCII encode (é→e, ç→c, è→e, etc.). Examples:
+- `herm-s-terre-d-herm-s-edt` → `hermes-terre-d-hermes-edt`
+- `initio-parfums-priv-s-oud-for-greatness` → `initio-parfums-prives-oud-for-greatness`
+
+**`prisma/data/fragrance_database.json`** — 30 `id` fields updated to match, keeping re-seed idempotent.
+
+**`prisma/seed.ts` NAME_ALIASES** — one alias entry updated:
+- `"terre d'hermès"` → `"hermes-terre-d-hermes-edt"` (was `"herm-s-terre-d-herm-s-edt"`)
+
+---
+
+## Current Fumage app state
+
+### Database
+- **Houses:** 596 (was 159; 437 new from Excel import)
+- **Fragrances:** 687 (unchanged)
+- **Notes:** 361 (unchanged)
+- **imageUrl set:** 520; null: 167
+
+### Infrastructure
+- Next.js 16.2.4, Prisma 5.22.0, PostgreSQL via Supabase (ref: hnsnmjwdpewgivphxkcn)
+- Auth: Supabase Auth
+- Search: Meilisearch SDK 0.57.0
+- Deployed: Vercel, auto-deploy on push to `main`
+- DB connection: pooler URL (aws-1-us-east-1.pooler.supabase.com:6543) — NOT direct connection
+- TypeScript: zero errors
+
+### Git state
+- Branch: `main`, up to date with origin
+- Latest commits:
+  - `c44875e` — fix broken slugs for 4 accented-name houses and their fragrances
+  - `7f882cb` — expand house catalog from 159 to 596 via global directory import
+  - `65dcd18` — add session 27 handover — image pipeline complete (520/687)
+
+---
+
+## Open action items
+
+| ID | Description |
+|---|---|
+| ai-009 | Configure custom domain in Vercel |
+| ai-012 | Build layering guidance page |
+| ai-015 | Write Gourmand family deep dive article |
+| ai-016 | Write Chypre family deep dive article |
+| — | 167 fragrances still have no image — see `image-fetch-failures.log` |
+| — | 437 new houses have no fragrances yet — catalog coverage opportunity |
+
+## Design constants (carry forward)
+
+- Background: `#0c0906` · Body: `stone-200` · Accent: `amber-500`/`amber-400`
+- Labels: `text-[10px] uppercase tracking-[0.2em]` · Card border: `border-stone-800`, hover `border-stone-600`
+- Aesthetic: apothecary-editorial — dark, warm, not sterile e-commerce
+- Guide articles: `font-serif` display/body, `max-w-2xl` container, pull quotes via left amber border
+- Guide article components (`PullQuote`, `SectionLabel`, `ScienceBox`) defined inline per file — intentionally not shared
+- Nav order: Catalog · Houses · Notes · Dupes · Guide · Search · Wardrobe/Sign in
+- Commits: imperative subject line, Co-Authored-By trailer
+- Fragrance slugs: always verify against database before referencing in guide articles — never invent a slug
+- Mobile nav: hamburger handled by `MobileNav.tsx` (client component); desktop nav is `hidden md:flex` in `Nav.tsx`
+- DB connection: use pooler URL only — direct connection (`db.hnsnmjwdpewgivphxkcn.supabase.co`) no longer resolves
+- Slug generation: use `unicodedata.NFKD` + ASCII encode (Python) or equivalent — never drop accented chars silently
