@@ -488,7 +488,8 @@ const NAME_ALIASES: Record<string, string> = {
   "nishane hacivat":              "nishane-hacivat",
   "memo irish leather":           "memo-paris-memo-paris-irish-leather",
   "khadlaj has gold":             "khadlaj-hareem-al-sultan-gold",
-  "initio oud for greatness":     "initio-parfums-priv-s-oud-for-greatness",
+  "initio oud for greatness":     "initio-parfums-prives-oud-for-greatness",
+  "initio ofg":                   "initio-parfums-prives-oud-for-greatness",
   // Dupe name variants (missing concentration suffix, etc.)
   "club de nuit intense man":     "armaf-club-de-nuit-intense-man-edp",
   "asad edp":                     "lattafa-asad",
