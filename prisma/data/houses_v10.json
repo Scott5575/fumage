@@ -1,0 +1,5342 @@
+[
+  {
+    "name": "Chanel",
+    "slug": "chanel",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1910,
+    "website": "https://www.chanel.com",
+    "description": "#1 men's fragrance globally by volume",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Dior",
+    "slug": "dior",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1947,
+    "website": "https://www.dior.com",
+    "description": "Sauvage is the world's best-selling fragrance by volume",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Guerlain",
+    "slug": "guerlain",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1828,
+    "website": "https://www.guerlain.com",
+    "description": "One of the oldest fragrance houses in the world",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Hermès",
+    "slug": "hermes",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1837,
+    "website": "https://www.hermes.com",
+    "description": "Hermessence is the private niche sub-line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Yves Saint Laurent",
+    "slug": "yves-saint-laurent",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1961,
+    "website": "https://www.yslbeauty.com",
+    "description": "Kouros (1981) is a landmark avant-garde masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Givenchy",
+    "slug": "givenchy",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1952,
+    "website": "https://www.givenchy.com",
+    "description": "Pi (1998) is a cult intellectual masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Cartier",
+    "slug": "cartier",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1847,
+    "website": "https://www.cartier.com",
+    "description": "Déclaration is a timeless masculine identity scent",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Jean Paul Gaultier",
+    "slug": "jean-paul-gaultier",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1976,
+    "website": "https://www.jeanpaulgaultier.com",
+    "description": "Le Male (1995) is one of the most iconic masculine bottles",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Thierry Mugler",
+    "slug": "thierry-mugler",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1992,
+    "website": "https://www.mugler.com",
+    "description": "A*Men (1996) pioneered gourmand masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Paco Rabanne",
+    "slug": "paco-rabanne",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1966,
+    "website": "https://www.pacorabanne.com",
+    "description": "1 Million and Invictus are billion-dollar global blockbusters",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Lalique",
+    "slug": "lalique",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1888,
+    "website": "https://www.lalique.com",
+    "description": "Crystal artistry; Encre Noire is a cult woody masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Caron Paris",
+    "slug": "caron-paris",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1904,
+    "website": "https://www.caron.com",
+    "description": "Pour un Homme (1934) is one of the oldest men's fragrances still sold",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Cacharel",
+    "slug": "cacharel",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1962,
+    "website": "https://www.cacharel.com",
+    "description": "Classic clean French style",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Lanvin",
+    "slug": "lanvin",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1889,
+    "website": "https://www.lanvin.com",
+    "description": "Avant Garde is a sophisticated modern masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Rochas",
+    "slug": "rochas",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1925,
+    "website": "https://www.rochas.com",
+    "description": "Moustache (1949) is a vintage barbershop classic",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Azzaro",
+    "slug": "azzaro",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1967,
+    "website": "https://www.azzaro.com",
+    "description": "Azzaro pour Homme (1978) is an iconic fougère",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Boucheron",
+    "slug": "boucheron",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1858,
+    "website": "https://www.boucheron.com",
+    "description": "Jaipur Homme is a classic oriental masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Van Cleef & Arpels",
+    "slug": "van-cleef-arpels",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1906,
+    "website": "https://www.vancleefarpels.com",
+    "description": "High jewelry house with luxury niche sub-line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "S.T. Dupont",
+    "slug": "s-t-dupont",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1872,
+    "website": "https://www.st-dupont.com",
+    "description": "French luxury lighter and pen house",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Kenzo",
+    "slug": "kenzo",
+    "tier": "DESIGNER",
+    "country": "Japan/France",
+    "foundedYear": 1970,
+    "website": "https://www.kenzo.com",
+    "description": "Kenzo pour Homme (1991) is a quiet classic",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Issey Miyake",
+    "slug": "issey-miyake",
+    "tier": "DESIGNER",
+    "country": "Japan",
+    "foundedYear": 1970,
+    "website": "https://www.isseymiyake.com",
+    "description": "L'Eau d'Issey (1994) defined the aquatic genre",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Narciso Rodriguez",
+    "slug": "narciso-rodriguez",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1997,
+    "website": "https://www.narcisorodriguez.com",
+    "description": "For Him is a highly influential musc-based masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "John Varvatos",
+    "slug": "john-varvatos",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 2000,
+    "website": "https://www.johnvarvatos.com",
+    "description": "Rock-and-roll luxury American fragrance",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Ralph Lauren",
+    "slug": "ralph-lauren",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1967,
+    "website": "https://www.ralphlauren.com",
+    "description": "Polo (1978) is a classic American masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Calvin Klein",
+    "slug": "calvin-klein",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1968,
+    "website": "https://www.calvinklein.com",
+    "description": "CK One (1994) defined the unisex modern genre",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Tom Ford Beauty",
+    "slug": "tom-ford-beauty",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 2004,
+    "website": "https://www.tomford.com",
+    "description": "Private Blend is the ultra-luxury niche tier",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Michael Kors",
+    "slug": "michael-kors",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1981,
+    "website": "https://www.michaelkors.com",
+    "description": "American jet-set lifestyle",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Carolina Herrera",
+    "slug": "carolina-herrera",
+    "tier": "DESIGNER",
+    "country": "Venezuela/USA",
+    "foundedYear": 1981,
+    "website": "https://www.carolinaherrera.com",
+    "description": "Bad Boy (2019) is a major modern masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Marc Jacobs",
+    "slug": "marc-jacobs",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1984,
+    "website": "https://www.marcjacobsfragrances.com",
+    "description": "Bang had a distinctive geometric metal bottle",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Donna Karan / DKNY",
+    "slug": "donna-karan-dkny",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1984,
+    "website": "https://www.dkny.com",
+    "description": "New York lifestyle fragrance house",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Tommy Hilfiger",
+    "slug": "tommy-hilfiger",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1984,
+    "website": "https://www.tommy.com",
+    "description": "Tommy (1994) is a classic all-American blue fragrance",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Burberry",
+    "slug": "burberry",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1856,
+    "website": "https://www.burberry.com",
+    "description": "Mr. Burberry and Hero are modern heritage masculines",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Dunhill",
+    "slug": "dunhill",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1893,
+    "website": "https://www.dunhill.com",
+    "description": "Icon (2014) is a tailored British masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Jo Malone London",
+    "slug": "jo-malone-london",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1994,
+    "website": "https://www.jomalone.com",
+    "description": "Estée Lauder owned; beloved for layering concept",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Prada",
+    "slug": "prada",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1913,
+    "website": "https://www.prada.com",
+    "description": "Luna Rossa is the sporty flagship masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Giorgio Armani",
+    "slug": "giorgio-armani",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1975,
+    "website": "https://www.armani.com",
+    "description": "AdG Profumo is a perennial blockbuster",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Dolce & Gabbana",
+    "slug": "dolce-gabbana",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1985,
+    "website": "https://www.dolcegabbana.com",
+    "description": "The One for Men is hugely popular",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Versace",
+    "slug": "versace",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1978,
+    "website": "https://www.versace.com",
+    "description": "Eros dominates Versace men's sales",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Bulgari",
+    "slug": "bulgari",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1884,
+    "website": "https://www.bulgari.com",
+    "description": "Le Gemme is Bulgari's ultra-luxury niche sub-line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Gucci",
+    "slug": "gucci",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1921,
+    "website": "https://www.gucci.com",
+    "description": "The Alchemist's Garden is Gucci's artisan niche sub-line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Valentino",
+    "slug": "valentino",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1960,
+    "website": "https://www.valentino.com",
+    "description": "Born in Roma is a popular fresh masculine line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Ferragamo",
+    "slug": "ferragamo",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1927,
+    "website": "https://www.ferragamo.com",
+    "description": "Uomo (2016) has broad demographic appeal",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Acqua di Parma",
+    "slug": "acqua-di-parma",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1916,
+    "website": "https://www.acquadiparma.com",
+    "description": "Iconic Italian bergamot citrus since 1916",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Trussardi",
+    "slug": "trussardi",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1911,
+    "website": "https://www.trussardi.com",
+    "description": "Long-standing Italian fashion house",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Bottega Veneta",
+    "slug": "bottega-veneta",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1966,
+    "website": "https://www.bottegaveneta.com",
+    "description": "Italian leather luxury house; refined fragrance line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Brioni",
+    "slug": "brioni",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1945,
+    "website": "https://www.brioni.com",
+    "description": "Bespoke Italian suiting house; sophisticated masculines",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Hugo Boss",
+    "slug": "hugo-boss",
+    "tier": "DESIGNER",
+    "country": "Germany",
+    "foundedYear": 1924,
+    "website": "https://www.hugoboss.com",
+    "description": "Boss Bottled has been a global bestseller for 25+ years",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Montblanc",
+    "slug": "montblanc",
+    "tier": "DESIGNER",
+    "country": "Germany",
+    "foundedYear": 1906,
+    "website": "https://www.montblanc.com",
+    "description": "Legend is one of the most reviewed men's fragrances",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Jil Sander",
+    "slug": "jil-sander",
+    "tier": "DESIGNER",
+    "country": "Germany",
+    "foundedYear": 1968,
+    "website": "https://www.jilsander.com",
+    "description": "German minimalism applied to fragrance",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Davidoff",
+    "slug": "davidoff",
+    "tier": "DESIGNER",
+    "country": "Switzerland",
+    "foundedYear": 1984,
+    "website": "https://www.davidoffperfumes.com",
+    "description": "Cool Water (1988) pioneered the aquatic masculine genre",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Chopard",
+    "slug": "chopard",
+    "tier": "DESIGNER",
+    "country": "Switzerland",
+    "foundedYear": 1860,
+    "website": "https://www.chopard.com",
+    "description": "Swiss luxury jeweller with a fragrance line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Louis Vuitton",
+    "slug": "louis-vuitton",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1854,
+    "website": "https://us.louisvuitton.com/eng-us/perfumes",
+    "description": "LVMH ultra-luxury line by Jacques Cavallier-Belletrud",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Viktor & Rolf",
+    "slug": "viktor-rolf",
+    "tier": "DESIGNER",
+    "country": "Netherlands",
+    "foundedYear": 1993,
+    "website": "https://www.viktor-rolf.com",
+    "description": "Spicebomb is one of the most popular modern masculines",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Lacoste",
+    "slug": "lacoste",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1933,
+    "website": "https://www.lacoste.com",
+    "description": "Essential is a clean aromatic everyday masculine",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Karl Lagerfeld",
+    "slug": "karl-lagerfeld",
+    "tier": "DESIGNER",
+    "country": "Germany",
+    "foundedYear": 1963,
+    "website": "https://www.karl.com",
+    "description": "Fashion icon's legacy fragrance range",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Cerruti",
+    "slug": "cerruti",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1967,
+    "website": "https://www.cerruti.com",
+    "description": "Cerruti 1881 is a classic from Italian menswear house",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Aramis",
+    "slug": "aramis",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 1965,
+    "website": "https://www.aramis.com",
+    "description": "Estée Lauder owned; Aramis (1966) is a classic chypre",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Christian Louboutin",
+    "slug": "christian-louboutin",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1991,
+    "website": "https://www.christianlouboutin.com",
+    "description": "Luxury shoe designer's bold, fashion-forward fragrance range",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Celine",
+    "slug": "celine",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1945,
+    "website": "https://www.celine.com",
+    "description": "Hedi Slimane's minimalist luxury; exclusive distribution",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Loewe",
+    "slug": "loewe",
+    "tier": "DESIGNER",
+    "country": "Spain",
+    "foundedYear": 1846,
+    "website": "https://www.loewe.com",
+    "description": "Spanish leather luxury house; strong fragrance line",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Dries Van Noten",
+    "slug": "dries-van-noten",
+    "tier": "DESIGNER",
+    "country": "Belgium",
+    "foundedYear": 1986,
+    "website": "https://www.driesvannoten.com",
+    "description": "Belgian designer's gender-fluid collection launched 2022",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Aerin Lauder",
+    "slug": "aerin-lauder",
+    "tier": "DESIGNER",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.aerin.com",
+    "description": "Estée Lauder granddaughter's lifestyle luxury brand",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Comme des Garçons",
+    "slug": "comme-des-garcons",
+    "tier": "DESIGNER",
+    "country": "Japan/Belgium",
+    "foundedYear": 1969,
+    "website": "https://shop.comme-des-garcons.com",
+    "description": "Rei Kawakubo's avant-garde fragrance philosophy",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Costume National",
+    "slug": "costume-national",
+    "tier": "DESIGNER",
+    "country": "Italy",
+    "foundedYear": 1986,
+    "website": "https://www.costumenational.com",
+    "description": "Italian avant-garde fashion house",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Creed",
+    "slug": "creed",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1760,
+    "website": "https://www.creedfragrances.com",
+    "description": "Aventus (2010) is the most celebrated modern niche masculine",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Penhaligon's",
+    "slug": "penhaligon-s",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1870,
+    "website": "https://www.penhaligons.com",
+    "description": "One of the oldest British perfumeries",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Floris London",
+    "slug": "floris-london",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1730,
+    "website": "https://www.florislondon.com",
+    "description": "Founded 1730 – oldest operating British perfumery",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Clive Christian",
+    "slug": "clive-christian",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1999,
+    "website": "https://www.clivechristian.com",
+    "description": "Ultra-luxury; claims some of the world's most expensive fragrances",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Roja Parfums",
+    "slug": "roja-parfums",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2011,
+    "website": "https://rojaparfums.com",
+    "description": "Founded by Roja Dove, acclaimed perfume historian",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Ormonde Jayne",
+    "slug": "ormonde-jayne",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2000,
+    "website": "https://www.ormondejayne.com",
+    "description": "Linda Pilkington known for meticulous botanical balance",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Boadicea the Victorious",
+    "slug": "boadicea-the-victorious",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2003,
+    "website": "https://boadiceaperfume.com",
+    "description": "Iconic pewter-shield bottles; founded by Michael Boadi",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Czech & Speake",
+    "slug": "czech-speake",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1978,
+    "website": "https://www.czechspeake.com",
+    "description": "Luxurious British house since 1978",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Geo F. Trumper",
+    "slug": "geo-f-trumper",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1875,
+    "website": "https://www.trumpers.com",
+    "description": "Classic Mayfair barber; grooming heritage since 1875",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Miller Harris",
+    "slug": "miller-harris",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2000,
+    "website": "https://www.millerharris.com",
+    "description": "Founded by perfumer Lyn Harris; botanically inspired",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Molton Brown",
+    "slug": "molton-brown",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1971,
+    "website": "https://www.moltonbrown.com",
+    "description": "Premium British apothecary brand",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Grossmith London",
+    "slug": "grossmith-london",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1835,
+    "website": "https://grosmithlondon.com",
+    "description": "One of the world's oldest perfume houses; revived 2009",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Atkinsons 1799",
+    "slug": "atkinsons-1799",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1799,
+    "website": "https://www.atkinsons1799.com",
+    "description": "Historic Mayfair house; revived as luxury niche",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Illuminum",
+    "slug": "illuminum",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2011,
+    "website": "https://www.illuminum.com",
+    "description": "Worn by Kate Middleton at her 2011 wedding",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Perfumer H",
+    "slug": "perfumer-h",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2016,
+    "website": "https://www.perfumerh.com",
+    "description": "Hamish Bowles' artisan house; bespoke approach",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Thameen London",
+    "slug": "thameen-london",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2013,
+    "website": "https://www.thameen.com",
+    "description": "London luxury niche inspired by precious gems and British heritage",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Spirit of Kings",
+    "slug": "spirit-of-kings",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2015,
+    "website": "https://www.spiritofkings.com",
+    "description": "UK luxury niche; bold masculine-leaning fragrances",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Hugh Parsons",
+    "slug": "hugh-parsons",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 2009,
+    "website": "https://www.hughparsons.com",
+    "description": "British luxury inspired by iconic London addresses",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Crown Northampton",
+    "slug": "crown-northampton",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1998,
+    "website": "https://www.crownnorthampton.com",
+    "description": "British shoemaking heritage house; artisan quality",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Beaufort London",
+    "slug": "beaufort-london",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2014,
+    "website": "https://beaufortlondon.com",
+    "description": "Gothic, maritime-themed indie house",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Papillon Artisan Parfums",
+    "slug": "papillon-artisan-parfums",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2015,
+    "website": "https://www.papillonartisanparfums.com",
+    "description": "Elizabeth Moores' butterfly-themed artisan house",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "4160 Tuesdays",
+    "slug": "4160-tuesdays",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2013,
+    "website": "https://www.4160tuesdays.com",
+    "description": "Playful, eccentric Sarah McCartney compositions",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Jorum Studio",
+    "slug": "jorum-studio",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2016,
+    "website": "https://www.jorumstudio.com",
+    "description": "Edinburgh artisan; Scottish landscape inspired",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Maya Njie",
+    "slug": "maya-njie",
+    "tier": "NICHE",
+    "country": "United Kingdom/Gambia",
+    "foundedYear": 2016,
+    "website": "https://www.mayanjie.com",
+    "description": "Gambian-Swedish heritage; bottled nostalgia",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Alghabra Parfums",
+    "slug": "alghabra-parfums",
+    "tier": "NICHE",
+    "country": "United Kingdom/Syria",
+    "foundedYear": 2014,
+    "website": "https://www.alghabraparfums.com",
+    "description": "Syrian-British indie; Middle Eastern meets British sensibility",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Sarah Baker Perfumes",
+    "slug": "sarah-baker-perfumes",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2015,
+    "website": "https://www.sarahbakerperfumes.com",
+    "description": "San Francisco-born visual artist turned perfumer; sold at Harrods",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Sana Jardin",
+    "slug": "sana-jardin",
+    "tier": "NICHE",
+    "country": "United Kingdom/Morocco",
+    "foundedYear": 2018,
+    "website": "https://www.sanajardin.com",
+    "description": "Social enterprise model; fair-trade Moroccan orange blossom workers",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Neandertal",
+    "slug": "neandertal",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2016,
+    "website": "https://www.neandertal.com",
+    "description": "Prehistoric-inspired concept; collaboration with Sissel Tolaas",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Maison Francis Kurkdjian",
+    "slug": "maison-francis-kurkdjian",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2009,
+    "website": "https://www.maisonfranckurkdjian.com",
+    "description": "MFK created JPG Le Male; LVMH acquired 2017",
+    "category": "French Niche"
+  },
+  {
+    "name": "Frédéric Malle",
+    "slug": "frederic-malle",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2000,
+    "website": "https://www.fredericmalle.com",
+    "description": "Each fragrance signed by its perfumer",
+    "category": "French Niche"
+  },
+  {
+    "name": "Serge Lutens",
+    "slug": "serge-lutens",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2000,
+    "website": "https://www.sergelutens.com",
+    "description": "Artistic, deeply personal compositions",
+    "category": "French Niche"
+  },
+  {
+    "name": "Parfums de Marly",
+    "slug": "parfums-de-marly",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2009,
+    "website": "https://www.parfums-de-marly.com",
+    "description": "Inspired by 18th-century Château de Marly",
+    "category": "French Niche"
+  },
+  {
+    "name": "Diptyque",
+    "slug": "diptyque",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1961,
+    "website": "https://www.diptyque.com",
+    "description": "One of the original niche houses",
+    "category": "French Niche"
+  },
+  {
+    "name": "Initio Parfums Privés",
+    "slug": "initio-parfums-prives",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2015,
+    "website": "https://www.initio.com",
+    "description": "Science-inspired psychotropic aromatic house",
+    "category": "French Niche"
+  },
+  {
+    "name": "L'Artisan Parfumeur",
+    "slug": "l-artisan-parfumeur",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1976,
+    "website": "https://www.lartisanparfumeur.com",
+    "description": "One of the first true niche concepts (1976)",
+    "category": "French Niche"
+  },
+  {
+    "name": "Atelier Cologne",
+    "slug": "atelier-cologne",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2009,
+    "website": "https://www.ateliercologne.com",
+    "description": "Cologne Absolues – proprietary high-concentration format",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Margiela Replica",
+    "slug": "maison-margiela-replica",
+    "tier": "NICHE",
+    "country": "Belgium/France",
+    "foundedYear": 2012,
+    "website": "https://www.maisonmargiela.com/fragrances",
+    "description": "Replica line recreates specific sensory memories",
+    "category": "French Niche"
+  },
+  {
+    "name": "Jeroboam",
+    "slug": "jeroboam",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2013,
+    "website": "https://www.jeroboamparis.com",
+    "description": "Premium French house with wax concentrate format",
+    "category": "French Niche"
+  },
+  {
+    "name": "Memo Paris",
+    "slug": "memo-paris",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2007,
+    "website": "https://www.memo-paris.com",
+    "description": "Travel-narrative inspired by Clara & John Molloy",
+    "category": "French Niche"
+  },
+  {
+    "name": "Montale",
+    "slug": "montale",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2003,
+    "website": "https://www.montaleparfums.com",
+    "description": "Bold oud-forward; 200+ fragrances in catalog",
+    "category": "French Niche"
+  },
+  {
+    "name": "Mancera",
+    "slug": "mancera",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2008,
+    "website": "https://www.manceraparfums.com",
+    "description": "Cedrat Boisé is often likened to Creed Aventus",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Crivelli",
+    "slug": "maison-crivelli",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://www.maisoncrivelli.com",
+    "description": "TikTok breakout niche house",
+    "category": "French Niche"
+  },
+  {
+    "name": "Matière Première",
+    "slug": "matiere-premiere",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://www.matierepremiere.com",
+    "description": "Single-material spotlight concept by Aurélien Guichard",
+    "category": "French Niche"
+  },
+  {
+    "name": "Histoires de Parfums",
+    "slug": "histoires-de-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2000,
+    "website": "https://www.histoiresdeparfums.com",
+    "description": "Literary-historical olfactory library",
+    "category": "French Niche"
+  },
+  {
+    "name": "Ex Nihilo",
+    "slug": "ex-nihilo",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2013,
+    "website": "https://www.exnihiloparis.com",
+    "description": "Bespoke customization (La Maison) in-store",
+    "category": "French Niche"
+  },
+  {
+    "name": "BDK Parfums",
+    "slug": "bdk-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2016,
+    "website": "https://www.bdkparfums.com",
+    "description": "David Benedek's Parisian niche; accessible pricing",
+    "category": "French Niche"
+  },
+  {
+    "name": "Liquides Imaginaires",
+    "slug": "liquides-imaginaires",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2013,
+    "website": "https://www.liquidesimaginaires.com",
+    "description": "Surrealist mythology-inspired perfumery",
+    "category": "French Niche"
+  },
+  {
+    "name": "Fragrance Du Bois",
+    "slug": "fragrance-du-bois",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2012,
+    "website": "https://www.fragrancedubois.com",
+    "description": "Sustainable traceable oud sourcing",
+    "category": "French Niche"
+  },
+  {
+    "name": "Jovoy Paris",
+    "slug": "jovoy-paris",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1923,
+    "website": "https://www.jovoy.com",
+    "description": "Prestigious Paris niche shop with own line",
+    "category": "French Niche"
+  },
+  {
+    "name": "Parfum d'Empire",
+    "slug": "parfum-d-empire",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2003,
+    "website": "https://www.parfumdempire.com",
+    "description": "Marc-Antoine Corticchiato's travel-history inspired house",
+    "category": "French Niche"
+  },
+  {
+    "name": "Heeley",
+    "slug": "heeley",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2005,
+    "website": "https://www.heeley.com",
+    "description": "James Heeley's minimalist nature-focused house",
+    "category": "French Niche"
+  },
+  {
+    "name": "Jul et Mad Paris",
+    "slug": "jul-et-mad-paris",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2013,
+    "website": "https://www.juletmad.com",
+    "description": "Complex oud and oriental compositions",
+    "category": "French Niche"
+  },
+  {
+    "name": "Marc-Antoine Barrois",
+    "slug": "marc-antoine-barrois",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2016,
+    "website": "https://www.marc-antoine-barrois.com",
+    "description": "Paris couture designer turned perfumer",
+    "category": "French Niche"
+  },
+  {
+    "name": "Etat Libre d'Orange",
+    "slug": "etat-libre-d-orange",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2006,
+    "website": "https://www.etatlibredorange.com",
+    "description": "'Free State of Orange' manifesto of perfumery freedom",
+    "category": "French Niche"
+  },
+  {
+    "name": "By Kilian",
+    "slug": "by-kilian",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2007,
+    "website": "https://www.bykilian.com",
+    "description": "Kilian Hennessy's luxury niche; refillable system",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maître Parfumeur et Gantier",
+    "slug": "maitre-parfumeur-et-gantier",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1988,
+    "website": "https://www.maitreparfumeur.com",
+    "description": "Pioneer of niche perfumery; Jean-François Laporte",
+    "category": "French Niche"
+  },
+  {
+    "name": "Annick Goutal / Goutal",
+    "slug": "annick-goutal-goutal",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1981,
+    "website": "https://www.goutal.com",
+    "description": "Classic Parisian style for men and women",
+    "category": "French Niche"
+  },
+  {
+    "name": "Atelier des Ors",
+    "slug": "atelier-des-ors",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2015,
+    "website": "https://www.atelierdesors.com",
+    "description": "Each scent uses 24-carat natural gold",
+    "category": "French Niche"
+  },
+  {
+    "name": "Essential Parfums",
+    "slug": "essential-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2019,
+    "website": "https://www.essentialparfums.com",
+    "description": "Five perfumers; accessibility and sustainability focus",
+    "category": "French Niche"
+  },
+  {
+    "name": "Bon Parfumeur",
+    "slug": "bon-parfumeur",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2016,
+    "website": "https://www.bonparfumeur.com",
+    "description": "Minimal numbered system; eco-certified Paris niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "Rania J",
+    "slug": "rania-j",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2012,
+    "website": "https://www.raniaj.com",
+    "description": "Paris indie house by Rania Jouaneh",
+    "category": "French Niche"
+  },
+  {
+    "name": "Akro",
+    "slug": "akro",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://www.akrofragrances.com",
+    "description": "Named after bad habits; inspired by addictions",
+    "category": "French Niche"
+  },
+  {
+    "name": "Ormaie",
+    "slug": "ormaie",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2019,
+    "website": "https://www.ormaie.fr",
+    "description": "Hand-illustrated sustainable Parisian niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "Pierre Guillaume Paris",
+    "slug": "pierre-guillaume-paris",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2005,
+    "website": "https://www.parfumsguillaume.com",
+    "description": "Independent perfumer-creator; Huitième Art offshoot",
+    "category": "French Niche"
+  },
+  {
+    "name": "Les Bains Guerbois",
+    "slug": "les-bains-guerbois",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.lesbains.com",
+    "description": "Inspired by the legendary 1880s Parisian hammam",
+    "category": "French Niche"
+  },
+  {
+    "name": "The Different Company",
+    "slug": "the-different-company",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2000,
+    "website": "https://www.thedifferentcompany.com",
+    "description": "Pioneers of niche retail; strong ingredient sourcing",
+    "category": "French Niche"
+  },
+  {
+    "name": "MDCI Parfums",
+    "slug": "mdci-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2003,
+    "website": "https://www.mdciparfums.com",
+    "description": "Charles-Albert Berthalon's ultra-luxury limited editions",
+    "category": "French Niche"
+  },
+  {
+    "name": "LM Parfums",
+    "slug": "lm-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2007,
+    "website": "https://www.lmparfums.com",
+    "description": "Laurent Mazzone's dark, intense Franco-luxury house",
+    "category": "French Niche"
+  },
+  {
+    "name": "Thomas Kosmala",
+    "slug": "thomas-kosmala",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2015,
+    "website": "https://www.thomaskosmala.com",
+    "description": "Alchemist of scent; Paris artisan",
+    "category": "French Niche"
+  },
+  {
+    "name": "Room 1015",
+    "slug": "room-1015",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.room1015.com",
+    "description": "Rock culture-inspired Paris niche house",
+    "category": "French Niche"
+  },
+  {
+    "name": "Franck Boclet",
+    "slug": "franck-boclet",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2010,
+    "website": "https://www.franckboclet.com",
+    "description": "Inspired by illicit pleasures and hedonism",
+    "category": "French Niche"
+  },
+  {
+    "name": "Eight & Bob",
+    "slug": "eight-bob",
+    "tier": "NICHE",
+    "country": "France/Spain",
+    "foundedYear": 1937,
+    "website": "https://www.eightandbob.com",
+    "description": "Reportedly JFK's favourite fragrance; legendary origin story",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Tahité",
+    "slug": "maison-tahite",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.maisontahite.com",
+    "description": "Paris indie with strong natural extract emphasis",
+    "category": "French Niche"
+  },
+  {
+    "name": "Olfactive Studio",
+    "slug": "olfactive-studio",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2011,
+    "website": "https://www.olfactivestudio.com",
+    "description": "Each fragrance inspired by a photograph",
+    "category": "French Niche"
+  },
+  {
+    "name": "Kajal Perfumes",
+    "slug": "kajal-perfumes",
+    "tier": "NICHE",
+    "country": "France/India",
+    "foundedYear": 2018,
+    "website": "https://www.kajalperfumes.com",
+    "description": "Franco-Indian; Middle Eastern-meets-Paris aesthetic",
+    "category": "French Niche"
+  },
+  {
+    "name": "Versatile Paris",
+    "slug": "versatile-paris",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.versatile-paris.com",
+    "description": "Paris indie; unexpected natural accords",
+    "category": "French Niche"
+  },
+  {
+    "name": "Jousset Parfums",
+    "slug": "jousset-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.joussetparfums.com",
+    "description": "French artisan botanical fine perfumery",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Rebatchi",
+    "slug": "maison-rebatchi",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2017,
+    "website": "https://www.maisonrebatchi.com",
+    "description": "Classical French masculine and feminine balance",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Mataha",
+    "slug": "maison-mataha",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://www.maisonmataha.com",
+    "description": "Born from a quest for the perfect vanilla",
+    "category": "French Niche"
+  },
+  {
+    "name": "Comptoir Sud Pacifique",
+    "slug": "comptoir-sud-pacifique",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1974,
+    "website": "https://www.comptoirsudpacifique.com",
+    "description": "Exotic travel-inspired Paris house; coconut and vanilla signature",
+    "category": "French Niche"
+  },
+  {
+    "name": "Les Indémodables",
+    "slug": "les-indemodables",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2006,
+    "website": "https://www.lesindemodables.com",
+    "description": "Paris niche; accessible artisan compositions",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Louis Marie",
+    "slug": "maison-louis-marie",
+    "tier": "NICHE",
+    "country": "France/USA",
+    "foundedYear": 2009,
+    "website": "https://www.maisonlouismarie.com",
+    "description": "Paris-inspired LA-based minimal clean niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "Daniel Josier",
+    "slug": "daniel-josier",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2010,
+    "website": "https://www.danieljosier.com",
+    "description": "Artisan French house with raw botanical focus",
+    "category": "French Niche"
+  },
+  {
+    "name": "Charenton Macerations",
+    "slug": "charenton-macerations",
+    "tier": "NICHE",
+    "country": "France/USA",
+    "foundedYear": 2013,
+    "website": "https://charentonmacerations.com",
+    "description": "Small-batch artisan; queer identity and NYC culture",
+    "category": "French Niche"
+  },
+  {
+    "name": "Houbigant",
+    "slug": "houbigant",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1775,
+    "website": "https://www.houbigantparis.com",
+    "description": "Created world's first fougère (1882)",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Frapin",
+    "slug": "frapin",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1270,
+    "website": "https://www.frapin.com",
+    "description": "Grande Champagne cognac estate turned perfumery; est. 1270",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Chabaud Maison de Parfum",
+    "slug": "chabaud-maison-de-parfum",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 2006,
+    "website": "https://www.chabaud-parfum.com",
+    "description": "Montpellier artisan house; botanical heritage",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Isabey Paris",
+    "slug": "isabey-paris",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1924,
+    "website": "https://www.isabey.fr",
+    "description": "Revived Parisian house; Art Deco heritage",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Oriza L. Legrand",
+    "slug": "oriza-l-legrand",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1720,
+    "website": "https://www.oriza-legrand.com",
+    "description": "Among world's oldest extant fragrance houses",
+    "category": "French Heritage"
+  },
+  {
+    "name": "D'Orsay Parfums",
+    "slug": "d-orsay-parfums",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1830,
+    "website": "https://www.parfumsdorsay.com",
+    "description": "Founded 1830; revived 2015",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Cire Trudon",
+    "slug": "cire-trudon",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1643,
+    "website": "https://www.ciretrudon.com",
+    "description": "Oldest candle maker in world; fragrances since 2014",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Parfums de Rosine",
+    "slug": "parfums-de-rosine",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1912,
+    "website": "https://www.parfumsderosine.com",
+    "description": "Rose-centric historic house; revived by Marie-Hélène Rogeon",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Molinard",
+    "slug": "molinard",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1849,
+    "website": "https://www.molinard.com",
+    "description": "Grasse maison with 175+ year heritage",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Fragonard",
+    "slug": "fragonard",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1926,
+    "website": "https://www.fragonard.com",
+    "description": "Grasse heritage house with famous on-site museum",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Galimard",
+    "slug": "galimard",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1747,
+    "website": "https://www.galimard.com",
+    "description": "1747 Grasse house; custom perfume workshops",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Parfums Lubin",
+    "slug": "parfums-lubin",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1798,
+    "website": "https://www.lubin.paris",
+    "description": "Supplied Napoleon; revived with new owners",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Roger & Gallet",
+    "slug": "roger-gallet",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1862,
+    "website": "https://www.roger-gallet.com",
+    "description": "Paris heritage house; Jean-Marie Farina (1862) is historic",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Xerjoff",
+    "slug": "xerjoff",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2003,
+    "website": "https://www.xerjoff.com",
+    "description": "Turin ultra-luxury; jewel-like hand-crafted bottles",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Nasomatto",
+    "slug": "nasomatto",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2007,
+    "website": "https://www.nasomatto.com",
+    "description": "Alessandro Gualtieri's 'crazy nose' philosophy",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Orto Parisi",
+    "slug": "orto-parisi",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2014,
+    "website": "https://www.ortoparisi.com",
+    "description": "Gualtieri's body-positive garden philosophy",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Tiziana Terenzi",
+    "slug": "tiziana-terenzi",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2003,
+    "website": "https://www.tizianaternzi.it",
+    "description": "Celestial-themed handcrafted Italian niche",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Santa Maria Novella",
+    "slug": "santa-maria-novella",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1612,
+    "website": "https://www.smnovella.com",
+    "description": "Est. 1221 by Dominican friars; oldest fragrance producer",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Profumum Roma",
+    "slug": "profumum-roma",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1996,
+    "website": "https://www.profumumroma.com",
+    "description": "Alcohol-free oil-based ultra-concentrated parfum",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Nobile 1942",
+    "slug": "nobile-1942",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2006,
+    "website": "https://www.nobile1942.it",
+    "description": "Campania artisan with strong Italian identity",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Lorenzo Villoresi",
+    "slug": "lorenzo-villoresi",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1992,
+    "website": "https://www.lorenzovilloresi.it",
+    "description": "Florentine master; custom bespoke service",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Carthusia",
+    "slug": "carthusia",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1948,
+    "website": "https://www.carthusia.com",
+    "description": "Founded by Capri monastery",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Masque Milano",
+    "slug": "masque-milano",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2012,
+    "website": "https://www.masquemilano.com",
+    "description": "Roberto Drago and Alessandro Brun's theatrical Milan house",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Laboratorio Olfattivo",
+    "slug": "laboratorio-olfattivo",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2009,
+    "website": "https://www.laboratorioolfattivo.com",
+    "description": "Research-led; cutting-edge natural materials",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "V Canto",
+    "slug": "v-canto",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2016,
+    "website": "https://www.vcanto.it",
+    "description": "Operatic Italian niche; sister brand to Tiziana Terenzi",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Meo Fusciuni",
+    "slug": "meo-fusciuni",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2010,
+    "website": "https://www.meofusciuni.it",
+    "description": "Palermo-based; poetic Sicilian identity",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Bois 1920",
+    "slug": "bois-1920",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1920,
+    "website": "https://www.bois1920.it",
+    "description": "Tuscan Valdinievole heritage since 1920",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Moresque Parfum",
+    "slug": "moresque-parfum",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2013,
+    "website": "https://www.moresque.it",
+    "description": "Italian design meets Moorish art and Arabic charm",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Filippo Sorcinelli",
+    "slug": "filippo-sorcinelli",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2005,
+    "website": "https://www.filipposorcinelli.com",
+    "description": "Bold conceptual; uses sacred incense materials",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Mendittorosa",
+    "slug": "mendittorosa",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2012,
+    "website": "https://www.mendittorosa.com",
+    "description": "Sicilian volcanic island-inspired collection",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Giardini di Toscana",
+    "slug": "giardini-di-toscana",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2004,
+    "website": "https://www.giardinoditoscana.com",
+    "description": "Tuscan botanical inspired; artisan Italian house",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Simone Andreoli",
+    "slug": "simone-andreoli",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2017,
+    "website": "https://www.simoneandreoli.it",
+    "description": "Emilian indie niche; Italian coastal identity",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Gritti",
+    "slug": "gritti",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1993,
+    "website": "https://www.profumigritti.com",
+    "description": "Venice-based artisan luxury niche",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Nomenclature",
+    "slug": "nomenclature",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2015,
+    "website": "https://www.nomenclature.eu",
+    "description": "Alberto Morillas & Karl Bradl; single IFF Captive molecules",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "The Merchant of Venice",
+    "slug": "the-merchant-of-venice",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2013,
+    "website": "https://www.themerchantofvenice.com",
+    "description": "Reinterprets ancient Venetian perfumery art",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Hilde Soliani",
+    "slug": "hilde-soliani",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2007,
+    "website": "https://www.hildesoliani.com",
+    "description": "Parma-based indie; playful storytelling and unusual accords",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Accendis",
+    "slug": "accendis",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2013,
+    "website": "https://www.accendis.it",
+    "description": "Milan-based; luxury niche with Italian modernist aesthetic",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Jusbox Perfumes",
+    "slug": "jusbox-perfumes",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2016,
+    "website": "https://www.jusbox.com",
+    "description": "Music-inspired Italian niche; each scent a song reference",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Farmacia SS. Annunziata",
+    "slug": "farmacia-ss-annunziata",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1561,
+    "website": "https://www.annunziata.it",
+    "description": "Florentine pharmacy since 1561; one of Italy's oldest fragrance producers",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "I Profumi di Firenze",
+    "slug": "i-profumi-di-firenze",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1968,
+    "website": "https://www.iprofumidifirenze.it",
+    "description": "Florence-based; named fragrances after Italian cities and landmarks",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Bruno Acampora",
+    "slug": "bruno-acampora",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1977,
+    "website": "https://www.brunoacampora.com",
+    "description": "Naples-based; pure concentrated perfume oil format since 1977",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Bogue Profumo",
+    "slug": "bogue-profumo",
+    "tier": "ARTISAN",
+    "country": "Italy",
+    "foundedYear": 2014,
+    "website": "https://www.bogueprofumo.it",
+    "description": "Antonio Gardoni's experimental laboratory approach",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Francesca Bianchi",
+    "slug": "francesca-bianchi",
+    "tier": "ARTISAN",
+    "country": "Italy",
+    "foundedYear": 2013,
+    "website": "https://www.francescabianchi.com",
+    "description": "Rome-based; sensual human-skin scent aesthetic",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Astrophil & Stella",
+    "slug": "astrophil-stella",
+    "tier": "ARTISAN",
+    "country": "Italy",
+    "foundedYear": 2014,
+    "website": "https://www.astrophilestella.com",
+    "description": "Guiseppe Imprezzabile's poetic artisan house",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Byredo",
+    "slug": "byredo",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2006,
+    "website": "https://www.byredo.com",
+    "description": "Ben Gorham's design-forward Scandinavian house",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Le Labo",
+    "slug": "le-labo",
+    "tier": "NICHE",
+    "country": "France/USA",
+    "foundedYear": 2006,
+    "website": "https://www.lelabofragrances.com",
+    "description": "Estée Lauder acquired; personalized labeling",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Björk & Berries",
+    "slug": "bjork-berries",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2009,
+    "website": "https://www.bjorkandberries.com",
+    "description": "Swedish forest-inspired beauty brand",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Stora Skuggan",
+    "slug": "stora-skuggan",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2014,
+    "website": "https://www.storaskuggan.com",
+    "description": "Small-batch Swedish artisan; Nordic mythology",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Vilhelm Parfumerie",
+    "slug": "vilhelm-parfumerie",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2016,
+    "website": "https://vilhelmparfumerie.com",
+    "description": "Stockholm art-studio perfumery",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Abel Odor",
+    "slug": "abel-odor",
+    "tier": "NICHE",
+    "country": "Netherlands",
+    "foundedYear": 2011,
+    "website": "https://abelodor.com",
+    "description": "Amsterdam; 100% natural certified fragrances",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Puredistance",
+    "slug": "puredistance",
+    "tier": "NICHE",
+    "country": "Netherlands",
+    "foundedYear": 2002,
+    "website": "https://www.puredistance.com",
+    "description": "Rotterdam ultra-luxury minimalist Dutch brand",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Andrea Maack",
+    "slug": "andrea-maack",
+    "tier": "NICHE",
+    "country": "Iceland",
+    "foundedYear": 2010,
+    "website": "https://www.andreamaack.com",
+    "description": "Icelandic artist-perfumer; conceptual minimalism",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "19-69",
+    "slug": "19-69",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2017,
+    "website": "https://www.19-69.eu",
+    "description": "Decade-defining cultural moments from 1969",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Baruti",
+    "slug": "baruti",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2014,
+    "website": "https://www.barutiparfum.com",
+    "description": "Dariusz Zając's Stockholm indie artisan",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Hiram Green",
+    "slug": "hiram-green",
+    "tier": "NICHE",
+    "country": "Netherlands",
+    "foundedYear": 2013,
+    "website": "https://www.hiramgreen.com",
+    "description": "Amsterdam; all natural IFRA-compliant concentrates",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Philly & Phill",
+    "slug": "philly-phill",
+    "tier": "NICHE",
+    "country": "Netherlands",
+    "foundedYear": 2014,
+    "website": "https://www.phillyphil.com",
+    "description": "Amsterdam indie niche house",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Pryn Parfum",
+    "slug": "pryn-parfum",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2011,
+    "website": "https://www.prynparfum.com",
+    "description": "Stockholm niche; Nordic and oriental fusion",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Escentric Molecules",
+    "slug": "escentric-molecules",
+    "tier": "NICHE",
+    "country": "Germany/UK",
+    "foundedYear": 2006,
+    "website": "https://www.escentric.com",
+    "description": "Geza Schoen's single aroma-chemical concept",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Tauer Perfumes",
+    "slug": "tauer-perfumes",
+    "tier": "NICHE",
+    "country": "Switzerland",
+    "foundedYear": 2004,
+    "website": "https://www.tauerperfumes.com",
+    "description": "Hand-made by Andy Tauer in Zurich",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Mizensir",
+    "slug": "mizensir",
+    "tier": "NICHE",
+    "country": "Switzerland",
+    "foundedYear": 1999,
+    "website": "https://www.mizensir.com",
+    "description": "Alberto Morillas' own house (perfumer of CK One)",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "J.F. Schwarzlose Berlin",
+    "slug": "j-f-schwarzlose-berlin",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 1856,
+    "website": "https://www.jf-schwarzlose.com",
+    "description": "Berlin heritage house revived; German expressionism",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Birkholz",
+    "slug": "birkholz",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2015,
+    "website": "https://www.birkholzberlin.com",
+    "description": "Modern Berlin lifestyle niche",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Lengling Munich",
+    "slug": "lengling-munich",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2013,
+    "website": "https://www.lengling-parfums.com",
+    "description": "Munich luxury niche; bold transparent bottles",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "4711 Echt Kölnisch Wasser",
+    "slug": "4711-echt-kolnisch-wasser",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 1799,
+    "website": "https://www.4711.com",
+    "description": "One of the world's oldest continuously produced fragrances",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Gisada",
+    "slug": "gisada",
+    "tier": "NICHE",
+    "country": "Switzerland",
+    "foundedYear": 2012,
+    "website": "https://www.gisada.com",
+    "description": "Swiss luxury brand; Ambassador Men is a major hit",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Vero Profumo",
+    "slug": "vero-profumo",
+    "tier": "NICHE",
+    "country": "Switzerland",
+    "foundedYear": 2007,
+    "website": "https://www.veroprofumo.com",
+    "description": "Vero Kern's Zurich artisan house; lauded by experts",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "April Aromatics",
+    "slug": "april-aromatics",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2007,
+    "website": "https://www.aprilaromatics.com",
+    "description": "Berlin all-natural botanical artisan by Tanja Bochnig",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Annette Neuffer",
+    "slug": "annette-neuffer",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2010,
+    "website": "https://www.annetteneuffer.de",
+    "description": "Stuttgart indie perfumer; European botanical classic style",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Carner Barcelona",
+    "slug": "carner-barcelona",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2010,
+    "website": "https://www.carnerbarcelona.com",
+    "description": "Barcelona urban identity by Sara Carner",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Ramon Monegal",
+    "slug": "ramon-monegal",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2008,
+    "website": "https://www.ramonmonegal.com",
+    "description": "5th-generation master perfumer from Barcelona",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Rosendo Mateu",
+    "slug": "rosendo-mateu",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2017,
+    "website": "https://www.rosendomateu.com",
+    "description": "Designed By Kilian line; now own Olfaction series",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Santi Burgas",
+    "slug": "santi-burgas",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2011,
+    "website": "https://www.santiburgas.com",
+    "description": "Barcelona avant-garde indie perfumer",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Bravanariz",
+    "slug": "bravanariz",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2013,
+    "website": "https://www.bravanariz.com",
+    "description": "Barcelona; landscapes of Catalonia bottled in natural perfumery",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Fugazzi",
+    "slug": "fugazzi",
+    "tier": "NICHE",
+    "country": "Belgium",
+    "foundedYear": 2020,
+    "website": "https://www.fugazzi.com",
+    "description": "Belgian indie niche; audacious and contemporary",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Bohoboco",
+    "slug": "bohoboco",
+    "tier": "NICHE",
+    "country": "Poland",
+    "foundedYear": 2019,
+    "website": "https://www.bohoboco.com",
+    "description": "Warsaw indie niche; high-quality unisex compositions",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Pigmentarium",
+    "slug": "pigmentarium",
+    "tier": "NICHE",
+    "country": "Poland",
+    "foundedYear": 2015,
+    "website": "https://www.pigmentarium.pl",
+    "description": "Krakow-based; inspired by pigments and colour science",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Orlov Paris",
+    "slug": "orlov-paris",
+    "tier": "NICHE",
+    "country": "Russia/France",
+    "foundedYear": 2015,
+    "website": "https://www.orlovparis.com",
+    "description": "Russian tsarist heritage reimagined as Paris luxury niche",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Amouage",
+    "slug": "amouage",
+    "tier": "NICHE",
+    "country": "Oman",
+    "foundedYear": 1983,
+    "website": "https://www.amouage.com",
+    "description": "Founded at request of Sultan of Oman; ultra-luxury iconic",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Arabian Oud",
+    "slug": "arabian-oud",
+    "tier": "NICHE",
+    "country": "Saudi Arabia",
+    "foundedYear": 1982,
+    "website": "https://us.arabianoud.com",
+    "description": "Largest fragrance retailer in Middle East; 1,200+ stores",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Al Haramain",
+    "slug": "al-haramain",
+    "tier": "NICHE",
+    "country": "Saudi Arabia",
+    "foundedYear": 1970,
+    "website": "https://www.alharamainfragrances.com",
+    "description": "Saudi family-run with global distribution",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Rasasi",
+    "slug": "rasasi",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1979,
+    "website": "https://www.rasasi.com",
+    "description": "Dubai-based; blending Eastern and Western aesthetics",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Swiss Arabian",
+    "slug": "swiss-arabian",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1974,
+    "website": "https://www.swissarabian.com",
+    "description": "Bridges Swiss precision with Arabian heritage",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Lattafa",
+    "slug": "lattafa",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2013,
+    "website": "https://www.lattafa.com",
+    "description": "Exceptional value; global distribution in 60+ countries",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Ajmal Perfumes",
+    "slug": "ajmal-perfumes",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1951,
+    "website": "https://www.ajmalperfumes.com",
+    "description": "One of UAE's oldest family-run houses (1951)",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Afnan Perfumes",
+    "slug": "afnan-perfumes",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2007,
+    "website": "https://www.afnanperfumes.com",
+    "description": "UAE luxury artisan house",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Attar Collection",
+    "slug": "attar-collection",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2009,
+    "website": "https://www.attarcollection.com",
+    "description": "UAE niche; powerful long-lasting compositions",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Shalini Parfum",
+    "slug": "shalini-parfum",
+    "tier": "NICHE",
+    "country": "UAE/France",
+    "foundedYear": 2008,
+    "website": "https://www.shaliniparfum.com",
+    "description": "Ultra-luxury; among most expensive per ml globally",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Widian / AJ Arabia",
+    "slug": "widian-aj-arabia",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2012,
+    "website": "https://www.ajnarabia.com",
+    "description": "UAE ultra-luxury contemporary house",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Ard Al Zaafaran",
+    "slug": "ard-al-zaafaran",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2005,
+    "website": "https://www.ardalzaafaran.com",
+    "description": "Affordable traditional Arabic perfumes from Dubai",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Abdul Samad Al Qurashi",
+    "slug": "abdul-samad-al-qurashi",
+    "tier": "NICHE",
+    "country": "Saudi Arabia",
+    "foundedYear": 1852,
+    "website": "https://www.asaq.com",
+    "description": "One of oldest oud and perfume houses in Arabian Peninsula",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Armaf",
+    "slug": "armaf",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2013,
+    "website": "https://www.armafperfumes.com",
+    "description": "Club de Nuit Intense Man is a viral bestseller",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Vertus",
+    "slug": "vertus",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2019,
+    "website": "https://www.vertusparis.com",
+    "description": "Dubai-Paris luxury niche; striking bottle design",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Hind Al Oud",
+    "slug": "hind-al-oud",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2015,
+    "website": "https://www.hindaloud.com",
+    "description": "Specialist UAE artisan oud house",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Orientica",
+    "slug": "orientica",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2018,
+    "website": "https://www.orientica.com",
+    "description": "Dubai niche; premium oriental at accessible prices",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Khadlaj",
+    "slug": "khadlaj",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1979,
+    "website": "https://www.khadlajperfumes.com",
+    "description": "UAE traditional oud and mukhallat specialist",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "The Spirit of Dubai",
+    "slug": "the-spirit-of-dubai",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2014,
+    "website": "https://www.thespiritofdubai.com",
+    "description": "Inspired by Dubai landmarks and culture",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Al Rehab",
+    "slug": "al-rehab",
+    "tier": "NICHE",
+    "country": "Saudi Arabia",
+    "foundedYear": 1992,
+    "website": "https://www.alrehab.com",
+    "description": "Saudi house; popular affordable Arabian-style perfume oils",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Amouroud",
+    "slug": "amouroud",
+    "tier": "NICHE",
+    "country": "Lebanon/USA",
+    "foundedYear": 2015,
+    "website": "https://www.amouroud.com",
+    "description": "Lebanese-American; bridges East and West aromatically",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Kayali Fragrance",
+    "slug": "kayali-fragrance",
+    "tier": "NICHE",
+    "country": "UAE/USA",
+    "foundedYear": 2018,
+    "website": "https://www.kayalibeauty.com",
+    "description": "Founded by Mona Kattan (Huda Beauty's sister); massive social following",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Ojar Parfums",
+    "slug": "ojar-parfums",
+    "tier": "NICHE",
+    "country": "France/Morocco",
+    "foundedYear": 2011,
+    "website": "https://www.ojar.com",
+    "description": "Franco-Moroccan house; North African and French tradition fusion",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Maison Asrar",
+    "slug": "maison-asrar",
+    "tier": "NICHE",
+    "country": "Saudi Arabia",
+    "foundedYear": 2014,
+    "website": "https://www.maisonasrar.com",
+    "description": "Riyadh ultra-luxury heritage oud house",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Gulf Orchid",
+    "slug": "gulf-orchid",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1985,
+    "website": "https://www.gulforchid.com",
+    "description": "UAE heritage fragrance producer; strong regional distribution",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Nabeel Perfumes",
+    "slug": "nabeel-perfumes",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1990,
+    "website": "https://www.nabeelperfumes.com",
+    "description": "Dubai oud attar specialist; over 30 years of traditional fragrances",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Nishane",
+    "slug": "nishane",
+    "tier": "NICHE",
+    "country": "Turkey",
+    "foundedYear": 2011,
+    "website": "https://www.nishane.com.tr",
+    "description": "Istanbul; Ottoman meets modern aesthetics",
+    "category": "Turkish / E. European"
+  },
+  {
+    "name": "Unique'e Luxury",
+    "slug": "unique-e-luxury",
+    "tier": "NICHE",
+    "country": "Turkey/USA",
+    "foundedYear": 2017,
+    "website": "https://www.uniqueeluxury.com",
+    "description": "Turkish-American house with oud focus",
+    "category": "Turkish / E. European"
+  },
+  {
+    "name": "D.S. & Durga",
+    "slug": "d-s-durga",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2007,
+    "website": "https://www.dsanddurga.com",
+    "description": "Brooklyn-based; Americana-narrative inspired",
+    "category": "American Niche"
+  },
+  {
+    "name": "Bond No. 9",
+    "slug": "bond-no-9",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2003,
+    "website": "https://www.bondno9.com",
+    "description": "New York neighborhood-inspired; vivid bottle art",
+    "category": "American Niche"
+  },
+  {
+    "name": "MiN New York",
+    "slug": "min-new-york",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2009,
+    "website": "https://www.minnewyork.com",
+    "description": "East Village niche boutique & own line",
+    "category": "American Niche"
+  },
+  {
+    "name": "Imaginary Authors",
+    "slug": "imaginary-authors",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.imaginaryauthors.com",
+    "description": "Portland OR; each scent is a novel by fictional author",
+    "category": "American Niche"
+  },
+  {
+    "name": "Strangers Parfumerie",
+    "slug": "strangers-parfumerie",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://www.strangersparfumerie.com",
+    "description": "Seattle-based indie; dark literary aesthetic",
+    "category": "American Niche"
+  },
+  {
+    "name": "Rogue Perfumery",
+    "slug": "rogue-perfumery",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2015,
+    "website": "https://www.rogueperfumery.com",
+    "description": "Non-IFRA vintage-inspired artisan by Manuel Cross",
+    "category": "American Niche"
+  },
+  {
+    "name": "Zoologist Perfumes",
+    "slug": "zoologist-perfumes",
+    "tier": "NICHE",
+    "country": "Canada",
+    "foundedYear": 2013,
+    "website": "https://www.zoologistperfumes.com",
+    "description": "Toronto; each fragrance evokes an animal's habitat",
+    "category": "American Niche"
+  },
+  {
+    "name": "Monsillage",
+    "slug": "monsillage",
+    "tier": "NICHE",
+    "country": "Canada",
+    "foundedYear": 2014,
+    "website": "https://monsillage.com",
+    "description": "Montreal artisan; Dominique Dubrana collaborations",
+    "category": "American Niche"
+  },
+  {
+    "name": "House of Sillage",
+    "slug": "house-of-sillage",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://houseofsillage.com",
+    "description": "Nicole Mather's haute parfumerie; crystal-adorned bottles",
+    "category": "American Niche"
+  },
+  {
+    "name": "CB I Hate Perfume",
+    "slug": "cb-i-hate-perfume",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2000,
+    "website": "https://www.cbihateperfume.com",
+    "description": "Christopher Brosius; radically personal memory-scent",
+    "category": "American Niche"
+  },
+  {
+    "name": "Kerosene",
+    "slug": "kerosene",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.keroseneperfumery.com",
+    "description": "John Pegg's dark and edgy indie niche",
+    "category": "American Niche"
+  },
+  {
+    "name": "Gallivant",
+    "slug": "gallivant",
+    "tier": "NICHE",
+    "country": "UK/USA",
+    "foundedYear": 2017,
+    "website": "https://www.gallivantparfums.com",
+    "description": "City-inspired approachable travel niche",
+    "category": "American Niche"
+  },
+  {
+    "name": "Juliette Has a Gun",
+    "slug": "juliette-has-a-gun",
+    "tier": "NICHE",
+    "country": "France/USA",
+    "foundedYear": 2005,
+    "website": "https://www.juliettehesagun.com",
+    "description": "Romano Ricci's provocateur house",
+    "category": "American Niche"
+  },
+  {
+    "name": "Commodity",
+    "slug": "commodity",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2013,
+    "website": "https://www.commoditygoods.com",
+    "description": "Minimalist modern American niche; strong digital presence",
+    "category": "American Niche"
+  },
+  {
+    "name": "Malin + Goetz",
+    "slug": "malin-goetz",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2004,
+    "website": "https://www.malinandgoetz.com",
+    "description": "NYC apothecary; gender-neutral modern approach",
+    "category": "American Niche"
+  },
+  {
+    "name": "Eris Parfums",
+    "slug": "eris-parfums",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2015,
+    "website": "https://www.erisparfums.com",
+    "description": "Barbara Herman's vintage-referencing niche house",
+    "category": "American Niche"
+  },
+  {
+    "name": "Régime des Fleurs",
+    "slug": "regime-des-fleurs",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://www.rdfleurs.com",
+    "description": "LA-based; aesthetic partnerships with artists",
+    "category": "American Niche"
+  },
+  {
+    "name": "Arquiste",
+    "slug": "arquiste",
+    "tier": "NICHE",
+    "country": "Mexico/USA",
+    "foundedYear": 2011,
+    "website": "https://www.arquiste.com",
+    "description": "Mexico-origin; historical vignettes in scent",
+    "category": "American Niche"
+  },
+  {
+    "name": "Electimuss",
+    "slug": "electimuss",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2010,
+    "website": "https://www.electimuss.com",
+    "description": "London boutique; Roman-themed naming",
+    "category": "American Niche"
+  },
+  {
+    "name": "Krigler",
+    "slug": "krigler",
+    "tier": "NICHE",
+    "country": "Monaco/USA",
+    "foundedYear": 1904,
+    "website": "https://www.krigler.com",
+    "description": "Monaco heritage house; private client list includes royalty",
+    "category": "American Niche"
+  },
+  {
+    "name": "The 7 Virtues",
+    "slug": "the-7-virtues",
+    "tier": "NICHE",
+    "country": "Canada",
+    "foundedYear": 2010,
+    "website": "https://the7virtues.com",
+    "description": "Social enterprise; sources ingredients from post-conflict regions",
+    "category": "American Niche"
+  },
+  {
+    "name": "Boy Smells",
+    "slug": "boy-smells",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2016,
+    "website": "https://boysmells.com",
+    "description": "LA-based; gender-inclusive; known for bold candles and perfumes",
+    "category": "American Niche"
+  },
+  {
+    "name": "Ellis Brooklyn",
+    "slug": "ellis-brooklyn",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://www.ellisbrooklyn.com",
+    "description": "NYC-based; clean and sustainable; gender-neutral focus",
+    "category": "American Niche"
+  },
+  {
+    "name": "Dedcool",
+    "slug": "dedcool",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2019,
+    "website": "https://www.dedcool.com",
+    "description": "LA-based; refillable; genderless clean fragrance brand",
+    "category": "American Niche"
+  },
+  {
+    "name": "Heretic Parfums",
+    "slug": "heretic-parfums",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://hereticparfums.com",
+    "description": "LA-based natural niche; anti-establishment philosophy",
+    "category": "American Niche"
+  },
+  {
+    "name": "Fort & Manlé",
+    "slug": "fort-manle",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2013,
+    "website": "https://www.fortandmanle.com",
+    "description": "LA artisan; gender-inclusive unisex focus",
+    "category": "American Niche"
+  },
+  {
+    "name": "January Scent Project",
+    "slug": "january-scent-project",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2015,
+    "website": "https://www.januaryscentproject.com",
+    "description": "John Biebel's Pacific Northwest indie; unusual natural accords",
+    "category": "American Niche"
+  },
+  {
+    "name": "Pineward Perfumes",
+    "slug": "pineward-perfumes",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2020,
+    "website": "https://www.pinewardperfume.com",
+    "description": "Colorado indie; resinous forest-inspired perfumes in extrait concentration",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Black Phoenix Alchemy Lab (BPAL)",
+    "slug": "black-phoenix-alchemy-lab-bpal",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2000,
+    "website": "https://blackphoenixalchemylab.com",
+    "description": "Philadelphia; gothic, occult and mythological perfume oils; 2000+ releases",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Solstice Scents",
+    "slug": "solstice-scents",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.solsticescents.com",
+    "description": "Small-batch indie; seasonal collections inspired by folklore and nature",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "House of Matriarch",
+    "slug": "house-of-matriarch",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://houseofmatriarch.com",
+    "description": "Seattle high-perfumery; all-natural Mysore sandalwood focus",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Aftelier Perfumes",
+    "slug": "aftelier-perfumes",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 1999,
+    "website": "https://www.aftelier.com",
+    "description": "Mandy Aftel's Berkeley all-natural artisan house; pioneer since 1999",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Sixteen92",
+    "slug": "sixteen92",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2015,
+    "website": "https://shop.sixteenninety2.com",
+    "description": "Columbus OH; seasonal goth-aesthetic indie oils and sprays",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Alkemia Perfumes",
+    "slug": "alkemia-perfumes",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.alkemiaapothecary.com",
+    "description": "Indie apothecary; all-natural botanical focus",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "DSH Perfumes",
+    "slug": "dsh-perfumes",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 1999,
+    "website": "https://www.dshperfumes.com",
+    "description": "Dawn Spencer Hurwitz; Colorado artisan since 1999",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Slumberhouse",
+    "slug": "slumberhouse",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2010,
+    "website": "https://www.slumberhouse.com",
+    "description": "Josh Lobb's ultra-dense visceral indie from Portland",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Bruno Fazzolari",
+    "slug": "bruno-fazzolari",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.brunofazzolari.com",
+    "description": "San Francisco fine art perfumery",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Aedes de Venustas",
+    "slug": "aedes-de-venustas",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 1995,
+    "website": "https://www.aedesdevenustas.com",
+    "description": "NYC's most storied niche boutique; own line since 2012",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Olympic Orchids",
+    "slug": "olympic-orchids",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2010,
+    "website": "https://www.olympicorchids.com",
+    "description": "Dr. Ellen Covey's Pacific Northwest artisan; scientist-perfumer",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Maher Olfactive",
+    "slug": "maher-olfactive",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2016,
+    "website": "https://www.maherolfactive.com",
+    "description": "Brooklyn indie; unusual raw materials and handcrafted process",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Fueguia 1833",
+    "slug": "fueguia-1833",
+    "tier": "NICHE",
+    "country": "Argentina",
+    "foundedYear": 2011,
+    "website": "https://www.fueguia.com",
+    "description": "Julian Bedel's all-natural South American botanicals",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Goldfield & Banks",
+    "slug": "goldfield-banks",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 2016,
+    "website": "https://www.goldfieldandbanks.com",
+    "description": "Australian natural perfumery; native botanicals",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Naomi Goodsir",
+    "slug": "naomi-goodsir",
+    "tier": "ARTISAN",
+    "country": "Australia/France",
+    "foundedYear": 2013,
+    "website": "https://www.naomigoodsir.com",
+    "description": "Melbourne designer; strong art-world sensibility",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Grown Alchemist",
+    "slug": "grown-alchemist",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 2008,
+    "website": "https://www.grownalchemist.com",
+    "description": "Melbourne bioactive beauty and fragrance brand",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Aesop",
+    "slug": "aesop",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 1987,
+    "website": "https://www.aesop.com",
+    "description": "Melbourne-founded botanical lifestyle brand; acquired by L'Oréal 2023",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Floraïku",
+    "slug": "floraiku",
+    "tier": "NICHE",
+    "country": "France/Japan",
+    "foundedYear": 2016,
+    "website": "https://www.floraiku.com",
+    "description": "Haiku poetry-inspired; bento-box packaging",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "DI SER",
+    "slug": "di-ser",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2014,
+    "website": "https://di-ser.jp",
+    "description": "Hokkaido forest-to-bottle; all Japanese botanicals",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Tamburins",
+    "slug": "tamburins",
+    "tier": "NICHE",
+    "country": "South Korea",
+    "foundedYear": 2017,
+    "website": "https://www.tamburins.com",
+    "description": "Gentle Monster sister brand; luxury Korean conceptual",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Nonfiction",
+    "slug": "nonfiction",
+    "tier": "NICHE",
+    "country": "South Korea",
+    "foundedYear": 2020,
+    "website": "https://www.nonfiction.co.kr",
+    "description": "Seoul lifestyle fragrance; calm and introspection focus",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Granhand",
+    "slug": "granhand",
+    "tier": "NICHE",
+    "country": "South Korea",
+    "foundedYear": 2013,
+    "website": "https://en.granhand.com",
+    "description": "Seoul indie; scents tied to memories and places",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Borntostandout (BTSO)",
+    "slug": "borntostandout-btso",
+    "tier": "NICHE",
+    "country": "South Korea",
+    "foundedYear": 2017,
+    "website": "https://www.borntostandout.com",
+    "description": "Korean niche rebels against mainstream perfumery",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "To Summer",
+    "slug": "to-summer",
+    "tier": "NICHE",
+    "country": "China",
+    "foundedYear": 2018,
+    "website": "https://www.tosummer.com",
+    "description": "Chinese indie niche; traditional Chinese seasons and culture",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "The Harmonist",
+    "slug": "the-harmonist",
+    "tier": "NICHE",
+    "country": "France/China",
+    "foundedYear": 2016,
+    "website": "https://www.theharmonist.com",
+    "description": "Feng Shui-inspired; Western perfumery and Chinese philosophy",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Soohyang",
+    "slug": "soohyang",
+    "tier": "NICHE",
+    "country": "South Korea",
+    "foundedYear": 2014,
+    "website": "https://en.soohyang.com",
+    "description": "Korean brand; memory and place-based scents",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Melt Season",
+    "slug": "melt-season",
+    "tier": "NICHE",
+    "country": "China",
+    "foundedYear": 2018,
+    "website": "https://www.meltseason.com",
+    "description": "Shanghai indie; L'Oréal invested; nature-minimalist Chinese aesthetic",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Senyoko",
+    "slug": "senyoko",
+    "tier": "NICHE",
+    "country": "Japan/France",
+    "foundedYear": 2014,
+    "website": "https://www.senyoko.com",
+    "description": "Franco-Japanese heritage; Erina and Joseph Jabbour; washi paper packaging",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Bombay Perfumery",
+    "slug": "bombay-perfumery",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2016,
+    "website": "https://www.bombayperfumery.com",
+    "description": "Indian indie; evokes specific memories and cities through scent",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "Naso Profumi",
+    "slug": "naso-profumi",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2014,
+    "website": "https://nasoprofumi.com",
+    "description": "4th-generation artisan; modern attar meets French perfumery",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "ISAK Fragrances",
+    "slug": "isak-fragrances",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 1857,
+    "website": "https://www.isakfragrances.com",
+    "description": "160-year Lucknow heritage; 5th-generation Awadhi perfumers",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "Gulab Singh Johrimal",
+    "slug": "gulab-singh-johrimal",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 1816,
+    "website": "https://www.gulabsinghjohrimal.com",
+    "description": "One of India's oldest perfume houses (1816); handcrafted attars",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "Forest Essentials",
+    "slug": "forest-essentials",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2000,
+    "website": "https://www.forestessentialsindia.com",
+    "description": "Luxury Ayurveda brand; single-flower and botanical perfumes",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "All Good Scents",
+    "slug": "all-good-scents",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2010,
+    "website": "https://allgoodscents.com",
+    "description": "Rajiv Sheth (Grasse and Paris trained); vegan cruelty-free modern Indian",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "LilaNur Parfums",
+    "slug": "lilanur-parfums",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2020,
+    "website": "https://lilanur.com",
+    "description": "Mumbai; spotlight on India's indigenous botanical ingredients",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "Call of the Valley",
+    "slug": "call-of-the-valley",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2020,
+    "website": "https://callofthevalley.in",
+    "description": "Mumbai; ancient deg and bhapka hydrodistillation method; ethical sourcing",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "Parfums Dusita",
+    "slug": "parfums-dusita",
+    "tier": "NICHE",
+    "country": "Thailand/France",
+    "foundedYear": 2015,
+    "website": "https://www.parfumsdusita.com",
+    "description": "Pissara Umavijani's Thai-French house; exquisite craftsmanship",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "Bortnikoff",
+    "slug": "bortnikoff",
+    "tier": "NICHE",
+    "country": "Thailand/Russia",
+    "foundedYear": 2018,
+    "website": "https://www.bortnikoff.com",
+    "description": "Russia-born creator, Thailand-based; ultra-rare all-natural attars",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "d'Annam",
+    "slug": "d-annam",
+    "tier": "NICHE",
+    "country": "Vietnam",
+    "foundedYear": 2015,
+    "website": "https://dannam.com",
+    "description": "Hanoi artisan; each fragrance a Vietnamese landscape",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "Scent of Africa",
+    "slug": "scent-of-africa",
+    "tier": "NICHE",
+    "country": "Ghana/France",
+    "foundedYear": 2020,
+    "website": "https://scentofafrica.com",
+    "description": "Ghana-inspired house; African botanicals and mythology; French perfumers",
+    "category": "African / N. African"
+  },
+  {
+    "name": "Réserve en Afrique",
+    "slug": "reserve-en-afrique",
+    "tier": "NICHE",
+    "country": "Senegal/France",
+    "foundedYear": 2019,
+    "website": "https://www.reserveenafrique.com",
+    "description": "Senegalese heritage meets French fine perfumery",
+    "category": "African / N. African"
+  },
+  {
+    "name": "Nadra Safiri",
+    "slug": "nadra-safiri",
+    "tier": "NICHE",
+    "country": "South Africa",
+    "foundedYear": 2020,
+    "website": "https://nadrasafiri.com",
+    "description": "Cape Town-based; African botanicals; anti-cruelty and ethical sourcing",
+    "category": "African / N. African"
+  },
+  {
+    "name": "House of Gozdawa",
+    "slug": "house-of-gozdawa",
+    "tier": "NICHE",
+    "country": "South Africa",
+    "foundedYear": 2015,
+    "website": "https://www.houseofgozdawa.co.za",
+    "description": "Cape Town; naturally-derived unisex Eau de Parfums; foraged ingredients",
+    "category": "African / N. African"
+  },
+  {
+    "name": "Areej Le Doré",
+    "slug": "areej-le-dore",
+    "tier": "ARTISAN",
+    "country": "Russia/UAE",
+    "foundedYear": 2016,
+    "website": "https://www.areejledore.com",
+    "description": "Ultra-rare natural luxury; very limited production",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Ensar Oud",
+    "slug": "ensar-oud",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2003,
+    "website": "https://www.ensaroud.com",
+    "description": "Artisan oud attar specialist; natural wood-oil focus",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Perris Monte Carlo",
+    "slug": "perris-monte-carlo",
+    "tier": "ARTISAN",
+    "country": "Monaco",
+    "foundedYear": 2007,
+    "website": "https://www.perrismontecarlo.com",
+    "description": "Monaco luxury independent; high concentration naturals",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Stéphane Humbert Lucas 777",
+    "slug": "stephane-humbert-lucas-777",
+    "tier": "ARTISAN",
+    "country": "France",
+    "foundedYear": 2012,
+    "website": "https://www.shl777.com",
+    "description": "Sought-after; strong oud and skin-scent focus",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Sultan Pasha Attars",
+    "slug": "sultan-pasha-attars",
+    "tier": "ARTISAN",
+    "country": "United Kingdom",
+    "foundedYear": 2008,
+    "website": "https://sultanpashaattars.com",
+    "description": "UK-based; classical French and Indian attar artistry",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Mona di Orio",
+    "slug": "mona-di-orio",
+    "tier": "ARTISAN",
+    "country": "Italy/France",
+    "foundedYear": 2006,
+    "website": "https://www.monadiorio.com",
+    "description": "The late Mona di Orio's dark, artistic perfumery",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Angelos Creations Olfactives",
+    "slug": "angelos-creations-olfactives",
+    "tier": "ARTISAN",
+    "country": "Greece",
+    "foundedYear": 2012,
+    "website": "https://www.angeloscreations.com",
+    "description": "Athens-based self-taught artisan; praised for complexity",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Theodoros Kalotinis",
+    "slug": "theodoros-kalotinis",
+    "tier": "ARTISAN",
+    "country": "Greece",
+    "foundedYear": 2015,
+    "website": "https://www.theodoroskalotinis.com",
+    "description": "Athens artisan perfumer; natural ingredients and Greek identity",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Anna Zworykina",
+    "slug": "anna-zworykina",
+    "tier": "ARTISAN",
+    "country": "Germany/Russia",
+    "foundedYear": 2013,
+    "website": "https://www.annazworykina.com",
+    "description": "Berlin-based Russian-German artisan; Eastern European natural focus",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Cloon Keen Atelier",
+    "slug": "cloon-keen-atelier",
+    "tier": "DESIGNER",
+    "country": "Ireland",
+    "foundedYear": 2002,
+    "website": "https://cloonkeen.com",
+    "description": "Irish artisan perfumer from Galway; hand-crafted in small batches since 2002",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Jardins Ecrivains",
+    "slug": "jardins-ecrivains",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2010,
+    "website": "https://www.jardinsdecrivains.com",
+    "description": "Paris Marais boutique; each scent inspired by a famous writer",
+    "category": "French Niche"
+  },
+  {
+    "name": "Le Galion",
+    "slug": "le-galion",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1930,
+    "website": "https://www.parfumslegalgalon.com",
+    "description": "Founded 1930 by Prince Murat; revived 2016; Art Deco fragrance classics",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Parle Moi de Parfum",
+    "slug": "parle-moi-de-parfum",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.parlemoideparfum.com",
+    "description": "Michael Favre's Paris indie; numbered fragrances; sharp elegant style",
+    "category": "French Niche"
+  },
+  {
+    "name": "Binet-Papillon",
+    "slug": "binet-papillon",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2015,
+    "website": "https://binet-papillon.com",
+    "description": "Small Paris house respecting 17th-century French perfumery traditions",
+    "category": "French Niche"
+  },
+  {
+    "name": "Astier de Villatte",
+    "slug": "astier-de-villatte",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1996,
+    "website": "https://www.astierdevillatte.com",
+    "description": "Beloved Paris ceramics atelier; atmospheric and literary fragrances",
+    "category": "French Niche"
+  },
+  {
+    "name": "1000 Flowers Perfumer",
+    "slug": "1000-flowers-perfumer",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.1000flowersperfumer.com",
+    "description": "Rachid Boumhandi's Paris indie; high-quality natural oil concentrates",
+    "category": "French Niche"
+  },
+  {
+    "name": "Absolument Parfumeur",
+    "slug": "absolument-parfumeur",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2012,
+    "website": "https://www.absolumentparfumeur.com",
+    "description": "Bernard Duclos' high-concentration naturals; Paris indie",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Violet",
+    "slug": "maison-violet",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2019,
+    "website": "https://www.maisonviolet.com",
+    "description": "Paris niche; clean modern aesthetics with premium naturals",
+    "category": "French Niche"
+  },
+  {
+    "name": "Cherigan Paris",
+    "slug": "cherigan-paris",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1920,
+    "website": "https://cherigan.com",
+    "description": "1920s Art Deco Montparnasse house; revived 2010s; bold historic compositions",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Officine Universelle Buly 1803",
+    "slug": "officine-universelle-buly-1803",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1803,
+    "website": "https://www.buly1803.com",
+    "description": "Revived 1803 Paris apothecary; Ramdane Touhami; Japonisme-inspired beauty",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Ella K Parfums",
+    "slug": "ella-k-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2017,
+    "website": "https://www.ellakparfums.com",
+    "description": "Kanako Kobayashi's Franco-Japanese Paris niche house; tea and wood focus",
+    "category": "French Niche"
+  },
+  {
+    "name": "Parfums de Nicolai",
+    "slug": "parfums-de-nicolai",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1989,
+    "website": "https://www.nicolai-parfumeur.com",
+    "description": "Patricia de Nicolai, great-granddaughter of Pierre Guerlain; expert refined niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "Le Couvent",
+    "slug": "le-couvent",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1987,
+    "website": "https://www.lecouvents.com",
+    "description": "Provence monastery-inspired; botanical and aromatherapy tradition",
+    "category": "French Niche"
+  },
+  {
+    "name": "Eau d Italie",
+    "slug": "eau-d-italie",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2001,
+    "website": "https://eauditalie.com",
+    "description": "Hotel Le Sirenuse Positano signature fragrance; Bertrand Duchaufour creations",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Tuttotondo",
+    "slug": "tuttotondo",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2014,
+    "website": "https://www.tuttotondo.com",
+    "description": "All-natural ingredients from Amalfi Coast region",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Erbario Toscano",
+    "slug": "erbario-toscano",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1998,
+    "website": "https://www.erbariotoscano.it",
+    "description": "Tuscany-based; 100% natural Tuscan botanical ingredients",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Il Profumo",
+    "slug": "il-profumo",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1995,
+    "website": "https://www.ilprofumo.it",
+    "description": "Milan artisan niche; high-quality naturals; fine Italian craft",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Filippa K Fragrance",
+    "slug": "filippa-k-fragrance",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2015,
+    "website": "https://www.filippa-k.com",
+    "description": "Swedish minimal fashion extending into clean genderless fragrance",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "House of Oud",
+    "slug": "house-of-oud",
+    "tier": "NICHE",
+    "country": "Italy / UAE",
+    "foundedYear": 2013,
+    "website": "https://www.houseofoud.com",
+    "description": "Italian-born oud-inspired house; bridge between Middle Eastern and Italian perfumery",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Navitus Parfums",
+    "slug": "navitus-parfums",
+    "tier": "NICHE",
+    "country": "USA / UAE",
+    "foundedYear": 2015,
+    "website": "https://www.navitusparfums.com",
+    "description": "Ultra-premium oud-inspired; New York designed, Arabian-inspired",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "El Nabil",
+    "slug": "el-nabil",
+    "tier": "NICHE",
+    "country": "France / Lebanon",
+    "foundedYear": 2012,
+    "website": "https://www.parfum-el-nabil.com",
+    "description": "Halal-certified French-Lebanese house; hugely popular in France and North Africa",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Maison Alhambra",
+    "slug": "maison-alhambra",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2022,
+    "website": "https://www.maisonalhambra.com",
+    "description": "Lattafa premium sub-brand; inspired by the Alhambra palace of Granada",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Al Wataniah",
+    "slug": "al-wataniah",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 1982,
+    "website": "https://www.alwataniahperfumes.com",
+    "description": "UAE heritage fragrance house; traditional oud and mukhallat specialist",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "J-Scent",
+    "slug": "j-scent",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2015,
+    "website": "https://www.j-scent.jp",
+    "description": "Tokyo artisan; each fragrance a Japanese cultural moment or flavor",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Kitowa",
+    "slug": "kitowa",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2018,
+    "website": "https://kitowafragrance.com",
+    "description": "Japanese hinoki cypress and sacred tree luxury fragrances; Mie Prefecture oils",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Parfum Satori",
+    "slug": "parfum-satori",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2000,
+    "website": "https://www.parfum-satori.com",
+    "description": "Satori Osawa's Tokyo boutique; French-trained; integrates Kodo Japanese fragrance art",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Osaji",
+    "slug": "osaji",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2019,
+    "website": "https://www.osaji.net",
+    "description": "Kamakura botanical wellness brand; incense cocoa concept; artisan fragrance line",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Retaw",
+    "slug": "retaw",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2011,
+    "website": "https://retaw.jp",
+    "description": "Tokyo lifestyle brand; cult solid fragrance wax format; influential in streetwear",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Shiro Cosmetics",
+    "slug": "shiro-cosmetics",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2009,
+    "website": "https://www.shiro-shiro.jp",
+    "description": "Hokkaido beauty brand; clean skin-friendly fragrances; minimalist Japanese philosophy",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Aux Paradis",
+    "slug": "aux-paradis",
+    "tier": "NICHE",
+    "country": "Japan",
+    "foundedYear": 2011,
+    "website": "https://auxparadis.com",
+    "description": "Tokyo indie; soft Japanese botanical minimalism; accessible niche",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Soma Ayurvedic",
+    "slug": "soma-ayurvedic",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2018,
+    "website": "https://www.somaayurvedic.com",
+    "description": "Allure Best of Beauty winner; Mysur Sandalwood rivaled by Le Labo Santal 33",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "NEESH Perfumes",
+    "slug": "neesh-perfumes",
+    "tier": "NICHE",
+    "country": "India",
+    "foundedYear": 2021,
+    "website": "https://neeshperfumes.com",
+    "description": "5th-generation Kannauj heritage; global distribution in India, US, EU, UAE",
+    "category": "South Asian / Indian"
+  },
+  {
+    "name": "Grandiflora Fragrance",
+    "slug": "grandiflora-fragrance",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 2011,
+    "website": "https://www.grandiflora.net",
+    "description": "Sydney florist Saskia Havekes; botanically rare flower-inspired perfumes",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Catherine Omai",
+    "slug": "catherine-omai",
+    "tier": "NICHE",
+    "country": "Nigeria",
+    "foundedYear": 2016,
+    "website": "https://www.catherineomai.com",
+    "description": "Nigerian luxury niche; celebrates West African femininity and heritage",
+    "category": "African / N. African"
+  },
+  {
+    "name": "White Label Fragrance",
+    "slug": "white-label-fragrance",
+    "tier": "NICHE",
+    "country": "Botswana",
+    "foundedYear": 2018,
+    "website": "https://www.whitelabelfragrance.com",
+    "description": "Botswana indie house; growing pan-African niche brand",
+    "category": "African / N. African"
+  },
+  {
+    "name": "Sonoma Scent Studio",
+    "slug": "sonoma-scent-studio",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2010,
+    "website": "https://www.sonomascentstudio.com",
+    "description": "Laurie Erickson's Sonoma County all-natural artisan studio",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Ava Luxe",
+    "slug": "ava-luxe",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2002,
+    "website": "https://www.avaluxe.com",
+    "description": "LA indie; natural and affordable artisan fragrance oils since 2002",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Chatillon Lux",
+    "slug": "chatillon-lux",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2013,
+    "website": "https://www.chatillonlux.com",
+    "description": "St. Louis MO artisan; classic American grooming meets fine fragrance",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Dame Perfumery Scottsdale",
+    "slug": "dame-perfumery-scottsdale",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2009,
+    "website": "https://www.dameperfumery.com",
+    "description": "Scottsdale AZ indie; authentic American Southwest desert botanicals",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Juniper Ridge",
+    "slug": "juniper-ridge",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2000,
+    "website": "https://juniperridge.com",
+    "description": "Oakland CA; wildcrafted from American wilderness; deeply natural and earthy",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Chris Collins New York",
+    "slug": "chris-collins-new-york",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2005,
+    "website": "https://www.chriscollinsnewyork.com",
+    "description": "NYC luxury niche; vivid collector bottles; fashion-forward compositions",
+    "category": "American Niche"
+  },
+  {
+    "name": "Labdanum 18",
+    "slug": "labdanum-18",
+    "tier": "NICHE",
+    "country": "Brazil",
+    "foundedYear": 2011,
+    "website": "https://www.labdanum18.com",
+    "description": "Brazilian natural oil concentrates trained in Grasse; South American minimalist niche",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Prepara",
+    "slug": "prepara",
+    "tier": "NICHE",
+    "country": "Portugal",
+    "foundedYear": 2016,
+    "website": "https://www.prepara.pt",
+    "description": "Lisbon artisan perfume studio; Iberian botanicals and heritage",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Elie Saab",
+    "slug": "elie-saab",
+    "tier": "DESIGNER",
+    "country": "Lebanon / France",
+    "foundedYear": 1982,
+    "website": "https://www.eliesaab.com",
+    "description": "Lebanese fashion house; Le Parfum line is a global commercial success",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Toskovat",
+    "slug": "toskovat",
+    "tier": "NICHE",
+    "country": "Russia",
+    "foundedYear": 2019,
+    "website": "https://toskovat.com",
+    "description": "Moscow minimalist indie; clean modern Russian niche concept",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Shiseido",
+    "slug": "shiseido",
+    "tier": "DESIGNER",
+    "country": "Japan",
+    "foundedYear": 1872,
+    "website": "https://www.shiseido.com",
+    "description": "Japan's oldest cosmetics company; storied fragrance heritage since 1872",
+    "category": "Designer / Luxury"
+  },
+  {
+    "name": "Abdes Salaam Attar",
+    "slug": "abdes-salaam-attar",
+    "tier": "NICHE",
+    "country": "Italy / France",
+    "foundedYear": 1982,
+    "website": "https://www.profumo.it",
+    "description": "Maestro Dominique Dubrana's Florence natural attar house since 1982",
+    "category": "French Niche"
+  },
+  {
+    "name": "Zielinski and Rozen",
+    "slug": "zielinski-and-rozen",
+    "tier": "NICHE",
+    "country": "Israel",
+    "foundedYear": 1905,
+    "website": "https://zielinskiandrozen.com",
+    "description": "Old Jaffa artisan house since 1905; Erez Rozen sole perfumer; custom bespoke service",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Agonist",
+    "slug": "agonist",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2008,
+    "website": "https://www.agonistparfums.com",
+    "description": "Swedish; hand-blown art-glass bottles; Christine and Niclas Lydeen",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Cra-Yon",
+    "slug": "cra-yon",
+    "tier": "NICHE",
+    "country": "Sweden / France",
+    "foundedYear": 2020,
+    "website": "https://www.cra-yon.com",
+    "description": "Swedish-French hybrid; vegan cruelty-free; award-winning perfumers",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Skandinavisk",
+    "slug": "skandinavisk",
+    "tier": "NICHE",
+    "country": "Denmark / UK",
+    "foundedYear": 2012,
+    "website": "https://www.skandinavisk.com",
+    "description": "Danish-British; captures Nordic nature through scent; strong sustainability ethos",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Zarkoperfume",
+    "slug": "zarkoperfume",
+    "tier": "NICHE",
+    "country": "Denmark",
+    "foundedYear": 2014,
+    "website": "https://www.zarkoperfume.com",
+    "description": "Danish molecular fragrance; pheromone-interaction concept by Zarko Ahlmann Pavlov",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Son Venin",
+    "slug": "son-venin",
+    "tier": "NICHE",
+    "country": "Norway",
+    "foundedYear": 2015,
+    "website": "https://sonvenin.com",
+    "description": "Oslo niche; experimental intimate perfumes; sensuous Nordic aesthetic",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Sprekenhus",
+    "slug": "sprekenhus",
+    "tier": "NICHE",
+    "country": "Norway",
+    "foundedYear": 2010,
+    "website": "https://www.sprekenhus.no",
+    "description": "Oslo unisex; inspired by Vega archipelago UNESCO heritage landscape",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Atelier Oblique",
+    "slug": "atelier-oblique",
+    "tier": "NICHE",
+    "country": "Denmark",
+    "foundedYear": 2013,
+    "website": "https://www.atelieroblique.com",
+    "description": "Copenhagen studio; minimalist Danish craft; architecturally minimal aesthetic",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "A.N. Other",
+    "slug": "a-n-other",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2018,
+    "website": "https://an-other.com",
+    "description": "Anti-marketing niche; highlights perfumer names over brand; exceptional value",
+    "category": "American Niche"
+  },
+  {
+    "name": "Henrik Vibskov",
+    "slug": "henrik-vibskov",
+    "tier": "NICHE",
+    "country": "Denmark",
+    "foundedYear": 2011,
+    "website": "https://henrikvibskov.com",
+    "description": "Danish fashion designer's fragrance; hand-carved bottle toppers; nature/imagination hybrid",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Bibbi Parfums",
+    "slug": "bibbi-parfums",
+    "tier": "NICHE",
+    "country": "Norway",
+    "foundedYear": 2017,
+    "website": "https://bibbi.no",
+    "description": "Oslo artisan house; crafted with Grasse perfumers; Nordic-oriental fusion",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Fischersund",
+    "slug": "fischersund",
+    "tier": "NICHE",
+    "country": "Iceland / Denmark",
+    "foundedYear": 2012,
+    "website": "https://fischersund.com",
+    "description": "Reykjavik-Copenhagen; experimental minimal apothecary bottles",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Colekt",
+    "slug": "colekt",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2016,
+    "website": "https://www.colekt.com",
+    "description": "Swedish lifestyle minimalism; botanical clean urban escapism",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Timothy Han",
+    "slug": "timothy-han",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2011,
+    "website": "https://timothyhan.com",
+    "description": "London-based; fine art photography background; each scent a political or social statement",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Vyrao",
+    "slug": "vyrao",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2021,
+    "website": "https://www.vyrao.com",
+    "description": "London; chakra-aligned; created with energy healer Yasmin Sewell",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Lush Perfumes",
+    "slug": "lush-perfumes",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1995,
+    "website": "https://www.lush.com/uk/en/c/perfume",
+    "description": "Handmade ethical cosmetics giant; Mark Constantine's cult in-house perfume lab",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Truefitt and Hill",
+    "slug": "truefitt-and-hill",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1805,
+    "website": "https://www.truefittandhill.com",
+    "description": "World's oldest barbershop est. 1805; Mayfair barbering heritage",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Frau Tonis Parfum",
+    "slug": "frau-tonis-parfum",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2009,
+    "website": "https://www.frautonis.com",
+    "description": "Berlin artisan; 26-scent olfactory library by Stefanie Hanssen",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Biehl Parfumkunstwerke",
+    "slug": "biehl-parfumkunstwerke",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2005,
+    "website": "https://www.biehl-parfumkunstwerke.com",
+    "description": "Munich art-fragrance label; each scent co-created with a visual artist",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Mad et Len",
+    "slug": "mad-et-len",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2008,
+    "website": "https://www.madetlenparfums.com",
+    "description": "Haute-Savoie artisan; cast-iron patinated pots; forest and iron aesthetic",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Matine",
+    "slug": "maison-matine",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://maisonmatine.fr",
+    "description": "Paris niche; cocktail-inspired; playful pop design",
+    "category": "French Niche"
+  },
+  {
+    "name": "Papilles",
+    "slug": "papilles",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2017,
+    "website": "https://www.papilles.net",
+    "description": "Paris gourmand-botanical niche focused on simplicity",
+    "category": "French Niche"
+  },
+  {
+    "name": "Olibere Parfums",
+    "slug": "olibere-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2012,
+    "website": "https://www.olibere.com",
+    "description": "Paris niche; luxurious natural resins and oud focus",
+    "category": "French Niche"
+  },
+  {
+    "name": "Strangelove NYC",
+    "slug": "strangelove-nyc",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2017,
+    "website": "https://www.strangelovenyc.com",
+    "description": "NYC luxury; conceptual photography-and-music-inspired artisan house",
+    "category": "American Niche"
+  },
+  {
+    "name": "Lvnea",
+    "slug": "lvnea",
+    "tier": "ARTISAN",
+    "country": "Canada",
+    "foundedYear": 2014,
+    "website": "https://lvneaperfume.com",
+    "description": "Montreal all-natural botanical artisan; forest and shadow identity",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Hilde Soliani updated",
+    "slug": "hilde-soliani-updated",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2007,
+    "website": "https://www.hildesoliani.com",
+    "description": "Parma indie; playful storytelling; updated listing",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Obvious Parfums",
+    "slug": "obvious-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2019,
+    "website": "https://obvious-parfums.com",
+    "description": "Paris collective; art-directed unisex contemporary niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "Roos and Roos",
+    "slug": "roos-and-roos",
+    "tier": "NICHE",
+    "country": "France / Denmark",
+    "foundedYear": 2016,
+    "website": "https://www.roosandroos.com",
+    "description": "Franco-Danish house; punk-rock irreverence; dark florals and leather",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Frama",
+    "slug": "frama",
+    "tier": "NICHE",
+    "country": "Denmark",
+    "foundedYear": 2014,
+    "website": "https://frama.space",
+    "description": "Copenhagen design-led lifestyle brand; Apothecary fragrance collection",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Parfums Quartana",
+    "slug": "parfums-quartana",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2009,
+    "website": "https://www.sixscents.com",
+    "description": "Fashion-fragrance collaborations; biannual artist releases",
+    "category": "American Niche"
+  },
+  {
+    "name": "Lvnea Perfume",
+    "slug": "lvnea-perfume",
+    "tier": "ARTISAN",
+    "country": "Canada",
+    "foundedYear": 2014,
+    "website": "https://lvneaperfume.com",
+    "description": "Montreal all-natural botanical artisan; dark poetic aesthetic",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Aqualis",
+    "slug": "aqualis",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2013,
+    "website": "https://www.aqualis.com",
+    "description": "Dubai artisan niche; pure oud in minimalist modern luxury",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Gissah Perfumes",
+    "slug": "gissah-perfumes",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2014,
+    "website": "https://gissah.com",
+    "description": "UAE artisan oud and luxury Arabian perfumery",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Hayari Paris",
+    "slug": "hayari-paris",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2013,
+    "website": "https://www.hayariparfums.com",
+    "description": "Paris luxury niche inspired by haute couture and arabesque art",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison Anthony Marmin",
+    "slug": "maison-anthony-marmin",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2015,
+    "website": "https://www.maisonanthonymarmin.com",
+    "description": "French niche; Anthony Marmin's artisan compositions",
+    "category": "French Niche"
+  },
+  {
+    "name": "Les Eaux Primordiales",
+    "slug": "les-eaux-primordiales",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2013,
+    "website": "https://www.leseauxprimordiales.com",
+    "description": "Paris luxury niche; rare primordial ingredients",
+    "category": "French Niche"
+  },
+  {
+    "name": "Bastille Parfums",
+    "slug": "bastille-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://bastilleparfums.com",
+    "description": "Paris niche with strong sustainability mission; eco-design",
+    "category": "French Niche"
+  },
+  {
+    "name": "Fiele Fragrances",
+    "slug": "fiele-fragrances",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2013,
+    "website": "https://fiele.co",
+    "description": "Portland-based; wearable art with textile and visual art collaborations",
+    "category": "American Niche"
+  },
+  {
+    "name": "Ffern",
+    "slug": "ffern",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2019,
+    "website": "https://ffern.co",
+    "description": "Subscription-based seasonal perfume; 4 launches per year; all-natural; made by Elodie Durande",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Gabar",
+    "slug": "gabar",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2020,
+    "website": "https://www.gabarperfumes.com",
+    "description": "London indie; nature-led; earthy and oceanic compositions that earned cult following",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Future Primitive Soap Co",
+    "slug": "future-primitive-soap-co",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2015,
+    "website": "https://www.futureprimitive.co.uk",
+    "description": "UK indie inspired by apothecaries and English folklore; fast sell-outs",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Who Is Elijah",
+    "slug": "who-is-elijah",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 2018,
+    "website": "https://whoiselijah.com.au",
+    "description": "Sydney genderless niche; $20M valuation; celebrity following including Sofia Richie",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "One Seed",
+    "slug": "one-seed",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 2009,
+    "website": "https://www.oneseed.com.au",
+    "description": "Adelaide; 100% natural vegan; award-winning; 80%+ organic certified",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Abel Fragrance",
+    "slug": "abel-fragrance",
+    "tier": "ARTISAN",
+    "country": "New Zealand",
+    "foundedYear": 2013,
+    "website": "https://abelfragrance.com",
+    "description": "Wellington NZ; 100% natural; Frances Shoemack and master perfumer Isaac Sinclair",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Viti Vinci",
+    "slug": "viti-vinci",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2021,
+    "website": "https://vitivinci.com",
+    "description": "Mallorca-based; regenerative farming; 100% natural wildcrafted botanicals",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "2787 Parfums",
+    "slug": "2787-parfums",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2016,
+    "website": "https://2787parfums.com",
+    "description": "Barcelona; Romy Kowalewski; modern molecular blank-canvas aesthetic",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "27 87 Parfums",
+    "slug": "27-87-parfums",
+    "tier": "NICHE",
+    "country": "Spain",
+    "foundedYear": 2016,
+    "website": "https://www.2787parfums.com",
+    "description": "Barcelona indie; stark minimalist bottles; molecular modernity",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Anatole Lebreton",
+    "slug": "anatole-lebreton",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2012,
+    "website": "https://www.anatolelebreton.com",
+    "description": "Rennes artisan; idiosyncratic and unconventional; ex-Fragrantica author",
+    "category": "French Niche"
+  },
+  {
+    "name": "Nissaba",
+    "slug": "nissaba",
+    "tier": "NICHE",
+    "country": "Switzerland",
+    "foundedYear": 2021,
+    "website": "https://nissaba.com",
+    "description": "Sebastien Tissot (ex-Firmenich naturals director); all-natural; Sumerian deity inspiration",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Francesca Dell Oro",
+    "slug": "francesca-dell-oro",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2014,
+    "website": "https://www.francescadelloro.com",
+    "description": "Monza-based; exceptional naturals sourcing; Fragrantica editors' favourite",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Thomas de Monaco",
+    "slug": "thomas-de-monaco",
+    "tier": "ARTISAN",
+    "country": "Monaco",
+    "foundedYear": 2014,
+    "website": "https://www.thomasdemonaco.com",
+    "description": "Monaco niche; Ambertree by Pascal Gaurin; theatrical and complex compositions",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Mark Buxton Perfumes",
+    "slug": "mark-buxton-perfumes",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2009,
+    "website": "https://www.markbuxtonperfumes.com",
+    "description": "Berlin; Juliette Has a Gun creator's solo brand; hedonistic and bold",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Gabar Perfume",
+    "slug": "gabar-perfume",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2020,
+    "website": "https://www.gabarperfumes.com",
+    "description": "London indie; nature and landscape-led; earthy and coastal compositions",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "UFO Parfums",
+    "slug": "ufo-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2020,
+    "website": "https://www.ufoparfums.com",
+    "description": "Paris indie; techno and electronic music culture; bold conceptual",
+    "category": "French Niche"
+  },
+  {
+    "name": "EAUSO VERT",
+    "slug": "eauso-vert",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2022,
+    "website": "https://eaussovert.com",
+    "description": "LA clean vegan indie; Latin heritage; Rodrigo Flores-Roux collaboration",
+    "category": "American Niche"
+  },
+  {
+    "name": "Liis",
+    "slug": "liis",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2018,
+    "website": "https://liis.co",
+    "description": "NYC minimal; sophisticated unisex compositions; understated luxury",
+    "category": "American Niche"
+  },
+  {
+    "name": "Providence Perfume Co",
+    "slug": "providence-perfume-co",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2009,
+    "website": "https://www.providenceperfume.com",
+    "description": "Providence RI; Charna Ethier; 100% natural botanical; 2012 Natural Perfumer of the Year",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Jouissance",
+    "slug": "jouissance",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2020,
+    "website": "https://www.jouissanceperfume.com",
+    "description": "NYC; botanical and transparent fragrance compositions",
+    "category": "American Niche"
+  },
+  {
+    "name": "Miguel Matos",
+    "slug": "miguel-matos",
+    "tier": "NICHE",
+    "country": "Portugal / Spain",
+    "foundedYear": 2018,
+    "website": "https://www.miguelmatos.com",
+    "description": "Ex-Fragrantica art critic turned perfumer; art/music/fetish inspired; multiple awards",
+    "category": "Spanish / Iberian"
+  },
+  {
+    "name": "Noyz",
+    "slug": "noyz",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2023,
+    "website": "https://www.noyzfragrance.com",
+    "description": "Gen-Z social-first brand; Shaun Neff founder; Harrods and Ulta retail partners",
+    "category": "American Niche"
+  },
+  {
+    "name": "Oranger",
+    "slug": "oranger",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2020,
+    "website": "https://www.oranger.paris",
+    "description": "Paris natural-only perfumery inspired by the Pays d Orient",
+    "category": "French Niche"
+  },
+  {
+    "name": "Mane",
+    "slug": "mane",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1871,
+    "website": "https://www.mane.com",
+    "description": "Grasse-based fragrance and flavor ingredients giant; own limited artisan line since 1871",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Les Parfums de la Bastide",
+    "slug": "les-parfums-de-la-bastide",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2005,
+    "website": "https://www.lesparfumsdelabastide.com",
+    "description": "Provence-based; Bastide lifestyle fragrance house",
+    "category": "French Niche"
+  },
+  {
+    "name": "La Curie",
+    "slug": "la-curie",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2018,
+    "website": "https://lacurieperfume.com",
+    "description": "Tucson AZ; Lesli Wood; woodsy Southwest nature-inspired perfumes",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Alkemia Perfumes updated",
+    "slug": "alkemia-perfumes-updated",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.alkemiaapothecary.com",
+    "description": "Indie apothecary; all-natural botanical focus; unique accords",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Dame Perfumery",
+    "slug": "dame-perfumery",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2009,
+    "website": "https://www.dameperfumery.com",
+    "description": "Scottsdale AZ; authentic American Southwest desert botanicals",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Xenos Perfumes",
+    "slug": "xenos-perfumes",
+    "tier": "ARTISAN",
+    "country": "Greece",
+    "foundedYear": 2016,
+    "website": "https://xenosperfumes.com",
+    "description": "Athens-born; Greek mythology and landscape-inspired niche",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Une Nuit Nomade",
+    "slug": "une-nuit-nomade",
+    "tier": "NICHE",
+    "country": "Belgium",
+    "foundedYear": 2015,
+    "website": "https://unenuitnomade.com",
+    "description": "Belgian nomadic-travel themed niche; Stephane Humbert Lucas collaborator",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Malin and Goetz updated",
+    "slug": "malin-and-goetz-updated",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2004,
+    "website": "https://www.malinandgoetz.com",
+    "description": "NYC apothecary; gender-neutral modern approach; Cannabis EDP is hugely popular",
+    "category": "American Niche"
+  },
+  {
+    "name": "Demetra",
+    "slug": "demetra",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2015,
+    "website": "https://www.demetraprofumi.com",
+    "description": "Puglia-based Italian artisan niche; Southern Italy Mediterranean botanical focus",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Angelos Creations",
+    "slug": "angelos-creations",
+    "tier": "ARTISAN",
+    "country": "Greece",
+    "foundedYear": 2012,
+    "website": "https://www.angeloscreations.com",
+    "description": "Athens self-taught artisan; lauded for complexity; multiple awards",
+    "category": "Indie / Artisan"
+  },
+  {
+    "name": "Maison de la Grange",
+    "slug": "maison-de-la-grange",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2017,
+    "website": "https://www.maisonde lagrange.fr",
+    "description": "Lyon boutique niche; handcrafted small-batch French artisan",
+    "category": "French Niche"
+  },
+  {
+    "name": "Chabaud updated",
+    "slug": "chabaud-updated",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 2006,
+    "website": "https://www.chabaud-parfum.com",
+    "description": "Montpellier botanical heritage house",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Hendley Perfumes",
+    "slug": "hendley-perfumes",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://hendleyperfumes.com",
+    "description": "New York artisan; Sean Hendley's understated masculine-leaning compositions",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Kyse Perfumes",
+    "slug": "kyse-perfumes",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2016,
+    "website": "https://www.kyseperfumes.com",
+    "description": "Milan indie niche; Yuki Kasai's Franco-Japanese minimalist approach",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Maison Le Jardin Retrouve",
+    "slug": "maison-le-jardin-retrouve",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1975,
+    "website": "https://www.jardin-retrouve.com",
+    "description": "Revived 1975 Paris house; Jean-Louis Poiroux; botanical Parisian garden classics",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Olette and Bertier",
+    "slug": "olette-and-bertier",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2016,
+    "website": "https://www.olette-bertier.com",
+    "description": "French fashion-inspired artisan house; each fragrance a Paris character",
+    "category": "French Niche"
+  },
+  {
+    "name": "IIUVO",
+    "slug": "iiuvo",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2018,
+    "website": "https://www.iiuvo.com",
+    "description": "Swedish sustainable indie; clean slow-fashion fragrance values",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Freddie Albrighton",
+    "slug": "freddie-albrighton",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2019,
+    "website": "https://www.freddiealbrightom.com",
+    "description": "London indie; innovative and characterful; occasionally gourmand twist",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "La Fleur By Livvy",
+    "slug": "la-fleur-by-livvy",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2013,
+    "website": "https://www.lafleurbylivvy.com",
+    "description": "Colorado indie; natural and mixed-media perfumes inspired by global travel",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Gaya Perfumes",
+    "slug": "gaya-perfumes",
+    "tier": "NICHE",
+    "country": "UAE",
+    "foundedYear": 2017,
+    "website": "https://www.gayaperfumes.com",
+    "description": "UAE artisan; fusion of South and Southeast Asian botanicals in Arabian format",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Baobab Collection",
+    "slug": "baobab-collection",
+    "tier": "NICHE",
+    "country": "Belgium",
+    "foundedYear": 2008,
+    "website": "https://www.baobabalexandreldubois.com",
+    "description": "Belgian luxury home and personal fragrance house; globe-inspired travel scents",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Henry Jacques",
+    "slug": "henry-jacques",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 1975,
+    "website": "https://parfumshenryjacques.com",
+    "description": "Grasse bespoke haute parfumerie since 1975; Henry Cremona; bespoke from USD 133,000; Harrods Salon de Parfums",
+    "category": "French Niche"
+  },
+  {
+    "name": "Maison 21G",
+    "slug": "maison-21g",
+    "tier": "NICHE",
+    "country": "Singapore",
+    "foundedYear": 2018,
+    "website": "https://www.maison21g.com",
+    "description": "Singapore luxury custom perfumery; Johanna Monange founder; personalised creation experience",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "Malay Perfumery",
+    "slug": "malay-perfumery",
+    "tier": "NICHE",
+    "country": "Malaysia",
+    "foundedYear": 2018,
+    "website": "https://www.malayperfumery.com",
+    "description": "Fazzillah Noordin; reviving Malay fragrance culture via French perfumery techniques",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "Haus of Gloi",
+    "slug": "haus-of-gloi",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2010,
+    "website": "https://www.hausofgloi.com",
+    "description": "US indie oil-based; popular seasonal releases; gothic and nature-inspired",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Poesie Perfume",
+    "slug": "poesie-perfume",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2016,
+    "website": "https://www.poesieperfume.com",
+    "description": "US indie; literary and whimsical; botanical-inspired; women and men collections",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "En Voyage Perfumes",
+    "slug": "en-voyage-perfumes",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.envoyageperfumes.com",
+    "description": "Shelley Waddington's Seattle all-natural artisan; award-winning botanicals",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "For Strange Women",
+    "slug": "for-strange-women",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.forstrangewomen.com",
+    "description": "Chicago indie; Jonna Evin; botanical oils; unisex dark atmosphere",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Nocturne Alchemy NAVA",
+    "slug": "nocturne-alchemy-nava",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.nocturnealchemylab.com",
+    "description": "Las Vegas indie; Egyptian and mythological themes; crystalline musk specialty",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Arcana Wildcraft",
+    "slug": "arcana-wildcraft",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://www.arcanawildcraft.com",
+    "description": "US indie; nature, dark forest, and folklore inspired; strong seasonal releases",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "OLO Fragrance",
+    "slug": "olo-fragrance",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2015,
+    "website": "https://www.olofragrance.com",
+    "description": "Portland indie; clean natural accords; masculine-leaning botanical compositions",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Conjure Oils",
+    "slug": "conjure-oils",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2005,
+    "website": "https://www.conjureoils.com",
+    "description": "US indie; occult and metaphysical inspiration; oil-based perfumes",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Deconstructing Eden",
+    "slug": "deconstructing-eden",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.deconstructingeden.com",
+    "description": "US indie; Shelley Waddington; ethereal and atmospheric botanical oils",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Sweet Anthem",
+    "slug": "sweet-anthem",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2009,
+    "website": "https://www.sweetanthem.com",
+    "description": "US indie; literary character-inspired; hand-blended artisan botanicals",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Teone Reinthal Natural Perfume",
+    "slug": "teone-reinthal-natural-perfume",
+    "tier": "ARTISAN",
+    "country": "Australia",
+    "foundedYear": 2010,
+    "website": "https://www.teone.com.au",
+    "description": "Melbourne all-natural artisan; 100% botanical perfume oils",
+    "category": "Australian / Oceania"
+  },
+  {
+    "name": "Margot Elena",
+    "slug": "margot-elena",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2005,
+    "website": "https://www.margotandtessa.com",
+    "description": "Library of Flowers brand; US indie; literary and whimsical collections",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Imaginary Authors updated",
+    "slug": "imaginary-authors-updated",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.imaginaryauthors.com",
+    "description": "Portland; each scent a novel by fictional author; multiple acclaimed releases",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Hexennacht",
+    "slug": "hexennacht",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://hexennacht.com",
+    "description": "US indie oil-based; dark gothic and occult themes; seasonal drops",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Possets",
+    "slug": "possets",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2000,
+    "website": "https://www.possets.com",
+    "description": "One of earliest US indie oil houses; Fabienne Christenson; vast catalog",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Fantome",
+    "slug": "fantome",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://www.fantomeperfume.com",
+    "description": "US indie; Halloween and gothic seasonal; highly sought-after releases",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Smell Bent",
+    "slug": "smell-bent",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2011,
+    "website": "https://www.smellbent.com",
+    "description": "NYC indie; Christopher Brosius protege; humorous and experimental",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Maison 21G updated",
+    "slug": "maison-21g-updated",
+    "tier": "NICHE",
+    "country": "Singapore",
+    "foundedYear": 2018,
+    "website": "https://www.maison21g.com",
+    "description": "Singapore luxury personalised perfumery boutique and brand",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "Roullier White",
+    "slug": "roullier-white",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2014,
+    "website": "https://www.roullierwhite.com",
+    "description": "London niche boutique and own label; curated artisan-focused selection",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Parle Moi de Parfum updated",
+    "slug": "parle-moi-de-parfum-updated",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2014,
+    "website": "https://www.parlemoideparfum.com",
+    "description": "Michael Favre's numbered Parisian fragrances",
+    "category": "French Niche"
+  },
+  {
+    "name": "Kintsugi Perfumes",
+    "slug": "kintsugi-perfumes",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2019,
+    "website": "https://www.kintsugiperfumes.com",
+    "description": "Paris Japanese-inspired niche; kintsugi philosophy of beauty through imperfection",
+    "category": "French Niche"
+  },
+  {
+    "name": "Vyrao updated",
+    "slug": "vyrao-updated",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2021,
+    "website": "https://www.vyrao.com",
+    "description": "Chakra energy-wellness fusion; Yasmin Sewell brand",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Nouvelle Vague",
+    "slug": "nouvelle-vague",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2018,
+    "website": "https://nouvelle-vague.fr",
+    "description": "Paris young niche; cinematic French New Wave inspiration",
+    "category": "French Niche"
+  },
+  {
+    "name": "Clandestine Laboratories",
+    "slug": "clandestine-laboratories",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2014,
+    "website": "https://clandestinelaboratories.com",
+    "description": "Bay Area CA; weird and abstract indie; cult following in niche community",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Waft",
+    "slug": "waft",
+    "tier": "NICHE",
+    "country": "United Kingdom",
+    "foundedYear": 2022,
+    "website": "https://www.waftperfume.com",
+    "description": "British sustainable niche; clean transparent ingredients; accessible price point",
+    "category": "British Niche / Indie"
+  },
+  {
+    "name": "Exaltatum",
+    "slug": "exaltatum",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2015,
+    "website": "https://www.exaltatum.com",
+    "description": "Paris niche; ultra-concentrated 30% extrait-level compositions at accessible prices",
+    "category": "French Niche"
+  },
+  {
+    "name": "The House of Oud updated",
+    "slug": "the-house-of-oud-updated",
+    "tier": "NICHE",
+    "country": "Italy / UAE",
+    "foundedYear": 2013,
+    "website": "https://www.houseofoud.com",
+    "description": "Italian-born oud-inspired; bridge between Middle Eastern and Italian aesthetics",
+    "category": "Middle Eastern / Arabic"
+  },
+  {
+    "name": "Orto Parisi updated",
+    "slug": "orto-parisi-updated",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2014,
+    "website": "https://www.ortoparisi.com",
+    "description": "Alessandro Gualtieri's body-positive nature philosophy house",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Neotantric Fragrances",
+    "slug": "neotantric-fragrances",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2017,
+    "website": "https://neotantric.com",
+    "description": "Stockholm holistic niche; tantric philosophy and raw botanicals",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Stora Skuggan updated",
+    "slug": "stora-skuggan-updated",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2014,
+    "website": "https://www.storaskuggan.com",
+    "description": "Stockholm mythology and Nordic nature niche",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Apoteker Tepe",
+    "slug": "apoteker-tepe",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2018,
+    "website": "https://apotekertepe.com",
+    "description": "Brooklyn apothecary indie; wellness and alchemical philosophy",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "IIUVO updated",
+    "slug": "iiuvo-updated",
+    "tier": "NICHE",
+    "country": "Sweden",
+    "foundedYear": 2018,
+    "website": "https://www.iiuvo.com",
+    "description": "Swedish sustainable indie; slow fragrance philosophy",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "In Fiore",
+    "slug": "in-fiore",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2000,
+    "website": "https://www.inflore.com",
+    "description": "Julie Elliott's San Francisco luxury botanical oil house; Neiman Marcus distribution",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Xinú Perfumes",
+    "slug": "xinu-perfumes",
+    "tier": "NICHE",
+    "country": "Mexico",
+    "foundedYear": 2016,
+    "website": "https://xinu.mx",
+    "description": "Mexico City; Rodrigo Flores-Roux perfumer; Otomí 'nose'; native Latin American botanicals; Estée Lauder invested",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Frassai",
+    "slug": "frassai",
+    "tier": "NICHE",
+    "country": "Argentina",
+    "foundedYear": 2017,
+    "website": "https://www.frassai.com",
+    "description": "Buenos Aires artisan; Natalia Outeda; art-inspired; woman-owned boutique house",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Loto del Sur",
+    "slug": "loto-del-sur",
+    "tier": "NICHE",
+    "country": "Colombia",
+    "foundedYear": 2010,
+    "website": "https://lotodelsur.com",
+    "description": "Bogotá; Amazon/Andes botanicals; sustainable sourcing; award-winning Latin design",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Perfumérica",
+    "slug": "perfumerica",
+    "tier": "NICHE",
+    "country": "Mexico",
+    "foundedYear": 2019,
+    "website": "https://www.perfumerica.mx",
+    "description": "Mexico City indie; celebrating Mexican landscapes and heritage through scent",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Teo Cabanel",
+    "slug": "teo-cabanel",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1893,
+    "website": "https://teo-cabanel.com",
+    "description": "Est. 1893; Duchess of Windsor's favourite perfumer; revived 2005 by Caroline Ilacqua; Jean-Francois Latty perfumer",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Robert Piguet Parfums",
+    "slug": "robert-piguet-parfums",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1933,
+    "website": "https://www.robertpiguetparfums.com",
+    "description": "Swiss-born Paris couturier who trained Dior and Givenchy; fragrance house since 1940s; revived 1990s",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Neela Vermeire Creations",
+    "slug": "neela-vermeire-creations",
+    "tier": "NICHE",
+    "country": "Belgium / France",
+    "foundedYear": 2011,
+    "website": "https://www.neelavermeire.com",
+    "description": "Indian-Belgian house; Bertrand Duchaufour collaborations; East-West cultural bridge",
+    "category": "French Niche"
+  },
+  {
+    "name": "Keiko Mecheri",
+    "slug": "keiko-mecheri",
+    "tier": "NICHE",
+    "country": "USA / France",
+    "foundedYear": 1997,
+    "website": "https://keikomecheri.com",
+    "description": "Japanese-born Californian artist; Grasse-quality naturals; cult Loukhoum since 1998",
+    "category": "French Niche"
+  },
+  {
+    "name": "David Jourquin",
+    "slug": "david-jourquin",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2010,
+    "website": "https://davidjourquin.com",
+    "description": "Bordeaux artisan; each fragrance a leather-forward journey across cultures",
+    "category": "French Niche"
+  },
+  {
+    "name": "Blood Concept",
+    "slug": "blood-concept",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2011,
+    "website": "https://www.bloodconcept.com",
+    "description": "Milan; blood-type themed; no-flower philosophy; metallic and primordial compositions",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Etro",
+    "slug": "etro",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1989,
+    "website": "https://www.etro.com",
+    "description": "Milan fashion house est. 1968; Etro Profumi since 1989; 24 fragrances; cashmere print identity",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Onyrico",
+    "slug": "onyrico",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2015,
+    "website": "https://www.onyrico.com",
+    "description": "Dream-world concept; tributes to great Italian geniuses; Fondazione Sozzani backed",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Pantheon Roma",
+    "slug": "pantheon-roma",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2013,
+    "website": "https://pantheonroma.com",
+    "description": "Rome; inspired by Renaissance love story of Raphael and Margherita Luti",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Une Nuit a Bali",
+    "slug": "une-nuit-a-bali",
+    "tier": "NICHE",
+    "country": "France / Bali",
+    "foundedYear": 2015,
+    "website": "https://unenuitabali.com",
+    "description": "Franco-Balinese collaboration; Indonesian botanicals through French perfumery techniques",
+    "category": "Southeast Asian / Global"
+  },
+  {
+    "name": "Pigmentarium updated",
+    "slug": "pigmentarium-updated",
+    "tier": "NICHE",
+    "country": "Czech Republic",
+    "foundedYear": 2018,
+    "website": "https://www.pigmentarium.com",
+    "description": "Prague artisan; Tomas Ric; leading Czech niche house; 14-country distribution",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Toskovat updated",
+    "slug": "toskovat-updated",
+    "tier": "NICHE",
+    "country": "Russia",
+    "foundedYear": 2019,
+    "website": "https://toskovat.com",
+    "description": "Moscow minimalist indie; clean modern Russian niche",
+    "category": "Benelux / Central EU"
+  },
+  {
+    "name": "Coqui Coqui",
+    "slug": "coqui-coqui",
+    "tier": "NICHE",
+    "country": "Mexico",
+    "foundedYear": 2003,
+    "website": "https://www.coquicoqui.com",
+    "description": "Yucatan Mexico; Nick Malleville; tropical botanicals and agave from Tulum boutiques",
+    "category": "Americas / Latin"
+  },
+  {
+    "name": "Parfumeura",
+    "slug": "parfumeura",
+    "tier": "NICHE",
+    "country": "Germany",
+    "foundedYear": 2010,
+    "website": "https://www.parfumeura.de",
+    "description": "Berlin indie; German nature and wellness-inspired natural botanical fragrances",
+    "category": "German / Swiss / Austrian"
+  },
+  {
+    "name": "Gabriella Chieffo",
+    "slug": "gabriella-chieffo",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 2010,
+    "website": "https://www.gabriellachieffo.com",
+    "description": "Napoli-based; raw natural Italian botany; earthy and mineral philosophy",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Clive Christian updated",
+    "slug": "clive-christian-updated",
+    "tier": "DESIGNER",
+    "country": "United Kingdom",
+    "foundedYear": 1999,
+    "website": "https://www.clivechristian.com",
+    "description": "Ultra-luxury; claims some of world's most expensive fragrances",
+    "category": "British Heritage"
+  },
+  {
+    "name": "Maison Incens",
+    "slug": "maison-incens",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2016,
+    "website": "https://maisonincens.com",
+    "description": "Paris niche; incense and resin focused; Japanese kodo philosophy",
+    "category": "French Niche"
+  },
+  {
+    "name": "Heeley Parfums updated",
+    "slug": "heeley-parfums-updated",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2005,
+    "website": "https://www.heeley.com",
+    "description": "James Heeley's minimalist nature-focused London-Paris house",
+    "category": "French Niche"
+  },
+  {
+    "name": "Parfumerie Generale",
+    "slug": "parfumerie-generale",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2002,
+    "website": "https://www.parfumeriegenerale.com",
+    "description": "Pierre Guillaume's original house; botanical precision niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "La Manufacture Parfums",
+    "slug": "la-manufacture-parfums",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2019,
+    "website": "https://www.lamanufactureparfums.com",
+    "description": "Paris quality-focused small-batch natural niche",
+    "category": "French Niche"
+  },
+  {
+    "name": "Aether Arts",
+    "slug": "aether-arts",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2012,
+    "website": "https://www.aetherarts.com",
+    "description": "Brooklyn art-lab indie; unique concept-driven extraits in collectors bottles",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Acampora Profumi",
+    "slug": "acampora-profumi",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1977,
+    "website": "https://www.brunoacampora.com",
+    "description": "Naples; Bruno Acampora; pure concentrated perfume oil format since 1977",
+    "category": "Italian Niche"
+  },
+  {
+    "name": "Eutopie",
+    "slug": "eutopie",
+    "tier": "NICHE",
+    "country": "France",
+    "foundedYear": 2009,
+    "website": "https://www.eutopie.com",
+    "description": "Paris conceptual niche; numbered perfumes; clean minimalist bottles",
+    "category": "French Niche"
+  },
+  {
+    "name": "Raer Scents",
+    "slug": "raer-scents",
+    "tier": "NICHE",
+    "country": "Denmark",
+    "foundedYear": 2018,
+    "website": "https://www.raerscents.com",
+    "description": "Copenhagen artisan; small-batch natural Danish niche",
+    "category": "Scandinavian / N. European"
+  },
+  {
+    "name": "Kissmenxwear",
+    "slug": "kissmenxwear",
+    "tier": "NICHE",
+    "country": "South Korea",
+    "foundedYear": 2017,
+    "website": "https://www.kissmenxwear.com",
+    "description": "Seoul conceptual niche; dark fantasy aesthetic; K-culture inspired",
+    "category": "Asian / East Asian"
+  },
+  {
+    "name": "Mandy Aftel updated",
+    "slug": "mandy-aftel-updated",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 1999,
+    "website": "https://www.aftelier.com",
+    "description": "Berkeley CA; pioneer of natural American perfumery since 1999; author and authority",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Lurker and Strange",
+    "slug": "lurker-and-strange",
+    "tier": "ARTISAN",
+    "country": "Canada",
+    "foundedYear": 2018,
+    "website": "https://www.lurkerandstrange.com",
+    "description": "Canadian indie; dark gothic aesthetic; handcrafted perfume oils",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Mixology Parfums",
+    "slug": "mixology-parfums",
+    "tier": "ARTISAN",
+    "country": "USA",
+    "foundedYear": 2015,
+    "website": "https://www.mixologyperfums.com",
+    "description": "NYC indie; bartender-inspired fragrance mixing approach",
+    "category": "American Indie / Artisan"
+  },
+  {
+    "name": "Parfums d Orsay",
+    "slug": "parfums-d-orsay",
+    "tier": "DESIGNER",
+    "country": "France",
+    "foundedYear": 1830,
+    "website": "https://www.parfumsdorsay.com",
+    "description": "Founded 1830 by Count d Orsay; revived 2015; Parisian aristocratic heritage",
+    "category": "French Heritage"
+  },
+  {
+    "name": "Strangelove NYC updated",
+    "slug": "strangelove-nyc-updated",
+    "tier": "NICHE",
+    "country": "USA",
+    "foundedYear": 2017,
+    "website": "https://www.strangelovenyc.com",
+    "description": "NYC luxury artisan; fashion-photography-music conceptual house",
+    "category": "American Niche"
+  },
+  {
+    "name": "Etro updated",
+    "slug": "etro-updated",
+    "tier": "NICHE",
+    "country": "Italy",
+    "foundedYear": 1989,
+    "website": "https://www.etro.com",
+    "description": "Milan fashion house fragrance range from 1989; 24 fragrances; iconic cashmere print bottles",
+    "category": "Italian Niche"
+  }
+]
