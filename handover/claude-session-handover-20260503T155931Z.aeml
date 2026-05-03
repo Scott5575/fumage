@@ -1,0 +1,93 @@
+::document
+id: claude-session-handover-20260503T155931Z
+type: session-handover
+session: 29
+authored_by: Claude Sonnet 4.6
+timestamp_utc: 2026-05-03T15:59:31Z
+
+---
+
+## What was accomplished
+
+### Data corrections (carried over from session 28 context)
+
+1. **houseId fix in seed.ts** — `houseId` was absent from the fragrance upsert `update` clause. Existing fragrances always hit the `update` path on re-seed, so canonical house name changes never re-linked fragrances to their correct house records. Added `houseId` to the `update` clause. This caused a double-seed (wasted ~38 min) before the root cause was identified.
+
+2. **Broken NAME_ALIAS for initio** — `"initio oud for greatness"` pointed to the old broken slug `initio-parfums-priv-s-oud-for-greatness`. Session 28 had fixed the fragrance slug to `initio-parfums-prives-oud-for-greatness` but missed updating this alias. Result: 15 similar-fragrance relationships were silently unresolved on every seed. Fixed; added `"initio ofg"` shorthand too.
+
+3. **42 fragrance house-name alignments** — Updated the `house` field in fragrance_database.json for 42 entries to match canonical names in houses_v10.json (Tom Ford → Tom Ford Beauty, Bvlgari → Bulgari, Roja Dove → Roja Parfums, Jo Malone → Jo Malone London, Salvatore Ferragamo → Ferragamo, Caron → Caron Paris, Atkinsons → Atkinsons 1799, Boadicea → Boadicea the Victorious, Officine Universelle Buly → Officine Universelle Buly 1803, Lubin → Parfums Lubin). Slugs/ids unchanged.
+
+4. **3 duplicate house records deleted** — "Clive Christian updated", "Chabaud updated", "Parfums d Orsay" — all had 0 fragrances; confirmed before deletion.
+
+### New fragrance content
+
+124 new entries across 48 DESIGNER houses that had no fragrance coverage, split into 4 tier files:
+
+- **Tier 1** (43 entries, 15 houses): Louis Vuitton, Marc Jacobs, Donna Karan/DKNY, Karl Lagerfeld, Boucheron, Trussardi, Chopard, S.T. Dupont, Cacharel, Brioni, Shiseido, Elie Saab, Christian Louboutin, Celine, Dries Van Noten
+- **Tier 2** (30 entries, 8 houses): Floris London, Czech & Speake, Geo F. Trumper, Truefitt and Hill, Molton Brown, Miller Harris, Grossmith London, Houbigant
+- **Tier 3** (31 entries, 14 houses): Roger & Gallet, Molinard, Fragonard, Galimard, Oriza L. Legrand, Parfums de Rosine, Robert Piguet Parfums, Le Galion, D'Orsay Parfums, Isabey Paris, Chabaud Maison de Parfum, Teo Cabanel, Maison Le Jardin Retrouve, Cherigan Paris
+- **Tier 4** (20 entries, 10 houses): Aerin Lauder, Costume National, Lush Perfumes, Illuminum, Thameen London, Cloon Keen Atelier, Crown Northampton, Hugh Parsons, Spirit of Kings, Cire Trudon
+
+Note: "Mane" (France, B2B fragrance ingredient supplier) was identified as non-consumer and skipped.
+
+### Final DB state after seed
+
+| Metric | Before | After |
+|--------|--------|-------|
+| Houses | 159 | 206 |
+| Notes | 361 | 379 |
+| Fragrances | 687 | 811 |
+| Similar pairs | 1,534 | 1,710 |
+| Dupe pairs | 22 | 23 |
+
+491 similar names unresolved — expected, references fragrances not yet in catalog (Knize Ten, Caron Nuit de Noël, etc.). Will resolve as catalog grows.
+
+---
+
+## Current file state
+
+- `prisma/data/fragrance_database.json` — 811 entries, source of truth
+- `prisma/data/fragrance_ext_designer_tier1–4.json` — source files for session 29 additions; committed alongside DB as provenance record
+- `prisma/data/houses_v10.json` — 596 canonical house records
+- `prisma/seed.ts` — seeder; houseId fix + initio alias fix applied and committed
+- `image-fetch-failures.log` — untracked; lists 167 fragrances that failed image fetch in session 28
+
+---
+
+## Commits this session (on branch main)
+
+```
+4dbb065  add 124 fragrances for 48 empty DESIGNER houses
+f867262  fix broken initio alias and add initio-ofg shorthand
+228cba1  align 42 fragrance house names to canonical houses_v10 names
+```
+
+Branch is ahead of origin/main by 8 commits — not yet pushed.
+
+---
+
+## Open actions
+
+- **ai-009** — custom domain configuration in Vercel; not started
+- **ai-012** — layering guidance page; not started
+- **ai-015** — Gourmand family deep-dive article; not started
+- **ai-016** — Chypre family deep-dive article; not started
+- **167 missing images** — fragrance entries with null imageUrl; blocked on image sourcing strategy decision
+- **491 unresolved similar names** — lower priority; resolve by expanding catalog or adding NAME_ALIASES for known references
+
+---
+
+## Known data gaps (DESIGNER houses still with no coverage)
+
+The 437 houses imported via houses_v10.json include many niche/artisan/ultra-luxury houses not yet touched. Session 29 addressed the 48 DESIGNER-tier houses that had zero entries. Niche tier and the remaining ULTRA/ARTISAN houses are not yet covered.
+
+---
+
+## How to continue
+
+1. Read this file.
+2. Read `prisma/data/fragrance_database.json` entry counts to confirm current state.
+3. Check `git log --oneline -5` to confirm branch state.
+4. Pick next open action from the list above.
+
+::end-document
