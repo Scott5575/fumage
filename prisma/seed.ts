@@ -662,6 +662,7 @@ async function main() {
       update: {
         // Keep editorial metadata fresh on re-seed but don't overwrite
         // user-entered fields (ratings, reviews are separate models)
+        houseId,
         name:            entry.name,
         year:            entry.year ?? undefined,
         category:        category as any,
