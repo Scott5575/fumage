@@ -1,0 +1,68 @@
+::document
+id: claude-session-handover-20260514T195346Z
+type: session-handover
+session: 30
+authored_by: Claude Opus 4.7 (1M context)
+timestamp_utc: 2026-05-14T19:53:46Z
+
+---
+
+## What was accomplished
+
+### New guide article — citrus-woody accord subfamily
+
+Added "The Dry Sun & The Dark Timber: Mastering the Citrus-Woody Accord" as a Family Deep Dive · Subfamily entry under the guide index.
+
+- Page: `src/app/guide/citrus-woody-accord/page.tsx` (283 lines, 10 min read)
+- Source HTML: `~/projects/Fragrance - Shared/citrus-wood-subfamily.html` (note filename divergence: `-wood-` source vs. `-woody-` route)
+- Card entry inserted into `src/app/guide/GuideIndex.tsx` after the `fresh-citrus` entry, keeping citrus-related cards adjacent in the listing
+- TypeScript clean (`npx tsc --noEmit` — no output, zero errors)
+
+### Pattern observed for future article work
+
+Card-list data lives in `src/app/guide/GuideIndex.tsx`. The `src/app/guide/page.tsx` file is a thin metadata + `<GuideIndex />` wrapper — editing it does not add a card. Future "add a card" instructions should target `GuideIndex.tsx`.
+
+---
+
+## Commits this session (on main)
+
+```
+5cb2169  add citrus-woody accord guide article
+```
+
+Pushed to `origin/main` (`76b0582..5cb2169`); Vercel auto-deploy triggered.
+
+---
+
+## Git state (post-push)
+
+- Branch: `claude/trusting-villani-85d473` (worktree, tracks `origin/main`)
+- Working tree: clean
+- Latest commit: `5cb2169`
+
+---
+
+## Unresolved instruction — DEPLOY.md
+
+Session 30 received an instruction to "also commit DEPLOY.md to the repo root." A 6-level case-insensitive search of `/Users/scottreisinger/` found no such file — not in the worktree, not in `~/projects/Fragrance - Shared/`, not in `~/Downloads`, not anywhere on disk. No prior handover or governance file references the filename. Skipped via option-1 selection (skip DEPLOY.md, run session-close). If a future session is asked to commit a deploy document, the source body must be supplied or drafted explicitly before acting.
+
+---
+
+## Open actions (inherited from session 29; status not re-verified this session)
+
+- **ai-009** — custom domain configuration in Vercel; not started
+- **167 missing images** — fragrance entries with null imageUrl; blocked on image sourcing strategy decision
+- **491 unresolved similar names** — lower priority
+
+Note: `ai-012` (layering), `ai-015` (gourmand), `ai-016` (chypre) appeared as not-started in the session 29 handover, but corresponding article folders now exist under `src/app/guide/`. Status not verified in this session.
+
+---
+
+## How to continue
+
+1. Read this file.
+2. Run `git log --oneline -5` to confirm branch state.
+3. If a `DEPLOY.md` task is revived, request the file body before acting — none exists anywhere on disk.
+4. Pick the next open action from the list above.
+
+::end-document
