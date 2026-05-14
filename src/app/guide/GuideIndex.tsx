@@ -94,6 +94,14 @@ const GUIDES: {
     category: "family",
   },
   {
+    href:     "/guide/citrus-woody-accord",
+    tag:      "Family Deep Dive · Subfamily",
+    title:    "The Dry Sun & The Dark Timber",
+    subtitle: "Mastering the citrus-woody accord — the chemistry of bridging two opposites, the historical lineage, and the bottles that prove it works.",
+    read:     "10 min read",
+    category: "family",
+  },
+  {
     href:     "/guide/gourmand",
     tag:      "Family Deep Dive · Gourmand",
     title:    "Pleasure Is the Point",
