@@ -17,3 +17,22 @@ next-env.d.ts
 # misc
 .DS_Store
 .vercel
+
+# Personal workspace folders — should never be tracked
+.claude/
+Fragrance - Shared/
+fragrance/
+
+# Aeleon workflow files
+*.aeml
+init.aeml*
+
+# Logs + temp files
+*.log
+image-fetch-failures.log
+
+# Next.js build output (CRITICAL — never commit this)
+.next/
+
+# Nested embedded git repos
+**/.git/
