@@ -1,0 +1,115 @@
+::document
+id: claude-session-handover-20260529T180512Z
+type: session-handover
+session: 32
+authored_by: Claude Opus 4.8 (1M context)
+timestamp_utc: 2026-05-29T18:05:12Z
+
+---
+
+## Session context
+
+Worked in the git worktree at `.claude/worktrees/trusting-villani-85d473` (branch
+`claude/trusting-villani-85d473`, tracking `origin/main`). This session began as a
+continuation of the session-30 work (citrus-woody article, already on main) and grew to
+include a second guide article, a worktree-environment fix, and a mid-session rebase to
+integrate session 31.
+
+---
+
+## What was accomplished
+
+### New guide article — fragrance maceration / bottle aging
+
+Added "The Resting Bottle: Does Fragrance Really Get Better With Age?" — a myth-busting
+piece on maceration, oxidation, and storage. Debunks the forum claim that resting a
+bottle for months improves it, while crediting the small real effect (a fresh batch
+settling over its first weeks).
+
+- Page: `src/app/guide/fragrance-aging/page.tsx` (~11 min read, 7 sections)
+- Card: inserted into `src/app/guide/GuideIndex.tsx` after the `reformulations` entry
+  (thematic neighbor — both about how a fragrance changes over time)
+- Tag: "Myth-Busting · Science", category `guide`
+- Voice: "knowledgeable friend" — informative, warm, light humor; matches citrus-woody
+- Verified by live preview (Next dev on :3000): article and index card render correctly
+  with all components (PullQuote/SectionLabel/Callout), amber accents, curly typography
+- No fragrances named as links, so the slug-discipline rule has nothing to verify
+
+### Worktree environment auto-link fix
+
+Git worktrees don't inherit the main checkout's untracked `.env.local`, so `next dev` in
+a worktree crashed (Supabase client got undefined URL/key → every route 500'd).
+
+- Added `scripts/link-worktree-env.mjs` — locates the canonical `.env.local` via
+  `git rev-parse --git-common-dir` and symlinks it into the worktree if missing
+- Wired to `predev` in `package.json` (NOT `prebuild` — Vercel production builds inject
+  env from the dashboard and must not run this)
+- Safe by design: no-ops in the main checkout or if a `.env.local` already exists; never
+  throws (dev is never blocked)
+- The symlink itself is gitignored, so no secrets are committed
+
+### Preview tooling
+
+Added `.claude/launch.json` (fumage-dev → `npm run dev`, port 3000) for the preview
+server. Untracked; `.claude/` is not gitignored, so it was intentionally left out of
+commits this session.
+
+---
+
+## Mid-session rebase — integrated session 31
+
+After the early pushes this session (citrus-woody + session-30 handover), `origin/main`
+advanced by 3 commits from session 31 (Meilisearch migration to self-hosted Hetzner) plus
+two `.gitignore` commits. Local branch diverged 2 ahead / 3 behind. Rebased the two local
+commits cleanly onto `origin/main` (zero file overlap), re-ran tsc, pushed. No commits
+lost; history is linear.
+
+---
+
+## Commits this session (now on origin/main)
+
+```
+f90afad  add fragrance-aging guide article (The Resting Bottle)
+054e23c  auto-link .env.local into git worktrees via predev hook
+31bc4a8  add session 30 handover — citrus-woody accord guide article   (pushed earlier)
+5cb2169  add citrus-woody accord guide article                          (pushed earlier)
+```
+
+---
+
+## Git state (post-push)
+
+- Branch: `claude/trusting-villani-85d473` (worktree), in sync with `origin/main`
+- Working tree: clean except untracked `.claude/` (launch.json — intentional)
+- Latest commit: `f90afad`
+
+---
+
+## Unresolved / carried items
+
+- **DEPLOY.md** — session was asked twice to "commit DEPLOY.md to the repo root." No such
+  file exists anywhere on disk (verified by recursive search of /Users/scottreisinger).
+  Skipped with the user's consent. If revived, the file body must be supplied.
+- **Clock-glitch defect** — the machine clock briefly read 2026-05-14 mid-session, so the
+  session-30 handover already on main (`claude-session-handover-20260514T195346Z.aeml`)
+  carries a wrong timestamp that sorts before session 31. Not rewritten (already pushed).
+  Logged to the improvement register.
+
+## Open actions (from session 31 / earlier)
+
+- **ai-009** — custom domain configuration in Vercel; not started
+- **Meilisearch HTTPS hardening** — deferred (plaintext HTTP, Caddy + Let's Encrypt plan
+  documented); see session 31 handover
+- **167 missing fragrance images** — blocked on image-sourcing strategy decision
+- **491 unresolved similar-fragrance name references** — lower priority
+
+---
+
+## How to continue
+
+1. Read this file, then the session 31 handover for the Meilisearch/search picture.
+2. `git log --oneline -5` to confirm branch state.
+3. Note: `next dev` now self-heals env in any worktree via the `predev` hook.
+4. Pick the next open action above.
+
+::end-document
