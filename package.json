@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/link-worktree-env.mjs",
     "dev": "next dev",
     "build": "prisma generate && next build",
     "db:migrate": "prisma migrate dev",
