@@ -1,0 +1,103 @@
+::document
+id: claude-session-handover-20260529T012500Z
+type: session-handover
+session: 31
+authored_by: Claude Opus 4.7 (1M context)
+timestamp_utc: 2026-05-29T01:25:00Z
+
+---
+
+## Session context
+
+This work happened in the Oversight project working directory but is entirely about Fumage infrastructure. This handover is being written into the Fumage repo so the next Fumage session has the full picture without having to read across projects.
+
+---
+
+## What was accomplished
+
+### Meilisearch migration — Cloud → self-hosted Hetzner
+
+Meilisearch Cloud's free trial expired. Migrated to a self-hosted Meilisearch instance on Hetzner Cloud to avoid the recurring fee.
+
+**Server**
+- Provider: Hetzner Cloud
+- Plan: CPX11 (Regular Performance line, Hillsboro OR — Cost-Optimized was not available in US-West locations)
+- IP: `5.78.212.33`
+- OS user: `fumage` (sudo enabled)
+- Meilisearch: installed as a systemd service at `/etc/systemd/system/meilisearch.service`, bound to `127.0.0.1:7700`
+- Master key: stored on the server at `/home/fumage/.mk` (mode 0600), also saved in Apple Keychain and a Locked Note on the laptop
+
+**Data**
+- All 811 fragrance documents reindexed from Supabase → self-hosted Meilisearch via `scripts/reindex.ts` (`npm run search:reindex`).
+- Verified end-to-end: search at fumage.vercel.app/search returns hits against the new backend.
+
+**Vercel env vars (Production)**
+- `MEILISEARCH_HOST` = `http://5.78.212.33:7700` (non-Sensitive so the value can be visually verified in the Vercel UI)
+- `MEILISEARCH_API_KEY` = master key (Sensitive flag set — value hidden after save)
+- Production redeployed after env var change.
+
+**Note on Vercel's Sensitive flag**: once a variable is saved as Sensitive, Vercel will not let you convert it back to non-Sensitive, and the edit modal displays a placeholder (`https://api.example.com` for URL-shaped, `sk_live_a12…` for key-shaped) instead of the real value. This is by design and previously caused a false alarm that env vars "weren't saving."
+
+### Credential leak + recovery
+
+A `git add -A` during the migration accidentally committed 92 personal / workspace files to the public GitHub repo, including `.env.local` (Meilisearch master key + Supabase DATABASE_URL) and Claude session handovers. The exposure window was a few minutes.
+
+**Recovery actions taken**:
+1. `git reset --hard 31bc4a8` to drop the bad commit locally.
+2. `git push --force-with-lease` to overwrite the public history.
+3. Comprehensive `.gitignore` added (commit `260bf40`) excluding `.claude/`, `Fragrance - Shared/`, `fragrance/`, `*.aeml`, `.next/`, `*.log`, env files, etc.
+
+**Not yet done** (judged low-priority by you at the time, but worth flagging):
+- Meilisearch master key has **not** been rotated. If it was scraped during the exposure window, an attacker has admin control of the search backend.
+- Supabase `DATABASE_URL` password has **not** been rotated.
+
+If either rotation becomes desirable, both are short tasks. Master-key rotation: change `MEILI_MASTER_KEY` in the systemd unit, restart `meilisearch.service`, update Vercel env var, redeploy. Supabase rotation: rotate via the Supabase dashboard, update `.env.local` and Vercel.
+
+### HTTPS hardening — deferred
+
+The master key currently travels in plaintext over HTTP between Vercel and Hetzner on every search request. Deferred at your request.
+
+Full resumption plan written to [deferred_meilisearch_https.md](.claude/projects/-Users-scottreisinger-projects-fumage/memory/deferred_meilisearch_https.md) in the local Claude project memory (covers Caddy install, Caddyfile, Let's Encrypt auto-provisioning, Vercel env var swap, firewall changes, and recommended key rotation after cutover).
+
+---
+
+## Commits this session (on main)
+
+```
+260bf40  add .gitignore for workspace folders and build output
+31bc4a8  add session 30 handover — citrus-woody accord guide article
+```
+
+(Note: `31bc4a8` predates this session but is the post-reset HEAD anchor referenced above.)
+
+Pushed to `origin/main` (force-with-lease used once during recovery).
+
+---
+
+## Git state (post-session)
+
+- Branch: `main`
+- Working tree: clean
+- Latest commit: `260bf40`
+
+---
+
+## Open actions
+
+- **Deferred — HTTPS for Meilisearch**: see linked memory file above. No deadline; risk window is open but assessed low-likelihood.
+- **Optional — rotate Meilisearch master key and Supabase DB password**: residual risk from the brief public-repo exposure.
+- **ai-009** (inherited from session 30) — custom domain in Vercel; not started.
+- **167 missing images** (inherited) — blocked on image sourcing strategy decision.
+- **491 unresolved similar names** (inherited) — lower priority.
+
+---
+
+## How to continue
+
+1. Read this file.
+2. Run `git log --oneline -5` to confirm branch state.
+3. If picking up the HTTPS work, read the linked `deferred_meilisearch_https.md` for the full plan.
+4. If rotating credentials, do master key first (simpler; full plan in linked memory) then Supabase.
+5. Otherwise pick the next open action from the list above.
+
+::end-document
