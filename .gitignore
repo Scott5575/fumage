@@ -26,6 +26,8 @@ fragrance/
 # Aeleon workflow files
 *.aeml
 init.aeml*
+# Exception: session handovers under handover/ are the established change record and must be tracked
+!handover/*.aeml
 
 # Logs + temp files
 *.log
