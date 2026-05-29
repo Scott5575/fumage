@@ -198,6 +198,14 @@ const GUIDES: {
     category: "guide",
   },
   {
+    href:     "/guide/fragrance-aging",
+    tag:      "Myth-Busting · Science",
+    title:    "The Resting Bottle",
+    subtitle: "Forums swear that letting a bottle sit for months 'wakes it up.' Here's what maceration actually is, what really happens to your fragrance on the shelf, and how to store it so it lasts.",
+    read:     "11 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/dupes-debate",
     tag:      "Buying Guide · Opinion",
     title:    "The Dupes Debate",
