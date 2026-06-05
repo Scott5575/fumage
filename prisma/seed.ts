@@ -552,6 +552,8 @@ async function main() {
   // ── Merge editorial extension files (fragrance_ext_2026_*.json) ───────────
   // Keeps post-launch editorial additions in their own version-controlled
   // files instead of hand-editing the 1.2 MB main database.
+  // Scoped to the "2026_" prefix on purpose: the fragrance_ext_designer_tier*.json
+  // files are already baked into fragrance_database.json and must not re-merge.
   const dataDir = path.resolve(__dirname, "data");
   const extFiles = fs
     .readdirSync(dataDir)
