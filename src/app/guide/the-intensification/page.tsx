@@ -56,7 +56,7 @@ const FLANKERS = [
     house: "Ralph Lauren, 2026",
     slug: "ralph-lauren-polo-67-extreme",
     tag: "Extreme",
-    desc: "Caramelised pineapple over leather and cedar. The rare intensification that adds a genuinely new accord instead of just turning up the base.",
+    desc: "The line's signature pineapple, now anchored to a leather-and-cedar base the original never had. The rare intensification that adds something genuinely new instead of just amplifying the base.",
   },
   {
     name: "Legend Elixir",
@@ -187,7 +187,7 @@ export default function TheIntensificationPage() {
             Not every intensification is a recoloured bottle. The line worth drawing is between the escalation that merely turns up the base and the one that introduces a genuinely new accord — a material or idea that was not in the original at all. The former gives you the fragrance you owned, sweeter and longer; the latter gives you something you could not have predicted from the parent.
           </p>
           <p className="text-sm text-stone-400 font-light leading-relaxed">
-            Of the five, Ralph Lauren&apos;s <em>Polo 67 Eau de Parfum Extreme</em> is the clearest case of the second kind. It does not simply deepen Polo 67; it folds in a caramelised-pineapple top and a leather-cedar base that change the fragrance&apos;s argument rather than its volume. The other four sit further toward the recoloured-bottle end: the <em>1 Million Night Elixir</em> is the 1 Million signature plus maple and amber, the <em>Legend Elixir</em> is Legend made warmer, the <em>Cool Elixir Safran Mineral</em> is the Cool line with a saffron accord stitched on at a budget price. Pleasant, mostly competent, occasionally very good value — but the pitch is amplification, not invention. The grid below sorts them by what they are actually doing.
+            Of the five, Ralph Lauren&apos;s <em>Polo 67 Eau de Parfum Extreme</em> is the clearest case of the second kind. It keeps the line&apos;s signature pineapple, but it swaps the original&apos;s vetiver-and-patchouli base for one built on leather, cedar and sandalwood — a material the parent simply did not contain. That new base changes the fragrance&apos;s argument rather than its volume. The other four sit further toward the recoloured-bottle end: the <em>1 Million Night Elixir</em> is the 1 Million signature plus maple and amber, the <em>Legend Elixir</em> is Legend made warmer, the <em>Cool Elixir Safran Mineral</em> is the Cool line with a saffron accord stitched on at a budget price. Pleasant, mostly competent, occasionally very good value — but the pitch is amplification, not invention. The grid below sorts them by what they are actually doing.
           </p>
         </div>
 
