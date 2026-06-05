@@ -22,7 +22,7 @@ const RELEASES: DispatchRelease[] = [
     slug: "rabanne-1-million-night-elixir",
     notes: "Mandarin, maple syrup, cinnamon, vanilla, amber",
     price: "$135–$170",
-    verdict: "1 Million after dark: maple-syrup sweetness over warm amber. Loud, limited, and unapologetically a crowd-pleaser.",
+    verdict: "1 Million after dark: maple-syrup sweetness over warm amber. Loud, limited, and built squarely for the crowd.",
   },
   {
     name: "Legend Elixir",
@@ -70,7 +70,7 @@ export default function DispatchMay2026Page() {
   return (
     <Dispatch
       monthLabel="May 2026"
-      deck="Spring tipped into summer and the houses answered with woods, ambers, and a wave of intensified flankers. Seven launches worth knowing — fresh citrus for the daytime, boozy amber for the night, and one literal blazer."
+      deck="Spring tipped into summer and the houses answered with woods, ambers, and a wave of intensified flankers. Seven launches worth knowing — fresh citrus for the daytime, warm amber for the night, and one literal blazer."
       releases={RELEASES}
     />
   );

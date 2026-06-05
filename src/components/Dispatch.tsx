@@ -4,7 +4,7 @@ export type DispatchRelease = {
   name: string;
   house: string;
   slug: string;       // catalog slug → /fragrances/[slug]
-  notes: string;      // short note summary
+  notes: string;      // comma-separated ingredients
   price: string;      // human-readable, e.g. "$155"
   verdict: string;    // one-line editorial take
 };
@@ -25,7 +25,7 @@ export default function Dispatch({ monthLabel, deck, releases }: DispatchProps) 
         ← Guide
       </Link>
 
-      <div className="mb-12 pb-12 border-b border-stone-800/60">
+      <div className="mb-16 pb-16 border-b border-stone-800/60">
         <p className="text-[10px] uppercase tracking-[0.3em] text-amber-500 mb-6">
           The Dispatch
         </p>
