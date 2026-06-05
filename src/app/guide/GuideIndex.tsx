@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-type Category = "all" | "psychology" | "family" | "guide";
+type Category = "all" | "psychology" | "family" | "guide" | "dispatch";
 
 const GUIDES: {
   href: string;
@@ -13,6 +13,22 @@ const GUIDES: {
   read: string;
   category: Category;
 }[] = [
+  {
+    href:     "/guide/dispatch-2026-05",
+    tag:      "The Dispatch · New Releases",
+    title:    "New Releases: May 2026",
+    subtitle: "The seven men's fragrance launches worth knowing from May 2026 — from Acqua di Parma's hand-pressed bergamot to Azzaro's 24-hour amber and a D.S. & Durga cologne that smells like a wool blazer.",
+    read:     "5 min read",
+    category: "dispatch",
+  },
+  {
+    href:     "/guide/the-intensification",
+    tag:      "Culture · Trends",
+    title:    "More of Everything",
+    subtitle: "Elixir, Absolu, Extreme, Parfum Intense — five of the seven biggest men's launches of May 2026 were intensified flankers, not new fragrances. What's driving it, and when the louder version is actually worth buying.",
+    read:     "13 min read",
+    category: "guide",
+  },
   {
     href:     "/guide/pheromones",
     tag:      "Psychology · Science",
@@ -252,6 +268,7 @@ const FILTERS: { value: Category; label: string }[] = [
   { value: "psychology", label: "Psychology"         },
   { value: "family",     label: "Family Deep Dives"  },
   { value: "guide",      label: "Buying Guides"      },
+  { value: "dispatch",   label: "New Releases"      },
 ];
 
 export default function GuideIndex() {
