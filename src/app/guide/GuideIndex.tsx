@@ -14,6 +14,14 @@ const GUIDES: {
   category: Category;
 }[] = [
   {
+    href:     "/guide/the-intensification",
+    tag:      "Culture · Trends",
+    title:    "More of Everything",
+    subtitle: "Elixir, Absolu, Extreme, Parfum Intense — five of the seven biggest men's launches of May 2026 were intensified flankers, not new fragrances. What's driving it, and when the louder version is actually worth buying.",
+    read:     "13 min read",
+    category: "guide",
+  },
+  {
     href:     "/guide/pheromones",
     tag:      "Psychology · Science",
     title:    "The Invisible Weapon",
