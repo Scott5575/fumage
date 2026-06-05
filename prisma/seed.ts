@@ -549,6 +549,22 @@ async function main() {
   const raw: RawFragrance[] = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
   console.log(`  Loaded ${raw.length} fragrances from JSON`);
 
+  // ── Merge editorial extension files (fragrance_ext_2026_*.json) ───────────
+  // Keeps post-launch editorial additions in their own version-controlled
+  // files instead of hand-editing the 1.2 MB main database.
+  const dataDir = path.resolve(__dirname, "data");
+  const extFiles = fs
+    .readdirSync(dataDir)
+    .filter((f) => /^fragrance_ext_2026_.*\.json$/.test(f))
+    .sort();
+  for (const file of extFiles) {
+    const ext: RawFragrance[] = JSON.parse(
+      fs.readFileSync(path.join(dataDir, file), "utf-8")
+    );
+    raw.push(...ext);
+    console.log(`  + Merged ${ext.length} fragrances from ${file}`);
+  }
+
   const nameSlugMap = buildNameSlugMap(raw);
 
   // ── 1. Upsert Houses ──────────────────────────────────────────────────────
