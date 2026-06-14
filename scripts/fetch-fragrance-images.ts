@@ -2,15 +2,17 @@
  * scripts/fetch-fragrance-images.ts
  *
  * For each fragrance without an imageUrl:
- *   1. Search DuckDuckGo via Playwright with name + house + year (avoids Fragrantica/Cloudflare)
+ *   1. Search via the firecrawl REST API with name + house + year, restricted to
+ *      site:fragrantica.com/perfume (firecrawl orchestrates engines server-side, so
+ *      it isn't blocked the way scraped DuckDuckGo/Bing now are)
  *   2. Scan all Fragrantica result URLs and pick the first one whose slug matches our fragrance
  *      name (slug verification rejects wrong versions like "Oud Wood Intense" for "Oud Wood")
  *   3. Fetch the clean bottle shot directly from fimgs.net (open CDN, no bot protection)
  *   4. Upload to Supabase Storage
  *   5. Update fragrance.imageUrl in the database
  *
- * Run (from project root):
- *   SUPABASE_SERVICE_ROLE_KEY=... npx ts-node --compiler-options '{"module":"CommonJS"}' scripts/fetch-fragrance-images.ts
+ * Run (from project root, with .env + .env.local loaded into the shell):
+ *   npx ts-node --compiler-options '{"module":"CommonJS"}' scripts/fetch-fragrance-images.ts
  *
  * Options:
  *   --dry-run   Print what would be fetched without writing to DB or Storage
@@ -20,6 +22,7 @@
  *
  * Required env vars (in addition to those in .env):
  *   SUPABASE_SERVICE_ROLE_KEY — service role key for Storage writes
+ *   FIRECRAWL_API_KEY         — firecrawl key for the search step
  */
 
 import * as fs from "fs";
@@ -27,9 +30,9 @@ import * as path from "path";
 import * as https from "https";
 import * as http from "http";
 import { URL } from "url";
-import { chromium } from "playwright";
 import { PrismaClient } from "@prisma/client";
 import { createClient } from "@supabase/supabase-js";
+import { findFragranticaId } from "./lib/fragrantica-match";
 
 // ── Config ─────────────────────────────────────────────────────────────────────
 
@@ -52,11 +55,17 @@ const prisma = new PrismaClient();
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const firecrawlKey = process.env.FIRECRAWL_API_KEY;
 
 if (!supabaseUrl || !serviceKey) {
   console.error(
     "Missing env: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required."
   );
+  process.exit(1);
+}
+
+if (!firecrawlKey) {
+  console.error("Missing env: FIRECRAWL_API_KEY is required for the search step.");
   process.exit(1);
 }
 
@@ -108,132 +117,82 @@ function fetchBinary(url: string): Promise<Buffer> {
   });
 }
 
-// ── Slug verification ──────────────────────────────────────────────────────────
+// ── firecrawl search → Fragrantica ID ─────────────────────────────────────────
 
-// Words that Fragrantica appends to URL slugs but aren't part of the product name
-// ("pour Homme", "pour Femme"). Do NOT include "de"/"le"/"la" — those appear inside
-// real fragrance names (Le Male, Bleu de Chanel) and must not be stripped.
-const IGNORABLE_URL_WORDS = new Set([
-  "pour", "homme", "femme", "men", "women", "man", "woman",
-]);
-
-// Only strip true concentration abbreviations that appear differently in our DB vs Fragrantica URLs.
-// Do NOT strip product-variant words like "parfum", "elixir", "intense", "absolu" —
-// those distinguish separate products (Sauvage vs Sauvage Parfum, Oud Wood vs Oud Wood Intense).
-const CONCENTRATION_TERMS = [
-  "eau de parfum", "eau de toilette", "eau fraiche", "eau de cologne",
-  "edp", "edt", "edc",
-];
-
-function normalizeForComparison(raw: string): string {
-  let s = raw
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "") // strip diacritics (é→e, ò→o)
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, " "); // drop punctuation
-
-  // Strip concentration terms
-  for (const term of CONCENTRATION_TERMS) {
-    s = s.replace(new RegExp(`\\b${term}\\b`, "g"), " ");
-  }
-
-  return s.replace(/\s+/g, " ").trim();
+// POST a query to the firecrawl REST search API and return the result URLs.
+// Throws on a non-2xx response (caller retries); 429 is surfaced so the retry
+// loop backs off.
+function firecrawlSearch(query: string): Promise<string[]> {
+  return new Promise((resolve, reject) => {
+    const body = JSON.stringify({ query, limit: 8 });
+    const req = https.request(
+      {
+        hostname: "api.firecrawl.dev",
+        path: "/v2/search",
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${firecrawlKey}`,
+          "Content-Type": "application/json",
+          "Content-Length": Buffer.byteLength(body),
+        },
+      },
+      (res) => {
+        const chunks: Buffer[] = [];
+        res.on("data", (c) => chunks.push(Buffer.from(c)));
+        res.on("end", () => {
+          if (res.statusCode === 429) {
+            reject(new Error("firecrawl 429 rate limited"));
+            return;
+          }
+          if (!res.statusCode || res.statusCode < 200 || res.statusCode >= 300) {
+            reject(new Error(`firecrawl HTTP ${res.statusCode}`));
+            return;
+          }
+          try {
+            const json = JSON.parse(Buffer.concat(chunks).toString());
+            const web = Array.isArray(json?.data?.web)
+              ? json.data.web
+              : Array.isArray(json?.data)
+              ? json.data
+              : [];
+            resolve(
+              web
+                .map((r: { url?: string }) => r.url)
+                .filter((u: unknown): u is string => typeof u === "string")
+            );
+          } catch (e) {
+            reject(e as Error);
+          }
+        });
+      }
+    );
+    req.on("error", reject);
+    req.setTimeout(30000, () => {
+      req.destroy();
+      reject(new Error(`firecrawl search timeout for "${query}"`));
+    });
+    req.write(body);
+    req.end();
+  });
 }
-
-function urlMatchesFragrance(ourName: string, houseName: string, fragUrl: string): boolean {
-  // Extract the fragrance name slug from the URL
-  // URL pattern: /perfume/House-Name/Frag-Name-YEAR-ID.html or /Frag-Name-ID.html
-  const urlMatch = fragUrl.match(/\/perfume\/[^/]+\/(.+?)-(\d+)\.html/);
-  if (!urlMatch) return false;
-
-  const urlNameSlug = urlMatch[1]; // e.g. "Oud-Wood-Intense" or "Sauvage-2015"
-
-  // Strip the house name prefix from our product name if present.
-  // Some DB entries store "Giorgio Armani Acqua di Giò Elixir" under house "Giorgio Armani",
-  // but Fragrantica's URL slug is just "Acqua-di-Gio-Elixir".
-  const houseNorm = normalizeForComparison(houseName);
-  let effectiveName = normalizeForComparison(ourName);
-  if (effectiveName.startsWith(houseNorm + " ")) {
-    effectiveName = effectiveName.slice(houseNorm.length).trim();
-  }
-
-  // Use original normalized name for IGNORABLE word filtering (preserves words like
-  // "homme"/"man" that belong to the product name, e.g. "Light Blue Pour Homme")
-  const fullNorm = normalizeForComparison(ourName);
-  const fullWords = new Set(fullNorm.split(" ").filter(Boolean));
-
-  // Normalize the URL name: replace hyphens with spaces, strip year,
-  // strip IGNORABLE words only when they do NOT appear in our product name
-  let urlName = urlNameSlug.replace(/-/g, " ").toLowerCase();
-  urlName = urlName.replace(/\b\d{4}\b/g, " "); // strip 4-digit years
-  urlName = urlName
-    .split(" ")
-    .filter((w) => w && !(IGNORABLE_URL_WORDS.has(w) && !fullWords.has(w)))
-    .join(" ");
-  urlName = normalizeForComparison(urlName);
-
-  // Helper: true if a and b match (equal, or one is a prefix of the other with no remaining words)
-  function nameMatches(a: string, b: string): boolean {
-    if (a === b) return true;
-    if (a.startsWith(b + " ") || b.startsWith(a + " ")) {
-      const extra = a.length > b.length ? a.slice(b.length).trim() : b.slice(a.length).trim();
-      return extra === "";
-    }
-    return false;
-  }
-
-  // Try full name first, then house-stripped name.
-  // Two-way attempt handles both cases:
-  //   "Dior Homme Intense" → URL "Dior-Homme-Intense" → full name matches directly
-  //   "Giorgio Armani Acqua di Gio Elixir" → URL "Acqua-di-Gio-Elixir" → stripped name matches
-  return nameMatches(fullNorm, urlName) || (fullNorm !== effectiveName && nameMatches(effectiveName, urlName));
-}
-
-// ── DuckDuckGo search via Playwright → Fragrantica ID ─────────────────────────
 
 async function findFragranticaImageUrl(
-  page: import("playwright").Page,
   name: string,
   house: string,
-  year: number | null
+  _year: number | null
 ): Promise<string | null> {
-  const queryParts = [`site:fragrantica.com/perfume`, name, house];
-  if (year) queryParts.push(String(year));
-  const query = encodeURIComponent(queryParts.join(" "));
+  // NB: the release year is deliberately NOT added to the query. Many Fragrantica
+  // perfume pages don't surface the year prominently, so including it pushes the
+  // correct page out of the top results (verified: "Nouveau Monde", "Barakkat Rouge
+  // 540"). Name + house alone rank the right page first.
+  const query = `site:fragrantica.com/perfume ${name} ${house}`;
 
-  await page.goto(`https://duckduckgo.com/?q=${query}&ia=web`, {
-    waitUntil: "networkidle",
-    timeout: 30000,
-  });
+  const resultUrls = await firecrawlSearch(query);
 
-  // Collect all distinct Fragrantica perfume URLs from the results page
-  const fragUrls: string[] = await page.evaluate(() => {
-    const seen = new Set<string>();
-    const urls: string[] = [];
-    for (const a of Array.from(document.querySelectorAll("a[href]"))) {
-      const href = (a as HTMLAnchorElement).href;
-      if (
-        /fragrantica\.com\/perfume\/[^/]+\/[^/]+-\d+\.html/.test(href) &&
-        !seen.has(href)
-      ) {
-        seen.add(href);
-        urls.push(href);
-      }
-    }
-    return urls;
-  });
-
-  // Pick the first URL whose slug matches our fragrance name
-  for (const url of fragUrls) {
-    if (urlMatchesFragrance(name, house, url)) {
-      const idMatch = url.match(/-(\d+)\.html$/);
-      if (idMatch) {
-        return `https://fimgs.net/mdimg/perfume/375x500.${idMatch[1]}.jpg`;
-      }
-    }
-  }
-
-  return null;
+  // Resolve the matching Fragrantica id via the token-set matcher (see
+  // scripts/lib/fragrantica-match.ts), then build the open-CDN bottle-shot URL.
+  const id = findFragranticaId(name, house, resultUrls);
+  return id ? `https://fimgs.net/mdimg/perfume/375x500.${id}.jpg` : null;
 }
 
 // ── Storage ────────────────────────────────────────────────────────────────────
@@ -297,79 +256,64 @@ async function main() {
   const results = { ok: 0, skipped: 0, failed: 0 };
   const failures: string[] = [];
 
-  const browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext({
-    userAgent:
-      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    locale: "en-US",
-    viewport: { width: 1280, height: 800 },
-  });
-  const page = await context.newPage();
+  for (let i = 0; i < target.length; i++) {
+    const f = target[i];
+    const prefix = `[${i + 1}/${target.length}] ${f.house.name} — ${f.name}${f.year ? ` (${f.year})` : ""}`;
 
-  // Establish a DuckDuckGo session before searching
-  await page.goto("https://duckduckgo.com/", {
-    waitUntil: "networkidle",
-    timeout: 30000,
-  });
-  await sleep(1500);
+    let imageSourceUrl: string | null = null;
+    let attempt = 0;
+    let hardFailed = false;
 
-  try {
-    for (let i = 0; i < target.length; i++) {
-      const f = target[i];
-      const prefix = `[${i + 1}/${target.length}] ${f.house.name} — ${f.name}${f.year ? ` (${f.year})` : ""}`;
-
-      let imageSourceUrl: string | null = null;
-      let attempt = 0;
-
-      while (attempt <= MAX_RETRIES && !imageSourceUrl) {
-        try {
-          imageSourceUrl = await findFragranticaImageUrl(
-            page,
-            f.name,
-            f.house.name,
-            f.year
-          );
-          break;
-        } catch (err) {
-          attempt++;
-          if (attempt > MAX_RETRIES) {
-            console.error(`  ${prefix}: FAILED — ${(err as Error).message}`);
-            results.failed++;
-            failures.push(`${f.slug}: ${(err as Error).message}`);
-          } else {
-            await sleep(3000);
-          }
-        }
-      }
-
-      if (attempt > MAX_RETRIES) {
-        // already logged
-      } else if (!imageSourceUrl) {
-        console.log(`  ${prefix}: not found / no slug match`);
-        results.skipped++;
-        failures.push(`${f.slug}: no matching Fragrantica URL found`);
-      } else if (DRY_RUN) {
-        console.log(`  ${prefix}: would fetch ${imageSourceUrl}`);
-        results.ok++;
-      } else {
-        try {
-          const imageData = await fetchBinary(imageSourceUrl);
-          const publicUrl = await uploadImage(f.slug, imageData);
-          await prisma.fragrance.update({
-            where: { id: f.id },
-            data: { imageUrl: publicUrl },
-          });
-          console.log(`  ${prefix}: ✓`);
-          results.ok++;
-        } catch (err) {
+    while (attempt <= MAX_RETRIES && !imageSourceUrl) {
+      try {
+        imageSourceUrl = await findFragranticaImageUrl(
+          f.name,
+          f.house.name,
+          f.year
+        );
+        break;
+      } catch (err) {
+        attempt++;
+        if (attempt > MAX_RETRIES) {
           console.error(`  ${prefix}: FAILED — ${(err as Error).message}`);
           results.failed++;
           failures.push(`${f.slug}: ${(err as Error).message}`);
+          hardFailed = true;
+        } else {
+          // back off harder on rate limits
+          await sleep(/429/.test((err as Error).message) ? 8000 : 3000);
         }
       }
     }
-  } finally {
-    await browser.close();
+
+    if (hardFailed) {
+      // already logged
+    } else if (!imageSourceUrl) {
+      console.log(`  ${prefix}: not found / no slug match`);
+      results.skipped++;
+      failures.push(`${f.slug}: no matching Fragrantica URL found`);
+    } else if (DRY_RUN) {
+      console.log(`  ${prefix}: would fetch ${imageSourceUrl}`);
+      results.ok++;
+    } else {
+      try {
+        const imageData = await fetchBinary(imageSourceUrl);
+        const publicUrl = await uploadImage(f.slug, imageData);
+        await prisma.fragrance.update({
+          where: { id: f.id },
+          data: { imageUrl: publicUrl },
+        });
+        console.log(`  ${prefix}: ✓`);
+        results.ok++;
+      } catch (err) {
+        console.error(`  ${prefix}: FAILED — ${(err as Error).message}`);
+        results.failed++;
+        failures.push(`${f.slug}: ${(err as Error).message}`);
+      }
+    }
+
+    // be polite to the firecrawl API between searches
+    await sleep(400);
   }
 
   console.log(
